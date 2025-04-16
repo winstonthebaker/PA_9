@@ -1,0 +1,987 @@
+{
+	"ID": "74a68a984824b4510d12589f199ad68f",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6605,
+	"Data": [
+		{
+			"ID": "74a68a984824b4510d12589f199ad68f",
+			"TypeName": "FlaxEngine.Scene",
+			"LightmapSettings": {
+				"IndirectLightingIntensity": 1.0,
+				"GlobalObjectsScale": 1.0,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"CompressLightmaps": true,
+				"UseGeometryWithNoMaterials": true,
+				"Quality": 100
+			}
+		},
+		{
+			"ID": "6ff0581d474c84230b3d0fa9f17e0972",
+			"TypeName": "ExitOnEsc",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"V": {}
+		},
+		{
+			"ID": "785581dd4ebb4520a1f5ff8abd722fde",
+			"TypeName": "Game.GameManager",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"_deathScreenActor": "46975d61404acbb43c0d2c9563d0112c"
+		},
+		{
+			"ID": "28553d634087c67c711ebd96080482aa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Visuals"
+		},
+		{
+			"ID": "bc81376747666609b0974580a21519a1",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": -69.65292358398438,
+					"Y": 124.01800537109375,
+					"Z": 35.34806823730469
+				}
+			},
+			"Sun": "deecf0894777293a4f478dadacf2a6f8",
+			"SunPower": 10.0
+		},
+		{
+			"ID": "da5e1c454a56377517d41686ebb0348f",
+			"TypeName": "FlaxEngine.EnvironmentProbe",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "Environment Probe",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 249.3258056640625,
+					"Z": 0.0
+				}
+			},
+			"ProbeID": "1e1fb3a7447c1265b15967b480549d98"
+		},
+		{
+			"ID": "deecf0894777293a4f478dadacf2a6f8",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "Directional Light",
+			"Transform": {
+				"Translation": {
+					"X": -1.6893305778503419,
+					"Y": 267.7931823730469,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.5176515579223633,
+					"Y": 0.0833025798201561,
+					"Z": 0.06534233689308167,
+					"W": 0.8490158915519714
+				}
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 0.9770245552062988,
+				"B": 0.8860000371932983,
+				"A": 1.0
+			}
+		},
+		{
+			"ID": "eb18e84d41670d6314174b89a1d5ffea",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "SkyLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"BakedProbe": "1c0e10484ff57d402275289550564b9f",
+			"Mode": 0
+		},
+		{
+			"ID": "4a9d87134ab42f4294db6bbcf1902bde",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"IsActive": false,
+			"Name": "Floor",
+			"Transform": {
+				"Scale": {
+					"X": 10.0,
+					"Y": 0.5,
+					"Z": 10.0
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "382f1ae946c519eff6e6f3a2965cf56b",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "4a7045e748c74e3de29afd8856f99205",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "4a9d87134ab42f4294db6bbcf1902bde",
+			"Name": "BoxCollider"
+		},
+		{
+			"ID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Cube",
+			"Transform": {
+				"Translation": {
+					"X": -37.15938186645508,
+					"Y": 59.57826232910156,
+					"Z": -85.36280059814453
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "8391b6da40053a988a0959ab9f26f700",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f05185004d85b1695fc5b1ae710ba373",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": 0.000003814697265625,
+				"Y": 0.0,
+				"Z": 0.00000762939453125
+			}
+		},
+		{
+			"ID": "5451148f47d7faebc699da88ae833c91",
+			"TypeName": "FlaxEngine.CharacterController",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Player",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 244.39471435546876,
+					"Z": 126.28030395507813
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "6fb5d8fe49b9622a06442aafaf782c86",
+			"TypeName": "Game.PlayerController",
+			"ParentID": "5451148f47d7faebc699da88ae833c91",
+			"_characterController": "5451148f47d7faebc699da88ae833c91",
+			"_cameraContainer": "b0d72c3746caebca055e1f921ca21c7c",
+			"_playerBody": "5451148f47d7faebc699da88ae833c91",
+			"_movementSpeed": 1000.0,
+			"_groundMovementAcceleration": 6000.0,
+			"_gravity": 2000.0
+		},
+		{
+			"ID": "b0d72c3746caebca055e1f921ca21c7c",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "5451148f47d7faebc699da88ae833c91",
+			"Name": "Camera",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 77.46640014648438,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "9053ad38428b10594c741db78d7fcca5",
+			"TypeName": "FreeCamera",
+			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
+			"V": {}
+		},
+		{
+			"ID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Scale": {
+					"X": 10.0,
+					"Y": 9.999996185302735,
+					"Z": 9.999996185302735
+				}
+			}
+		},
+		{
+			"ID": "1896a6564341762c89fb57a6dc5a33f6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor",
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "827eb24040c4981ae62d4b8ca3254aea",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "1896a6564341762c89fb57a6dc5a33f6",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "c95b74804ac2985fd7b9339a01f9ff1e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 300.0
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "5d808c164264dcf7923fe9acb7901fb3",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c95b74804ac2985fd7b9339a01f9ff1e",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "98b01da24912067621aaec8fc06dabeb",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -300.0
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "8a68169143897b17482edfa4956f8add",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "98b01da24912067621aaec8fc06dabeb",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "ce429cf54583c5119c7f3b8a04b0973c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 2",
+			"Transform": {
+				"Translation": {
+					"X": -300.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "35af00b84245031a286c94ad5cb5237c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ce429cf54583c5119c7f3b8a04b0973c",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "e2f6608c408b53a443478f9b8a3cd79e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 3",
+			"Transform": {
+				"Translation": {
+					"X": -300.0,
+					"Y": 0.0,
+					"Z": 300.0
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "77cd6623405c8fd4700e5689c5210a40",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "e2f6608c408b53a443478f9b8a3cd79e",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "782303394aa35faac4f7bc956a5b1c73",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 4",
+			"Transform": {
+				"Translation": {
+					"X": -300.0,
+					"Y": 0.0,
+					"Z": -300.0
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "58de6d5b4867d16a05d2f38a604f80d8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "782303394aa35faac4f7bc956a5b1c73",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "7ff1e55b4fcc7ece211fc9bca3dbe71e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 5",
+			"Transform": {
+				"Translation": {
+					"X": 300.0,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "687b718840d584fdedc97b8a38888462",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7ff1e55b4fcc7ece211fc9bca3dbe71e",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "928dfed9425cb5cdc58b7a976a13923a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 6",
+			"Transform": {
+				"Translation": {
+					"X": 300.0,
+					"Y": 0.0,
+					"Z": 300.0
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "63dbf3d64b7d028d1d29a591c2ec51cd",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "928dfed9425cb5cdc58b7a976a13923a",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "6bd532cf43af31aeed944e9767f20168",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 7",
+			"Transform": {
+				"Translation": {
+					"X": 300.0,
+					"Y": 0.0,
+					"Z": -300.0
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "a593af2e4b9efc5d39d7fca37ff6f79a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "6bd532cf43af31aeed944e9767f20168",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "e898f2d5471b63c07091659077eb71d6",
+			"TypeName": "FlaxEngine.Terrain",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Terrain",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -2500.0,
+					"Z": 0.0
+				}
+			},
+			"Material": "ad0f5f6d4e13f55511fdbab6e0c02c99",
+			"LODCount": 6,
+			"ChunkSize": 127,
+			"Patches": [
+				{
+					"X": 0,
+					"Z": 0,
+					"Offset": -0.000015259021893143655,
+					"Height": 4196.77734375,
+					"Heightmap": "0118b7534246bb76d39035a833389f6b",
+					"Splatmap0": "974d0ad14d95724e439d38a72f7fa7b7",
+					"Splatmap1": "a8f9be40464a0ea671a916aad5a77bd7",
+					"Heightfield": "9caf16fe4d4e13e259a760a0f15e6e7a",
+					"Chunks": [
+						{
+							"Offset": 529.47998046875,
+							"Height": 3176.57470703125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 3236.083984375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 2097.916748046875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 3116.455078125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 3883.056640625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 1137.6953125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 225.09068298339845,
+							"Height": 2362.800048828125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 1137.0849609375,
+							"Height": 2568.9697265625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 3234.2529296875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 646.97265625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 2587.2802734375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3549.8046875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 2687.150146484375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 2745.9716796875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 490.1123046875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 646.97265625,
+							"Material": "00000000000000000000000000000000"
+						}
+					]
+				},
+				{
+					"X": 1,
+					"Z": 0,
+					"Offset": -0.000015259021893143655,
+					"Height": 3391.11328125,
+					"Heightmap": "f1e55ce64e3ab89f3d7b42b98cd06921",
+					"Splatmap0": "00000000000000000000000000000000",
+					"Splatmap1": "00000000000000000000000000000000",
+					"Heightfield": "4bac0456462e28b7f4cecfa74d73269e",
+					"Chunks": [
+						{
+							"Offset": 156.8603515625,
+							"Height": 3078.0029296875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 1608.2763671875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 2254.638671875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 1391.6015625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 215.75927734375,
+							"Height": 2842.5673828125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 1137.6953125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 1760.374267578125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 1726.07421875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 3046.636474609375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 2920.292724609375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 803.8330078125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 2412.7197265625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 2729.820556640625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 3234.2529296875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 2033.91162109375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 2430.419921875,
+							"Material": "00000000000000000000000000000000"
+						}
+					]
+				},
+				{
+					"X": 0,
+					"Z": 1,
+					"Offset": -0.000015259021893143655,
+					"Height": 3549.8046875,
+					"Heightmap": "a9dbf4ac4ee62f94a49e6db83e27be06",
+					"Splatmap0": "00000000000000000000000000000000",
+					"Splatmap1": "00000000000000000000000000000000",
+					"Heightfield": "5185eb774887982272c9468107e73f68",
+					"Chunks": [
+						{
+							"Offset": 0.0,
+							"Height": 3549.8046875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 3392.9443359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 2095.591796875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 490.1123046875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 3059.08203125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 2744.7509765625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 1450.8056640625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 313.720703125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 490.1123046875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 1294.5556640625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 803.8330078125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 313.720703125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 1137.0849609375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 803.8330078125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 58.8226318359375,
+							"Height": 1235.1226806640626,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 960.693359375,
+							"Material": "00000000000000000000000000000000"
+						}
+					]
+				},
+				{
+					"X": 1,
+					"Z": 1,
+					"Offset": -0.000015259021893143655,
+					"Height": 4353.02734375,
+					"Heightmap": "cbec84db453082ba2883c19dc04f7bac",
+					"Splatmap0": "00000000000000000000000000000000",
+					"Splatmap1": "00000000000000000000000000000000",
+					"Heightfield": "fed3f9bc4236bb56e5532b94cfd70aa0",
+					"Chunks": [
+						{
+							"Offset": 156.8603515625,
+							"Height": 490.1123046875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 2254.678955078125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 2096.83154296875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 2255.2490234375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 333.251953125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 646.97265625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 823.3642578125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 313.720703125,
+							"Height": 3883.056640625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 1938.904541015625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 215.75927734375,
+							"Height": 2038.87939453125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 490.1123046875,
+							"Height": 2568.9697265625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 1078.4912109375,
+							"Height": 3274.5361328125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 2254.638671875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 2254.638671875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 0.0,
+							"Height": 2744.140625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 156.8603515625,
+							"Height": 2587.2802734375,
+							"Material": "00000000000000000000000000000000"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "f13e5334400709e06be20d896af0f4f4",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Cube 0",
+			"Transform": {
+				"Translation": {
+					"X": 600.0,
+					"Y": 100.0,
+					"Z": 2100.0
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "17b5d43b4f425fabe2fb0999fce94a56",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "f13e5334400709e06be20d896af0f4f4",
+			"Name": "BoxCollider",
+			"Tag": "KillsOnContact",
+			"IsTrigger": true
+		},
+		{
+			"ID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"TypeName": "FlaxEngine.UICanvas",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "UICanvas",
+			"V": {}
+		},
+		{
+			"ID": "46975d61404acbb43c0d2c9563d0112c",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"Name": "AlphaPanel",
+			"Control": "FlaxEngine.GUI.AlphaPanel",
+			"Data": {
+	"Alpha": 0.0,
+	"IgnoreStack": false,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": false,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "2cbbc7d14d70736c6c5122a4fc674917",
+			"TypeName": "Game.DeathScreen",
+			"ParentID": "46975d61404acbb43c0d2c9563d0112c",
+			"V": {
+	"_screen": "46975d61404acbb43c0d2c9563d0112c"
+}
+		}
+	]
+}

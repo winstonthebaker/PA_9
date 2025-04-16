@@ -1,0 +1,137 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "PA_8|Editor.Windows.Debug|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\\"",
+				"-arch=x64",
+				"-configuration=Debug",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8"
+			}
+		},
+		{
+			"label": "PA_8|Editor.Windows.Development|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"command": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\\"",
+				"-arch=x64",
+				"-configuration=Development",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8"
+			}
+		},
+		{
+			"label": "PA_8|Editor.Windows.Release|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\\"",
+				"-arch=x64",
+				"-configuration=Release",
+				"-platform=Windows",
+				"-buildTargets=GameEditorTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8"
+			}
+		},
+		{
+			"label": "PA_8|Game.Windows.Debug|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\\"",
+				"-arch=x64",
+				"-configuration=Debug",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8"
+			}
+		},
+		{
+			"label": "PA_8|Game.Windows.Development|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\\"",
+				"-arch=x64",
+				"-configuration=Development",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8"
+			}
+		},
+		{
+			"label": "PA_8|Game.Windows.Release|x64",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"command": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Tools\\Flax.Build",
+			"args": [
+				"-build",
+				"-log",
+				"-mutex",
+				"\\\"-workspace=C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\\"",
+				"-arch=x64",
+				"-configuration=Release",
+				"-platform=Windows",
+				"-buildTargets=GameTarget"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8"
+			}
+		}
+	]
+}

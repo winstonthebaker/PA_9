@@ -1,0 +1,101 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "coreclr",
+			"name": "PA_8|Editor.Windows.Debug|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "PA_8|Editor.Windows.Debug|x64",
+			"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+			"program": "C:\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Editor\\Win64\\Debug\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "PA_8|Editor.Windows.Development|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "PA_8|Editor.Windows.Development|x64",
+			"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+			"program": "C:\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Editor\\Win64\\Development\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "PA_8|Editor.Windows.Release|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "PA_8|Editor.Windows.Release|x64",
+			"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+			"program": "C:\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Editor\\Win64\\Release\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "PA_8|Game.Windows.Debug|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "PA_8|Game.Windows.Debug|x64",
+			"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+			"program": "C:\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Editor\\Win64\\Debug\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "PA_8|Game.Windows.Development|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "PA_8|Game.Windows.Development|x64",
+			"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+			"program": "C:\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Editor\\Win64\\Development\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "PA_8|Game.Windows.Release|x64 (C#)",
+			"request": "launch",
+			"preLaunchTask": "PA_8|Game.Windows.Release|x64",
+			"cwd": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+			"program": "C:\\Program Files (x86)\\Flax\\Flax_1.9\\Binaries\\Editor\\Win64\\Release\\FlaxEditor",
+			"args": [
+				"-project",
+				"C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8",
+				"-skipCompile"
+			],
+			"stopAtEntry": false,
+			"externalConsole": true
+		},
+		{
+			"type": "coreclr",
+			"name": "PA_8 (C# Attach Editor)",
+			"request": "attach",
+			"processName": "FlaxEditor"
+		}
+	]
+}
