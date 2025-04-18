@@ -2,9 +2,9 @@
   "profiles": {
     "BuildScripts": {
       "commandName": "Executable",
-      "workingDirectory": "C:/Users/winst/OneDrive/Documents/Flax Projects/PA_8",
+      "workingDirectory": "C:/Users/winst/OneDrive/Documents/Flax Projects/PA_9",
       "executablePath": "C:/Program Files (x86)/Flax/Flax_1.9/Binaries/Editor/Win64/Development/FlaxEditor.exe",
-      "commandLineArgs": "-project \"C:/Users/winst/OneDrive/Documents/Flax Projects/PA_8\"",
+      "commandLineArgs": "-project \"C:/Users/winst/OneDrive/Documents/Flax Projects/PA_9\"",
       "nativeDebugging": false
     }
   }

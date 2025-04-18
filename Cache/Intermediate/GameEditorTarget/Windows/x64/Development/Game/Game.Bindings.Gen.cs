@@ -183,6 +183,320 @@ namespace Game.Interop
 namespace Game
 {
     [Unmanaged]
+    [NativeMarshalling(typeof(LauncherEnemyMarshaller))]
+    public unsafe partial class LauncherEnemy : Script
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LauncherEnemy"/>.
+        /// </summary>
+        public LauncherEnemy() : base()
+        {
+        }
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Prefab _missilePrefab
+        {
+            get { return Internal_Get_missilePrefab(__unmanagedPtr); }
+            set { Internal_Set_missilePrefab(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.LauncherEnemy::Internal_Get_missilePrefab", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Prefab Internal_Get_missilePrefab(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.LauncherEnemy::Internal_Set_missilePrefab", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_missilePrefab(IntPtr __obj, IntPtr value);
+    }
+}
+namespace Game.Interop
+{
+
+    /// <summary>
+    /// Marshaller for type <see cref="LauncherEnemy"/>.
+    /// </summary>
+    #if FLAX_EDITOR
+    [HideInEditor]
+    #endif
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.ManagedToUnmanagedIn, typeof(LauncherEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.UnmanagedToManagedOut, typeof(LauncherEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.ElementIn, typeof(LauncherEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.ManagedToUnmanagedOut, typeof(LauncherEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.UnmanagedToManagedIn, typeof(LauncherEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.ElementOut, typeof(LauncherEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.ManagedToUnmanagedRef, typeof(LauncherEnemyMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.UnmanagedToManagedRef, typeof(LauncherEnemyMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(LauncherEnemy), MarshalMode.ElementRef, typeof(LauncherEnemyMarshaller))]
+    public static class LauncherEnemyMarshaller
+    {
+    #pragma warning disable 1591
+    #pragma warning disable 618
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class NativeToManaged
+        {
+            public static LauncherEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<LauncherEnemy>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(LauncherEnemy managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class ManagedToNative
+        {
+            public static LauncherEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<LauncherEnemy>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(LauncherEnemy managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public struct Bidirectional
+        {
+            ManagedHandleMarshaller.Bidirectional marsh;
+            public void FromManaged(LauncherEnemy managed) => marsh.FromManaged(managed);
+            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
+            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
+            public LauncherEnemy ToManaged() => Unsafe.As<LauncherEnemy>(marsh.ToManaged());
+            public void Free() => marsh.Free();
+        }
+        internal static LauncherEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<LauncherEnemy>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
+        internal static IntPtr ConvertToUnmanaged(LauncherEnemy managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
+        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
+    
+        internal static LauncherEnemy ToManaged(IntPtr managed) => Unsafe.As<LauncherEnemy>(ManagedHandleMarshaller.ToManaged(managed));
+        internal static IntPtr ToNative(LauncherEnemy managed) => ManagedHandleMarshaller.ToNative(managed);
+    #pragma warning restore 618
+    #pragma warning restore 1591
+    }
+}
+
+namespace Game
+{
+    [Unmanaged]
+    [NativeMarshalling(typeof(MissileMarshaller))]
+    public unsafe partial class Missile : Script
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Missile"/>.
+        /// </summary>
+        public Missile() : base()
+        {
+        }
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public RigidBody _rb
+        {
+            get { return Internal_Get_rb(__unmanagedPtr); }
+            set { Internal_Set_rb(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Missile::Internal_Get_rb", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial RigidBody Internal_Get_rb(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Missile::Internal_Set_rb", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_rb(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Collider _col
+        {
+            get { return Internal_Get_col(__unmanagedPtr); }
+            set { Internal_Set_col(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Missile::Internal_Get_col", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Collider Internal_Get_col(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Missile::Internal_Set_col", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_col(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        public float _thrustPower
+        {
+            get { return Internal_Get_thrustPower(__unmanagedPtr); }
+            set { Internal_Set_thrustPower(__unmanagedPtr, value); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Missile::Internal_Get_thrustPower", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial float Internal_Get_thrustPower(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Missile::Internal_Set_thrustPower", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_thrustPower(IntPtr __obj, float value);
+    }
+}
+namespace Game.Interop
+{
+
+    /// <summary>
+    /// Marshaller for type <see cref="Missile"/>.
+    /// </summary>
+    #if FLAX_EDITOR
+    [HideInEditor]
+    #endif
+    [CustomMarshaller(typeof(Missile), MarshalMode.ManagedToUnmanagedIn, typeof(MissileMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Missile), MarshalMode.UnmanagedToManagedOut, typeof(MissileMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Missile), MarshalMode.ElementIn, typeof(MissileMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Missile), MarshalMode.ManagedToUnmanagedOut, typeof(MissileMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Missile), MarshalMode.UnmanagedToManagedIn, typeof(MissileMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Missile), MarshalMode.ElementOut, typeof(MissileMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Missile), MarshalMode.ManagedToUnmanagedRef, typeof(MissileMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Missile), MarshalMode.UnmanagedToManagedRef, typeof(MissileMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Missile), MarshalMode.ElementRef, typeof(MissileMarshaller))]
+    public static class MissileMarshaller
+    {
+    #pragma warning disable 1591
+    #pragma warning disable 618
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class NativeToManaged
+        {
+            public static Missile ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Missile>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Missile managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class ManagedToNative
+        {
+            public static Missile ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Missile>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Missile managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public struct Bidirectional
+        {
+            ManagedHandleMarshaller.Bidirectional marsh;
+            public void FromManaged(Missile managed) => marsh.FromManaged(managed);
+            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
+            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
+            public Missile ToManaged() => Unsafe.As<Missile>(marsh.ToManaged());
+            public void Free() => marsh.Free();
+        }
+        internal static Missile ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Missile>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
+        internal static IntPtr ConvertToUnmanaged(Missile managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
+        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
+    
+        internal static Missile ToManaged(IntPtr managed) => Unsafe.As<Missile>(ManagedHandleMarshaller.ToManaged(managed));
+        internal static IntPtr ToNative(Missile managed) => ManagedHandleMarshaller.ToNative(managed);
+    #pragma warning restore 618
+    #pragma warning restore 1591
+    }
+}
+
+namespace Game
+{
+    [Unmanaged]
+    [NativeMarshalling(typeof(MovingEnemyMarshaller))]
+    public unsafe partial class MovingEnemy : Script
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MovingEnemy"/>.
+        /// </summary>
+        public MovingEnemy() : base()
+        {
+        }
+
+        [Unmanaged]
+        public Actor[] _followPoints
+        {
+            get { return Internal_Get_followPoints(__unmanagedPtr, typeof(Actor), out var __returnCount); }
+            set { var __valueCount = value?.Length ?? 0; Internal_Set_followPoints(__unmanagedPtr, value, __valueCount); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.MovingEnemy::Internal_Get_followPoints", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        [return: MarshalUsing(typeof(FlaxEngine.Interop.ArrayMarshaller<,>), CountElementName = nameof(__returnCount))]
+        internal static partial Actor[] Internal_Get_followPoints(IntPtr __obj, [MarshalUsing(typeof(FlaxEngine.Interop.SystemTypeMarshaller))] System.Type resultArrayItemType0, out int __returnCount);
+
+        [LibraryImport("Game", EntryPoint = "Game.MovingEnemy::Internal_Set_followPoints", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_followPoints(IntPtr __obj, [MarshalUsing(typeof(FlaxEngine.Interop.ArrayMarshaller<,>), CountElementName = "__valueCount"), In] Actor[] value, int __valueCount);
+
+        [Unmanaged]
+        [DefaultValue((float)1000.0)]
+        public float _moveSpeed
+        {
+            get { return Internal_Get_moveSpeed(__unmanagedPtr); }
+            set { Internal_Set_moveSpeed(__unmanagedPtr, value); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.MovingEnemy::Internal_Get_moveSpeed", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial float Internal_Get_moveSpeed(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.MovingEnemy::Internal_Set_moveSpeed", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_moveSpeed(IntPtr __obj, float value);
+    }
+}
+namespace Game.Interop
+{
+
+    /// <summary>
+    /// Marshaller for type <see cref="MovingEnemy"/>.
+    /// </summary>
+    #if FLAX_EDITOR
+    [HideInEditor]
+    #endif
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.ManagedToUnmanagedIn, typeof(MovingEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.UnmanagedToManagedOut, typeof(MovingEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.ElementIn, typeof(MovingEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.ManagedToUnmanagedOut, typeof(MovingEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.UnmanagedToManagedIn, typeof(MovingEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.ElementOut, typeof(MovingEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.ManagedToUnmanagedRef, typeof(MovingEnemyMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.UnmanagedToManagedRef, typeof(MovingEnemyMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(MovingEnemy), MarshalMode.ElementRef, typeof(MovingEnemyMarshaller))]
+    public static class MovingEnemyMarshaller
+    {
+    #pragma warning disable 1591
+    #pragma warning disable 618
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class NativeToManaged
+        {
+            public static MovingEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<MovingEnemy>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(MovingEnemy managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class ManagedToNative
+        {
+            public static MovingEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<MovingEnemy>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(MovingEnemy managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public struct Bidirectional
+        {
+            ManagedHandleMarshaller.Bidirectional marsh;
+            public void FromManaged(MovingEnemy managed) => marsh.FromManaged(managed);
+            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
+            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
+            public MovingEnemy ToManaged() => Unsafe.As<MovingEnemy>(marsh.ToManaged());
+            public void Free() => marsh.Free();
+        }
+        internal static MovingEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<MovingEnemy>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
+        internal static IntPtr ConvertToUnmanaged(MovingEnemy managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
+        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
+    
+        internal static MovingEnemy ToManaged(IntPtr managed) => Unsafe.As<MovingEnemy>(ManagedHandleMarshaller.ToManaged(managed));
+        internal static IntPtr ToNative(MovingEnemy managed) => ManagedHandleMarshaller.ToNative(managed);
+    #pragma warning restore 618
+    #pragma warning restore 1591
+    }
+}
+
+namespace Game
+{
+    [Unmanaged]
     [NativeMarshalling(typeof(PlayerControllerMarshaller))]
     public unsafe partial class PlayerController : Script
     {
@@ -318,6 +632,34 @@ namespace Game
 
         [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Set_jumpSpeed", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
         internal static partial void Internal_Set_jumpSpeed(IntPtr __obj, float value);
+
+        [Unmanaged]
+        [DefaultValue((float)1000.0)]
+        public float _jumpNormalForce
+        {
+            get { return Internal_Get_jumpNormalForce(__unmanagedPtr); }
+            set { Internal_Set_jumpNormalForce(__unmanagedPtr, value); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Get_jumpNormalForce", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial float Internal_Get_jumpNormalForce(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Set_jumpNormalForce", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_jumpNormalForce(IntPtr __obj, float value);
+
+        [Unmanaged]
+        [DefaultValue((float)1000.0)]
+        public float _jumpVerticalForce
+        {
+            get { return Internal_Get_jumpVerticalForce(__unmanagedPtr); }
+            set { Internal_Set_jumpVerticalForce(__unmanagedPtr, value); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Get_jumpVerticalForce", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial float Internal_Get_jumpVerticalForce(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Set_jumpVerticalForce", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_jumpVerticalForce(IntPtr __obj, float value);
     }
 }
 namespace Game.Interop
@@ -476,6 +818,97 @@ namespace Game.Interop
 namespace Game
 {
     [Unmanaged]
+    [NativeMarshalling(typeof(ProjectileMarshaller))]
+    public unsafe partial class Projectile : Script
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Projectile"/>.
+        /// </summary>
+        public Projectile() : base()
+        {
+        }
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Collider _collider
+        {
+            get { return Internal_Get_collider(__unmanagedPtr); }
+            set { Internal_Set_collider(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Projectile::Internal_Get_collider", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Collider Internal_Get_collider(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Projectile::Internal_Set_collider", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_collider(IntPtr __obj, IntPtr value);
+    }
+}
+namespace Game.Interop
+{
+
+    /// <summary>
+    /// Marshaller for type <see cref="Projectile"/>.
+    /// </summary>
+    #if FLAX_EDITOR
+    [HideInEditor]
+    #endif
+    [CustomMarshaller(typeof(Projectile), MarshalMode.ManagedToUnmanagedIn, typeof(ProjectileMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Projectile), MarshalMode.UnmanagedToManagedOut, typeof(ProjectileMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Projectile), MarshalMode.ElementIn, typeof(ProjectileMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Projectile), MarshalMode.ManagedToUnmanagedOut, typeof(ProjectileMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Projectile), MarshalMode.UnmanagedToManagedIn, typeof(ProjectileMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Projectile), MarshalMode.ElementOut, typeof(ProjectileMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Projectile), MarshalMode.ManagedToUnmanagedRef, typeof(ProjectileMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Projectile), MarshalMode.UnmanagedToManagedRef, typeof(ProjectileMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Projectile), MarshalMode.ElementRef, typeof(ProjectileMarshaller))]
+    public static class ProjectileMarshaller
+    {
+    #pragma warning disable 1591
+    #pragma warning disable 618
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class NativeToManaged
+        {
+            public static Projectile ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Projectile>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Projectile managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class ManagedToNative
+        {
+            public static Projectile ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Projectile>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Projectile managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public struct Bidirectional
+        {
+            ManagedHandleMarshaller.Bidirectional marsh;
+            public void FromManaged(Projectile managed) => marsh.FromManaged(managed);
+            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
+            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
+            public Projectile ToManaged() => Unsafe.As<Projectile>(marsh.ToManaged());
+            public void Free() => marsh.Free();
+        }
+        internal static Projectile ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Projectile>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
+        internal static IntPtr ConvertToUnmanaged(Projectile managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
+        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
+    
+        internal static Projectile ToManaged(IntPtr managed) => Unsafe.As<Projectile>(ManagedHandleMarshaller.ToManaged(managed));
+        internal static IntPtr ToNative(Projectile managed) => ManagedHandleMarshaller.ToNative(managed);
+    #pragma warning restore 618
+    #pragma warning restore 1591
+    }
+}
+
+namespace Game
+{
+    [Unmanaged]
     [NativeMarshalling(typeof(TestScriptMarshaller))]
     public unsafe partial class TestScript : Script
     {
@@ -615,6 +1048,97 @@ namespace Game.Interop
     
         internal static TestScript ToManaged(IntPtr managed) => Unsafe.As<TestScript>(ManagedHandleMarshaller.ToManaged(managed));
         internal static IntPtr ToNative(TestScript managed) => ManagedHandleMarshaller.ToNative(managed);
+    #pragma warning restore 618
+    #pragma warning restore 1591
+    }
+}
+
+namespace Game
+{
+    [Unmanaged]
+    [NativeMarshalling(typeof(TurretEnemyMarshaller))]
+    public unsafe partial class TurretEnemy : Script
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TurretEnemy"/>.
+        /// </summary>
+        public TurretEnemy() : base()
+        {
+        }
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Prefab _bulletPrefab
+        {
+            get { return Internal_Get_bulletPrefab(__unmanagedPtr); }
+            set { Internal_Set_bulletPrefab(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.TurretEnemy::Internal_Get_bulletPrefab", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Prefab Internal_Get_bulletPrefab(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.TurretEnemy::Internal_Set_bulletPrefab", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_bulletPrefab(IntPtr __obj, IntPtr value);
+    }
+}
+namespace Game.Interop
+{
+
+    /// <summary>
+    /// Marshaller for type <see cref="TurretEnemy"/>.
+    /// </summary>
+    #if FLAX_EDITOR
+    [HideInEditor]
+    #endif
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.ManagedToUnmanagedIn, typeof(TurretEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.UnmanagedToManagedOut, typeof(TurretEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.ElementIn, typeof(TurretEnemyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.ManagedToUnmanagedOut, typeof(TurretEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.UnmanagedToManagedIn, typeof(TurretEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.ElementOut, typeof(TurretEnemyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.ManagedToUnmanagedRef, typeof(TurretEnemyMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.UnmanagedToManagedRef, typeof(TurretEnemyMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(TurretEnemy), MarshalMode.ElementRef, typeof(TurretEnemyMarshaller))]
+    public static class TurretEnemyMarshaller
+    {
+    #pragma warning disable 1591
+    #pragma warning disable 618
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class NativeToManaged
+        {
+            public static TurretEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<TurretEnemy>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(TurretEnemy managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class ManagedToNative
+        {
+            public static TurretEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<TurretEnemy>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(TurretEnemy managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public struct Bidirectional
+        {
+            ManagedHandleMarshaller.Bidirectional marsh;
+            public void FromManaged(TurretEnemy managed) => marsh.FromManaged(managed);
+            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
+            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
+            public TurretEnemy ToManaged() => Unsafe.As<TurretEnemy>(marsh.ToManaged());
+            public void Free() => marsh.Free();
+        }
+        internal static TurretEnemy ConvertToManaged(IntPtr unmanaged) => Unsafe.As<TurretEnemy>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
+        internal static IntPtr ConvertToUnmanaged(TurretEnemy managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
+        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
+    
+        internal static TurretEnemy ToManaged(IntPtr managed) => Unsafe.As<TurretEnemy>(ManagedHandleMarshaller.ToManaged(managed));
+        internal static IntPtr ToNative(TurretEnemy managed) => ManagedHandleMarshaller.ToNative(managed);
     #pragma warning restore 618
     #pragma warning restore 1591
     }

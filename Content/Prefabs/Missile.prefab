@@ -1,0 +1,85 @@
+{
+	"ID": "5e40e14f4b884341a0302ca5acefb0d6",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "b1db0837481161598fe95f9fb3ecfe44",
+		"TypeName": "FlaxEngine.RigidBody",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "Missile",
+		"EnableGravity": false
+	},
+	{
+		"ID": "e1f525264403ba65b19f42ba1e814884",
+		"TypeName": "Game.Missile",
+		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
+		"_rb": "b1db0837481161598fe95f9fb3ecfe44",
+		"_col": "77374f674e3b3a6dd21344ade782101b",
+		"_thrustPower": 3000.0
+	},
+	{
+		"ID": "58fb400d4cc5a73ea1055b83bfcce458",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
+		"Name": "Cone",
+		"Model": "1629791049d56625f1980a849286d1d7",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "173f662b42339a7478d16b91ef14b0e1",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "bb6262d044326d1e3c3c42a3f94c42fc",
+		"TypeName": "FlaxEngine.ParticleEffect",
+		"ParentID": "58fb400d4cc5a73ea1055b83bfcce458",
+		"Name": "ParticleEffect",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -65.635498046875
+			},
+			"Orientation": {
+				"X": 0.7071068286895752,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		},
+		"Overrides": [],
+		"ParticleSystem": "bf8578a4402de6a8c9b6cf95911c5598"
+	},
+	{
+		"ID": "d62b508c4ae6489ba35088babfff6373",
+		"TypeName": "Game.RocketTrail",
+		"ParentID": "bb6262d044326d1e3c3c42a3f94c42fc",
+		"V": {}
+	},
+	{
+		"ID": "77374f674e3b3a6dd21344ade782101b",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
+		"Name": "SphereCollider",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 53.9831771850586
+			},
+			"Scale": {
+				"X": 1.350000023841858,
+				"Y": 1.0,
+				"Z": 1.0
+			}
+		},
+		"IsTrigger": true
+	}
+]
+}

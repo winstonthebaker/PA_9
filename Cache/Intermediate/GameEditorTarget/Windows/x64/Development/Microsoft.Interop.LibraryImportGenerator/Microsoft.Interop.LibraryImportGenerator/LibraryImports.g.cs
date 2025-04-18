@@ -46,6 +46,301 @@ namespace Game
 }
 namespace Game
 {
+    public unsafe partial class LauncherEnemy
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
+        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+        internal static partial global::FlaxEngine.Prefab Internal_Get_missilePrefab(nint __obj)
+        {
+            bool __invokeSucceeded = default;
+            global::FlaxEngine.Prefab __retVal = default;
+            nint __retVal_native = default;
+            try
+            {
+                {
+                    __retVal_native = __PInvoke(__obj);
+                }
+
+                __invokeSucceeded = true;
+                // Unmarshal - Convert native data to managed data.
+                __retVal = global::FlaxEngine.Interop.PrefabMarshaller.NativeToManaged.ConvertToManaged(__retVal_native);
+            }
+            finally
+            {
+                if (__invokeSucceeded)
+                {
+                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
+                    global::FlaxEngine.Interop.PrefabMarshaller.NativeToManaged.Free(__retVal_native);
+                }
+            }
+
+            return __retVal;
+            // Local P/Invoke
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.LauncherEnemy::Internal_Get_missilePrefab", ExactSpelling = true)]
+            static extern unsafe nint __PInvoke(nint ____obj_native);
+        }
+    }
+}
+namespace Game
+{
+    public unsafe partial class LauncherEnemy
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.LauncherEnemy::Internal_Set_missilePrefab", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_missilePrefab(nint __obj, nint value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class Missile
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
+        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+        internal static partial global::FlaxEngine.RigidBody Internal_Get_rb(nint __obj)
+        {
+            bool __invokeSucceeded = default;
+            global::FlaxEngine.RigidBody __retVal = default;
+            nint __retVal_native = default;
+            try
+            {
+                {
+                    __retVal_native = __PInvoke(__obj);
+                }
+
+                __invokeSucceeded = true;
+                // Unmarshal - Convert native data to managed data.
+                __retVal = global::FlaxEngine.Interop.RigidBodyMarshaller.NativeToManaged.ConvertToManaged(__retVal_native);
+            }
+            finally
+            {
+                if (__invokeSucceeded)
+                {
+                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
+                    global::FlaxEngine.Interop.RigidBodyMarshaller.NativeToManaged.Free(__retVal_native);
+                }
+            }
+
+            return __retVal;
+            // Local P/Invoke
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Missile::Internal_Get_rb", ExactSpelling = true)]
+            static extern unsafe nint __PInvoke(nint ____obj_native);
+        }
+    }
+}
+namespace Game
+{
+    public unsafe partial class Missile
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Missile::Internal_Set_rb", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_rb(nint __obj, nint value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class Missile
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
+        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+        internal static partial global::FlaxEngine.Collider Internal_Get_col(nint __obj)
+        {
+            bool __invokeSucceeded = default;
+            global::FlaxEngine.Collider __retVal = default;
+            nint __retVal_native = default;
+            try
+            {
+                {
+                    __retVal_native = __PInvoke(__obj);
+                }
+
+                __invokeSucceeded = true;
+                // Unmarshal - Convert native data to managed data.
+                __retVal = global::FlaxEngine.Interop.ColliderMarshaller.NativeToManaged.ConvertToManaged(__retVal_native);
+            }
+            finally
+            {
+                if (__invokeSucceeded)
+                {
+                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
+                    global::FlaxEngine.Interop.ColliderMarshaller.NativeToManaged.Free(__retVal_native);
+                }
+            }
+
+            return __retVal;
+            // Local P/Invoke
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Missile::Internal_Get_col", ExactSpelling = true)]
+            static extern unsafe nint __PInvoke(nint ____obj_native);
+        }
+    }
+}
+namespace Game
+{
+    public unsafe partial class Missile
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Missile::Internal_Set_col", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_col(nint __obj, nint value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class Missile
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Missile::Internal_Get_thrustPower", ExactSpelling = true)]
+        internal static extern partial float Internal_Get_thrustPower(nint __obj);
+    }
+}
+namespace Game
+{
+    public unsafe partial class Missile
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Missile::Internal_Set_thrustPower", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_thrustPower(nint __obj, float value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class MovingEnemy
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
+        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+        internal static partial global::FlaxEngine.Actor[] Internal_Get_followPoints(nint __obj, global::System.Type resultArrayItemType0, out int __returnCount)
+        {
+            bool __invokeSucceeded = default;
+            global::System.Runtime.CompilerServices.Unsafe.SkipInit(out __returnCount);
+            nint __resultArrayItemType0_native = default;
+            global::FlaxEngine.Actor[] __retVal = default;
+            nint* __retVal_native = default;
+            // Setup - Perform required setup.
+            int __retVal_native__numElements;
+            global::System.Runtime.CompilerServices.Unsafe.SkipInit(out __retVal_native__numElements);
+            try
+            {
+                // Marshal - Convert managed data to native data.
+                __resultArrayItemType0_native = global::FlaxEngine.Interop.SystemTypeMarshaller.ConvertToUnmanaged(resultArrayItemType0);
+                // Pin - Pin data in preparation for calling the P/Invoke.
+                fixed (int* ____returnCount_native = &__returnCount)
+                {
+                    __retVal_native = __PInvoke(__obj, __resultArrayItemType0_native, ____returnCount_native);
+                }
+
+                __invokeSucceeded = true;
+                // Unmarshal - Convert native data to managed data.
+                __retVal_native__numElements = __returnCount;
+                __retVal = global::FlaxEngine.Interop.ArrayMarshaller<global::FlaxEngine.Actor, nint>.NativeToManaged.AllocateContainerForManagedElements(__retVal_native, __retVal_native__numElements);
+                {
+                    global::System.ReadOnlySpan<nint> __retVal_native__nativeSpan = global::FlaxEngine.Interop.ArrayMarshaller<global::FlaxEngine.Actor, nint>.NativeToManaged.GetUnmanagedValuesSource(__retVal_native, __retVal_native__numElements);
+                    global::System.Span<global::FlaxEngine.Actor> __retVal_native__managedSpan = global::FlaxEngine.Interop.ArrayMarshaller<global::FlaxEngine.Actor, nint>.NativeToManaged.GetManagedValuesDestination(__retVal);
+                    for (int __i0 = 0; __i0 < __retVal_native__numElements; ++__i0)
+                    {
+                        __retVal_native__managedSpan[__i0] = global::FlaxEngine.Interop.ActorMarshaller.NativeToManaged.ConvertToManaged(__retVal_native__nativeSpan[__i0]);
+                    }
+                }
+            }
+            finally
+            {
+                if (__invokeSucceeded)
+                {
+                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
+                    {
+                        global::System.ReadOnlySpan<nint> __retVal_native__nativeSpan = global::FlaxEngine.Interop.ArrayMarshaller<global::FlaxEngine.Actor, nint>.NativeToManaged.GetUnmanagedValuesSource(__retVal_native, __retVal_native__numElements);
+                        for (int __i0 = 0; __i0 < __retVal_native__nativeSpan.Length; ++__i0)
+                        {
+                            global::FlaxEngine.Interop.ActorMarshaller.NativeToManaged.Free(__retVal_native__nativeSpan[__i0]);
+                        }
+                    }
+
+                    global::FlaxEngine.Interop.ArrayMarshaller<global::FlaxEngine.Actor, nint>.NativeToManaged.Free(__retVal_native);
+                }
+
+                // CleanupCallerAllocated - Perform cleanup of caller allocated resources.
+                global::FlaxEngine.Interop.SystemTypeMarshaller.Free(__resultArrayItemType0_native);
+            }
+
+            return __retVal;
+            // Local P/Invoke
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.MovingEnemy::Internal_Get_followPoints", ExactSpelling = true)]
+            static extern unsafe nint* __PInvoke(nint ____obj_native, nint __resultArrayItemType0_native, int* ____returnCount_native);
+        }
+    }
+}
+namespace Game
+{
+    public unsafe partial class MovingEnemy
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
+        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+        internal static partial void Internal_Set_followPoints(nint __obj, global::FlaxEngine.Actor[] value, int __valueCount)
+        {
+            bool __invokeSucceeded = default;
+            nint* __value_native = default;
+            // Setup - Perform required setup.
+            scoped global::FlaxEngine.Interop.ArrayMarshaller<global::FlaxEngine.Actor, nint>.ManagedToNative __value_native__marshaller = new();
+            int __value_native__numElements;
+            int __value_native__lastIndexMarshalled = 0;
+            global::System.Runtime.CompilerServices.Unsafe.SkipInit(out __value_native__numElements);
+            try
+            {
+                // Marshal - Convert managed data to native data.
+                __value_native__marshaller.FromManaged(value);
+                {
+                    global::System.ReadOnlySpan<global::FlaxEngine.Actor> __value_native__managedSpan = __value_native__marshaller.GetManagedValuesSource();
+                    global::System.Span<nint> __value_native__nativeSpan = __value_native__marshaller.GetUnmanagedValuesDestination();
+                    for (int __i0 = 0; __i0 < __value_native__managedSpan.Length; ++__i0, ++__value_native__lastIndexMarshalled)
+                    {
+                        __value_native__nativeSpan[__i0] = global::FlaxEngine.Interop.ActorMarshaller.ManagedToNative.ConvertToUnmanaged(__value_native__managedSpan[__i0]);
+                    }
+                }
+
+                {
+                    // PinnedMarshal - Convert managed data to native data that requires the managed data to be pinned.
+                    __value_native = __value_native__marshaller.ToUnmanaged();
+                    __PInvoke(__obj, __value_native, __valueCount);
+                }
+
+                __invokeSucceeded = true;
+            }
+            finally
+            {
+                if (__invokeSucceeded)
+                {
+                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
+                    _ = __value_native__lastIndexMarshalled;
+                }
+
+                // CleanupCallerAllocated - Perform cleanup of caller allocated resources.
+                {
+                    global::System.ReadOnlySpan<nint> __value_native__nativeSpan = __value_native__marshaller.GetUnmanagedValuesDestination();
+                    for (int __i0 = 0; __i0 < __value_native__lastIndexMarshalled; ++__i0)
+                    {
+                        global::FlaxEngine.Interop.ActorMarshaller.ManagedToNative.Free(__value_native__nativeSpan[__i0]);
+                    }
+                }
+
+                __value_native__marshaller.Free();
+            }
+
+            // Local P/Invoke
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.MovingEnemy::Internal_Set_followPoints", ExactSpelling = true)]
+            static extern unsafe void __PInvoke(nint ____obj_native, nint* __value_native, int ____valueCount_native);
+        }
+    }
+}
+namespace Game
+{
+    public unsafe partial class MovingEnemy
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.MovingEnemy::Internal_Get_moveSpeed", ExactSpelling = true)]
+        internal static extern partial float Internal_Get_moveSpeed(nint __obj);
+    }
+}
+namespace Game
+{
+    public unsafe partial class MovingEnemy
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.MovingEnemy::Internal_Set_moveSpeed", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_moveSpeed(nint __obj, float value);
+    }
+}
+namespace Game
+{
     public unsafe partial class PlayerController
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
@@ -277,6 +572,38 @@ namespace Game
 }
 namespace Game
 {
+    public unsafe partial class PlayerController
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerController::Internal_Get_jumpNormalForce", ExactSpelling = true)]
+        internal static extern partial float Internal_Get_jumpNormalForce(nint __obj);
+    }
+}
+namespace Game
+{
+    public unsafe partial class PlayerController
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerController::Internal_Set_jumpNormalForce", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_jumpNormalForce(nint __obj, float value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class PlayerController
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerController::Internal_Get_jumpVerticalForce", ExactSpelling = true)]
+        internal static extern partial float Internal_Get_jumpVerticalForce(nint __obj);
+    }
+}
+namespace Game
+{
+    public unsafe partial class PlayerController
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerController::Internal_Set_jumpVerticalForce", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_jumpVerticalForce(nint __obj, float value);
+    }
+}
+namespace Game
+{
     public unsafe partial class PlayerWeapon
     {
         [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerWeapon::Internal_Get_cooldown", ExactSpelling = true)]
@@ -289,6 +616,51 @@ namespace Game
     {
         [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_cooldown", ExactSpelling = true)]
         internal static extern partial void Internal_Set_cooldown(nint __obj, float value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class Projectile
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
+        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+        internal static partial global::FlaxEngine.Collider Internal_Get_collider(nint __obj)
+        {
+            bool __invokeSucceeded = default;
+            global::FlaxEngine.Collider __retVal = default;
+            nint __retVal_native = default;
+            try
+            {
+                {
+                    __retVal_native = __PInvoke(__obj);
+                }
+
+                __invokeSucceeded = true;
+                // Unmarshal - Convert native data to managed data.
+                __retVal = global::FlaxEngine.Interop.ColliderMarshaller.NativeToManaged.ConvertToManaged(__retVal_native);
+            }
+            finally
+            {
+                if (__invokeSucceeded)
+                {
+                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
+                    global::FlaxEngine.Interop.ColliderMarshaller.NativeToManaged.Free(__retVal_native);
+                }
+            }
+
+            return __retVal;
+            // Local P/Invoke
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Projectile::Internal_Get_collider", ExactSpelling = true)]
+            static extern unsafe nint __PInvoke(nint ____obj_native);
+        }
+    }
+}
+namespace Game
+{
+    public unsafe partial class Projectile
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Projectile::Internal_Set_collider", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_collider(nint __obj, nint value);
     }
 }
 namespace Game
@@ -427,5 +799,50 @@ namespace Game
     {
         [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.TestScript::Internal_SetPlayerCamera", ExactSpelling = true)]
         internal static extern partial void Internal_SetPlayerCamera(nint __obj, nint value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class TurretEnemy
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
+        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+        internal static partial global::FlaxEngine.Prefab Internal_Get_bulletPrefab(nint __obj)
+        {
+            bool __invokeSucceeded = default;
+            global::FlaxEngine.Prefab __retVal = default;
+            nint __retVal_native = default;
+            try
+            {
+                {
+                    __retVal_native = __PInvoke(__obj);
+                }
+
+                __invokeSucceeded = true;
+                // Unmarshal - Convert native data to managed data.
+                __retVal = global::FlaxEngine.Interop.PrefabMarshaller.NativeToManaged.ConvertToManaged(__retVal_native);
+            }
+            finally
+            {
+                if (__invokeSucceeded)
+                {
+                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
+                    global::FlaxEngine.Interop.PrefabMarshaller.NativeToManaged.Free(__retVal_native);
+                }
+            }
+
+            return __retVal;
+            // Local P/Invoke
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.TurretEnemy::Internal_Get_bulletPrefab", ExactSpelling = true)]
+            static extern unsafe nint __PInvoke(nint ____obj_native);
+        }
+    }
+}
+namespace Game
+{
+    public unsafe partial class TurretEnemy
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.TurretEnemy::Internal_Set_bulletPrefab", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_bulletPrefab(nint __obj, nint value);
     }
 }

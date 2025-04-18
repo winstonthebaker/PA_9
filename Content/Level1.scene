@@ -219,7 +219,7 @@
 			"ID": "6ad7a94a48162fbc6c1f26bb3371869b",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "EmptyActor",
+			"Name": "Floor",
 			"Transform": {
 				"Scale": {
 					"X": 10.0,
@@ -501,6 +501,64 @@
 			"CollisionData": "9f24010149c0277927292a905b74d02c"
 		},
 		{
+			"ID": "f87b2803443956eca6ddc9a8e35aed1c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 8",
+			"Transform": {
+				"Translation": {
+					"X": -449.8031311035156,
+					"Y": 151.0084991455078,
+					"Z": 300.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -0.7071068286895752,
+					"W": 0.7071068286895752
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			},
+			"VertexColors": [
+				"/iIA//r6+v/+/v7//iIA/w=="
+			]
+		},
+		{
+			"ID": "204c610f4418111218a50187a92fd8d8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "f87b2803443956eca6ddc9a8e35aed1c",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "146b9286416b3bc2777592baa7fa972b",
+			"TypeName": "FlaxEngine.NavMeshBoundsVolume",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "NavMeshBoundsVolume",
+			"Transform": {
+				"Scale": {
+					"X": 0.10000000149011612,
+					"Y": 0.1000000387430191,
+					"Z": 0.1000000387430191
+				}
+			},
+			"Size": {
+				"X": 9000.0,
+				"Y": 1000.0,
+				"Z": 9000.0
+			}
+		},
+		{
 			"ID": "e898f2d5471b63c07091659077eb71d6",
 			"TypeName": "FlaxEngine.Terrain",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -522,88 +580,88 @@
 					"Offset": -0.000015259021893143655,
 					"Height": 4196.77734375,
 					"Heightmap": "0118b7534246bb76d39035a833389f6b",
-					"Splatmap0": "974d0ad14d95724e439d38a72f7fa7b7",
-					"Splatmap1": "a8f9be40464a0ea671a916aad5a77bd7",
+					"Splatmap0": "00000000000000000000000000000000",
+					"Splatmap1": "00000000000000000000000000000000",
 					"Heightfield": "9caf16fe4d4e13e259a760a0f15e6e7a",
 					"Chunks": [
 						{
-							"Offset": 529.47998046875,
-							"Height": 3176.57470703125,
+							"Offset": 529.4721069335938,
+							"Height": 3176.576416015625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 313.720703125,
-							"Height": 3236.083984375,
+							"Offset": 313.6615905761719,
+							"Height": 3236.132568359375,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 313.720703125,
-							"Height": 2097.916748046875,
+							"Offset": 313.6615905761719,
+							"Height": 2097.972412109375,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 313.720703125,
-							"Height": 3116.455078125,
+							"Offset": 313.6615905761719,
+							"Height": 3116.508056640625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 313.720703125,
-							"Height": 3883.056640625,
+							"Offset": 313.6615905761719,
+							"Height": 3883.11572265625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 313.720703125,
-							"Height": 1137.6953125,
+							"Offset": 313.6615905761719,
+							"Height": 1782.12744140625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 225.09068298339845,
-							"Height": 2362.800048828125,
+							"Offset": 225.39833068847657,
+							"Height": 2362.47021484375,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 1137.0849609375,
-							"Height": 2568.9697265625,
+							"Offset": 1137.071533203125,
+							"Height": 2568.97705078125,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 156.8603515625,
-							"Height": 3234.2529296875,
+							"Offset": 156.83079528808595,
+							"Height": 3234.275390625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 313.720703125,
-							"Height": 646.97265625,
+							"Offset": 313.6615905761719,
+							"Height": 646.983154296875,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 156.8603515625,
-							"Height": 2587.2802734375,
+							"Offset": 156.83079528808595,
+							"Height": 2587.292236328125,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 0.0,
-							"Height": 3549.8046875,
+							"Offset": -0.000015259021893143655,
+							"Height": 3549.794189453125,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 313.720703125,
-							"Height": 2687.150146484375,
+							"Offset": 313.6615905761719,
+							"Height": 2687.192626953125,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 156.8603515625,
-							"Height": 2745.9716796875,
+							"Offset": 156.83079528808595,
+							"Height": 2745.980224609375,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 0.0,
-							"Height": 490.1123046875,
+							"Offset": -0.000015259021893143655,
+							"Height": 490.0882873535156,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 0.0,
-							"Height": 646.97265625,
+							"Offset": -0.000015259021893143655,
+							"Height": 646.9191284179688,
 							"Material": "00000000000000000000000000000000"
 						}
 					]
@@ -797,10 +855,10 @@
 					"Z": 1,
 					"Offset": -0.000015259021893143655,
 					"Height": 4353.02734375,
-					"Heightmap": "cbec84db453082ba2883c19dc04f7bac",
+					"Heightmap": "00000000000000000000000000000000",
 					"Splatmap0": "00000000000000000000000000000000",
 					"Splatmap1": "00000000000000000000000000000000",
-					"Heightfield": "fed3f9bc4236bb56e5532b94cfd70aa0",
+					"Heightfield": "00000000000000000000000000000000",
 					"Chunks": [
 						{
 							"Offset": 156.8603515625,
@@ -982,6 +1040,265 @@
 			"V": {
 	"_screen": "46975d61404acbb43c0d2c9563d0112c"
 }
+		},
+		{
+			"ID": "8dd674d843093e1805cbb8a9d0395807",
+			"TypeName": "FlaxEngine.NavMesh",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "NavMesh.Default",
+			"DataAsset": "570cc51e434fdf6ae4eea4a90fe13bf2",
+			"Properties": {
+				"Name": "Default",
+				"Agent": {}
+			}
+		},
+		{
+			"ID": "0640888f4dcd3676be91a798821fe28c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "MoveEnemy",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 400.0
+				}
+			},
+			"Model": "1b4a643d44706750b2e35ea4e11e3663",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "e9e9eb964db6be36bb9f74acae9922a8",
+			"TypeName": "Game.MovingEnemy",
+			"ParentID": "0640888f4dcd3676be91a798821fe28c",
+			"_followPoints": [
+				"5c005e194c736b6e450e459747ab78ee",
+				"aa93c9074f3f91e0eeaf8fa7a820485b"
+			]
+		},
+		{
+			"ID": "c4e1c1ee4d4b35d7aec11e85155c7e62",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "0640888f4dcd3676be91a798821fe28c",
+			"Name": "BoxCollider",
+			"Tag": "KillsOnContact",
+			"IsTrigger": true,
+			"Center": {
+				"X": 0.0,
+				"Y": -0.00000762939453125,
+				"Z": 0.0
+			}
+		},
+		{
+			"ID": "c4e9d7c84bd034f38d0dc693b29142c8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "FollowPoints"
+		},
+		{
+			"ID": "5c005e194c736b6e450e459747ab78ee",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c4e9d7c84bd034f38d0dc693b29142c8",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": -1300.0,
+					"Y": 0.0,
+					"Z": 1200.0
+				}
+			}
+		},
+		{
+			"ID": "aa93c9074f3f91e0eeaf8fa7a820485b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "c4e9d7c84bd034f38d0dc693b29142c8",
+			"Name": "EmptyActor 0",
+			"Transform": {
+				"Translation": {
+					"X": 1200.0,
+					"Y": 0.0,
+					"Z": 1200.0
+				}
+			}
+		},
+		{
+			"ID": "99ac07ee44a773b7715fa9adcf14e383",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "TurretEnemy"
+		},
+		{
+			"ID": "f27026fc4ebe1be61ee1c6b79369280c",
+			"TypeName": "Game.TurretEnemy",
+			"ParentID": "99ac07ee44a773b7715fa9adcf14e383"
+		},
+		{
+			"ID": "5f95a27546dd839828494e933f18cf37",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "99ac07ee44a773b7715fa9adcf14e383",
+			"Name": "Cube",
+			"Transform": {
+				"Translation": {
+					"X": -800.0,
+					"Y": 100.0,
+					"Z": 1300.0
+				}
+			},
+			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "bb0ccefc47ddda31b9bdd0a21c56bc9a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Bullet",
+			"Transform": {
+				"Translation": {
+					"X": 400.0,
+					"Y": 100.0,
+					"Z": 800.0
+				}
+			}
+		},
+		{
+			"ID": "c0aa70db4022db7c496b648e218b247c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "bb0ccefc47ddda31b9bdd0a21c56bc9a",
+			"Name": "Sphere",
+			"Transform": {
+				"Scale": {
+					"X": 0.10000000149011612,
+					"Y": 0.10000000149011612,
+					"Z": 0.10000000149011612
+				}
+			},
+			"Model": "dd86c4724bf734c4959d23b3c74faa05",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "3f43380f424c11174875338ccafcca24",
+			"TypeName": "FlaxEngine.SphereCollider",
+			"ParentID": "bb0ccefc47ddda31b9bdd0a21c56bc9a",
+			"Name": "SphereCollider",
+			"Transform": {
+				"Scale": {
+					"X": 0.10000000149011612,
+					"Y": 0.10000000149011612,
+					"Z": 0.10000000149011612
+				}
+			},
+			"IsTrigger": true
+		},
+		{
+			"ID": "5ccec6564b69ca84c998479b90db355f",
+			"TypeName": "FlaxEngine.RigidBody",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Missile",
+			"Transform": {
+				"Translation": {
+					"X": 1900.0,
+					"Y": 200.0,
+					"Z": 0.0
+				}
+			},
+			"EnableGravity": false
+		},
+		{
+			"ID": "f68768e943ef7f0eef33e780d811366f",
+			"TypeName": "Game.Missile",
+			"ParentID": "5ccec6564b69ca84c998479b90db355f",
+			"_rb": "5ccec6564b69ca84c998479b90db355f",
+			"_thrustPower": 3000.0
+		},
+		{
+			"ID": "341f0a0745e8256cca185ba004535350",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "5ccec6564b69ca84c998479b90db355f",
+			"Name": "Cone",
+			"Model": "1629791049d56625f1980a849286d1d7",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "173f662b42339a7478d16b91ef14b0e1",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "eca453b74b90ad0ce6b413b1e4b2fddf",
+			"TypeName": "FlaxEngine.ParticleEffect",
+			"ParentID": "341f0a0745e8256cca185ba004535350",
+			"Name": "ParticleEffect",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -65.635498046875
+				},
+				"Orientation": {
+					"X": 0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				}
+			},
+			"Overrides": [],
+			"ParticleSystem": "bf8578a4402de6a8c9b6cf95911c5598"
+		},
+		{
+			"ID": "cc23d42c4ba54d3319e4d58f89886324",
+			"TypeName": "Game.RocketTrail",
+			"ParentID": "eca453b74b90ad0ce6b413b1e4b2fddf",
+			"V": {}
+		},
+		{
+			"ID": "83d8563f4565a9680784e48bf12363f7",
+			"TypeName": "FlaxEngine.SphereCollider",
+			"ParentID": "5ccec6564b69ca84c998479b90db355f",
+			"Name": "SphereCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 53.983177185058597
+				},
+				"Scale": {
+					"X": 1.350000023841858,
+					"Y": 1.0,
+					"Z": 1.0
+				}
+			},
+			"IsTrigger": true
 		}
 	]
 }

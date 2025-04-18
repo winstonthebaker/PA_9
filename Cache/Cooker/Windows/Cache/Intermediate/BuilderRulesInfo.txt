@@ -1,0 +1,2 @@
+-8584585466188383204
+C:\Program Files (x86)\Flax\Flax_1.9;.NET 8.0.10;C:\Program Files (x86)\Flax\Flax_1.9\Binaries\Tools\Flax.Build.dll

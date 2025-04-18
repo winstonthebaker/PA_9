@@ -1,6 +1,6 @@
 /NOLOGO
 /ERRORREPORT:PROMPT
-/OUT:"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Binaries\GameEditorTarget\Windows\x64\Development\Game.HotReload.7.dll"
+/OUT:"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Binaries\GameEditorTarget\Windows\x64\Development\Game.HotReload.7.dll"
 /MACHINE:x64
 /SUBSYSTEM:WINDOWS
 /MANIFEST:NO
@@ -8,13 +8,13 @@
 /NXCOMPAT
 /DELAY:UNLOAD
 /DLL
-/IMPLIB:"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Binaries\GameEditorTarget\Windows\x64\Development\Game.HotReload.7.lib"
+/IMPLIB:"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Binaries\GameEditorTarget\Windows\x64\Development\Game.HotReload.7.lib"
 /PDBALTPATH:%_PDB%
 /OPT:NOREF
 /OPT:NOICF
 /INCREMENTAL
 /DEBUG
-/PDB:"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Binaries\GameEditorTarget\Windows\x64\Development\Game.HotReload.7.pdb"
+/PDB:"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Binaries\GameEditorTarget\Windows\x64\Development\Game.HotReload.7.pdb"
 /LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\lib\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64"
@@ -29,10 +29,15 @@
 "oleaut32.lib"
 "delayimp.lib"
 "C:\Program Files (x86)\Flax\Flax_1.9\Binaries\Editor\Win64\Development\FlaxEditor.lib"
-"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\GameManager.obj"
-"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\ICanTakeDamage.obj"
-"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\PlayerController.obj"
-"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\PlayerWeapon.obj"
-"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\TestScript.obj"
-"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\Game.Bindings.Gen.obj"
-"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_8\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\Game.Gen.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\GameManager.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\ICanTakeDamage.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\LauncherEnemy.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\Missile.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\MovingEnemy.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\PlayerController.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\PlayerWeapon.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\Projectile.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\TestScript.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\TurretEnemy.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\Game.Bindings.Gen.obj"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\Game.Gen.obj"

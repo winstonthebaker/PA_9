@@ -5,6 +5,10 @@
 #include "Engine/Scripting/ScriptingObjectReference.h"
 #include "ICanReset.h"
 #include "Engine/Physics/Colliders/Collider.h"
+#include "Engine/Core/Collections/Array.h"
+#include "Engine/Core/Types/Pair.h"
+#include <queue>
+
 
 API_CLASS() class GAME_API PlayerController : public Script, ICanReset
 {
@@ -22,15 +26,27 @@ public:
     API_FIELD() float _gravity = 1000.0;
     API_FIELD() float _rotationSmoothing = 20.0;
     API_FIELD() float _jumpSpeed = 1000.0;
+
+    API_FIELD() float _jumpNormalForce = 1000.0;
+    API_FIELD() float _jumpVerticalForce = 1000.0;
+
+    static PlayerController* GetInstance(); 
+    Vector3 GetVelocity();
+
     // [Script]
 
 
 private:
+    
+    std::queue<Pair<float, Vector3>> _activeContacts;
+
     void OnEnable() override;
     void OnDisable() override;
 
+    void OnAwake() override;
     void OnUpdate() override;
     void OnStart() override;
+
     void Reset() override;
 
     enum State
@@ -40,6 +56,8 @@ private:
     };
 
     Vector3 _currentVelocity = Vector3::Zero;
+
+    static PlayerController* _instance;
 
     float _bodyRotation = 0;
     float _startingBodyRotation = 0;
@@ -54,7 +72,8 @@ private:
     State _state = Air;
 
     bool _dead = false;
-
+    bool _isLookingBackward = false;
+    bool _awaitingReset = false;
     void HandleMovement();
     void EvaluateState();
     void PitchCamera();
@@ -64,8 +83,13 @@ private:
     void ApplyMovement();
 
     void Jump();
+    void WallJump(Vector3 wallNormal);
+    void EvaluateJump();
+
 
     void Die();
+    void HandleShooting();
 
     void OnTriggerEnter(PhysicsColliderActor* other);
+    void OnCollisionEnter(const Collision& collision);
 };

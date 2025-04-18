@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\Cache\\Projects\\BuildScripts.csproj",
+      "projectUniqueName": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_9\\Cache\\Projects\\BuildScripts.csproj",
       "projectName": "BuildScripts.CSharp",
-      "projectPath": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\Cache\\Projects\\BuildScripts.csproj",
+      "projectPath": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_9\\Cache\\Projects\\BuildScripts.csproj",
       "packagesPath": "C:\\Users\\winst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\Cache\\Projects\\obj\\",
+      "outputPath": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_9\\Cache\\Projects\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\winst\\AppData\\Roaming\\NuGet\\NuGet.Config",

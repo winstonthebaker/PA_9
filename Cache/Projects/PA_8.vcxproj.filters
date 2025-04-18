@@ -4,7 +4,7 @@
     <ClCompile Include="..\..\Source\Game.Gen.cpp" />
     <ClInclude Include="..\..\Source\Game.Gen.h" />
     <Filter Include="Game">
-      <UniqueIdentifier>{191D1926-E79E-4030-A133-0FDB911C838D}</UniqueIdentifier>
+      <UniqueIdentifier>{6BE3155F-79F3-4435-AC2C-C4ACEFC99550}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Game\GameManager.cpp">
       <Filter>Game</Filter>
@@ -21,6 +21,24 @@
     <ClInclude Include="..\..\Source\Game\ICanTakeDamage.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Game\LauncherEnemy.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\LauncherEnemy.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Game\Missile.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\Missile.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Game\MovingEnemy.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\MovingEnemy.h">
+      <Filter>Game</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Game\PlayerController.cpp">
       <Filter>Game</Filter>
     </ClCompile>
@@ -33,14 +51,26 @@
     <ClInclude Include="..\..\Source\Game\PlayerWeapon.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Game\Projectile.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\Projectile.h">
+      <Filter>Game</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Game\TestScript.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Game\TestScript.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Game\TurretEnemy.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\TurretEnemy.h">
+      <Filter>Game</Filter>
+    </ClInclude>
     <Filter Include="obj">
-      <UniqueIdentifier>{58E60DFB-34E2-466D-9715-560FFB00C27C}</UniqueIdentifier>
+      <UniqueIdentifier>{6BF10B3F-C50B-448D-AAD9-BCEAC5AA3006}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\obj\Game.csproj.nuget.dgspec.json">
       <Filter>obj</Filter>
@@ -58,7 +88,7 @@
       <Filter>obj</Filter>
     </None>
     <Filter Include="Properties">
-      <UniqueIdentifier>{BF8F2E36-FAE4-4AD1-9778-02551A9529BD}</UniqueIdentifier>
+      <UniqueIdentifier>{84AA8A9B-CEC4-46F7-9835-4FFB2F9837A4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Properties\launchSettings.json">
       <Filter>Properties</Filter>

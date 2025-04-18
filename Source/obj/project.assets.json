@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\Source\\Game.csproj",
+      "projectUniqueName": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_9\\Source\\Game.csproj",
       "projectName": "Game.CSharp",
-      "projectPath": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\Source\\Game.csproj",
+      "projectPath": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_9\\Source\\Game.csproj",
       "packagesPath": "C:\\Users\\winst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_8\\Source\\obj\\",
+      "outputPath": "C:\\Users\\winst\\OneDrive\\Documents\\Flax Projects\\PA_9\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\winst\\AppData\\Roaming\\NuGet\\NuGet.Config",

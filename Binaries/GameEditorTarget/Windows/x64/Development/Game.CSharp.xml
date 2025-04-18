@@ -19,6 +19,21 @@
             Marshaller for type <see cref="T:Game.ICanTakeDamage"/>.
             </summary>
         </member>
+        <member name="T:Game.Interop.LauncherEnemyMarshaller">
+            <summary>
+            Marshaller for type <see cref="T:Game.LauncherEnemy"/>.
+            </summary>
+        </member>
+        <member name="T:Game.Interop.MissileMarshaller">
+            <summary>
+            Marshaller for type <see cref="T:Game.Missile"/>.
+            </summary>
+        </member>
+        <member name="T:Game.Interop.MovingEnemyMarshaller">
+            <summary>
+            Marshaller for type <see cref="T:Game.MovingEnemy"/>.
+            </summary>
+        </member>
         <member name="T:Game.Interop.PlayerControllerMarshaller">
             <summary>
             Marshaller for type <see cref="T:Game.PlayerController"/>.
@@ -29,14 +44,39 @@
             Marshaller for type <see cref="T:Game.PlayerWeapon"/>.
             </summary>
         </member>
+        <member name="T:Game.Interop.ProjectileMarshaller">
+            <summary>
+            Marshaller for type <see cref="T:Game.Projectile"/>.
+            </summary>
+        </member>
         <member name="T:Game.Interop.TestScriptMarshaller">
             <summary>
             Marshaller for type <see cref="T:Game.TestScript"/>.
             </summary>
         </member>
+        <member name="T:Game.Interop.TurretEnemyMarshaller">
+            <summary>
+            Marshaller for type <see cref="T:Game.TurretEnemy"/>.
+            </summary>
+        </member>
         <member name="M:Game.ICanTakeDamage.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Game.ICanTakeDamage"/>.
+            </summary>
+        </member>
+        <member name="M:Game.LauncherEnemy.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Game.LauncherEnemy"/>.
+            </summary>
+        </member>
+        <member name="M:Game.Missile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Game.Missile"/>.
+            </summary>
+        </member>
+        <member name="M:Game.MovingEnemy.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Game.MovingEnemy"/>.
             </summary>
         </member>
         <member name="M:Game.PlayerController.#ctor">
@@ -49,9 +89,19 @@
             Initializes a new instance of the <see cref="T:Game.PlayerWeapon"/>.
             </summary>
         </member>
+        <member name="M:Game.Projectile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Game.Projectile"/>.
+            </summary>
+        </member>
         <member name="M:Game.TestScript.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Game.TestScript"/>.
+            </summary>
+        </member>
+        <member name="M:Game.TurretEnemy.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Game.TurretEnemy"/>.
             </summary>
         </member>
         <member name="T:Game.LockCursor">
@@ -75,6 +125,24 @@
             <summary>
             MainMenu Script.
             </summary>
+        </member>
+        <member name="T:Game.RocketTrail">
+            <summary>
+            RocketTrail Script.
+            </summary>
+        </member>
+        <member name="M:Game.RocketTrail.OnStart">
+            <inheritdoc/>
+        </member>
+        <member name="F:Game.RocketTrail._emitter">
+            <inheritdoc/>
+            
+        </member>
+        <member name="M:Game.RocketTrail.OnDisable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.RocketTrail.OnUpdate">
+            <inheritdoc/>
         </member>
     </members>
 </doc>
