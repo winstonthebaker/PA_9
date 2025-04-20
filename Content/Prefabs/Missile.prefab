@@ -6,17 +6,28 @@
 	{
 		"ID": "b1db0837481161598fe95f9fb3ecfe44",
 		"TypeName": "FlaxEngine.RigidBody",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "Missile",
+		"Tag": "KillsOnContact",
 		"EnableGravity": false
 	},
 	{
-		"ID": "e1f525264403ba65b19f42ba1e814884",
-		"TypeName": "Game.Missile",
+		"ID": "dd9f15e64bc83003ccc086869b698a64",
+		"TypeName": "Game.Rocket",
 		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
 		"_rb": "b1db0837481161598fe95f9fb3ecfe44",
 		"_col": "77374f674e3b3a6dd21344ade782101b",
-		"_thrustPower": 3000.0
+		"_thrustPower": 4000.0
+	},
+	{
+		"ID": "424b5b3545f02ddbc2fd1aab915f53bf",
+		"TypeName": "Game.ShotHandler",
+		"ParentID": "b1db0837481161598fe95f9fb3ecfe44"
+	},
+	{
+		"ID": "d648c8e9433b359f45ac249fee798db4",
+		"TypeName": "Game.Explodes",
+		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
+		"_explosionPrefab": "fc01981d4fde3345d1ec7abdbe1c9e31"
 	},
 	{
 		"ID": "58fb400d4cc5a73ea1055b83bfcce458",
@@ -71,7 +82,7 @@
 			"Translation": {
 				"X": 0.0,
 				"Y": 0.0,
-				"Z": 53.9831771850586
+				"Z": 53.983177185058597
 			},
 			"Scale": {
 				"X": 1.350000023841858,
@@ -79,6 +90,7 @@
 				"Z": 1.0
 			}
 		},
+		"Tag": "KillsOnContact",
 		"IsTrigger": true
 	}
 ]

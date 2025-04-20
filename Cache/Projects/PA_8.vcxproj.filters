@@ -4,21 +4,30 @@
     <ClCompile Include="..\..\Source\Game.Gen.cpp" />
     <ClInclude Include="..\..\Source\Game.Gen.h" />
     <Filter Include="Game">
-      <UniqueIdentifier>{6BE3155F-79F3-4435-AC2C-C4ACEFC99550}</UniqueIdentifier>
+      <UniqueIdentifier>{2D185A01-405D-4027-8C8D-E21AD0837DED}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Game\Explodes.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\Explodes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Game\ExplosionDestroySelf.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\ExplosionDestroySelf.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Game\FloatingMine.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\FloatingMine.h">
+      <Filter>Game</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Game\GameManager.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Game\GameManager.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Source\Game\ICanReset.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Game\ICanTakeDamage.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Game\ICanTakeDamage.h">
       <Filter>Game</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Game\LauncherEnemy.cpp">
@@ -27,16 +36,28 @@
     <ClInclude Include="..\..\Source\Game\LauncherEnemy.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Game\Missile.cpp">
+    <ClCompile Include="..\..\Source\Game\Mine.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\Game\Missile.h">
+    <ClInclude Include="..\..\Source\Game\Mine.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Game\MineSpawner.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\MineSpawner.h">
       <Filter>Game</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Game\MovingEnemy.cpp">
       <Filter>Game</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Game\MovingEnemy.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Game\Pickup.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\Pickup.h">
       <Filter>Game</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Game\PlayerController.cpp">
@@ -57,10 +78,22 @@
     <ClInclude Include="..\..\Source\Game\Projectile.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Game\TestScript.cpp">
+    <ClCompile Include="..\..\Source\Game\Rocket.cpp">
       <Filter>Game</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\Game\TestScript.h">
+    <ClInclude Include="..\..\Source\Game\Rocket.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Game\RotateObject.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\RotateObject.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Game\ShotHandler.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Game\ShotHandler.h">
       <Filter>Game</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Game\TurretEnemy.cpp">
@@ -70,7 +103,7 @@
       <Filter>Game</Filter>
     </ClInclude>
     <Filter Include="obj">
-      <UniqueIdentifier>{6BF10B3F-C50B-448D-AAD9-BCEAC5AA3006}</UniqueIdentifier>
+      <UniqueIdentifier>{709EC331-FF34-4196-8E55-3937DBF10D26}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\obj\Game.csproj.nuget.dgspec.json">
       <Filter>obj</Filter>
@@ -88,7 +121,7 @@
       <Filter>obj</Filter>
     </None>
     <Filter Include="Properties">
-      <UniqueIdentifier>{84AA8A9B-CEC4-46F7-9835-4FFB2F9837A4}</UniqueIdentifier>
+      <UniqueIdentifier>{D9814B47-220B-46B8-A013-ACC37B5E4954}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Properties\launchSettings.json">
       <Filter>Properties</Filter>

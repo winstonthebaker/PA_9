@@ -8,6 +8,29 @@ MovingEnemy::MovingEnemy(const SpawnParams& params)
 	_tickUpdate = true;
 }
 
+void MovingEnemy::SetDestroysSelf(bool destroysSelf)
+{
+	_destroysSelf = destroysSelf;
+}
+
+void MovingEnemy::SetFollowPoints(const Array<ScriptingObjectReference<Actor>>& points)
+{
+	_followPoints.Clear();
+	for (auto point : points)
+	{
+		_followPoints.Add(point);
+	}
+}
+
+void MovingEnemy::AddFollowPoint(const ScriptingObjectReference<Actor>& newPoint)
+{
+	_followPoints.Add(newPoint);
+}
+
+void MovingEnemy::OnReset()
+{
+}
+
 void MovingEnemy::OnEnable()
 {
 
@@ -35,6 +58,11 @@ void MovingEnemy::OnUpdate()
 	dir *= moveDist;
 	if (dist < moveDist)
 	{
+		if (_destroysSelf)
+		{
+			GetActor()->DeleteObject();
+			return;
+		}
 		_currentFollowPointIndex++;
 		if (_currentFollowPointIndex >= _followPoints.Count())
 		{

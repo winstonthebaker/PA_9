@@ -74,19 +74,12 @@ GameManager* GameManager::GetInstance()
 	return _instance;
 }
 
-void GameManager::AddToResets(ICanReset* reset)
-{
-	_resets.Add(reset);
-}
+
 
 void GameManager::ResetGame()
 {
+	OnReset();
 	_gameOver = false;
 	HideDeathScreen();
-	for (ICanReset* reset : _resets)
-	{
-		if (reset)
-			reset->Reset();
-	}
 }
 

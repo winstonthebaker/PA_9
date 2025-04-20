@@ -1,0 +1,79 @@
+{
+	"ID": "751de5d8491a1ba3684408963d70184d",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "38d3c4f343403c3608aa5fb3c631bbc5",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Mine"
+	},
+	{
+		"ID": "4ea5121c4729dc7db646719aab3e6b7a",
+		"TypeName": "Game.ShotHandler",
+		"ParentID": "38d3c4f343403c3608aa5fb3c631bbc5"
+	},
+	{
+		"ID": "6ec6c2b94fdda719ac4c94b82b790a3d",
+		"TypeName": "Game.FloatingMine",
+		"ParentID": "38d3c4f343403c3608aa5fb3c631bbc5",
+		"_existsOnStart": true,
+		"_col": "775c23f145aca17f0f674ea4d08a0d63"
+	},
+	{
+		"ID": "9881ca6948e6ef2898795aba9a31b9e9",
+		"TypeName": "Game.MovingEnemy",
+		"ParentID": "38d3c4f343403c3608aa5fb3c631bbc5"
+	},
+	{
+		"ID": "a80231de45cd9d3889f84b95ce487fdf",
+		"TypeName": "Game.Explodes",
+		"ParentID": "38d3c4f343403c3608aa5fb3c631bbc5",
+		"_explosionPrefab": "fc01981d4fde3345d1ec7abdbe1c9e31"
+	},
+	{
+		"ID": "4c905e854fcde6a6d126f5a225e23d40",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "38d3c4f343403c3608aa5fb3c631bbc5",
+		"Name": "Sphere",
+		"Model": "dad045124c04be65babfb5a8950c2d46",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "173f662b42339a7478d16b91ef14b0e1",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "1f6baa894f55a181fec137a48afa4026",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "4c905e854fcde6a6d126f5a225e23d40",
+		"_rotationSpeed": 360.0,
+		"_rotationAxis": {
+			"X": 0.0,
+			"Y": 1.0,
+			"Z": 0.0
+		}
+	},
+	{
+		"ID": "775c23f145aca17f0f674ea4d08a0d63",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "38d3c4f343403c3608aa5fb3c631bbc5",
+		"Name": "SphereCollider",
+		"Transform": {
+			"Scale": {
+				"X": 1.3799999952316285,
+				"Y": 1.0,
+				"Z": 1.0
+			}
+		},
+		"Layer": 2,
+		"Tag": "KillsOnContact",
+		"IsTrigger": true
+	}
+]
+}

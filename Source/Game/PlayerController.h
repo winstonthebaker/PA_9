@@ -3,14 +3,13 @@
 #include "Engine/Scripting/Script.h"
 #include "Engine/Physics/Colliders/CharacterController.h"
 #include "Engine/Scripting/ScriptingObjectReference.h"
-#include "ICanReset.h"
 #include "Engine/Physics/Colliders/Collider.h"
 #include "Engine/Core/Collections/Array.h"
 #include "Engine/Core/Types/Pair.h"
 #include <queue>
 
 
-API_CLASS() class GAME_API PlayerController : public Script, ICanReset
+API_CLASS() class GAME_API PlayerController : public Script
 {
 API_AUTO_SERIALIZATION();
 DECLARE_SCRIPTING_TYPE(PlayerController);
@@ -30,8 +29,15 @@ public:
     API_FIELD() float _jumpNormalForce = 1000.0;
     API_FIELD() float _jumpVerticalForce = 1000.0;
 
+    
+
     static PlayerController* GetInstance(); 
     Vector3 GetVelocity();
+
+    void FireShotgun(float recoilPower);
+
+    Quaternion GetCameraOrientation();
+    Vector3 GetCameraPosition();
 
     // [Script]
 
@@ -46,8 +52,7 @@ private:
     void OnAwake() override;
     void OnUpdate() override;
     void OnStart() override;
-
-    void Reset() override;
+    void Reset();
 
     enum State
     {
@@ -70,6 +75,8 @@ private:
     float _timeLastGrounded = -9999.9;
     float _timeJumpLastPressed = -9999.9;
     State _state = Air;
+
+    float _frameRecoil = 0.0;
 
     bool _dead = false;
     bool _isLookingBackward = false;

@@ -1,8 +1,0 @@
-Missing Android SDK. Cannot build for Android platform.
-DotNetSdk, 8.0.403.9999, C:\Program Files\dotnet\
-AndroidNdk, missing
-AndroidSdk, missing
-XCode, missing
-GDK, missing
-Windows SDK v10_0_22621_0, 10.0.22621.0, C:\Program Files (x86)\Windows Kits\10\
-Windows Toolset v144, C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120

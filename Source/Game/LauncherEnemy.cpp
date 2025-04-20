@@ -11,7 +11,7 @@ LauncherEnemy::LauncherEnemy(const SpawnParams& params)
 
 void LauncherEnemy::OnEnable()
 {
-    _missile = nullptr;
+    _spawnTimer = _spawnTime;
 }
 
 void LauncherEnemy::OnDisable()
@@ -23,8 +23,8 @@ void LauncherEnemy::OnUpdate()
     _spawnTimer -= Time::GetDeltaTime();
     if (_spawnTimer < 0)
     {
-        _spawnTimer = 1;
-        SpawnMissile();
+        _spawnTimer = _spawnTime;
+       SpawnMissile();
     }
 }
 

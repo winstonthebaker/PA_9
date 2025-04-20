@@ -9,26 +9,208 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #include "Game.Gen.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Content\AssetReference.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Collections\Array.h"
+#include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Types\BaseTypes.h"
+#include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Types\LayersMask.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Level\Actor.h"
-#include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Level\Actors\Camera.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Level\Prefabs\Prefab.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\Actors\RigidBody.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\Colliders\CharacterController.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\Colliders\Collider.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Scripting\ScriptingObjectReference.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Explodes.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\ExplosionDestroySelf.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\FloatingMine.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\GameManager.h"
-#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\ICanTakeDamage.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\LauncherEnemy.h"
-#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Missile.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Mine.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\MineSpawner.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\MovingEnemy.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Pickup.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\PlayerController.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\PlayerWeapon.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Projectile.h"
-#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\TestScript.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Rocket.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\RotateObject.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\ShotHandler.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\TurretEnemy.h"
 #include "Engine/Scripting/ManagedCLR/MClass.h"
 #include "Engine/Scripting/ManagedCLR/MMethod.h"
 #include "Engine/Serialization/Serialization.h"
+
+void Explodes::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(Explodes);
+    SERIALIZE(_explosionPrefab);
+}
+
+void Explodes::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_explosionPrefab);
+}
+
+class ExplodesInternal
+{
+public:
+    DLLEXPORT static MObject* Get_explosionPrefab(Explodes* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Explodes::Internal_Get_explosionPrefab")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_explosionPrefab.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_explosionPrefab(Explodes* __obj, Prefab* value)
+    {
+        MSVC_FUNC_EXPORT("Game.Explodes::Internal_Set_explosionPrefab")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_explosionPrefab = value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer Explodes::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Explodes", 13), sizeof(Explodes), &ExplodesInternal::InitRuntime, (ScriptingType::SpawnHandler)&Explodes::Spawn, &Script::TypeInitializer, &ExplodesInternal::SetupScriptVTable, &ExplodesInternal::SetupScriptObjectVTable, nullptr);
+
+void ExplosionDestroySelf::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(ExplosionDestroySelf);
+    SERIALIZE(_lifeTime);
+}
+
+void ExplosionDestroySelf::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_lifeTime);
+}
+
+class ExplosionDestroySelfInternal
+{
+public:
+    DLLEXPORT static float Get_lifeTime(ExplosionDestroySelf* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.ExplosionDestroySelf::Internal_Get_lifeTime")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_lifeTime;
+    }
+
+    DLLEXPORT static void Set_lifeTime(ExplosionDestroySelf* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.ExplosionDestroySelf::Internal_Set_lifeTime")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_lifeTime = value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer ExplosionDestroySelf::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.ExplosionDestroySelf", 25), sizeof(ExplosionDestroySelf), &ExplosionDestroySelfInternal::InitRuntime, (ScriptingType::SpawnHandler)&ExplosionDestroySelf::Spawn, &Script::TypeInitializer, &ExplosionDestroySelfInternal::SetupScriptVTable, &ExplosionDestroySelfInternal::SetupScriptObjectVTable, nullptr);
+
+void FloatingMine::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(FloatingMine);
+    SERIALIZE(_existsOnStart);
+    SERIALIZE(_col);
+}
+
+void FloatingMine::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_existsOnStart);
+    DESERIALIZE(_col);
+}
+
+class FloatingMineInternal
+{
+public:
+    DLLEXPORT static bool Get_existsOnStart(FloatingMine* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.FloatingMine::Internal_Get_existsOnStart")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_existsOnStart;
+    }
+
+    DLLEXPORT static void Set_existsOnStart(FloatingMine* __obj, bool value)
+    {
+        MSVC_FUNC_EXPORT("Game.FloatingMine::Internal_Set_existsOnStart")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_existsOnStart = value;
+    }
+
+    DLLEXPORT static MObject* Get_col(FloatingMine* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.FloatingMine::Internal_Get_col")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_col.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_col(FloatingMine* __obj, Collider* value)
+    {
+        MSVC_FUNC_EXPORT("Game.FloatingMine::Internal_Set_col")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_col = value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer FloatingMine::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.FloatingMine", 17), sizeof(FloatingMine), &FloatingMineInternal::InitRuntime, (ScriptingType::SpawnHandler)&FloatingMine::Spawn, &Script::TypeInitializer, &FloatingMineInternal::SetupScriptVTable, &FloatingMineInternal::SetupScriptObjectVTable, nullptr);
 
 void GameManager::Serialize(SerializeStream& stream, const void* otherObj)
 {
@@ -83,54 +265,19 @@ public:
 
 ScriptingTypeInitializer GameManager::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.GameManager", 16), sizeof(GameManager), &GameManagerInternal::InitRuntime, (ScriptingType::SpawnHandler)&GameManager::Spawn, &Script::TypeInitializer, &GameManagerInternal::SetupScriptVTable, &GameManagerInternal::SetupScriptObjectVTable, nullptr);
 
-void ICanTakeDamage::Serialize(SerializeStream& stream, const void* otherObj)
-{
-    Script::Serialize(stream, otherObj);
-    SERIALIZE_GET_OTHER_OBJ(ICanTakeDamage);
-}
-
-void ICanTakeDamage::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
-{
-    Script::Deserialize(stream, modifier);
-}
-
-class ICanTakeDamageInternal
-{
-public:
-
-    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
-    {
-        if (!scriptVTable)
-        {
-            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
-            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
-            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
-        }
-    }
-
-    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
-    {
-    }
-
-    static void InitRuntime()
-    {
-    }
-
-};
-
-ScriptingTypeInitializer ICanTakeDamage::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.ICanTakeDamage", 19), sizeof(ICanTakeDamage), &ICanTakeDamageInternal::InitRuntime, (ScriptingType::SpawnHandler)&ICanTakeDamage::Spawn, &Script::TypeInitializer, &ICanTakeDamageInternal::SetupScriptVTable, &ICanTakeDamageInternal::SetupScriptObjectVTable, nullptr);
-
 void LauncherEnemy::Serialize(SerializeStream& stream, const void* otherObj)
 {
     Script::Serialize(stream, otherObj);
     SERIALIZE_GET_OTHER_OBJ(LauncherEnemy);
     SERIALIZE(_missilePrefab);
+    SERIALIZE(_spawnTime);
 }
 
 void LauncherEnemy::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
 {
     Script::Deserialize(stream, modifier);
     DESERIALIZE(_missilePrefab);
+    DESERIALIZE(_spawnTime);
 }
 
 class LauncherEnemyInternal
@@ -148,6 +295,20 @@ public:
         MSVC_FUNC_EXPORT("Game.LauncherEnemy::Internal_Set_missilePrefab")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
         __obj->_missilePrefab = value;
+    }
+
+    DLLEXPORT static float Get_spawnTime(LauncherEnemy* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.LauncherEnemy::Internal_Get_spawnTime")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_spawnTime;
+    }
+
+    DLLEXPORT static void Set_spawnTime(LauncherEnemy* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.LauncherEnemy::Internal_Set_spawnTime")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_spawnTime = value;
     }
 
 
@@ -173,66 +334,34 @@ public:
 
 ScriptingTypeInitializer LauncherEnemy::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.LauncherEnemy", 18), sizeof(LauncherEnemy), &LauncherEnemyInternal::InitRuntime, (ScriptingType::SpawnHandler)&LauncherEnemy::Spawn, &Script::TypeInitializer, &LauncherEnemyInternal::SetupScriptVTable, &LauncherEnemyInternal::SetupScriptObjectVTable, nullptr);
 
-void Missile::Serialize(SerializeStream& stream, const void* otherObj)
+void Mine::Serialize(SerializeStream& stream, const void* otherObj)
 {
     Script::Serialize(stream, otherObj);
-    SERIALIZE_GET_OTHER_OBJ(Missile);
-    SERIALIZE(_rb);
+    SERIALIZE_GET_OTHER_OBJ(Mine);
     SERIALIZE(_col);
-    SERIALIZE(_thrustPower);
 }
 
-void Missile::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+void Mine::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
 {
     Script::Deserialize(stream, modifier);
-    DESERIALIZE(_rb);
     DESERIALIZE(_col);
-    DESERIALIZE(_thrustPower);
 }
 
-class MissileInternal
+class MineInternal
 {
 public:
-    DLLEXPORT static MObject* Get_rb(Missile* __obj)
+    DLLEXPORT static MObject* Get_col(Mine* __obj)
     {
-        MSVC_FUNC_EXPORT("Game.Missile::Internal_Get_rb")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->_rb.GetManagedInstance();
-    }
-
-    DLLEXPORT static void Set_rb(Missile* __obj, RigidBody* value)
-    {
-        MSVC_FUNC_EXPORT("Game.Missile::Internal_Set_rb")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->_rb = value;
-    }
-
-    DLLEXPORT static MObject* Get_col(Missile* __obj)
-    {
-        MSVC_FUNC_EXPORT("Game.Missile::Internal_Get_col")
+        MSVC_FUNC_EXPORT("Game.Mine::Internal_Get_col")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
         return __obj->_col.GetManagedInstance();
     }
 
-    DLLEXPORT static void Set_col(Missile* __obj, Collider* value)
+    DLLEXPORT static void Set_col(Mine* __obj, Collider* value)
     {
-        MSVC_FUNC_EXPORT("Game.Missile::Internal_Set_col")
+        MSVC_FUNC_EXPORT("Game.Mine::Internal_Set_col")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
         __obj->_col = value;
-    }
-
-    DLLEXPORT static float Get_thrustPower(Missile* __obj)
-    {
-        MSVC_FUNC_EXPORT("Game.Missile::Internal_Get_thrustPower")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->_thrustPower;
-    }
-
-    DLLEXPORT static void Set_thrustPower(Missile* __obj, float value)
-    {
-        MSVC_FUNC_EXPORT("Game.Missile::Internal_Set_thrustPower")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->_thrustPower = value;
     }
 
 
@@ -256,7 +385,124 @@ public:
 
 };
 
-ScriptingTypeInitializer Missile::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Missile", 12), sizeof(Missile), &MissileInternal::InitRuntime, (ScriptingType::SpawnHandler)&Missile::Spawn, &Script::TypeInitializer, &MissileInternal::SetupScriptVTable, &MissileInternal::SetupScriptObjectVTable, nullptr);
+ScriptingTypeInitializer Mine::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Mine", 9), sizeof(Mine), &MineInternal::InitRuntime, (ScriptingType::SpawnHandler)&Mine::Spawn, &Script::TypeInitializer, &MineInternal::SetupScriptVTable, &MineInternal::SetupScriptObjectVTable, nullptr);
+
+void MineSpawner::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(MineSpawner);
+    SERIALIZE(_minePrefab);
+    SERIALIZE(_mineTarget);
+    SERIALIZE(_moveSpeed);
+    SERIALIZE(_spawnTime);
+    SERIALIZE(_spawnEarly);
+}
+
+void MineSpawner::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_minePrefab);
+    DESERIALIZE(_mineTarget);
+    DESERIALIZE(_moveSpeed);
+    DESERIALIZE(_spawnTime);
+    DESERIALIZE(_spawnEarly);
+}
+
+class MineSpawnerInternal
+{
+public:
+    DLLEXPORT static MObject* Get_minePrefab(MineSpawner* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Get_minePrefab")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_minePrefab.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_minePrefab(MineSpawner* __obj, Prefab* value)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Set_minePrefab")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_minePrefab = value;
+    }
+
+    DLLEXPORT static MObject* Get_mineTarget(MineSpawner* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Get_mineTarget")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_mineTarget.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_mineTarget(MineSpawner* __obj, Actor* value)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Set_mineTarget")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_mineTarget = value;
+    }
+
+    DLLEXPORT static float Get_moveSpeed(MineSpawner* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Get_moveSpeed")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_moveSpeed;
+    }
+
+    DLLEXPORT static void Set_moveSpeed(MineSpawner* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Set_moveSpeed")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_moveSpeed = value;
+    }
+
+    DLLEXPORT static float Get_spawnTime(MineSpawner* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Get_spawnTime")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_spawnTime;
+    }
+
+    DLLEXPORT static void Set_spawnTime(MineSpawner* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Set_spawnTime")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_spawnTime = value;
+    }
+
+    DLLEXPORT static float Get_spawnEarly(MineSpawner* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Get_spawnEarly")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_spawnEarly;
+    }
+
+    DLLEXPORT static void Set_spawnEarly(MineSpawner* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.MineSpawner::Internal_Set_spawnEarly")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_spawnEarly = value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer MineSpawner::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.MineSpawner", 16), sizeof(MineSpawner), &MineSpawnerInternal::InitRuntime, (ScriptingType::SpawnHandler)&MineSpawner::Spawn, &Script::TypeInitializer, &MineSpawnerInternal::SetupScriptVTable, &MineSpawnerInternal::SetupScriptObjectVTable, nullptr);
 
 void MovingEnemy::Serialize(SerializeStream& stream, const void* otherObj)
 {
@@ -328,6 +574,59 @@ public:
 };
 
 ScriptingTypeInitializer MovingEnemy::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.MovingEnemy", 16), sizeof(MovingEnemy), &MovingEnemyInternal::InitRuntime, (ScriptingType::SpawnHandler)&MovingEnemy::Spawn, &Script::TypeInitializer, &MovingEnemyInternal::SetupScriptVTable, &MovingEnemyInternal::SetupScriptObjectVTable, nullptr);
+
+void Pickup::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(Pickup);
+    SERIALIZE(_type);
+}
+
+void Pickup::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_type);
+}
+
+class PickupInternal
+{
+public:
+    DLLEXPORT static int Get_type(Pickup* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Pickup::Internal_Get_type")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_type;
+    }
+
+    DLLEXPORT static void Set_type(Pickup* __obj, int value)
+    {
+        MSVC_FUNC_EXPORT("Game.Pickup::Internal_Set_type")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_type = value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer Pickup::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Pickup", 11), sizeof(Pickup), &PickupInternal::InitRuntime, (ScriptingType::SpawnHandler)&Pickup::Spawn, &Script::TypeInitializer, &PickupInternal::SetupScriptVTable, &PickupInternal::SetupScriptObjectVTable, nullptr);
 
 void PlayerController::Serialize(SerializeStream& stream, const void* otherObj)
 {
@@ -546,30 +845,190 @@ void PlayerWeapon::Serialize(SerializeStream& stream, const void* otherObj)
 {
     Script::Serialize(stream, otherObj);
     SERIALIZE_GET_OTHER_OBJ(PlayerWeapon);
-    SERIALIZE(_cooldown);
+    SERIALIZE(_shotgunRecoil);
+    SERIALIZE(_pc);
+    SERIALIZE(_shotgun);
+    SERIALIZE(_pistol);
+    SERIALIZE(_layers);
+    SERIALIZE(_pistolAmmo);
+    SERIALIZE(_shotgunAmmo);
+    SERIALIZE(_pistolVisualRecoilDistance);
+    SERIALIZE(_pistolVisualRecoilRotation);
+    SERIALIZE(_shotgunVisualRecoilDistance);
+    SERIALIZE(_shotgunVisualRecoilRotation);
 }
 
 void PlayerWeapon::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
 {
     Script::Deserialize(stream, modifier);
-    DESERIALIZE(_cooldown);
+    DESERIALIZE(_shotgunRecoil);
+    DESERIALIZE(_pc);
+    DESERIALIZE(_shotgun);
+    DESERIALIZE(_pistol);
+    DESERIALIZE(_layers);
+    DESERIALIZE(_pistolAmmo);
+    DESERIALIZE(_shotgunAmmo);
+    DESERIALIZE(_pistolVisualRecoilDistance);
+    DESERIALIZE(_pistolVisualRecoilRotation);
+    DESERIALIZE(_shotgunVisualRecoilDistance);
+    DESERIALIZE(_shotgunVisualRecoilRotation);
 }
 
 class PlayerWeaponInternal
 {
 public:
-    DLLEXPORT static float Get_cooldown(PlayerWeapon* __obj)
+    DLLEXPORT static float Get_shotgunRecoil(PlayerWeapon* __obj)
     {
-        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_cooldown")
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_shotgunRecoil")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->_cooldown;
+        return __obj->_shotgunRecoil;
     }
 
-    DLLEXPORT static void Set_cooldown(PlayerWeapon* __obj, float value)
+    DLLEXPORT static void Set_shotgunRecoil(PlayerWeapon* __obj, float value)
     {
-        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_cooldown")
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_shotgunRecoil")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->_cooldown = value;
+        __obj->_shotgunRecoil = value;
+    }
+
+    DLLEXPORT static MObject* Get_pc(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_pc")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_pc.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_pc(PlayerWeapon* __obj, PlayerController* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_pc")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_pc = value;
+    }
+
+    DLLEXPORT static MObject* Get_shotgun(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_shotgun")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_shotgun.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_shotgun(PlayerWeapon* __obj, Actor* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_shotgun")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_shotgun = value;
+    }
+
+    DLLEXPORT static MObject* Get_pistol(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_pistol")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_pistol.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_pistol(PlayerWeapon* __obj, Actor* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_pistol")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_pistol = value;
+    }
+
+    DLLEXPORT static void Get_layers(PlayerWeapon* __obj, LayersMask* __resultAsRef)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_layers")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        *__resultAsRef = __obj->_layers;
+    }
+
+    DLLEXPORT static void Set_layers(PlayerWeapon* __obj, LayersMask* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_layers")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_layers = *value;
+    }
+
+    DLLEXPORT static int Get_pistolAmmo(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_pistolAmmo")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_pistolAmmo;
+    }
+
+    DLLEXPORT static void Set_pistolAmmo(PlayerWeapon* __obj, int value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_pistolAmmo")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_pistolAmmo = value;
+    }
+
+    DLLEXPORT static int Get_shotgunAmmo(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_shotgunAmmo")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_shotgunAmmo;
+    }
+
+    DLLEXPORT static void Set_shotgunAmmo(PlayerWeapon* __obj, int value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_shotgunAmmo")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_shotgunAmmo = value;
+    }
+
+    DLLEXPORT static float Get_pistolVisualRecoilDistance(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_pistolVisualRecoilDistance")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_pistolVisualRecoilDistance;
+    }
+
+    DLLEXPORT static void Set_pistolVisualRecoilDistance(PlayerWeapon* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_pistolVisualRecoilDistance")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_pistolVisualRecoilDistance = value;
+    }
+
+    DLLEXPORT static float Get_pistolVisualRecoilRotation(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_pistolVisualRecoilRotation")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_pistolVisualRecoilRotation;
+    }
+
+    DLLEXPORT static void Set_pistolVisualRecoilRotation(PlayerWeapon* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_pistolVisualRecoilRotation")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_pistolVisualRecoilRotation = value;
+    }
+
+    DLLEXPORT static float Get_shotgunVisualRecoilDistance(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_shotgunVisualRecoilDistance")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_shotgunVisualRecoilDistance;
+    }
+
+    DLLEXPORT static void Set_shotgunVisualRecoilDistance(PlayerWeapon* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_shotgunVisualRecoilDistance")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_shotgunVisualRecoilDistance = value;
+    }
+
+    DLLEXPORT static float Get_shotgunVisualRecoilRotation(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_shotgunVisualRecoilRotation")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_shotgunVisualRecoilRotation;
+    }
+
+    DLLEXPORT static void Set_shotgunVisualRecoilRotation(PlayerWeapon* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_shotgunVisualRecoilRotation")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_shotgunVisualRecoilRotation = value;
     }
 
 
@@ -648,98 +1107,66 @@ public:
 
 ScriptingTypeInitializer Projectile::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Projectile", 15), sizeof(Projectile), &ProjectileInternal::InitRuntime, (ScriptingType::SpawnHandler)&Projectile::Spawn, &Script::TypeInitializer, &ProjectileInternal::SetupScriptVTable, &ProjectileInternal::SetupScriptObjectVTable, nullptr);
 
-void TestScript::Serialize(SerializeStream& stream, const void* otherObj)
+void Rocket::Serialize(SerializeStream& stream, const void* otherObj)
 {
     Script::Serialize(stream, otherObj);
-    SERIALIZE_GET_OTHER_OBJ(TestScript);
-    SERIALIZE(MoveSpeed);
-    SERIALIZE(Gravity);
-    SERIALIZE(RotationSpeed);
-    SERIALIZE(Controller);
-    SERIALIZE(PlayerCamera);
+    SERIALIZE_GET_OTHER_OBJ(Rocket);
+    SERIALIZE(_rb);
+    SERIALIZE(_col);
+    SERIALIZE(_thrustPower);
 }
 
-void TestScript::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+void Rocket::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
 {
     Script::Deserialize(stream, modifier);
-    DESERIALIZE(MoveSpeed);
-    DESERIALIZE(Gravity);
-    DESERIALIZE(RotationSpeed);
-    DESERIALIZE(Controller);
-    DESERIALIZE(PlayerCamera);
+    DESERIALIZE(_rb);
+    DESERIALIZE(_col);
+    DESERIALIZE(_thrustPower);
 }
 
-class TestScriptInternal
+class RocketInternal
 {
 public:
-    DLLEXPORT static float GetMoveSpeed(TestScript* __obj)
+    DLLEXPORT static MObject* Get_rb(Rocket* __obj)
     {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_GetMoveSpeed")
+        MSVC_FUNC_EXPORT("Game.Rocket::Internal_Get_rb")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->MoveSpeed;
+        return __obj->_rb.GetManagedInstance();
     }
 
-    DLLEXPORT static void SetMoveSpeed(TestScript* __obj, float value)
+    DLLEXPORT static void Set_rb(Rocket* __obj, RigidBody* value)
     {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_SetMoveSpeed")
+        MSVC_FUNC_EXPORT("Game.Rocket::Internal_Set_rb")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->MoveSpeed = value;
+        __obj->_rb = value;
     }
 
-    DLLEXPORT static float GetGravity(TestScript* __obj)
+    DLLEXPORT static MObject* Get_col(Rocket* __obj)
     {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_GetGravity")
+        MSVC_FUNC_EXPORT("Game.Rocket::Internal_Get_col")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->Gravity;
+        return __obj->_col.GetManagedInstance();
     }
 
-    DLLEXPORT static void SetGravity(TestScript* __obj, float value)
+    DLLEXPORT static void Set_col(Rocket* __obj, Collider* value)
     {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_SetGravity")
+        MSVC_FUNC_EXPORT("Game.Rocket::Internal_Set_col")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->Gravity = value;
+        __obj->_col = value;
     }
 
-    DLLEXPORT static float GetRotationSpeed(TestScript* __obj)
+    DLLEXPORT static float Get_thrustPower(Rocket* __obj)
     {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_GetRotationSpeed")
+        MSVC_FUNC_EXPORT("Game.Rocket::Internal_Get_thrustPower")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->RotationSpeed;
+        return __obj->_thrustPower;
     }
 
-    DLLEXPORT static void SetRotationSpeed(TestScript* __obj, float value)
+    DLLEXPORT static void Set_thrustPower(Rocket* __obj, float value)
     {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_SetRotationSpeed")
+        MSVC_FUNC_EXPORT("Game.Rocket::Internal_Set_thrustPower")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->RotationSpeed = value;
-    }
-
-    DLLEXPORT static MObject* GetController(TestScript* __obj)
-    {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_GetController")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->Controller.GetManagedInstance();
-    }
-
-    DLLEXPORT static void SetController(TestScript* __obj, CharacterController* value)
-    {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_SetController")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->Controller = value;
-    }
-
-    DLLEXPORT static MObject* GetPlayerCamera(TestScript* __obj)
-    {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_GetPlayerCamera")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->PlayerCamera.GetManagedInstance();
-    }
-
-    DLLEXPORT static void SetPlayerCamera(TestScript* __obj, Camera* value)
-    {
-        MSVC_FUNC_EXPORT("Game.TestScript::Internal_SetPlayerCamera")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->PlayerCamera = value;
+        __obj->_thrustPower = value;
     }
 
 
@@ -763,7 +1190,113 @@ public:
 
 };
 
-ScriptingTypeInitializer TestScript::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.TestScript", 15), sizeof(TestScript), &TestScriptInternal::InitRuntime, (ScriptingType::SpawnHandler)&TestScript::Spawn, &Script::TypeInitializer, &TestScriptInternal::SetupScriptVTable, &TestScriptInternal::SetupScriptObjectVTable, nullptr);
+ScriptingTypeInitializer Rocket::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Rocket", 11), sizeof(Rocket), &RocketInternal::InitRuntime, (ScriptingType::SpawnHandler)&Rocket::Spawn, &Script::TypeInitializer, &RocketInternal::SetupScriptVTable, &RocketInternal::SetupScriptObjectVTable, nullptr);
+
+void RotateObject::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(RotateObject);
+    SERIALIZE(_rotationSpeed);
+    SERIALIZE(_rotationAxis);
+}
+
+void RotateObject::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_rotationSpeed);
+    DESERIALIZE(_rotationAxis);
+}
+
+class RotateObjectInternal
+{
+public:
+    DLLEXPORT static float Get_rotationSpeed(RotateObject* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.RotateObject::Internal_Get_rotationSpeed")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_rotationSpeed;
+    }
+
+    DLLEXPORT static void Set_rotationSpeed(RotateObject* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.RotateObject::Internal_Set_rotationSpeed")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_rotationSpeed = value;
+    }
+
+    DLLEXPORT static void Get_rotationAxis(RotateObject* __obj, Vector3* __resultAsRef)
+    {
+        MSVC_FUNC_EXPORT("Game.RotateObject::Internal_Get_rotationAxis")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        *__resultAsRef = __obj->_rotationAxis;
+    }
+
+    DLLEXPORT static void Set_rotationAxis(RotateObject* __obj, Vector3* value)
+    {
+        MSVC_FUNC_EXPORT("Game.RotateObject::Internal_Set_rotationAxis")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_rotationAxis = *value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer RotateObject::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.RotateObject", 17), sizeof(RotateObject), &RotateObjectInternal::InitRuntime, (ScriptingType::SpawnHandler)&RotateObject::Spawn, &Script::TypeInitializer, &RotateObjectInternal::SetupScriptVTable, &RotateObjectInternal::SetupScriptObjectVTable, nullptr);
+
+void ShotHandler::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(ShotHandler);
+}
+
+void ShotHandler::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+}
+
+class ShotHandlerInternal
+{
+public:
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer ShotHandler::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.ShotHandler", 16), sizeof(ShotHandler), &ShotHandlerInternal::InitRuntime, (ScriptingType::SpawnHandler)&ShotHandler::Spawn, &Script::TypeInitializer, &ShotHandlerInternal::SetupScriptVTable, &ShotHandlerInternal::SetupScriptObjectVTable, nullptr);
 
 void TurretEnemy::Serialize(SerializeStream& stream, const void* otherObj)
 {

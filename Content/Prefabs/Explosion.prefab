@@ -1,0 +1,25 @@
+{
+	"ID": "fc01981d4fde3345d1ec7abdbe1c9e31",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "87e4a7cd4b0815140690fd90ff3b297e",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Explosion"
+	},
+	{
+		"ID": "2824c765401c5e5fbd5a8f9004fee25a",
+		"TypeName": "Game.ExplosionDestroySelf",
+		"ParentID": "87e4a7cd4b0815140690fd90ff3b297e"
+	},
+	{
+		"ID": "511dad49423f8f6a75994cbb6743db95",
+		"TypeName": "FlaxEngine.ParticleEffect",
+		"ParentID": "87e4a7cd4b0815140690fd90ff3b297e",
+		"Name": "ParticleEffect",
+		"Overrides": [],
+		"ParticleSystem": "61a823394c042a4e9a013480fdc50839"
+	}
+]
+}

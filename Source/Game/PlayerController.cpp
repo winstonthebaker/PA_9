@@ -3,7 +3,7 @@
 #include "Engine/Engine/Time.h"
 #include "Engine/Core/Log.h"
 #include "GameManager.h"
-
+#include "Pickup.h"
 
 PlayerController* PlayerController::_instance = nullptr;
 
@@ -24,6 +24,22 @@ Vector3 PlayerController::GetVelocity()
 	return _characterController->GetVelocity();
 }
 
+void PlayerController::FireShotgun(float recoilPower)
+{
+	_frameRecoil = recoilPower;
+	
+}
+
+Quaternion PlayerController::GetCameraOrientation()
+{
+	return _cameraContainer->GetOrientation();
+}
+
+Vector3 PlayerController::GetCameraPosition()
+{
+	return _cameraContainer->GetPosition();
+}
+
 void PlayerController::OnEnable()
 {
 	if (!_characterController)
@@ -32,7 +48,7 @@ void PlayerController::OnEnable()
 	}
 	_characterController->TriggerEnter.Bind<PlayerController, &PlayerController::OnTriggerEnter>(this);
 	_characterController->CollisionEnter.Bind<PlayerController, &PlayerController::OnCollisionEnter>(this);
-
+	GameManager::GetInstance()->OnReset.Bind<PlayerController, &PlayerController::Reset>(this);
 
 }
 
@@ -44,6 +60,7 @@ void PlayerController::OnDisable()
 	}
 	_characterController->TriggerEnter.Unbind<PlayerController, &PlayerController::OnTriggerEnter>(this);
 	_characterController->CollisionEnter.UnbindAll();
+	GameManager::GetInstance()->OnReset.Unbind<PlayerController, &PlayerController::Reset>(this);
 
 }
 
@@ -74,7 +91,6 @@ void PlayerController::OnStart()
 		LOG(Error, "GameManager not instantiated!");
 		return;
 	}
-	GameManager::GetInstance()->AddToResets(this);
 
 	_startingBodyRotation = _characterController->GetOrientation().GetEuler().Y;
 	_bodyRotation = _startingBodyRotation;
@@ -101,6 +117,7 @@ void PlayerController::Reset()
 	_dead = false;
 	_currentVelocity = Vector3::Zero;
 	_awaitingReset = true;
+	_frameRecoil = 0.0;
 
 }
 
@@ -386,14 +403,10 @@ void PlayerController::HandleShooting()
 	{
 		return;
 	}
-
-	if (Input::GetMouseButtonDown(MouseButton::Left))
-	{
-		float recoilPower = 3000.0;
-		Quaternion directionFaced = _cameraContainer->GetOrientation();
-		Vector3 recoilImpulse = directionFaced * Vector3::Forward * -recoilPower;
-		_currentVelocity += recoilImpulse;
-	}
+	Quaternion directionFaced = _cameraContainer->GetOrientation();
+	Vector3 recoilImpulse = directionFaced * Vector3::Forward * -_frameRecoil;
+	_currentVelocity += recoilImpulse;
+	_frameRecoil = 0.0;
 }
 
 void PlayerController::OnTriggerEnter(PhysicsColliderActor* other)
@@ -401,8 +414,18 @@ void PlayerController::OnTriggerEnter(PhysicsColliderActor* other)
 	Tag killsOnContactTag = Tags::Get(TEXT("KillsOnContact"));
 	if (other->HasTag(killsOnContactTag))
 	{
-		Die();
+		if (!_dead)
+		{
+			Die();
+
+		}
 	}
+	Pickup* pickup = other->GetScript<Pickup>();
+	if (pickup)
+	{
+		pickup->Grab();
+	}
+	
 }
 
 void PlayerController::OnCollisionEnter(const Collision& collision)
