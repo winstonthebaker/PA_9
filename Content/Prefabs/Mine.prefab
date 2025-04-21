@@ -6,7 +6,14 @@
 	{
 		"ID": "38d3c4f343403c3608aa5fb3c631bbc5",
 		"TypeName": "FlaxEngine.EmptyActor",
-		"Name": "Mine"
+		"Name": "Mine",
+		"Transform": {
+			"Scale": {
+				"X": 1.5,
+				"Y": 1.5,
+				"Z": 1.5
+			}
+		}
 	},
 	{
 		"ID": "4ea5121c4729dc7db646719aab3e6b7a",
@@ -52,12 +59,7 @@
 		"ID": "1f6baa894f55a181fec137a48afa4026",
 		"TypeName": "Game.RotateObject",
 		"ParentID": "4c905e854fcde6a6d126f5a225e23d40",
-		"_rotationSpeed": 360.0,
-		"_rotationAxis": {
-			"X": 0.0,
-			"Y": 1.0,
-			"Z": 0.0
-		}
+		"_rotationSpeed": 360.0
 	},
 	{
 		"ID": "775c23f145aca17f0f674ea4d08a0d63",

@@ -6,6 +6,9 @@
 #include "Engine/Debug/DebugDraw.h"
 #include "ShotHandler.h"
 #include "GameManager.h"
+#include "Engine/Core/Random.h"
+#include "Engine/Scripting/ManagedCLR/MClass.h"
+#include "Engine/Scripting/ManagedCLR/MMethod.h"
 
 PlayerWeapon::PlayerWeapon(const SpawnParams& params)
 	: Script(params)
@@ -55,6 +58,63 @@ void PlayerWeapon::OnDisable()
 
 void PlayerWeapon::OnUpdate()
 {
+	HandleWeaponVisuals();
+
+	HandleAttack();
+	GameManager* gm = GameManager::GetInstance();
+	if (gm)
+	{
+		gm->SetPistolAmmo(_pistolAmmo);
+		gm->SetShotgunAmmo(_shotgunAmmo);
+	}
+
+}
+
+
+void PlayerWeapon::HandleAttack()
+{
+	if (!_pc)
+	{
+		return;
+	}
+	if (Input::GetMouseButtonDown(MouseButton::Left))
+	{
+		FirePistol();
+	}
+	if (Input::GetMouseButtonDown(MouseButton::Right))
+	{
+		FireShotgun();
+	}
+}
+
+void PlayerWeapon::Reset()
+{
+	_pistolAmmo = _pistolStartingAmmo;
+	_shotgunAmmo = _shotgunStartingAmmo;
+}
+
+void PlayerWeapon::PistolRecoil()
+{
+	Quaternion recoilRot = Quaternion::Euler(Vector3(-_pistolVisualRecoilRotation, 0, 0));
+	if (_pistol)
+	{
+		_pistol->SetLocalOrientation(_pistol->GetLocalOrientation() + recoilRot);
+		_pistol->SetLocalPosition(_pistol->GetLocalPosition() + Vector3(0, 0, -_pistolVisualRecoilDistance));
+	}
+}
+
+void PlayerWeapon::ShotunRecoil()
+{
+	Quaternion recoilRot = Quaternion::Euler(Vector3(-_shotgunVisualRecoilRotation, 0, 0));
+	if (_shotgun)
+	{
+		_shotgun->SetLocalOrientation(_shotgun->GetLocalOrientation() + recoilRot);
+		_shotgun->SetLocalPosition(_shotgun->GetLocalPosition() + Vector3(0, 0, -_shotgunVisualRecoilDistance));
+	}
+}
+
+void PlayerWeapon::HandleWeaponVisuals()
+{
 	if (_pistolAmmo > 0)
 	{
 		_pistolHideFactor = 0;
@@ -78,14 +138,6 @@ void PlayerWeapon::OnUpdate()
 		{
 			_shotgunHideFactor += Time::GetDeltaTime() * 60;
 		}
-	}
-	
-	HandleAttack();
-	GameManager* gm = GameManager::GetInstance();
-	if (gm)
-	{
-		gm->SetPistolAmmo(_pistolAmmo);
-		gm->SetShotgunAmmo(_shotgunAmmo);
 	}
 	float rotationSmoothing = 20;
 	float factor = rotationSmoothing * Time::GetDeltaTime();
@@ -123,24 +175,66 @@ void PlayerWeapon::OnUpdate()
 	}
 }
 
-
-void PlayerWeapon::HandleAttack()
+void PlayerWeapon::FirePistol()
 {
-	if (!_pc)
+	if (_pistolAmmo <= 0)
 	{
 		return;
 	}
-	if (Input::GetMouseButtonDown(MouseButton::Left))
+	_pistolAmmo--;
+	PistolRecoil();
+	//pistol
+	RayCastHit hit;
+	if (Physics::RayCast(_pc->GetCameraPosition(), _pc->GetCameraOrientation() * Vector3::Forward, hit, MAX_float, _layers))
 	{
-		if (_pistolAmmo <= 0)
+		Actor* current = hit.Collider;
+		while (current)
 		{
-			return;
+			ShotHandler* shotHandler = current->GetScript<ShotHandler>();
+			if (shotHandler)
+			{
+				shotHandler->TakeShot();
+			}
+
+			if (current->HasParent())
+			{
+				current = current->GetParent();
+			}
+			else
+			{
+				break;
+			}
 		}
-		_pistolAmmo--;
-		PistolRecoil();
-		//pistol
-		RayCastHit hit;
-		if (Physics::RayCast(_pc->GetCameraPosition(), _pc->GetCameraOrientation() * Vector3::Forward, hit, MAX_float, _layers))
+		DEBUG_DRAW_SPHERE(BoundingSphere(hit.Point, 50), Color::Red, 0.0f, true);
+		SpawnTrail(_pistol->GetPosition(), hit.Point);
+	}
+}
+
+void PlayerWeapon::FireShotgun()
+{
+
+	if (_shotgunAmmo <= 0)
+	{
+		return;
+	}
+	_shotgunAmmo--;
+	//shotgun
+	_pc->FireShotgun(_shotgunRecoil);
+	ShotunRecoil();
+	int numPellets = 8;
+	float spreadRadius = 150;
+	float shotgunRange = 2000;
+	RayCastHit hit;
+	for (int i = 0; i < numPellets; i++)
+	{
+		float angle = Random::RandRange(0, PI * 2);
+		float radius = sqrtf(Random::Rand());
+		radius *= spreadRadius;
+
+		Vector3 spread = _pc->GetCameraOrientation() * Vector3(radius * Math::Cos(angle), radius * Math::Sin(angle), 0);
+		Vector3 origin = _pc->GetCameraPosition() + spread;
+		Vector3 direction = _pc->GetCameraOrientation() * Vector3::Forward;
+		if (Physics::RayCast(origin, direction, hit, shotgunRange, _layers))
 		{
 			Actor* current = hit.Collider;
 			while (current)
@@ -160,46 +254,40 @@ void PlayerWeapon::HandleAttack()
 					break;
 				}
 			}
+			SpawnTrail(_shotgun->GetPosition(), hit.Point);
 			DEBUG_DRAW_SPHERE(BoundingSphere(hit.Point, 50), Color::Red, 0.0f, true);
 		}
-	}
-	if (Input::GetMouseButtonDown(MouseButton::Right))
-	{
-		if (_shotgunAmmo <= 0)
+		else
 		{
-			return;
+			SpawnTrail(_shotgun->GetPosition(), direction * shotgunRange);
 		}
-		_shotgunAmmo--;
-		//shotgun
-		_pc->FireShotgun(_shotgunRecoil);
-		ShotunRecoil();
 	}
+	
 }
 
-void PlayerWeapon::Reset()
+void PlayerWeapon::SpawnTrail(Vector3 startPoint, Vector3 endPoint)
 {
-	_pistolAmmo = _pistolStartingAmmo;
-	_shotgunAmmo = _shotgunStartingAmmo;
-}
-
-void PlayerWeapon::PistolRecoil()
-{
-	Quaternion recoilRot = Quaternion::Euler(Vector3(-_pistolVisualRecoilRotation, 0, 0));
-	if (_pistol)
+	if (!_bulletTrailPrefab)
 	{
-		_pistol->SetLocalOrientation(_pistol->GetLocalOrientation() + recoilRot);
-		_pistol->SetLocalPosition(_pistol->GetLocalPosition() + Vector3(0, 0, -_pistolVisualRecoilDistance));
+		return;
 	}
-}
-
-void PlayerWeapon::ShotunRecoil()
-{
-	Quaternion recoilRot = Quaternion::Euler(Vector3(-_shotgunVisualRecoilRotation, 0, 0));
-	if (_shotgun)
+	auto spawn = PrefabManager::SpawnPrefab(_bulletTrailPrefab, startPoint);
+	Script* bulletTrailScript = spawn->GetScript<Script>();
+	if (!bulletTrailScript)
 	{
-		_shotgun->SetLocalOrientation(_shotgun->GetLocalOrientation() + recoilRot);
-		_shotgun->SetLocalPosition(_shotgun->GetLocalPosition() + Vector3(0, 0, -_shotgunVisualRecoilDistance));
+		return;
 	}
+	auto method = bulletTrailScript->GetClass()->GetMethod("SetPoint", 1);
+	if (!method)
+	{
+
+		return;
+	}
+	Vector3 arg = Vector3(endPoint);
+	void* args[1];
+	args[0] = &arg;
+
+	method->Invoke(bulletTrailScript->GetOrCreateManagedInstance(), args, nullptr);
 }
 
 Vector3 PlayerWeapon::CalculatePistolPosition()

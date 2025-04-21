@@ -64,7 +64,6 @@ void GameManager::ShowDeathScreen()
 		return;
 	}
 	method->Invoke(uiManager->GetOrCreateManagedInstance(), nullptr, nullptr);
-
 }
 
 

@@ -4,6 +4,9 @@
 #include "PlayerController.h"
 #include "Engine/Core/Types/LayersMask.h"
 #include "Engine/Level/Actor.h"
+#include "Engine/Content/AssetReference.h"
+#include "Engine/Level/Prefabs/PrefabManager.h"
+
 API_CLASS() class GAME_API PlayerWeapon : public Script
 {
 	API_AUTO_SERIALIZATION();
@@ -12,10 +15,12 @@ API_CLASS() class GAME_API PlayerWeapon : public Script
 	// [Script]
 
 public:
-	API_FIELD() float _shotgunRecoil;
+	API_FIELD() float _shotgunRecoil = 800;
 	API_FIELD() ScriptingObjectReference<PlayerController> _pc;
 	API_FIELD() ScriptingObjectReference<Actor> _shotgun;
 	API_FIELD() ScriptingObjectReference<Actor> _pistol;
+	API_FIELD() AssetReference<Prefab> _bulletTrailPrefab;
+
 	API_FIELD() LayersMask _layers;
 
 	API_FIELD() int _pistolAmmo = 0;
@@ -35,6 +40,12 @@ private:
 	void Reset();
 	void PistolRecoil();
 	void ShotunRecoil();
+	void HandleWeaponVisuals();
+	void FirePistol();
+	void FireShotgun();
+
+	void SpawnTrail(Vector3 startPoint, Vector3 endPoint);
+
 	float _timeLastAttack;
 	float _timeAttackLastPressed;
 	int _pistolStartingAmmo;

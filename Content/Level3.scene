@@ -291,25 +291,6 @@
 			"ParentID": "0780b75746cabc0ae9a3dab2808ad6e1"
 		},
 		{
-			"ID": "788e97024d56c0386b6ea4abeb7c8e9a",
-			"TypeName": "FlaxEngine.Decal",
-			"ParentID": "0780b75746cabc0ae9a3dab2808ad6e1",
-			"Name": "Decal",
-			"Transform": {
-				"Translation": {
-					"X": 192.8281707763672,
-					"Y": 400.0157470703125,
-					"Z": 300.0
-				},
-				"Scale": {
-					"X": 3.9570133686065676,
-					"Y": 8.335226058959961,
-					"Z": 0.6117346882820129
-				}
-			},
-			"Material": "6d80021e4c46a9c2f1b95084153a8859"
-		},
-		{
 			"ID": "cbfbe31641d61ddec433419a41ed1028",
 			"PrefabID": "397709304075ca4ae98b06a39216ed11",
 			"PrefabObjectID": "2bca821b48971e188b17f7890186c924",
@@ -342,6 +323,25 @@
 			"PrefabID": "397709304075ca4ae98b06a39216ed11",
 			"PrefabObjectID": "0799c0d7490531be38d5079c275bf1e2",
 			"ParentID": "98d408e44a4baa5bd7e192913dcddae2"
+		},
+		{
+			"ID": "f359e73147cd87178cc099a7334d339b",
+			"TypeName": "FlaxEngine.Decal",
+			"ParentID": "98d408e44a4baa5bd7e192913dcddae2",
+			"Name": "Decal",
+			"Transform": {
+				"Translation": {
+					"X": -100.00010681152344,
+					"Y": 0.000011920939869014547,
+					"Z": 300.0
+				},
+				"Scale": {
+					"X": 5.145524978637695,
+					"Y": 16.49468421936035,
+					"Z": 1.0
+				}
+			},
+			"Material": "6d80021e4c46a9c2f1b95084153a8859"
 		},
 		{
 			"ID": "107221e842802bee989af9b3452d9128",
@@ -599,7 +599,7 @@
 			"ParentID": "bd86eb6246afad75a18c91818e493e86",
 			"V": {
 	"_screen": "bd86eb6246afad75a18c91818e493e86",
-	"_nextLevel": "74a68a984824b4510d12589f199ad68f"
+	"_nextLevel": "9ebe0f314cd6019be174b69c95586629"
 }
 		},
 		{
@@ -819,27 +819,6 @@
 }
 		},
 		{
-			"ID": "9ac53cfe41672012c15f66aac7c4c15f",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "8cf81b7b479cce351dc1f098dcad2cb9",
-			"IsActive": false,
-			"Name": "Launcher",
-			"Transform": {
-				"Translation": {
-					"X": 300.0,
-					"Y": 100.0,
-					"Z": 1900.0
-				}
-			}
-		},
-		{
-			"ID": "efe7db134d229282df47acb789aa4273",
-			"TypeName": "Game.LauncherEnemy",
-			"ParentID": "9ac53cfe41672012c15f66aac7c4c15f",
-			"_missilePrefab": "5e40e14f4b884341a0302ca5acefb0d6",
-			"_spawnTime": 4091553349894144.0
-		},
-		{
 			"ID": "a76782b14ed12fc26f35008aaf46b12d",
 			"PrefabID": "6da247e4466583bc5ccecda48a9625cd",
 			"PrefabObjectID": "5380a1b647ddfa2cf2d9fa9d5dae3261",
@@ -883,7 +862,7 @@
 			"Transform": {
 				"Translation": {
 					"X": -400.0,
-					"Y": 200.0,
+					"Y": 300.0,
 					"Z": 1100.0
 				},
 				"Orientation": {
@@ -903,11 +882,7 @@
 			"ID": "735e46604db064067e5b1db39b90e45c",
 			"PrefabID": "f77b7c824d99e36e2b26dc991bf2b369",
 			"PrefabObjectID": "c020ae2c4f82e44691dec4b135b5032d",
-			"ParentID": "4b62ac41470138fd3a6df0a02baa7735",
-			"_followPoints": [
-				"29c823734f729b795b857b81f33f4be4",
-				"554e4ccf4e45cafacccaffb72b7aba35"
-			]
+			"ParentID": "4b62ac41470138fd3a6df0a02baa7735"
 		},
 		{
 			"ID": "070e5e11440f4497b74fcdad26c6d646",
@@ -934,7 +909,7 @@
 			"Transform": {
 				"Translation": {
 					"X": -400.0,
-					"Y": 200.0,
+					"Y": 300.0,
 					"Z": 1100.0
 				}
 			}

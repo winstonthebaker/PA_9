@@ -6,7 +6,6 @@
 	{
 		"ID": "b011bdec4efe71e176a41e8e7503e6cb",
 		"TypeName": "FlaxEngine.CharacterController",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "Player",
 		"StaticFlags": 0,
 		"Layer": 1,
@@ -30,10 +29,10 @@
 		"ID": "ab76e18b4b72de7bcc27eaaf0f47ac1c",
 		"TypeName": "Game.PlayerWeapon",
 		"ParentID": "b011bdec4efe71e176a41e8e7503e6cb",
-		"_shotgunRecoil": -336.64324951171877,
 		"_pc": "02ed9b5844900dc51530d9b721ff89d1",
 		"_shotgun": "2b97d92a43be4e87a352a1b560f63b22",
 		"_pistol": "c101cbc54697aece43db0abc324f1a66",
+		"_bulletTrailPrefab": "14f715514d2044e512c0e3b865f50368",
 		"_layers": 4294967293
 	},
 	{

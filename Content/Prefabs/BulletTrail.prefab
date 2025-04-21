@@ -1,0 +1,20 @@
+{
+	"ID": "14f715514d2044e512c0e3b865f50368",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "6f37cba84b0384f5e0cab7b67eccc7cb",
+		"TypeName": "FlaxEngine.ParticleEffect",
+		"Name": "BulletTrail",
+		"Overrides": [],
+		"ParticleSystem": "f785ca424e42efc9074f56ae2ff90031"
+	},
+	{
+		"ID": "301634ab4125e65517a9b0aff5ce7471",
+		"TypeName": "Game.BulletTrail",
+		"ParentID": "6f37cba84b0384f5e0cab7b67eccc7cb",
+		"V": {}
+	}
+]
+}

@@ -314,6 +314,7 @@ namespace Game
         }
 
         [Unmanaged]
+        [DefaultValue((float)5)]
         public float _startingTime
         {
             get { return Internal_Get_startingTime(__unmanagedPtr); }
@@ -1095,6 +1096,7 @@ namespace Game
         }
 
         [Unmanaged]
+        [DefaultValue((float)800)]
         public float _shotgunRecoil
         {
             get { return Internal_Get_shotgunRecoil(__unmanagedPtr); }
@@ -1148,6 +1150,20 @@ namespace Game
 
         [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_pistol", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
         internal static partial void Internal_Set_pistol(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Prefab _bulletTrailPrefab
+        {
+            get { return Internal_Get_bulletTrailPrefab(__unmanagedPtr); }
+            set { Internal_Set_bulletTrailPrefab(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Get_bulletTrailPrefab", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Prefab Internal_Get_bulletTrailPrefab(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_bulletTrailPrefab", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_bulletTrailPrefab(IntPtr __obj, IntPtr value);
 
         [Unmanaged]
         public LayersMask _layers
@@ -1533,6 +1549,7 @@ namespace Game
         }
 
         [Unmanaged]
+        [DefaultValue((float)0)]
         public float _rotationSpeed
         {
             get { return Internal_Get_rotationSpeed(__unmanagedPtr); }
@@ -1546,6 +1563,7 @@ namespace Game
         internal static partial void Internal_Set_rotationSpeed(IntPtr __obj, float value);
 
         [Unmanaged]
+        [DefaultValue(typeof(Vector3), "0,1,0")]
         public Vector3 _rotationAxis
         {
             get { Internal_Get_rotationAxis(__unmanagedPtr, out var __resultAsRef); return __resultAsRef; }

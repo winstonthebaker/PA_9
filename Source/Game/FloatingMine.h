@@ -22,6 +22,8 @@ DECLARE_SCRIPTING_TYPE(FloatingMine);
     void OnStart() override;
     void OnReset();
     void OnTriggerEnter(PhysicsColliderActor* other);
+    void HandleDeath();
+    bool _awaitingReset = false;
 
 public:
     API_FIELD() bool _existsOnStart;

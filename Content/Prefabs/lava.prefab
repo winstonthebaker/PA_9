@@ -1,0 +1,33 @@
+{
+	"ID": "b750c8264c0790ce1c601abc50690b33",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "lava",
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "95ab9ad9443556ca30aee0a23092b156",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"Name": "MeshCollider",
+		"Tag": "KillsOnContact",
+		"IsTrigger": true,
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	}
+]
+}

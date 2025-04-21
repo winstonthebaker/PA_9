@@ -75,6 +75,7 @@
 /analyzer:"C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\8.0.10\analyzers\dotnet\cs\Microsoft.Interop.SourceGeneration.dll"
 "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game\Game.Bindings.Gen.cs"
 "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.Gen.cs"
+"C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\BulletTrail.cs"
 "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\DeathScreen.cs"
 "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\ExitOnEsc.cs"
 "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\FreeCamera.cs"

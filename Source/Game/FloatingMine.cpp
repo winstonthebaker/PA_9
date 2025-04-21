@@ -42,7 +42,7 @@ void FloatingMine::OnDisable()
 
 void FloatingMine::OnUpdate()
 {
-	// Here you can add code that needs to be called every frame
+	_awaitingReset = false;
 }
 
 void FloatingMine::OnDestroy()
@@ -51,6 +51,30 @@ void FloatingMine::OnDestroy()
 }
 
 void FloatingMine::GetShot()
+{
+	HandleDeath();
+}
+
+void FloatingMine::OnStart()
+{
+	GameManager::GetInstance()->OnReset.Bind<FloatingMine, &FloatingMine::OnReset>(this);
+}
+
+void FloatingMine::OnReset()
+{
+	GetActor()->SetIsActive(true);
+	_awaitingReset = true;
+}
+void FloatingMine::OnTriggerEnter(PhysicsColliderActor* other)
+{
+	if (_awaitingReset)
+	{
+		return;
+	}
+	HandleDeath();
+}
+
+void FloatingMine::HandleDeath()
 {
 	Explodes* explodes = GetActor()->GetScript<Explodes>();
 	if (explodes)
@@ -64,24 +88,5 @@ void FloatingMine::GetShot()
 	else
 	{
 		GetActor()->DeleteObject();
-	}
-}
-
-void FloatingMine::OnStart()
-{
-	GameManager::GetInstance()->OnReset.Bind<FloatingMine, &FloatingMine::OnReset>(this);
-}
-
-void FloatingMine::OnReset()
-{
-	GetActor()->SetIsActive(true);
-}
-void FloatingMine::OnTriggerEnter(PhysicsColliderActor* other)
-{
-	GetActor()->DeleteObject();
-	Explodes* explodes = GetActor()->GetScript<Explodes>();
-	if (explodes)
-	{
-		explodes->Explode();
 	}
 }

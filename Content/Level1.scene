@@ -27,7 +27,7 @@
 			"ID": "785581dd4ebb4520a1f5ff8abd722fde",
 			"TypeName": "Game.GameManager",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"_startingTime": 5.0,
+			"_startingTime": 10.0,
 			"_UIManager": "ec15e7f24b1dca1bfc061ca1ab4a226e"
 		},
 		{
@@ -569,7 +569,9 @@
 			"PrefabID": "dbe47aad42240302846f6bb714ba8b82",
 			"PrefabObjectID": "b8625c0d4bb99469500cf3b988de83c7",
 			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
-			"Data": {}
+			"Data": {
+	"Visible": true
+}
 		},
 		{
 			"ID": "087dadca4dfdf43b67ba86a0af058af6",
@@ -844,6 +846,19 @@
 					{}
 				]
 			}
+		},
+		{
+			"ID": "c17b6d924db56cfc41a32e8e735348c7",
+			"TypeName": "FlaxEngine.ParticleEffect",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "BulletTrail",
+			"Overrides": []
+		},
+		{
+			"ID": "a14d03af47742b8859165885335dccd9",
+			"TypeName": "Game.BulletTrail",
+			"ParentID": "c17b6d924db56cfc41a32e8e735348c7",
+			"V": {}
 		}
 	]
 }

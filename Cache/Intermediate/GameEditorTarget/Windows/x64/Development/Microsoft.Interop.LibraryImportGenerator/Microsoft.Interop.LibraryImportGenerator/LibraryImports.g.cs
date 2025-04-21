@@ -989,6 +989,51 @@ namespace Game
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
         [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
+        internal static partial global::FlaxEngine.Prefab Internal_Get_bulletTrailPrefab(nint __obj)
+        {
+            bool __invokeSucceeded = default;
+            global::FlaxEngine.Prefab __retVal = default;
+            nint __retVal_native = default;
+            try
+            {
+                {
+                    __retVal_native = __PInvoke(__obj);
+                }
+
+                __invokeSucceeded = true;
+                // Unmarshal - Convert native data to managed data.
+                __retVal = global::FlaxEngine.Interop.PrefabMarshaller.NativeToManaged.ConvertToManaged(__retVal_native);
+            }
+            finally
+            {
+                if (__invokeSucceeded)
+                {
+                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
+                    global::FlaxEngine.Interop.PrefabMarshaller.NativeToManaged.Free(__retVal_native);
+                }
+            }
+
+            return __retVal;
+            // Local P/Invoke
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerWeapon::Internal_Get_bulletTrailPrefab", ExactSpelling = true)]
+            static extern unsafe nint __PInvoke(nint ____obj_native);
+        }
+    }
+}
+namespace Game
+{
+    public unsafe partial class PlayerWeapon
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_bulletTrailPrefab", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_bulletTrailPrefab(nint __obj, nint value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class PlayerWeapon
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
+        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
         internal static partial void Internal_Get_layers(nint __obj, out global::FlaxEngine.LayersMask __resultAsRef)
         {
             global::System.Runtime.CompilerServices.Unsafe.SkipInit(out __resultAsRef);

@@ -32,7 +32,7 @@ public:
 	bool IsGameOver();
 	void SetShotgunAmmo(int shotgunAmmo);
 	void SetPistolAmmo(int pistolAmmo);
-	API_FIELD() float _startingTime;
+	API_FIELD() float _startingTime = 5;
 
 	float _time;
 	

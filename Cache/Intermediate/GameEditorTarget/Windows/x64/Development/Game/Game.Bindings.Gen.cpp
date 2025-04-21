@@ -811,6 +811,7 @@ void PlayerWeapon::Serialize(SerializeStream& stream, const void* otherObj)
     SERIALIZE(_pc);
     SERIALIZE(_shotgun);
     SERIALIZE(_pistol);
+    SERIALIZE(_bulletTrailPrefab);
     SERIALIZE(_layers);
     SERIALIZE(_pistolAmmo);
     SERIALIZE(_shotgunAmmo);
@@ -827,6 +828,7 @@ void PlayerWeapon::Deserialize(DeserializeStream& stream, ISerializeModifier* mo
     DESERIALIZE(_pc);
     DESERIALIZE(_shotgun);
     DESERIALIZE(_pistol);
+    DESERIALIZE(_bulletTrailPrefab);
     DESERIALIZE(_layers);
     DESERIALIZE(_pistolAmmo);
     DESERIALIZE(_shotgunAmmo);
@@ -893,6 +895,20 @@ public:
         MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_pistol")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
         __obj->_pistol = value;
+    }
+
+    DLLEXPORT static MObject* Get_bulletTrailPrefab(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_bulletTrailPrefab")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_bulletTrailPrefab.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_bulletTrailPrefab(PlayerWeapon* __obj, Prefab* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_bulletTrailPrefab")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_bulletTrailPrefab = value;
     }
 
     DLLEXPORT static void Get_layers(PlayerWeapon* __obj, LayersMask* __resultAsRef)
