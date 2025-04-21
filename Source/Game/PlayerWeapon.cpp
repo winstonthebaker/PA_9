@@ -221,7 +221,7 @@ void PlayerWeapon::FireShotgun()
 	//shotgun
 	_pc->FireShotgun(_shotgunRecoil);
 	ShotunRecoil();
-	int numPellets = 8;
+	int numPellets = 12;
 	float spreadRadius = 150;
 	float shotgunRange = 2000;
 	RayCastHit hit;

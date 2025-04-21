@@ -1,0 +1,2058 @@
+{
+	"ID": "1f4a2d494f184aacdb47cd94938dae42",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6605,
+	"Data": [
+		{
+			"ID": "1f4a2d494f184aacdb47cd94938dae42",
+			"TypeName": "FlaxEngine.Scene",
+			"LightmapSettings": {
+				"IndirectLightingIntensity": 1.0,
+				"GlobalObjectsScale": 1.0,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"CompressLightmaps": true,
+				"UseGeometryWithNoMaterials": true,
+				"Quality": 100
+			}
+		},
+		{
+			"ID": "6ff0581d474c84230b3d0fa9f17e0972",
+			"TypeName": "ExitOnEsc",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"V": {}
+		},
+		{
+			"ID": "785581dd4ebb4520a1f5ff8abd722fde",
+			"TypeName": "Game.GameManager",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"_UIManager": "ec15e7f24b1dca1bfc061ca1ab4a226e"
+		},
+		{
+			"ID": "28553d634087c67c711ebd96080482aa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"Name": "Visuals"
+		},
+		{
+			"ID": "bc81376747666609b0974580a21519a1",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": -69.65292358398438,
+					"Y": 124.01800537109375,
+					"Z": 35.34806823730469
+				}
+			},
+			"SunPower": 10.0
+		},
+		{
+			"ID": "da5e1c454a56377517d41686ebb0348f",
+			"TypeName": "FlaxEngine.EnvironmentProbe",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "Environment Probe",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 249.3258056640625,
+					"Z": 0.0
+				}
+			},
+			"ProbeID": "1e1fb3a7447c1265b15967b480549d98"
+		},
+		{
+			"ID": "eb18e84d41670d6314174b89a1d5ffea",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "28553d634087c67c711ebd96080482aa",
+			"Name": "SkyLight",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"BakedProbe": "1c0e10484ff57d402275289550564b9f",
+			"Mode": 0
+		},
+		{
+			"ID": "5451148f47d7faebc699da88ae833c91",
+			"PrefabID": "a936057b461900a4ec5d8b84a2fcf550",
+			"PrefabObjectID": "b011bdec4efe71e176a41e8e7503e6cb",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 130.0,
+					"Z": -1000.0
+				}
+			}
+		},
+		{
+			"ID": "6fb5d8fe49b9622a06442aafaf782c86",
+			"PrefabID": "a936057b461900a4ec5d8b84a2fcf550",
+			"PrefabObjectID": "02ed9b5844900dc51530d9b721ff89d1",
+			"ParentID": "5451148f47d7faebc699da88ae833c91",
+			"_characterController": "5451148f47d7faebc699da88ae833c91",
+			"_cameraContainer": "b0d72c3746caebca055e1f921ca21c7c",
+			"_playerBody": "5451148f47d7faebc699da88ae833c91"
+		},
+		{
+			"ID": "5725a64940fc653828e8ffb303b0ee31",
+			"PrefabID": "a936057b461900a4ec5d8b84a2fcf550",
+			"PrefabObjectID": "ab76e18b4b72de7bcc27eaaf0f47ac1c",
+			"ParentID": "5451148f47d7faebc699da88ae833c91",
+			"_pc": "6fb5d8fe49b9622a06442aafaf782c86",
+			"_shotgun": "aadac6624e7905d88850c99e9800864c",
+			"_pistol": "7797a24044e266f74ba013b16927ab7c"
+		},
+		{
+			"ID": "b0d72c3746caebca055e1f921ca21c7c",
+			"PrefabID": "a936057b461900a4ec5d8b84a2fcf550",
+			"PrefabObjectID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+			"ParentID": "5451148f47d7faebc699da88ae833c91"
+		},
+		{
+			"ID": "9053ad38428b10594c741db78d7fcca5",
+			"PrefabID": "a936057b461900a4ec5d8b84a2fcf550",
+			"PrefabObjectID": "6d437b0f48e3720c907bfebd4085fae0",
+			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
+			"V": {}
+		},
+		{
+			"ID": "aadac6624e7905d88850c99e9800864c",
+			"PrefabID": "a936057b461900a4ec5d8b84a2fcf550",
+			"PrefabObjectID": "2b97d92a43be4e87a352a1b560f63b22",
+			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7797a24044e266f74ba013b16927ab7c",
+			"PrefabID": "a936057b461900a4ec5d8b84a2fcf550",
+			"PrefabObjectID": "c101cbc54697aece43db0abc324f1a66",
+			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"Name": "Level"
+		},
+		{
+			"ID": "f632b3a343b580e4bf4bf9afe555cea9",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "dcce96f24a4ae387e1c41598ea3d65eb",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -800.0
+				}
+			}
+		},
+		{
+			"ID": "4ba8514e4d835fffc0cff7b5460e1fc9",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "8de1d4bd499ba5275c536db5a411e51e",
+			"ParentID": "f632b3a343b580e4bf4bf9afe555cea9",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "ccdd5ef84e5d31277505318122b3e2b5",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "e1a733b84be56b2e5dc145a4a3f3efb1",
+			"ParentID": "4ba8514e4d835fffc0cff7b5460e1fc9"
+		},
+		{
+			"ID": "f3a5380144acaf43c4826eb916a6fa0f",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "e3e42f684d8353c2afbb279c075592a6",
+			"ParentID": "f632b3a343b580e4bf4bf9afe555cea9",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "8afd26c7424f7597eba3e2aa710015e3",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "8191dfda424a5203828894b96d6737ff",
+			"ParentID": "f3a5380144acaf43c4826eb916a6fa0f"
+		},
+		{
+			"ID": "359de0044e62b8be59c952a2cc872010",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "5b25e9d648696d508e53ab8f7af20026",
+			"ParentID": "f632b3a343b580e4bf4bf9afe555cea9",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "4306689d426bd77bd45a44a554b52adf",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "6973272b4dcdc487928e16a131c28428",
+			"ParentID": "359de0044e62b8be59c952a2cc872010"
+		},
+		{
+			"ID": "3d1ac3ef4ea1bcd0805036a230334d72",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "9f3391a149a1b8b618a0a3bf63ee967d",
+			"ParentID": "f632b3a343b580e4bf4bf9afe555cea9",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "f2ff67604a4b0e8c2db3fb86bb5536e6",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "eb6b84634e3627e0e437688f37052cb4",
+			"ParentID": "3d1ac3ef4ea1bcd0805036a230334d72"
+		},
+		{
+			"ID": "00cd7c324016327d158278b37117e793",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "c45a7d064e0f523ee392448917d77c69",
+			"ParentID": "f632b3a343b580e4bf4bf9afe555cea9",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "ea92d91b4c9c6a315a7bb7863a716150",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "00d1e3b04a6200d42d09888ce2d79907",
+			"ParentID": "00cd7c324016327d158278b37117e793"
+		},
+		{
+			"ID": "0524e3b548ab3b820b449fae9958c775",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "f1a5e8424721eed53f83d39a23cbc9bc",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "Tube 0",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 800.0
+				}
+			}
+		},
+		{
+			"ID": "0cdd1b59450b730a231e3c9c1014efe8",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "6d7671244b468a905adcf6a49f6662e8",
+			"ParentID": "0524e3b548ab3b820b449fae9958c775",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "4e7f08cc4f92729b7e58e999bf34574f",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "53376c4b40876540f224dcb4604f9a8e",
+			"ParentID": "0cdd1b59450b730a231e3c9c1014efe8"
+		},
+		{
+			"ID": "0780b75746cabc0ae9a3dab2808ad6e1",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "d0b110824b48b9472813c3acb0c068d3",
+			"ParentID": "0524e3b548ab3b820b449fae9958c775",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "37cdfe03400428fd0d6a779ae84b6b68",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "d4db99c740f4efabb91224ab091b9eb1",
+			"ParentID": "0780b75746cabc0ae9a3dab2808ad6e1"
+		},
+		{
+			"ID": "cbfbe31641d61ddec433419a41ed1028",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "2bca821b48971e188b17f7890186c924",
+			"ParentID": "0524e3b548ab3b820b449fae9958c775",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "f1931fd1419a3e56f7b47e850e1e9580",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "413866a9405cfa43da41058bdabb0599",
+			"ParentID": "cbfbe31641d61ddec433419a41ed1028"
+		},
+		{
+			"ID": "98d408e44a4baa5bd7e192913dcddae2",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "da3056154d0ff57893ba5b905034a9fe",
+			"ParentID": "0524e3b548ab3b820b449fae9958c775",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "f063e0c044a50b53637554b4dba040d8",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "0799c0d7490531be38d5079c275bf1e2",
+			"ParentID": "98d408e44a4baa5bd7e192913dcddae2"
+		},
+		{
+			"ID": "107221e842802bee989af9b3452d9128",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "dcce96f24a4ae387e1c41598ea3d65eb",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 2400.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -4.371138828673793e-8
+				}
+			}
+		},
+		{
+			"ID": "027593924ab6aa339eb496aeef71b362",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "8de1d4bd499ba5275c536db5a411e51e",
+			"ParentID": "107221e842802bee989af9b3452d9128",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "661fd3a443fe3f312a8a15b207087155",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "e1a733b84be56b2e5dc145a4a3f3efb1",
+			"ParentID": "027593924ab6aa339eb496aeef71b362"
+		},
+		{
+			"ID": "40f0842a48010475f165768360d8a16d",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "e3e42f684d8353c2afbb279c075592a6",
+			"ParentID": "107221e842802bee989af9b3452d9128",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7647be7d4e1e635f592a24ad637b736c",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "8191dfda424a5203828894b96d6737ff",
+			"ParentID": "40f0842a48010475f165768360d8a16d"
+		},
+		{
+			"ID": "fa6cbc90451724a8a52da6827ea77f8d",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "5b25e9d648696d508e53ab8f7af20026",
+			"ParentID": "107221e842802bee989af9b3452d9128",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "674452da484f49ed52bb729c4b4da943",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "6973272b4dcdc487928e16a131c28428",
+			"ParentID": "fa6cbc90451724a8a52da6827ea77f8d"
+		},
+		{
+			"ID": "0bcd5e2e4a43565c8fbda38e242d5dff",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "9f3391a149a1b8b618a0a3bf63ee967d",
+			"ParentID": "107221e842802bee989af9b3452d9128",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "1872b988445677cdaeb39393a6811a6d",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "eb6b84634e3627e0e437688f37052cb4",
+			"ParentID": "0bcd5e2e4a43565c8fbda38e242d5dff"
+		},
+		{
+			"ID": "2fbc6ba0424e519abbba8da37143aeb8",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "c45a7d064e0f523ee392448917d77c69",
+			"ParentID": "107221e842802bee989af9b3452d9128",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "0a0563874c3c245e48d412b1926ea97a",
+			"PrefabID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+			"PrefabObjectID": "00d1e3b04a6200d42d09888ce2d79907",
+			"ParentID": "2fbc6ba0424e519abbba8da37143aeb8"
+		},
+		{
+			"ID": "39092ce54c67a1f42ba127912e92cc0c",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "f1a5e8424721eed53f83d39a23cbc9bc",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "Tube 1",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 1600.0
+				}
+			}
+		},
+		{
+			"ID": "e155506e4f994ecb988e948768962521",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "6d7671244b468a905adcf6a49f6662e8",
+			"ParentID": "39092ce54c67a1f42ba127912e92cc0c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "c13e0a61452da6088e908f97deff970a",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "53376c4b40876540f224dcb4604f9a8e",
+			"ParentID": "e155506e4f994ecb988e948768962521"
+		},
+		{
+			"ID": "89dafbfc48d0bc52c963f6afcb2d1a91",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "d0b110824b48b9472813c3acb0c068d3",
+			"ParentID": "39092ce54c67a1f42ba127912e92cc0c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "94bdc7944b986e597a9194b601005058",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "d4db99c740f4efabb91224ab091b9eb1",
+			"ParentID": "89dafbfc48d0bc52c963f6afcb2d1a91"
+		},
+		{
+			"ID": "c97bafa84a10a17f9853b4a629312325",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "2bca821b48971e188b17f7890186c924",
+			"ParentID": "39092ce54c67a1f42ba127912e92cc0c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "4b5dc8e54c6378df0aa10d9262189f20",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "413866a9405cfa43da41058bdabb0599",
+			"ParentID": "c97bafa84a10a17f9853b4a629312325"
+		},
+		{
+			"ID": "065173584442a1fbf1afafaf39d8cadc",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "da3056154d0ff57893ba5b905034a9fe",
+			"ParentID": "39092ce54c67a1f42ba127912e92cc0c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "cbd24e4f4a4600f8f425f09e107a5373",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "0799c0d7490531be38d5079c275bf1e2",
+			"ParentID": "065173584442a1fbf1afafaf39d8cadc"
+		},
+		{
+			"ID": "36f2a7704a8948d5c04553b3b01c5abf",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "f1a5e8424721eed53f83d39a23cbc9bc",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "Tube 2"
+		},
+		{
+			"ID": "bcb709204fcff007c0e1e59f8cf0cd1d",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "6d7671244b468a905adcf6a49f6662e8",
+			"ParentID": "36f2a7704a8948d5c04553b3b01c5abf",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "cdc272a444d7f7223202c3aa0f5ac2cb",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "53376c4b40876540f224dcb4604f9a8e",
+			"ParentID": "bcb709204fcff007c0e1e59f8cf0cd1d"
+		},
+		{
+			"ID": "ea4c8aea47558cd033003ca010cb3cbb",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "d0b110824b48b9472813c3acb0c068d3",
+			"ParentID": "36f2a7704a8948d5c04553b3b01c5abf",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "9c0590b942ab753ad13baca7520decae",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "d4db99c740f4efabb91224ab091b9eb1",
+			"ParentID": "ea4c8aea47558cd033003ca010cb3cbb"
+		},
+		{
+			"ID": "48bbbf0d43d16c509bb74dab959d81f4",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "2bca821b48971e188b17f7890186c924",
+			"ParentID": "36f2a7704a8948d5c04553b3b01c5abf",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "ccb76b47443737df8311d08e9dd03a85",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "413866a9405cfa43da41058bdabb0599",
+			"ParentID": "48bbbf0d43d16c509bb74dab959d81f4"
+		},
+		{
+			"ID": "0b66fa584d14a3b38c902cac172d79c5",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "da3056154d0ff57893ba5b905034a9fe",
+			"ParentID": "36f2a7704a8948d5c04553b3b01c5abf",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "157707204f64577366d77693bd6d4229",
+			"PrefabID": "397709304075ca4ae98b06a39216ed11",
+			"PrefabObjectID": "0799c0d7490531be38d5079c275bf1e2",
+			"ParentID": "0b66fa584d14a3b38c902cac172d79c5"
+		},
+		{
+			"ID": "733679d943d25c0a9b1e4abe2f928b0a",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Transform": {
+				"Translation": {
+					"X": 200.0,
+					"Y": 0.0,
+					"Z": 700.0
+				}
+			}
+		},
+		{
+			"ID": "cccd15944b289f99e7d4fe98dc9b6e3b",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "94da036e43fb36869a07539510393215",
+			"ParentID": "733679d943d25c0a9b1e4abe2f928b0a",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "68d968f64aa9b71e24926494157d11c7",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "babf43a14336c0be51caf89835f6507d",
+			"ParentID": "cccd15944b289f99e7d4fe98dc9b6e3b"
+		},
+		{
+			"ID": "0f970a3c45c65d9285545caea9ccd990",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "733679d943d25c0a9b1e4abe2f928b0a",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "f6e01ebf4e818b21a90f5fbe6b0a3413",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "0f970a3c45c65d9285545caea9ccd990"
+		},
+		{
+			"ID": "3e3c88d046ca55f3cc5247b55af4c2b4",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "733679d943d25c0a9b1e4abe2f928b0a",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "991154674e9041357870ab9f1a7bcd86",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "3e3c88d046ca55f3cc5247b55af4c2b4"
+		},
+		{
+			"ID": "ba36d3c44fb21851f3f17cb67e949fed",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 0",
+			"Transform": {
+				"Translation": {
+					"X": 200.0,
+					"Y": 200.0,
+					"Z": 700.0
+				}
+			}
+		},
+		{
+			"ID": "deed911f4f98d14af9338991140df5b4",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "94da036e43fb36869a07539510393215",
+			"ParentID": "ba36d3c44fb21851f3f17cb67e949fed",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "5f60fb0842383d4135b609a1ed6adac2",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "babf43a14336c0be51caf89835f6507d",
+			"ParentID": "deed911f4f98d14af9338991140df5b4"
+		},
+		{
+			"ID": "1cb07dba41281f589dbc999e0daff8b3",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "ba36d3c44fb21851f3f17cb67e949fed",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "5330048848423c6187d001bb62f6aec4",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "1cb07dba41281f589dbc999e0daff8b3"
+		},
+		{
+			"ID": "42af647b43d0d00fbf8255b591b97475",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "ba36d3c44fb21851f3f17cb67e949fed",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "dfbcc25d475f70bf851c38b5035c4d6f",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "42af647b43d0d00fbf8255b591b97475"
+		},
+		{
+			"ID": "8f8b43884e1d83ba0700bdbd5e21c47b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "ba36d3c44fb21851f3f17cb67e949fed",
+			"Name": "smallwall 2",
+			"Transform": {
+				"Translation": {
+					"X": -200.0,
+					"Y": 200.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 1.0,
+					"W": 0.0
+				}
+			},
+			"Model": "122fa74949f1c145858b9e8c73650706",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "6d6f269f48bd69a2d33e448b068066df",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8f8b43884e1d83ba0700bdbd5e21c47b",
+			"Name": "MeshCollider",
+			"CollisionData": "8c6751514f47b48392b7b9be0ee0da9c"
+		},
+		{
+			"ID": "a5ac2f9f48a074e2a39530b8e4c0cd88",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 1",
+			"Transform": {
+				"Translation": {
+					"X": 300.0,
+					"Y": 400.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "370382014cd9b7053c6c838dcece42a6",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "a5ac2f9f48a074e2a39530b8e4c0cd88",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "b5bc3b3e4b818117ada93184a461081b",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "370382014cd9b7053c6c838dcece42a6"
+		},
+		{
+			"ID": "0777273f448fcfc03a0c0796eac4528e",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "a5ac2f9f48a074e2a39530b8e4c0cd88",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "287ebf7249d38c65376cd19f88552b39",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "0777273f448fcfc03a0c0796eac4528e"
+		},
+		{
+			"ID": "f97a1a96410acb7a25219590f6de6536",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 2",
+			"Transform": {
+				"Translation": {
+					"X": 300.0,
+					"Y": 600.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "00a8520644b733dfb42af4998bc1fa6d",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "f97a1a96410acb7a25219590f6de6536",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "8d9348404f66c17114658381f1084855",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "00a8520644b733dfb42af4998bc1fa6d"
+		},
+		{
+			"ID": "8c92a2bd438cd259102fd8826b6581ee",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "f97a1a96410acb7a25219590f6de6536",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7561136643d287444c39ffa0b8f7daf6",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "8c92a2bd438cd259102fd8826b6581ee"
+		},
+		{
+			"ID": "46293dc24e074c5084fbd299cae8cd07",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 3",
+			"Transform": {
+				"Translation": {
+					"X": 100.0,
+					"Y": 600.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "178ebfc840565344ece0cd872b65f3d7",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "46293dc24e074c5084fbd299cae8cd07",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "5d37a972432837ec44d6bf8f11a46275",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "178ebfc840565344ece0cd872b65f3d7"
+		},
+		{
+			"ID": "f25a2e22487568df0e2893bbaa0c611c",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "46293dc24e074c5084fbd299cae8cd07",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "5f76adc047dd6c09fee011a0fb5b5403",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "f25a2e22487568df0e2893bbaa0c611c"
+		},
+		{
+			"ID": "71c27ffd4732916671beba9255d1d5c7",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 4",
+			"Transform": {
+				"Translation": {
+					"X": 100.0,
+					"Y": 400.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "8a47a4ef4ca5054538cc07b16d265b1e",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "71c27ffd4732916671beba9255d1d5c7",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "709befeb401f7329c0b6c692dca25867",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "8a47a4ef4ca5054538cc07b16d265b1e"
+		},
+		{
+			"ID": "a0c1f9324f8ceebf87b23096bea0bf10",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "71c27ffd4732916671beba9255d1d5c7",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "21d9f97240d49d8fbe228aacab311b9b",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "a0c1f9324f8ceebf87b23096bea0bf10"
+		},
+		{
+			"ID": "638a14c54bf2f974ea2375a3e6143c4b",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 5",
+			"Transform": {
+				"Translation": {
+					"X": -100.0,
+					"Y": 600.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "53ed67794a5c93086d83e7a3eb7738f7",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "638a14c54bf2f974ea2375a3e6143c4b",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "a3cebfbc4cbf60cb843b76adf17986af",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "53ed67794a5c93086d83e7a3eb7738f7"
+		},
+		{
+			"ID": "2250d6414dcd8c6692165787e9cc5f13",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "638a14c54bf2f974ea2375a3e6143c4b",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "644870a941880fe473dac9a423ec3ab1",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "2250d6414dcd8c6692165787e9cc5f13"
+		},
+		{
+			"ID": "7ce3e1f94a766c7f4eb647beb51a1a56",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 6",
+			"Transform": {
+				"Translation": {
+					"X": -100.0,
+					"Y": 400.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "c7c12e664822e936694d0f80f34f6fba",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "7ce3e1f94a766c7f4eb647beb51a1a56",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "fb8b7b784aa3be9c44cb3da6756f2704",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "c7c12e664822e936694d0f80f34f6fba"
+		},
+		{
+			"ID": "344aae984e2286c6f5add7b3aed8f918",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "7ce3e1f94a766c7f4eb647beb51a1a56",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "6477eac741b5774f2d787ebc0af0910a",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "344aae984e2286c6f5add7b3aed8f918"
+		},
+		{
+			"ID": "c5faaaad41d95f73b9983584384e78ac",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 7",
+			"Transform": {
+				"Translation": {
+					"X": -300.0,
+					"Y": 600.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "7aa8d1bb4eb92b2c7da245921671fb8c",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "c5faaaad41d95f73b9983584384e78ac",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "bf308db94a9a166753cdcaa52af908a1",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "7aa8d1bb4eb92b2c7da245921671fb8c"
+		},
+		{
+			"ID": "e6984e7f4172dcd68929af855a566ece",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "c5faaaad41d95f73b9983584384e78ac",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "8127ba3544d67a629978fdba4921a8f2",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "e6984e7f4172dcd68929af855a566ece"
+		},
+		{
+			"ID": "ae3fdaed4cca384858672faa2a3299da",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 8",
+			"Transform": {
+				"Translation": {
+					"X": -300.0,
+					"Y": 400.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "25d9479a42364d6b637fd394ea90f790",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "ae3fdaed4cca384858672faa2a3299da",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "75f5d9ec48bc2837db98e08f24e1c08f",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "25d9479a42364d6b637fd394ea90f790"
+		},
+		{
+			"ID": "0e2977fd40b9a89f5bca9dbe1d4e8b10",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "ae3fdaed4cca384858672faa2a3299da",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "5be404a34d924a77d484f1a9dbc1ff1a",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "0e2977fd40b9a89f5bca9dbe1d4e8b10"
+		},
+		{
+			"ID": "e605dd2f4f8111e20056479b150cc7f5",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 9",
+			"Transform": {
+				"Translation": {
+					"X": -200.0,
+					"Y": 200.0,
+					"Z": 700.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": 5.960464477539063e-8
+				}
+			}
+		},
+		{
+			"ID": "340982d04bd7d8229a41208b2adeb376",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "94da036e43fb36869a07539510393215",
+			"ParentID": "e605dd2f4f8111e20056479b150cc7f5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "a34e8f6b4641809daf439c8bc7462994",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "babf43a14336c0be51caf89835f6507d",
+			"ParentID": "340982d04bd7d8229a41208b2adeb376"
+		},
+		{
+			"ID": "a01d5f5944fd6575d658b8b4c09834dc",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "e605dd2f4f8111e20056479b150cc7f5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "fd5874344d653ecc1f18f79a37b87552",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "a01d5f5944fd6575d658b8b4c09834dc"
+		},
+		{
+			"ID": "0ed834144773cffedc31149baf2fc3ac",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "e605dd2f4f8111e20056479b150cc7f5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "51328f4043da0db3c00212a6e64f6311",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "0ed834144773cffedc31149baf2fc3ac"
+		},
+		{
+			"ID": "7881b77c4e4fccc451801fadf4f4a4c7",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 10",
+			"Transform": {
+				"Translation": {
+					"X": -200.0,
+					"Y": 0.0,
+					"Z": 700.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": 5.960464477539063e-8
+				}
+			}
+		},
+		{
+			"ID": "6ac774484901d3a2d60713a6ce64c614",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "94da036e43fb36869a07539510393215",
+			"ParentID": "7881b77c4e4fccc451801fadf4f4a4c7",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7de1cb564a21243877659b9276d87669",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "babf43a14336c0be51caf89835f6507d",
+			"ParentID": "6ac774484901d3a2d60713a6ce64c614"
+		},
+		{
+			"ID": "dc4d28db4d4a0a9396c5d89a5ee1ccb0",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "7881b77c4e4fccc451801fadf4f4a4c7",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "198b973544789cd2b6c81d92eee0d103",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "dc4d28db4d4a0a9396c5d89a5ee1ccb0"
+		},
+		{
+			"ID": "94668ce74f63b430ffc8d1b51b8b022f",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "7881b77c4e4fccc451801fadf4f4a4c7",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "0f3fc89b4cd7760eb096bf8a5a11bc31",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "94668ce74f63b430ffc8d1b51b8b022f"
+		},
+		{
+			"ID": "7fa154054c77b66aa2ddd9a719841140",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 11",
+			"Transform": {
+				"Translation": {
+					"X": 400.0,
+					"Y": 200.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "a150d0544bc348127ef4289a3504c651",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "7fa154054c77b66aa2ddd9a719841140",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "295180734129a03c6d39918e94ba589e",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "a150d0544bc348127ef4289a3504c651"
+		},
+		{
+			"ID": "c3fd5eff43e5dafc36d45fad9a7a77fc",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "7fa154054c77b66aa2ddd9a719841140",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "edf7211e4d09f736c20883b56c8b59a0",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "c3fd5eff43e5dafc36d45fad9a7a77fc"
+		},
+		{
+			"ID": "49788ad84e73bce94c1e1d82fa29e543",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 12",
+			"Transform": {
+				"Translation": {
+					"X": 400.0,
+					"Y": 0.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "c117930445b8b0f4259c31a8ea73b0a9",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "49788ad84e73bce94c1e1d82fa29e543",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "85acd3144194b4501c6ffeb9a7d0808a",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "c117930445b8b0f4259c31a8ea73b0a9"
+		},
+		{
+			"ID": "8c3ca4a341ed504e16b6d1972029da46",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "49788ad84e73bce94c1e1d82fa29e543",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "87df77e3415940fb5d14f4aae89d729d",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "8c3ca4a341ed504e16b6d1972029da46"
+		},
+		{
+			"ID": "9f8729e44d1272d35325be911ae1fea9",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 13",
+			"Transform": {
+				"Translation": {
+					"X": -400.0,
+					"Y": 0.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "ca22cfb24998d9f96a2f6cafaeaa4284",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "9f8729e44d1272d35325be911ae1fea9",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "3e253fc04a6d55f4f7080ca6ad4c67c3",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "ca22cfb24998d9f96a2f6cafaeaa4284"
+		},
+		{
+			"ID": "227fc2a64d0b105882c0139caa43c259",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "9f8729e44d1272d35325be911ae1fea9",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "3a926ab64521f16e06dae8923011596c",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "227fc2a64d0b105882c0139caa43c259"
+		},
+		{
+			"ID": "0e60c33c41eb3bebe80bcb9b67773078",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "adeb78ee4ac6589c6df85da07a20c32a",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "SmallBox 14",
+			"Transform": {
+				"Translation": {
+					"X": -400.0,
+					"Y": 200.0,
+					"Z": 700.0
+				}
+			},
+			"RemovedObjects": [
+				"94da036e43fb36869a07539510393215"
+			]
+		},
+		{
+			"ID": "c1d7571049cf15f3fcdb3ab95ce0dace",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "14138c5e44383b738a7003a8803656c5",
+			"ParentID": "0e60c33c41eb3bebe80bcb9b67773078",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "970c6c754a007e47d0b191841e7d0350",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "bdf16f97440dc56eda6d12aeb5f4ef26",
+			"ParentID": "c1d7571049cf15f3fcdb3ab95ce0dace"
+		},
+		{
+			"ID": "a66b34ab4998d52b32b9b2812c395849",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "a903e9f54aa32b80e861b5acf76c19a1",
+			"ParentID": "0e60c33c41eb3bebe80bcb9b67773078",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7b65ebb04af810ad0aef98a0193d9e4c",
+			"PrefabID": "49fc4926449064a497d1f490e1d8aaad",
+			"PrefabObjectID": "0ad16d424bb7c646131df191774e3811",
+			"ParentID": "a66b34ab4998d52b32b9b2812c395849"
+		},
+		{
+			"ID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"TypeName": "FlaxEngine.UICanvas",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"Name": "UICanvas",
+			"V": {}
+		},
+		{
+			"ID": "f257a86943529bc711af0190415d5f08",
+			"TypeName": "Game.UIManager",
+			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"V": {
+	"_deathScreen": "2cbbc7d14d70736c6c5122a4fc674917",
+	"_nextLevelScreen": "087dadca4dfdf43b67ba86a0af058af6",
+	"_infoTextPanel": "532a67b14d484bfc407be09055cd1a37",
+	"_progressBarLeft": "94921356427123ebd1fe37a3a6642db6",
+	"_progressBarRight": "b600fbf04119110cc079eebeb07a9829"
+}
+		},
+		{
+			"ID": "46975d61404acbb43c0d2c9563d0112c",
+			"PrefabID": "633fd50b4421f4a0133facadc4d00887",
+			"PrefabObjectID": "7524a781400afb45c98af7be23ea074a",
+			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"Data": {
+	"Visible": true
+}
+		},
+		{
+			"ID": "2cbbc7d14d70736c6c5122a4fc674917",
+			"PrefabID": "633fd50b4421f4a0133facadc4d00887",
+			"PrefabObjectID": "7c9c538344b3442664c3aaba8dcd25c6",
+			"ParentID": "46975d61404acbb43c0d2c9563d0112c",
+			"V": {
+	"_screen": "46975d61404acbb43c0d2c9563d0112c"
+}
+		},
+		{
+			"ID": "7e498bf54020ee90113f87b38d747211",
+			"PrefabID": "633fd50b4421f4a0133facadc4d00887",
+			"PrefabObjectID": "91d33baf4f2645e5919b188eb87919c2",
+			"ParentID": "46975d61404acbb43c0d2c9563d0112c",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 756.0,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "8a3a9c614a509d2a884757a586854db3",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"Name": "Crosshair",
+			"Transform": {
+				"Translation": {
+					"X": 954.0,
+					"Y": 534.0,
+					"Z": 0.0
+				}
+			},
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "f6d6dbd340865046c98c41aa47d04c33",
+		"Filter": 1
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"AnchorMax": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Offsets": {
+		"Left": -6.0,
+		"Right": 12.0,
+		"Top": -6.0,
+		"Bottom": 12.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "bd86eb6246afad75a18c91818e493e86",
+			"PrefabID": "dbe47aad42240302846f6bb714ba8b82",
+			"PrefabObjectID": "b8625c0d4bb99469500cf3b988de83c7",
+			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"Data": {
+	"Visible": true
+}
+		},
+		{
+			"ID": "087dadca4dfdf43b67ba86a0af058af6",
+			"PrefabID": "dbe47aad42240302846f6bb714ba8b82",
+			"PrefabObjectID": "3c79dac5451f853f00d858882581f7b4",
+			"ParentID": "bd86eb6246afad75a18c91818e493e86",
+			"V": {
+	"_screen": "bd86eb6246afad75a18c91818e493e86"
+}
+		},
+		{
+			"ID": "f3c3da374e7835e3268b529b9f1e6a2f",
+			"PrefabID": "dbe47aad42240302846f6bb714ba8b82",
+			"PrefabObjectID": "60e39e66437e870824afd593a48685b7",
+			"ParentID": "bd86eb6246afad75a18c91818e493e86",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 756.0,
+					"Z": 0.0
+				}
+			},
+			"Data": {}
+		},
+		{
+			"ID": "94921356427123ebd1fe37a3a6642db6",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"Name": "ProgressBarLeft",
+			"Transform": {
+				"Translation": {
+					"X": 96.0,
+					"Y": 54.0,
+					"Z": 0.0
+				}
+			},
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 0,
+	"Origin": 1,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 0.0,
+	"BarMargin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"BarColor": {
+		"R": 1.0,
+		"G": 0.97770536,
+		"B": 0.0,
+		"A": 1.0
+	},
+	"BarBrush": null,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.05,
+		"Y": 0.05
+	},
+	"AnchorMax": {
+		"X": 0.5,
+		"Y": 0.1
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.10980392,
+		"G": 0.10980392,
+		"B": 0.10980392,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp",
+		"Color": {
+			"R": 0.0,
+			"G": 0.0,
+			"B": 0.0,
+			"A": 0.0
+		}
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "b600fbf04119110cc079eebeb07a9829",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"Name": "ProgressBarRight",
+			"Transform": {
+				"Translation": {
+					"X": 960.0,
+					"Y": 54.0,
+					"Z": 0.0
+				}
+			},
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 0,
+	"Origin": 0,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 0.0,
+	"BarMargin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"BarColor": {
+		"R": 1.0,
+		"G": 0.97770536,
+		"B": 0.0,
+		"A": 1.0
+	},
+	"BarBrush": null,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.5,
+		"Y": 0.05
+	},
+	"AnchorMax": {
+		"X": 0.95,
+		"Y": 0.1
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.10980392,
+		"G": 0.10980392,
+		"B": 0.10980392,
+		"A": 1.0
+	},
+	"BackgroundBrush": {
+		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp",
+		"Color": {
+			"R": 0.0,
+			"G": 0.0,
+			"B": 0.0,
+			"A": 0.0
+		}
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "286044e643ff51c19f5d6f8543fed476",
+			"PrefabID": "7bf78e9b48fa644505856ba11227db2e",
+			"PrefabObjectID": "d2df0ffe4b607b3ce0dde7baa6e6c68e",
+			"ParentID": "ec15e7f24b1dca1bfc061ca1ab4a226e",
+			"Data": {}
+		},
+		{
+			"ID": "532a67b14d484bfc407be09055cd1a37",
+			"PrefabID": "7bf78e9b48fa644505856ba11227db2e",
+			"PrefabObjectID": "9b5bb83d4cd41cc173cb798f8217ce40",
+			"ParentID": "286044e643ff51c19f5d6f8543fed476",
+			"V": {
+	"_screen": "286044e643ff51c19f5d6f8543fed476"
+}
+		},
+		{
+			"ID": "cabd423d4e95dfffa2d66e9b534a8896",
+			"PrefabID": "7bf78e9b48fa644505856ba11227db2e",
+			"PrefabObjectID": "891302cd4ea89d36965b02badb482865",
+			"ParentID": "286044e643ff51c19f5d6f8543fed476",
+			"Transform": {
+				"Translation": {
+					"X": 384.0,
+					"Y": 756.0,
+					"Z": 0.0
+				}
+			},
+			"Data": {
+	"TextColor": {
+		"R": 0.111035824,
+		"G": 1.0,
+		"B": 0.0,
+		"A": 1.0
+	},
+	"Text": "[lmb to shoot.]"
+}
+		},
+		{
+			"ID": "9ac53cfe41672012c15f66aac7c4c15f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"IsActive": false,
+			"Name": "Launcher",
+			"Transform": {
+				"Translation": {
+					"X": 300.0,
+					"Y": 100.0,
+					"Z": 1900.0
+				}
+			}
+		},
+		{
+			"ID": "efe7db134d229282df47acb789aa4273",
+			"TypeName": "Game.LauncherEnemy",
+			"ParentID": "9ac53cfe41672012c15f66aac7c4c15f",
+			"_missilePrefab": "5e40e14f4b884341a0302ca5acefb0d6",
+			"_spawnTime": 4091553349894144.0
+		},
+		{
+			"ID": "a76782b14ed12fc26f35008aaf46b12d",
+			"PrefabID": "6da247e4466583bc5ccecda48a9625cd",
+			"PrefabObjectID": "5380a1b647ddfa2cf2d9fa9d5dae3261",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 100.0,
+					"Z": 2500.0
+				}
+			}
+		},
+		{
+			"ID": "fb2975ea4f61fd26cc918ebc9801f01d",
+			"PrefabID": "6da247e4466583bc5ccecda48a9625cd",
+			"PrefabObjectID": "9b1cc3f14ba876159de732affe2356ec",
+			"ParentID": "a76782b14ed12fc26f35008aaf46b12d"
+		},
+		{
+			"ID": "67faa8ab47f594e01585ae9d944ee6cc",
+			"PrefabID": "6da247e4466583bc5ccecda48a9625cd",
+			"PrefabObjectID": "c8fc328d4981bd00a7bd5b8ab9066428",
+			"ParentID": "fb2975ea4f61fd26cc918ebc9801f01d"
+		},
+		{
+			"ID": "e597129847b09aefa81ed29d32173ef3",
+			"PrefabID": "6da247e4466583bc5ccecda48a9625cd",
+			"PrefabObjectID": "3a6cfb1249c78fc309d5819fd2dcc6a8",
+			"ParentID": "fb2975ea4f61fd26cc918ebc9801f01d",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "c17b6d924db56cfc41a32e8e735348c7",
+			"TypeName": "FlaxEngine.ParticleEffect",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"Name": "BulletTrail",
+			"Overrides": []
+		},
+		{
+			"ID": "a14d03af47742b8859165885335dccd9",
+			"TypeName": "Game.BulletTrail",
+			"ParentID": "c17b6d924db56cfc41a32e8e735348c7",
+			"V": {}
+		},
+		{
+			"ID": "dd788a2b40e5051393fb489b6245dd57",
+			"PrefabID": "751de5d8491a1ba3684408963d70184d",
+			"PrefabObjectID": "38d3c4f343403c3608aa5fb3c631bbc5",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 200.0,
+					"Z": 800.0
+				}
+			}
+		},
+		{
+			"ID": "b989ad604d9248d9ffb8109850df4601",
+			"PrefabID": "751de5d8491a1ba3684408963d70184d",
+			"PrefabObjectID": "4ea5121c4729dc7db646719aab3e6b7a",
+			"ParentID": "dd788a2b40e5051393fb489b6245dd57"
+		},
+		{
+			"ID": "6fa726974c149b92f6de3d8792417565",
+			"PrefabID": "751de5d8491a1ba3684408963d70184d",
+			"PrefabObjectID": "6ec6c2b94fdda719ac4c94b82b790a3d",
+			"ParentID": "dd788a2b40e5051393fb489b6245dd57",
+			"_col": "2f4a617748e3b41bdef98990fbc78c05"
+		},
+		{
+			"ID": "168ff512402632dac1fdada22f06e81c",
+			"PrefabID": "751de5d8491a1ba3684408963d70184d",
+			"PrefabObjectID": "9881ca6948e6ef2898795aba9a31b9e9",
+			"ParentID": "dd788a2b40e5051393fb489b6245dd57"
+		},
+		{
+			"ID": "0bd29514429a82086a9a87b6cd56e7f5",
+			"PrefabID": "751de5d8491a1ba3684408963d70184d",
+			"PrefabObjectID": "a80231de45cd9d3889f84b95ce487fdf",
+			"ParentID": "dd788a2b40e5051393fb489b6245dd57"
+		},
+		{
+			"ID": "0319bf49441f10cefee65bb8841211b4",
+			"PrefabID": "751de5d8491a1ba3684408963d70184d",
+			"PrefabObjectID": "4c905e854fcde6a6d126f5a225e23d40",
+			"ParentID": "dd788a2b40e5051393fb489b6245dd57",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "f7ce2ccd4af08123638555ad0673a4ea",
+			"PrefabID": "751de5d8491a1ba3684408963d70184d",
+			"PrefabObjectID": "1f6baa894f55a181fec137a48afa4026",
+			"ParentID": "0319bf49441f10cefee65bb8841211b4"
+		},
+		{
+			"ID": "2f4a617748e3b41bdef98990fbc78c05",
+			"PrefabID": "751de5d8491a1ba3684408963d70184d",
+			"PrefabObjectID": "775c23f145aca17f0f674ea4d08a0d63",
+			"ParentID": "dd788a2b40e5051393fb489b6245dd57"
+		},
+		{
+			"ID": "0c4e37674d5280f30dbd34a8861056ad",
+			"PrefabID": "654c0cd54d4b040c4dc7e284ca2af813",
+			"PrefabObjectID": "9441295c4fc76f6b08f554b04c1edf2f",
+			"ParentID": "1f4a2d494f184aacdb47cd94938dae42",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 100.0,
+					"Z": -200.0
+				}
+			}
+		},
+		{
+			"ID": "0706ede84769f7a2c1bfd395cb7bdd71",
+			"PrefabID": "654c0cd54d4b040c4dc7e284ca2af813",
+			"PrefabObjectID": "92d5a29849bfe68608fe52b03080049f",
+			"ParentID": "0c4e37674d5280f30dbd34a8861056ad"
+		},
+		{
+			"ID": "590245ba4ad4e2dc1f294d8a736cc0bd",
+			"PrefabID": "654c0cd54d4b040c4dc7e284ca2af813",
+			"PrefabObjectID": "fa23d82a4f6e6b00ee7232984fdd4338",
+			"ParentID": "0c4e37674d5280f30dbd34a8861056ad"
+		},
+		{
+			"ID": "7afbe9f64b770b656ec979a3050016f5",
+			"PrefabID": "654c0cd54d4b040c4dc7e284ca2af813",
+			"PrefabObjectID": "d73c8e5b4415c23e753897a973033e86",
+			"ParentID": "590245ba4ad4e2dc1f294d8a736cc0bd"
+		},
+		{
+			"ID": "c4e72d4240eb2153fab73a83b8ecca4f",
+			"PrefabID": "654c0cd54d4b040c4dc7e284ca2af813",
+			"PrefabObjectID": "c05f37974edb98a08e6ca585263ae450",
+			"ParentID": "590245ba4ad4e2dc1f294d8a736cc0bd",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		}
+	]
+}

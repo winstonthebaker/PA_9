@@ -1096,20 +1096,6 @@ namespace Game
         }
 
         [Unmanaged]
-        [DefaultValue((float)800)]
-        public float _shotgunRecoil
-        {
-            get { return Internal_Get_shotgunRecoil(__unmanagedPtr); }
-            set { Internal_Set_shotgunRecoil(__unmanagedPtr, value); }
-        }
-
-        [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Get_shotgunRecoil", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
-        internal static partial float Internal_Get_shotgunRecoil(IntPtr __obj);
-
-        [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_shotgunRecoil", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
-        internal static partial void Internal_Set_shotgunRecoil(IntPtr __obj, float value);
-
-        [Unmanaged]
         [DefaultValue(null)]
         public PlayerController _pc
         {

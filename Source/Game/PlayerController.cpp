@@ -372,10 +372,12 @@ void PlayerController::EvaluateJump()
 	}
 
 	effectiveNormal.Normalize();
-	
+	float normalVerticality = Vector3::Dot(effectiveNormal, Vector3::Up);
+	//LOG_STR(Info, StringUtils::ToString(normalVerticality));
+
 	Vector3 totalVelocityDelta = Vector3::Zero;
-	totalVelocityDelta.Y += _jumpVerticalForce;
-	totalVelocityDelta += (effectiveNormal * _jumpNormalForce);
+	totalVelocityDelta.Y = _jumpVerticalForce;
+	totalVelocityDelta += (effectiveNormal * _jumpNormalForce * (1-normalVerticality));
 
 	_currentVelocity += totalVelocityDelta;
 	LOG_STR(Info, totalVelocityDelta.ToString());

@@ -807,7 +807,6 @@ void PlayerWeapon::Serialize(SerializeStream& stream, const void* otherObj)
 {
     Script::Serialize(stream, otherObj);
     SERIALIZE_GET_OTHER_OBJ(PlayerWeapon);
-    SERIALIZE(_shotgunRecoil);
     SERIALIZE(_pc);
     SERIALIZE(_shotgun);
     SERIALIZE(_pistol);
@@ -824,7 +823,6 @@ void PlayerWeapon::Serialize(SerializeStream& stream, const void* otherObj)
 void PlayerWeapon::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
 {
     Script::Deserialize(stream, modifier);
-    DESERIALIZE(_shotgunRecoil);
     DESERIALIZE(_pc);
     DESERIALIZE(_shotgun);
     DESERIALIZE(_pistol);
@@ -841,20 +839,6 @@ void PlayerWeapon::Deserialize(DeserializeStream& stream, ISerializeModifier* mo
 class PlayerWeaponInternal
 {
 public:
-    DLLEXPORT static float Get_shotgunRecoil(PlayerWeapon* __obj)
-    {
-        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_shotgunRecoil")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->_shotgunRecoil;
-    }
-
-    DLLEXPORT static void Set_shotgunRecoil(PlayerWeapon* __obj, float value)
-    {
-        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_shotgunRecoil")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->_shotgunRecoil = value;
-    }
-
     DLLEXPORT static MObject* Get_pc(PlayerWeapon* __obj)
     {
         MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_pc")

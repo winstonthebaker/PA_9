@@ -15,7 +15,7 @@ API_CLASS() class GAME_API PlayerWeapon : public Script
 	// [Script]
 
 public:
-	API_FIELD() float _shotgunRecoil = 800;
+	
 	API_FIELD() ScriptingObjectReference<PlayerController> _pc;
 	API_FIELD() ScriptingObjectReference<Actor> _shotgun;
 	API_FIELD() ScriptingObjectReference<Actor> _pistol;
@@ -23,7 +23,7 @@ public:
 
 	API_FIELD() LayersMask _layers;
 
-	API_FIELD() int _pistolAmmo = 0;
+	API_FIELD() int _pistolAmmo = 0; 
 	API_FIELD() int _shotgunAmmo = 0;
 
 	API_FIELD() float _pistolVisualRecoilDistance = 10;
@@ -33,6 +33,7 @@ public:
 	void HandlePickup(int type);
 
 private:
+	float _shotgunRecoil = 800;
 	void OnEnable() override;
 	void OnDisable() override;
 	void OnUpdate() override;

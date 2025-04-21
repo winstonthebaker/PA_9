@@ -6,7 +6,6 @@
 	{
 		"ID": "9441295c4fc76f6b08f554b04c1edf2f",
 		"TypeName": "FlaxEngine.SphereCollider",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "PistolShell",
 		"IsTrigger": true,
 		"Radius": 100.0
@@ -27,12 +26,7 @@
 		"ID": "d73c8e5b4415c23e753897a973033e86",
 		"TypeName": "Game.RotateObject",
 		"ParentID": "fa23d82a4f6e6b00ee7232984fdd4338",
-		"_rotationSpeed": 360.0000305175781,
-		"_rotationAxis": {
-			"X": 0.0,
-			"Y": 1.3877295751130918e30,
-			"Z": 4.590373509435236e-41
-		}
+		"_rotationSpeed": 360.0000305175781
 	},
 	{
 		"ID": "c05f37974edb98a08e6ca585263ae450",

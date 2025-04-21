@@ -9,7 +9,8 @@
 		"Name": "Player",
 		"StaticFlags": 0,
 		"Layer": 1,
-		"Tag": "Player"
+		"Tag": "Player",
+		"StepOffset": 10.0
 	},
 	{
 		"ID": "02ed9b5844900dc51530d9b721ff89d1",
@@ -19,11 +20,9 @@
 		"_cameraContainer": "d1df58b14fcc4ff50d1526b3a73ed1a9",
 		"_playerBody": "b011bdec4efe71e176a41e8e7503e6cb",
 		"_movementSpeed": 1000.0,
-		"_groundMovementAcceleration": 6000.0,
+		"_groundMovementAcceleration": 10000.0,
 		"_gravity": 2000.0,
-		"_jumpSpeed": 500.0,
-		"_jumpNormalForce": 500.0,
-		"_jumpVerticalForce": 500.0
+		"_jumpSpeed": 500.0
 	},
 	{
 		"ID": "ab76e18b4b72de7bcc27eaaf0f47ac1c",

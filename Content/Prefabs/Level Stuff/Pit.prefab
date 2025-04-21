@@ -1,0 +1,216 @@
+{
+	"ID": "7987cf824d3627fb813c4181f3dc803f",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "fb7f4ece43693123e28425943409d267",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "Pit"
+	},
+	{
+		"ID": "38bc8c8e439fd4978680a4bb9c609793",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "fb7f4ece43693123e28425943409d267",
+		"Name": "wall4",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": -400.0,
+				"Z": 1199.9998779296876
+			},
+			"Orientation": {
+				"X": 0.5,
+				"Y": -0.5000000596046448,
+				"Z": 0.5,
+				"W": -0.5
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "cfd1dee741426160cc5d7fb42ec12186",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "38bc8c8e439fd4978680a4bb9c609793",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	},
+	{
+		"ID": "ea35f9cb48f1834b762a208219f3b53a",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "fb7f4ece43693123e28425943409d267",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": -100.0,
+				"Z": 800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "61ea8414453349510d68e09bd35db3f5",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "ea35f9cb48f1834b762a208219f3b53a"
+	},
+	{
+		"ID": "02201ee248b6f9d46d80aead79507acc",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "fb7f4ece43693123e28425943409d267",
+		"Name": "wall 1",
+		"Transform": {
+			"Translation": {
+				"X": 0.000030517578125,
+				"Y": -400.0,
+				"Z": 400.0000915527344
+			},
+			"Orientation": {
+				"X": 0.5,
+				"Y": 0.5000000596046448,
+				"Z": 0.5,
+				"W": 0.5
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "56fe7cf64cdace13cbcad9b5b8f87852",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "02201ee248b6f9d46d80aead79507acc",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	},
+	{
+		"ID": "27a3bd98466dd3bf69764db90097189d",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "fb7f4ece43693123e28425943409d267",
+		"Name": "wall 0",
+		"Transform": {
+			"Translation": {
+				"X": 400.0,
+				"Y": -400.0,
+				"Z": 800.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "741e5218468fa2b94999bebab4aacc06",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "27a3bd98466dd3bf69764db90097189d",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	},
+	{
+		"ID": "9ac3b65f49f95376b01553a0befd6316",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "fb7f4ece43693123e28425943409d267",
+		"Name": "floor 0",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": -300.0,
+				"Z": 800.0
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "ae3085fe40e370bdc716d2bb6371d840",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "9ac3b65f49f95376b01553a0befd6316",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	},
+	{
+		"ID": "9adcda5d450bf46dbcf2a39faf2c7124",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "fb7f4ece43693123e28425943409d267",
+		"Name": "wall3",
+		"Transform": {
+			"Translation": {
+				"X": -400.0,
+				"Y": -400.0,
+				"Z": 800.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "c480a1d84ea4d3a29f2ec6bdb0a99e46",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "9adcda5d450bf46dbcf2a39faf2c7124",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	}
+]
+}

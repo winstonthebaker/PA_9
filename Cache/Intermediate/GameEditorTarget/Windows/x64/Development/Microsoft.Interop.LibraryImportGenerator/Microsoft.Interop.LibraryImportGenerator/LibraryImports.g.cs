@@ -836,22 +836,6 @@ namespace Game
 {
     public unsafe partial class PlayerWeapon
     {
-        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerWeapon::Internal_Get_shotgunRecoil", ExactSpelling = true)]
-        internal static extern partial float Internal_Get_shotgunRecoil(nint __obj);
-    }
-}
-namespace Game
-{
-    public unsafe partial class PlayerWeapon
-    {
-        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_shotgunRecoil", ExactSpelling = true)]
-        internal static extern partial void Internal_Set_shotgunRecoil(nint __obj, float value);
-    }
-}
-namespace Game
-{
-    public unsafe partial class PlayerWeapon
-    {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
         [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
         internal static partial global::Game.PlayerController Internal_Get_pc(nint __obj)
