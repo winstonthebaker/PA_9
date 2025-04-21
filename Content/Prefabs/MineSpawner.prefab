@@ -1,0 +1,62 @@
+{
+	"ID": "073e8088442189122dfb448485be99ce",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "c039bb54442c1bf0e80227a0726cea2d",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "MineSpawner"
+	},
+	{
+		"ID": "dc86e3874a72d502058c11a7592cef81",
+		"TypeName": "Game.MineSpawner",
+		"ParentID": "c039bb54442c1bf0e80227a0726cea2d",
+		"_minePrefab": "751de5d8491a1ba3684408963d70184d",
+		"_mineTarget": "6673e95d474170602010329976a4e55f",
+		"_spawnTime": 1.0
+	},
+	{
+		"ID": "f780963041675221d1a2c5ae2f45c29a",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "c039bb54442c1bf0e80227a0726cea2d",
+		"Name": "Start",
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "6673e95d474170602010329976a4e55f",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "c039bb54442c1bf0e80227a0726cea2d",
+		"Name": "End",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 2000.0
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

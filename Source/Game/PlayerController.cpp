@@ -4,6 +4,7 @@
 #include "Engine/Core/Log.h"
 #include "GameManager.h"
 #include "Pickup.h"
+#include "PlayerWeapon.h"
 
 PlayerController* PlayerController::_instance = nullptr;
 
@@ -71,6 +72,10 @@ void PlayerController::OnAwake()
 
 void PlayerController::OnUpdate()
 {
+	if (GameManager::GetInstance()->_time < 0)
+	{
+		Die();
+	}
 	HandleMovement();
 }
 
@@ -169,7 +174,7 @@ void PlayerController::PitchCamera()
 		LOG(Error, "_cameraContainer not set on Player!");
 		return;
 	}
-	if (_dead)
+	if (GameManager::GetInstance()->IsGameOver())
 	{
 		return;
 	}
@@ -195,7 +200,8 @@ void PlayerController::RotateBody()
 		LOG(Error, "_playerBody not set on Player!");
 		return;
 	}
-	if (_dead)
+	
+	if (GameManager::GetInstance()->IsGameOver())
 	{
 		return;
 	}
@@ -223,7 +229,7 @@ void PlayerController::HandleHorizontalMovement()
 	desiredMove += transform.GetRight() * right;
 	desiredMove.Normalize();
 
-	if (_dead)
+	if (GameManager::GetInstance()->IsGameOver())
 	{
 		desiredMove = Vector3::Zero;
 	}
@@ -272,7 +278,7 @@ void PlayerController::HandleVerticalMovement()
 		LOG(Error, "_characterController not set on Player!");
 		return;
 	}
-	if (Input::GetKeyDown(KeyboardKeys::Spacebar))
+	if (Input::GetKeyDown(KeyboardKeys::Spacebar) && !GameManager::GetInstance()->IsGameOver())
 	{
 		_timeJumpLastPressed = Time::GetGameTime();
 	}
@@ -314,19 +320,8 @@ void PlayerController::ApplyMovement()
 	_characterController->Move(_currentVelocity * Time::GetDeltaTime());
 }
 
-void PlayerController::Jump()
-{
 
-	
 
-	_timeJumpLastPressed = -9999.9;
-	_timeLastGrounded = -9999.9;
-	_currentVelocity.Y = _jumpSpeed;
-}
-
-void PlayerController::WallJump(Vector3 wallNormal)
-{
-}
 
 void PlayerController::EvaluateJump()
 {
@@ -389,11 +384,21 @@ void PlayerController::EvaluateJump()
 
 void PlayerController::Die()
 {
-	_dead = true;
 	GameManager* instance = GameManager::GetInstance();
 	if (instance)
 	{
-		instance->EndGame();
+
+	}
+	
+	if (_dead)
+	{
+		return;
+	}
+	_dead = true;
+
+	if (instance)
+	{
+		instance->Lose();
 	}
 }
 
@@ -411,6 +416,10 @@ void PlayerController::HandleShooting()
 
 void PlayerController::OnTriggerEnter(PhysicsColliderActor* other)
 {
+	if (_awaitingReset)
+	{
+		return;
+	}
 	Tag killsOnContactTag = Tags::Get(TEXT("KillsOnContact"));
 	if (other->HasTag(killsOnContactTag))
 	{
@@ -420,10 +429,29 @@ void PlayerController::OnTriggerEnter(PhysicsColliderActor* other)
 
 		}
 	}
+	Tag winTag = Tags::Get(TEXT("WinItem"));
+	if (other->HasTag(winTag))
+	{
+		GameManager* instance = GameManager::GetInstance();
+		if (instance)
+		{
+			instance->Win();
+		}
+	}
 	Pickup* pickup = other->GetScript<Pickup>();
 	if (pickup)
 	{
-		pickup->Grab();
+		int pickupType = pickup->Grab();
+		
+		PlayerWeapon* weapon = GetActor()->GetScript<PlayerWeapon>();
+		if (weapon)
+		{
+			weapon->HandlePickup(pickupType);
+		}
+		if (pickupType == 0)
+		{
+			GameManager::GetInstance()->AddTime(3);
+		}
 	}
 	
 }

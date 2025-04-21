@@ -1,6 +1,6 @@
 ﻿#include "MovingEnemy.h"
 #include "Engine/Engine/Time.h"
-
+#include "GameManager.h"
 MovingEnemy::MovingEnemy(const SpawnParams& params)
 	: Script(params)
 {
@@ -27,18 +27,18 @@ void MovingEnemy::AddFollowPoint(const ScriptingObjectReference<Actor>& newPoint
 	_followPoints.Add(newPoint);
 }
 
-void MovingEnemy::OnReset()
-{
-}
+
 
 void MovingEnemy::OnEnable()
 {
-
+	_positionOnStart = GetActor()->GetPosition();
+	GameManager::GetInstance()->OnReset.Bind<MovingEnemy, &MovingEnemy::Reset>(this);
 }
 
 void MovingEnemy::OnDisable()
 {
-	// Here you can add code that needs to be called when script is disabled (eg. unregister from events)
+	GameManager::GetInstance()->OnReset.Unbind<MovingEnemy, &MovingEnemy::Reset>(this);
+
 }
 
 void MovingEnemy::OnUpdate()
@@ -71,4 +71,9 @@ void MovingEnemy::OnUpdate()
 	}
 	
 	GetActor()->AddMovement(dir);
+}
+
+void MovingEnemy::Reset()
+{
+	GetActor()->SetPosition(_positionOnStart);
 }

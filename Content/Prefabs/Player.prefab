@@ -1,0 +1,111 @@
+{
+	"ID": "a936057b461900a4ec5d8b84a2fcf550",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "b011bdec4efe71e176a41e8e7503e6cb",
+		"TypeName": "FlaxEngine.CharacterController",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "Player",
+		"StaticFlags": 0,
+		"Layer": 1,
+		"Tag": "Player"
+	},
+	{
+		"ID": "02ed9b5844900dc51530d9b721ff89d1",
+		"TypeName": "Game.PlayerController",
+		"ParentID": "b011bdec4efe71e176a41e8e7503e6cb",
+		"_characterController": "b011bdec4efe71e176a41e8e7503e6cb",
+		"_cameraContainer": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+		"_playerBody": "b011bdec4efe71e176a41e8e7503e6cb",
+		"_movementSpeed": 1000.0,
+		"_groundMovementAcceleration": 6000.0,
+		"_gravity": 2000.0,
+		"_jumpSpeed": 500.0,
+		"_jumpNormalForce": 500.0,
+		"_jumpVerticalForce": 500.0
+	},
+	{
+		"ID": "ab76e18b4b72de7bcc27eaaf0f47ac1c",
+		"TypeName": "Game.PlayerWeapon",
+		"ParentID": "b011bdec4efe71e176a41e8e7503e6cb",
+		"_shotgunRecoil": -336.64324951171877,
+		"_pc": "02ed9b5844900dc51530d9b721ff89d1",
+		"_shotgun": "2b97d92a43be4e87a352a1b560f63b22",
+		"_pistol": "c101cbc54697aece43db0abc324f1a66",
+		"_layers": 4294967293
+	},
+	{
+		"ID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+		"TypeName": "FlaxEngine.Camera",
+		"ParentID": "b011bdec4efe71e176a41e8e7503e6cb",
+		"Name": "Camera",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 77.46640014648438,
+				"Z": 0.0
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 1
+	},
+	{
+		"ID": "6d437b0f48e3720c907bfebd4085fae0",
+		"TypeName": "FreeCamera",
+		"ParentID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+		"V": {}
+	},
+	{
+		"ID": "2b97d92a43be4e87a352a1b560f63b22",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+		"Name": "shotgun",
+		"Transform": {
+			"Translation": {
+				"X": 21.0,
+				"Y": -12.0,
+				"Z": 28.0
+			}
+		},
+		"StaticFlags": 0,
+		"Model": "0ccc388b41af7bd8330046be59429708",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "33776b45485aeb515da787861d4d853d",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "c101cbc54697aece43db0abc324f1a66",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+		"Name": "pistol",
+		"Transform": {
+			"Translation": {
+				"X": -22.0,
+				"Y": -12.0,
+				"Z": 28.0
+			}
+		},
+		"StaticFlags": 0,
+		"Model": "939dc71049abbd9baa22c6aa7a15c763",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "33776b45485aeb515da787861d4d853d",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

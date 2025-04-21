@@ -42,6 +42,7 @@ public:
     // [Script]
 
 
+
 private:
     
     std::queue<Pair<float, Vector3>> _activeContacts;
@@ -89,8 +90,6 @@ private:
     void HandleVerticalMovement();
     void ApplyMovement();
 
-    void Jump();
-    void WallJump(Vector3 wallNormal);
     void EvaluateJump();
 
 

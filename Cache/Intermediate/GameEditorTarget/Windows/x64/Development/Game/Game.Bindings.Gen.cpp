@@ -22,7 +22,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\FloatingMine.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\GameManager.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\LauncherEnemy.h"
-#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Mine.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\MineSpawner.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\MovingEnemy.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Pickup.h"
@@ -216,30 +215,46 @@ void GameManager::Serialize(SerializeStream& stream, const void* otherObj)
 {
     Script::Serialize(stream, otherObj);
     SERIALIZE_GET_OTHER_OBJ(GameManager);
-    SERIALIZE(_deathScreenActor);
+    SERIALIZE(_startingTime);
+    SERIALIZE(_UIManager);
 }
 
 void GameManager::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
 {
     Script::Deserialize(stream, modifier);
-    DESERIALIZE(_deathScreenActor);
+    DESERIALIZE(_startingTime);
+    DESERIALIZE(_UIManager);
 }
 
 class GameManagerInternal
 {
 public:
-    DLLEXPORT static MObject* Get_deathScreenActor(GameManager* __obj)
+    DLLEXPORT static float Get_startingTime(GameManager* __obj)
     {
-        MSVC_FUNC_EXPORT("Game.GameManager::Internal_Get_deathScreenActor")
+        MSVC_FUNC_EXPORT("Game.GameManager::Internal_Get_startingTime")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->_deathScreenActor.GetManagedInstance();
+        return __obj->_startingTime;
     }
 
-    DLLEXPORT static void Set_deathScreenActor(GameManager* __obj, Actor* value)
+    DLLEXPORT static void Set_startingTime(GameManager* __obj, float value)
     {
-        MSVC_FUNC_EXPORT("Game.GameManager::Internal_Set_deathScreenActor")
+        MSVC_FUNC_EXPORT("Game.GameManager::Internal_Set_startingTime")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->_deathScreenActor = value;
+        __obj->_startingTime = value;
+    }
+
+    DLLEXPORT static MObject* Get_UIManager(GameManager* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.GameManager::Internal_Get_UIManager")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_UIManager.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_UIManager(GameManager* __obj, Actor* value)
+    {
+        MSVC_FUNC_EXPORT("Game.GameManager::Internal_Set_UIManager")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_UIManager = value;
     }
 
 
@@ -333,59 +348,6 @@ public:
 };
 
 ScriptingTypeInitializer LauncherEnemy::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.LauncherEnemy", 18), sizeof(LauncherEnemy), &LauncherEnemyInternal::InitRuntime, (ScriptingType::SpawnHandler)&LauncherEnemy::Spawn, &Script::TypeInitializer, &LauncherEnemyInternal::SetupScriptVTable, &LauncherEnemyInternal::SetupScriptObjectVTable, nullptr);
-
-void Mine::Serialize(SerializeStream& stream, const void* otherObj)
-{
-    Script::Serialize(stream, otherObj);
-    SERIALIZE_GET_OTHER_OBJ(Mine);
-    SERIALIZE(_col);
-}
-
-void Mine::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
-{
-    Script::Deserialize(stream, modifier);
-    DESERIALIZE(_col);
-}
-
-class MineInternal
-{
-public:
-    DLLEXPORT static MObject* Get_col(Mine* __obj)
-    {
-        MSVC_FUNC_EXPORT("Game.Mine::Internal_Get_col")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        return __obj->_col.GetManagedInstance();
-    }
-
-    DLLEXPORT static void Set_col(Mine* __obj, Collider* value)
-    {
-        MSVC_FUNC_EXPORT("Game.Mine::Internal_Set_col")
-        if (__obj == nullptr) DebugLog::ThrowNullReference();
-        __obj->_col = value;
-    }
-
-
-    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
-    {
-        if (!scriptVTable)
-        {
-            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
-            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
-            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
-        }
-    }
-
-    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
-    {
-    }
-
-    static void InitRuntime()
-    {
-    }
-
-};
-
-ScriptingTypeInitializer Mine::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Mine", 9), sizeof(Mine), &MineInternal::InitRuntime, (ScriptingType::SpawnHandler)&Mine::Spawn, &Script::TypeInitializer, &MineInternal::SetupScriptVTable, &MineInternal::SetupScriptObjectVTable, nullptr);
 
 void MineSpawner::Serialize(SerializeStream& stream, const void* otherObj)
 {

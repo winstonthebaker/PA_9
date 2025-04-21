@@ -3,7 +3,6 @@
 #include "Engine/Scripting/Script.h"
 #include "Engine/Content/AssetReference.h"
 #include "Engine/Scripting/ScriptingObjectReference.h"
-#include "Mine.h"
 API_CLASS() class GAME_API MineSpawner : public Script
 {
 API_AUTO_SERIALIZATION();

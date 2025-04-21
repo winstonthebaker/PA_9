@@ -12,16 +12,36 @@ DECLARE_SCRIPTING_TYPE(GameManager);
 private:
 	void OnAwake() override;
 	void OnUpdate() override;
-
+	void OnStart() override;
 	static GameManager* _instance;
+
+	void ShowDeathScreen();
 	void HideDeathScreen();
+
+	void ShowWinScreen();
+	void HideWinScreen();
+
+	void ShowInfoText();
+	void HideInfoText();
 	bool _gameOver = false;
+	void UpdateTime();
+	int _shotgunAmmo;
+	int _pistolAmmo;
 public:
+	void AddTime(float time);
+	bool IsGameOver();
+	void SetShotgunAmmo(int shotgunAmmo);
+	void SetPistolAmmo(int pistolAmmo);
+	API_FIELD() float _startingTime;
+
+	float _time;
+	
 	Delegate<> OnReset;
 
-	void EndGame();
+	void Lose();
 	static GameManager* GetInstance();
 	void ResetGame();
-	void ShowDeathScreen();
-	API_FIELD() ScriptingObjectReference<Actor> _deathScreenActor;
+
+	void Win();
+	API_FIELD() ScriptingObjectReference<Actor> _UIManager;
 };

@@ -17,7 +17,6 @@ public:
     void SetDestroysSelf(bool destroysSelf);
     void SetFollowPoints(const Array<ScriptingObjectReference<Actor>>& points);
     void AddFollowPoint(const ScriptingObjectReference<Actor>& newPoint);
-    void OnReset();
 private:
     int _currentFollowPointIndex = 0;
     bool _destroysSelf = false;
@@ -25,4 +24,7 @@ private:
     void OnEnable() override;
     void OnDisable() override;
     void OnUpdate() override;
+    void Reset();
+
+    Vector3 _positionOnStart;
 };

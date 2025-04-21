@@ -1,0 +1,191 @@
+{
+	"ID": "dbe47aad42240302846f6bb714ba8b82",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "b8625c0d4bb99469500cf3b988de83c7",
+		"TypeName": "FlaxEngine.UIControl",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "NextLevelScreen",
+		"Control": "FlaxEngine.GUI.AlphaPanel",
+		"Data": {
+			"Alpha": 0.0,
+			"IgnoreStack": false,
+			"ClipChildren": true,
+			"CullChildren": true,
+			"AnchorMin": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"AnchorMax": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Offsets": {
+				"Left": 0.0,
+				"Right": 0.0,
+				"Top": 0.0,
+				"Bottom": 0.0
+			},
+			"Scale": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Pivot": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Shear": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"Rotation": 0.0,
+			"BackgroundColor": {
+				"R": 0.0,
+				"G": 0.8816681,
+				"B": 1.0,
+				"A": 0.14888889
+			},
+			"BackgroundBrush": null,
+			"Enabled": true,
+			"Visible": false,
+			"AutoFocus": false
+		}
+	},
+	{
+		"ID": "3c79dac5451f853f00d858882581f7b4",
+		"TypeName": "Game.NextLevelScreen",
+		"ParentID": "b8625c0d4bb99469500cf3b988de83c7",
+		"V": {
+			"_screen": "b8625c0d4bb99469500cf3b988de83c7",
+			"_nextLevel": "9b7ca24d43518342246265b3ecba8c1b"
+		}
+	},
+	{
+		"ID": "60e39e66437e870824afd593a48685b7",
+		"TypeName": "FlaxEngine.UIControl",
+		"ParentID": "b8625c0d4bb99469500cf3b988de83c7",
+		"Name": "InfoText 0",
+		"Transform": {
+			"Translation": {
+				"X": 150.40000915527345,
+				"Y": 374.5,
+				"Z": 0.0
+			}
+		},
+		"Control": "FlaxEngine.GUI.TextBox",
+		"Data": {
+			"WatermarkText": "",
+			"CaseOption": 0,
+			"Bold": true,
+			"Italic": false,
+			"VerticalAlignment": 1,
+			"HorizontalAlignment": 1,
+			"Wrapping": 0,
+			"Font": {
+				"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+				"Size": 20.0
+			},
+			"TextMaterial": null,
+			"TextColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"WatermarkTextColor": {
+				"R": 0.47058824,
+				"G": 0.47058824,
+				"B": 0.5137255,
+				"A": 1.0
+			},
+			"SelectionColor": {
+				"R": 0.0,
+				"G": 0.47843137,
+				"B": 0.8,
+				"A": 1.0
+			},
+			"EndEditOnClick": true,
+			"IsMultiline": false,
+			"MaxLength": 2147483646,
+			"IsReadOnly": false,
+			"IsSelectable": true,
+			"ClipText": true,
+			"IsMultilineScrollable": true,
+			"BackgroundSelectedColor": {
+				"R": 0.24705882,
+				"G": 0.24705882,
+				"B": 0.27450982,
+				"A": 1.0
+			},
+			"CaretColor": {
+				"R": 1.0,
+				"G": 1.0,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"CaretFlashSpeed": 6.0,
+			"BackgroundSelectedFlashSpeed": 6.0,
+			"HasBorder": true,
+			"BorderThickness": 1.0,
+			"BorderColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 0.0
+			},
+			"BorderSelectedColor": {
+				"R": 0.0,
+				"G": 0.47843137,
+				"B": 0.8,
+				"A": 1.0
+			},
+			"Text": "[space to continue.]",
+			"SelectionRange": {
+				"StartIndex": -1,
+				"EndIndex": -1
+			},
+			"ClipChildren": true,
+			"CullChildren": true,
+			"AnchorMin": {
+				"X": 0.2,
+				"Y": 0.7
+			},
+			"AnchorMax": {
+				"X": 0.8,
+				"Y": 0.9
+			},
+			"Offsets": {
+				"Left": 0.0,
+				"Right": 0.0,
+				"Top": 0.0,
+				"Bottom": 0.0
+			},
+			"Scale": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Pivot": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Shear": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"Rotation": 0.0,
+			"BackgroundColor": {
+				"R": 0.2,
+				"G": 0.2,
+				"B": 0.21568628,
+				"A": 0.0
+			},
+			"BackgroundBrush": null,
+			"Enabled": true,
+			"Visible": true,
+			"AutoFocus": true
+		}
+	}
+]
+}

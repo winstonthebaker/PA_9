@@ -4,7 +4,7 @@
     <ClCompile Include="..\..\Source\Game.Gen.cpp" />
     <ClInclude Include="..\..\Source\Game.Gen.h" />
     <Filter Include="Game">
-      <UniqueIdentifier>{2D185A01-405D-4027-8C8D-E21AD0837DED}</UniqueIdentifier>
+      <UniqueIdentifier>{E97BFB3B-D24B-45EB-ABB5-50F92D66C0C1}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Game\Explodes.cpp">
       <Filter>Game</Filter>
@@ -34,12 +34,6 @@
       <Filter>Game</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Game\LauncherEnemy.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\Game\Mine.cpp">
-      <Filter>Game</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Game\Mine.h">
       <Filter>Game</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Game\MineSpawner.cpp">
@@ -103,7 +97,7 @@
       <Filter>Game</Filter>
     </ClInclude>
     <Filter Include="obj">
-      <UniqueIdentifier>{709EC331-FF34-4196-8E55-3937DBF10D26}</UniqueIdentifier>
+      <UniqueIdentifier>{C1CCB6EA-4E49-4824-8F03-CED3FCCFF5B3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\obj\Game.csproj.nuget.dgspec.json">
       <Filter>obj</Filter>
@@ -121,7 +115,7 @@
       <Filter>obj</Filter>
     </None>
     <Filter Include="Properties">
-      <UniqueIdentifier>{D9814B47-220B-46B8-A013-ACC37B5E4954}</UniqueIdentifier>
+      <UniqueIdentifier>{7AF1D22F-BDB4-4FA9-83CB-B07ABDD6FA4F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Properties\launchSettings.json">
       <Filter>Properties</Filter>

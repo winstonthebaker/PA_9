@@ -1,6 +1,7 @@
 ﻿#include "LauncherEnemy.h"
 #include "Engine/Level/Prefabs/PrefabManager.h"
 #include "Engine/Engine/Time.h"
+#include "GameManager.h"
 
 LauncherEnemy::LauncherEnemy(const SpawnParams& params)
     : Script(params)
@@ -20,6 +21,14 @@ void LauncherEnemy::OnDisable()
 
 void LauncherEnemy::OnUpdate()
 {
+    GameManager* gm = GameManager::GetInstance();
+    if (gm)
+    {
+        if (gm->IsGameOver())
+        {
+            return;
+        }
+    }
     _spawnTimer -= Time::GetDeltaTime();
     if (_spawnTimer < 0)
     {

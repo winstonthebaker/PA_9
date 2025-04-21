@@ -183,9 +183,12 @@
     <Compile Include="Game\DeathScreen.cs" />
     <Compile Include="Game\ExitOnEsc.cs" />
     <Compile Include="Game\FreeCamera.cs" />
+    <Compile Include="Game\InfoTextPanel.cs" />
     <Compile Include="Game\LockCursor.cs" />
     <Compile Include="Game\MainMenu.cs" />
+    <Compile Include="Game\NextLevelScreen.cs" />
     <Compile Include="Game\RocketTrail.cs" />
+    <Compile Include="Game\UIManager.cs" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Editor.Windows.Debug|x64' " >
     <Compile Visible="false" Include="C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Intermediate\GameEditorTarget\Windows\x64\Debug\Game\Game.Bindings.Gen.cs" />

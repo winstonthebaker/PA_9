@@ -18,7 +18,6 @@ void FloatingMine::OnEnable()
 	{
 		//LOG_STR(Info, TEXT("Bound!"));
 		shotHandler->OnShot.Bind<FloatingMine, &FloatingMine::GetShot>(this);
-		LOG_STR(Info, TEXT("GetShot bound"));
 	}
 	if (_col)
 	{

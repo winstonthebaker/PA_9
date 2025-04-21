@@ -198,8 +198,6 @@
     <ClInclude Include="..\..\Source\Game\GameManager.h"/>
     <ClCompile Include="..\..\Source\Game\LauncherEnemy.cpp"/>
     <ClInclude Include="..\..\Source\Game\LauncherEnemy.h"/>
-    <ClCompile Include="..\..\Source\Game\Mine.cpp"/>
-    <ClInclude Include="..\..\Source\Game\Mine.h"/>
     <ClCompile Include="..\..\Source\Game\MineSpawner.cpp"/>
     <ClInclude Include="..\..\Source\Game\MineSpawner.h"/>
     <ClCompile Include="..\..\Source\Game\MovingEnemy.cpp"/>

@@ -6,7 +6,8 @@
 	"Tags": [
 		"Bullet",
 		"KillsOnContact",
-		"Player"
+		"Player",
+		"WinItem"
 	],
 	"Layers": [
 		"Default",

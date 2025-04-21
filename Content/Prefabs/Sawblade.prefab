@@ -1,0 +1,57 @@
+{
+	"ID": "f77b7c824d99e36e2b26dc991bf2b369",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "11009a5643555fa053c22cbe076264f9",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "Sawblade",
+		"Tag": "KillsOnContact",
+		"IsTrigger": true,
+		"Size": {
+			"X": 34.0,
+			"Y": 200.0,
+			"Z": 200.0
+		}
+	},
+	{
+		"ID": "c020ae2c4f82e44691dec4b135b5032d",
+		"TypeName": "Game.MovingEnemy",
+		"ParentID": "11009a5643555fa053c22cbe076264f9",
+		"_followPoints": [
+			"29c823734f729b795b857b81f33f4be4",
+			"554e4ccf4e45cafacccaffb72b7aba35"
+		]
+	},
+	{
+		"ID": "998a225e470a8e4e19fc3caa04ac78fa",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "11009a5643555fa053c22cbe076264f9",
+		"Name": "Cube",
+		"Model": "329fc310453f3a2952be6fa0ac6480a8",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "173f662b42339a7478d16b91ef14b0e1",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "b1a42bde46cc7408ca99f2973325bfff",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "998a225e470a8e4e19fc3caa04ac78fa",
+		"_rotationSpeed": 600.0,
+		"_rotationAxis": {
+			"X": -1.0,
+			"Y": 0.0,
+			"Z": 0.0
+		}
+	}
+]
+}

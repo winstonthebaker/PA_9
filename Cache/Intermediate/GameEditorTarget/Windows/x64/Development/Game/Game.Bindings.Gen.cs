@@ -314,18 +314,31 @@ namespace Game
         }
 
         [Unmanaged]
-        [DefaultValue(null)]
-        public Actor _deathScreenActor
+        public float _startingTime
         {
-            get { return Internal_Get_deathScreenActor(__unmanagedPtr); }
-            set { Internal_Set_deathScreenActor(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+            get { return Internal_Get_startingTime(__unmanagedPtr); }
+            set { Internal_Set_startingTime(__unmanagedPtr, value); }
         }
 
-        [LibraryImport("Game", EntryPoint = "Game.GameManager::Internal_Get_deathScreenActor", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
-        internal static partial Actor Internal_Get_deathScreenActor(IntPtr __obj);
+        [LibraryImport("Game", EntryPoint = "Game.GameManager::Internal_Get_startingTime", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial float Internal_Get_startingTime(IntPtr __obj);
 
-        [LibraryImport("Game", EntryPoint = "Game.GameManager::Internal_Set_deathScreenActor", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
-        internal static partial void Internal_Set_deathScreenActor(IntPtr __obj, IntPtr value);
+        [LibraryImport("Game", EntryPoint = "Game.GameManager::Internal_Set_startingTime", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_startingTime(IntPtr __obj, float value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Actor _UIManager
+        {
+            get { return Internal_Get_UIManager(__unmanagedPtr); }
+            set { Internal_Set_UIManager(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.GameManager::Internal_Get_UIManager", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Actor Internal_Get_UIManager(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.GameManager::Internal_Set_UIManager", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_UIManager(IntPtr __obj, IntPtr value);
     }
 }
 namespace Game.Interop
@@ -490,97 +503,6 @@ namespace Game.Interop
     
         internal static LauncherEnemy ToManaged(IntPtr managed) => Unsafe.As<LauncherEnemy>(ManagedHandleMarshaller.ToManaged(managed));
         internal static IntPtr ToNative(LauncherEnemy managed) => ManagedHandleMarshaller.ToNative(managed);
-    #pragma warning restore 618
-    #pragma warning restore 1591
-    }
-}
-
-namespace Game
-{
-    [Unmanaged]
-    [NativeMarshalling(typeof(MineMarshaller))]
-    public unsafe partial class Mine : Script
-    {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Mine"/>.
-        /// </summary>
-        public Mine() : base()
-        {
-        }
-
-        [Unmanaged]
-        [DefaultValue(null)]
-        public Collider _col
-        {
-            get { return Internal_Get_col(__unmanagedPtr); }
-            set { Internal_Set_col(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
-        }
-
-        [LibraryImport("Game", EntryPoint = "Game.Mine::Internal_Get_col", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
-        internal static partial Collider Internal_Get_col(IntPtr __obj);
-
-        [LibraryImport("Game", EntryPoint = "Game.Mine::Internal_Set_col", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
-        internal static partial void Internal_Set_col(IntPtr __obj, IntPtr value);
-    }
-}
-namespace Game.Interop
-{
-
-    /// <summary>
-    /// Marshaller for type <see cref="Mine"/>.
-    /// </summary>
-    #if FLAX_EDITOR
-    [HideInEditor]
-    #endif
-    [CustomMarshaller(typeof(Mine), MarshalMode.ManagedToUnmanagedIn, typeof(MineMarshaller.ManagedToNative))]
-    [CustomMarshaller(typeof(Mine), MarshalMode.UnmanagedToManagedOut, typeof(MineMarshaller.ManagedToNative))]
-    [CustomMarshaller(typeof(Mine), MarshalMode.ElementIn, typeof(MineMarshaller.ManagedToNative))]
-    [CustomMarshaller(typeof(Mine), MarshalMode.ManagedToUnmanagedOut, typeof(MineMarshaller.NativeToManaged))]
-    [CustomMarshaller(typeof(Mine), MarshalMode.UnmanagedToManagedIn, typeof(MineMarshaller.NativeToManaged))]
-    [CustomMarshaller(typeof(Mine), MarshalMode.ElementOut, typeof(MineMarshaller.NativeToManaged))]
-    [CustomMarshaller(typeof(Mine), MarshalMode.ManagedToUnmanagedRef, typeof(MineMarshaller.Bidirectional))]
-    [CustomMarshaller(typeof(Mine), MarshalMode.UnmanagedToManagedRef, typeof(MineMarshaller.Bidirectional))]
-    [CustomMarshaller(typeof(Mine), MarshalMode.ElementRef, typeof(MineMarshaller))]
-    public static class MineMarshaller
-    {
-    #pragma warning disable 1591
-    #pragma warning disable 618
-    #if FLAX_EDITOR
-        [HideInEditor]
-    #endif
-        public static class NativeToManaged
-        {
-            public static Mine ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Mine>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
-            public static IntPtr ConvertToUnmanaged(Mine managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
-            public static void Free(IntPtr unmanaged) {}
-        }
-    #if FLAX_EDITOR
-        [HideInEditor]
-    #endif
-        public static class ManagedToNative
-        {
-            public static Mine ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Mine>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
-            public static IntPtr ConvertToUnmanaged(Mine managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
-            public static void Free(IntPtr unmanaged) {}
-        }
-    #if FLAX_EDITOR
-        [HideInEditor]
-    #endif
-        public struct Bidirectional
-        {
-            ManagedHandleMarshaller.Bidirectional marsh;
-            public void FromManaged(Mine managed) => marsh.FromManaged(managed);
-            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
-            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
-            public Mine ToManaged() => Unsafe.As<Mine>(marsh.ToManaged());
-            public void Free() => marsh.Free();
-        }
-        internal static Mine ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Mine>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
-        internal static IntPtr ConvertToUnmanaged(Mine managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
-        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
-    
-        internal static Mine ToManaged(IntPtr managed) => Unsafe.As<Mine>(ManagedHandleMarshaller.ToManaged(managed));
-        internal static IntPtr ToNative(Mine managed) => ManagedHandleMarshaller.ToNative(managed);
     #pragma warning restore 618
     #pragma warning restore 1591
     }
@@ -1241,6 +1163,7 @@ namespace Game
         internal static partial void Internal_Set_layers(IntPtr __obj, ref LayersMask value);
 
         [Unmanaged]
+        [DefaultValue((int)0)]
         public int _pistolAmmo
         {
             get { return Internal_Get_pistolAmmo(__unmanagedPtr); }
@@ -1254,6 +1177,7 @@ namespace Game
         internal static partial void Internal_Set_pistolAmmo(IntPtr __obj, int value);
 
         [Unmanaged]
+        [DefaultValue((int)0)]
         public int _shotgunAmmo
         {
             get { return Internal_Get_shotgunAmmo(__unmanagedPtr); }
@@ -1267,6 +1191,7 @@ namespace Game
         internal static partial void Internal_Set_shotgunAmmo(IntPtr __obj, int value);
 
         [Unmanaged]
+        [DefaultValue((float)10)]
         public float _pistolVisualRecoilDistance
         {
             get { return Internal_Get_pistolVisualRecoilDistance(__unmanagedPtr); }
@@ -1280,6 +1205,7 @@ namespace Game
         internal static partial void Internal_Set_pistolVisualRecoilDistance(IntPtr __obj, float value);
 
         [Unmanaged]
+        [DefaultValue((float)45)]
         public float _pistolVisualRecoilRotation
         {
             get { return Internal_Get_pistolVisualRecoilRotation(__unmanagedPtr); }
@@ -1293,6 +1219,7 @@ namespace Game
         internal static partial void Internal_Set_pistolVisualRecoilRotation(IntPtr __obj, float value);
 
         [Unmanaged]
+        [DefaultValue((float)15)]
         public float _shotgunVisualRecoilDistance
         {
             get { return Internal_Get_shotgunVisualRecoilDistance(__unmanagedPtr); }
@@ -1306,6 +1233,7 @@ namespace Game
         internal static partial void Internal_Set_shotgunVisualRecoilDistance(IntPtr __obj, float value);
 
         [Unmanaged]
+        [DefaultValue((float)60)]
         public float _shotgunVisualRecoilRotation
         {
             get { return Internal_Get_shotgunVisualRecoilRotation(__unmanagedPtr); }

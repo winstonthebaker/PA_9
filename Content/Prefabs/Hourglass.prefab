@@ -1,0 +1,63 @@
+{
+	"ID": "e1056129436a7098e78b11823806ea6c",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "8d86bd0c4e3bdf4028cc5aa38501bb21",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "Hourglass",
+		"IsTrigger": true,
+		"Radius": 100.0
+	},
+	{
+		"ID": "72b64b024c2ec13e0963bcbd2397f34e",
+		"TypeName": "Game.Pickup",
+		"ParentID": "8d86bd0c4e3bdf4028cc5aa38501bb21",
+		"_type": 0
+	},
+	{
+		"ID": "9b1232d846a6825fe084e4945edd5df0",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "8d86bd0c4e3bdf4028cc5aa38501bb21",
+		"Name": "Visual"
+	},
+	{
+		"ID": "605aa3e64c164c1531eb8498842c34f0",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "9b1232d846a6825fe084e4945edd5df0",
+		"_rotationSpeed": 360.0,
+		"_rotationAxis": {
+			"X": 0.0,
+			"Y": 1.0,
+			"Z": 0.0
+		}
+	},
+	{
+		"ID": "04afc6574bd686ebd5de18b8e602842e",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "9b1232d846a6825fe084e4945edd5df0",
+		"Name": "Cube",
+		"Transform": {
+			"Orientation": {
+				"X": 0.3357294201850891,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.941958487033844
+			}
+		},
+		"Model": "dfb19a5c45e04c0cf628d0aff72628d8",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "e07a93a54cfcde8c047be581818febc6",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

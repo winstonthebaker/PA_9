@@ -1,0 +1,57 @@
+{
+	"ID": "6da247e4466583bc5ccecda48a9625cd",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "5380a1b647ddfa2cf2d9fa9d5dae3261",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"Name": "WinItem",
+		"Tag": "WinItem",
+		"IsTrigger": true,
+		"Radius": 95.0
+	},
+	{
+		"ID": "9b1cc3f14ba876159de732affe2356ec",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "5380a1b647ddfa2cf2d9fa9d5dae3261",
+		"Name": "Container"
+	},
+	{
+		"ID": "c8fc328d4981bd00a7bd5b8ab9066428",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "9b1cc3f14ba876159de732affe2356ec",
+		"_rotationSpeed": 360.0,
+		"_rotationAxis": {
+			"X": 0.0,
+			"Y": 1.0,
+			"Z": 0.0
+		}
+	},
+	{
+		"ID": "3a6cfb1249c78fc309d5819fd2dcc6a8",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "9b1cc3f14ba876159de732affe2356ec",
+		"Name": "Cube",
+		"Transform": {
+			"Orientation": {
+				"X": -0.30573880672454836,
+				"Y": -0.09179139137268067,
+				"Z": -0.3763047456741333,
+				"W": 0.8697659969329834
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "8391b6da40053a988a0959ab9f26f700",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

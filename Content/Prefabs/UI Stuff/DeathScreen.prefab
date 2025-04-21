@@ -1,0 +1,190 @@
+{
+	"ID": "633fd50b4421f4a0133facadc4d00887",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "7524a781400afb45c98af7be23ea074a",
+		"TypeName": "FlaxEngine.UIControl",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "DeathScreen",
+		"Control": "FlaxEngine.GUI.AlphaPanel",
+		"Data": {
+			"Alpha": 0.0,
+			"IgnoreStack": false,
+			"ClipChildren": true,
+			"CullChildren": true,
+			"AnchorMin": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"AnchorMax": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Offsets": {
+				"Left": 0.0,
+				"Right": 0.0,
+				"Top": 0.0,
+				"Bottom": 0.0
+			},
+			"Scale": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Pivot": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Shear": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"Rotation": 0.0,
+			"BackgroundColor": {
+				"R": 0.7733333,
+				"G": 0.15601818,
+				"B": 0.0,
+				"A": 0.69555557
+			},
+			"BackgroundBrush": null,
+			"Enabled": true,
+			"Visible": false,
+			"AutoFocus": false
+		}
+	},
+	{
+		"ID": "7c9c538344b3442664c3aaba8dcd25c6",
+		"TypeName": "Game.DeathScreen",
+		"ParentID": "7524a781400afb45c98af7be23ea074a",
+		"V": {
+			"_screen": "7524a781400afb45c98af7be23ea074a"
+		}
+	},
+	{
+		"ID": "91d33baf4f2645e5919b188eb87919c2",
+		"TypeName": "FlaxEngine.UIControl",
+		"ParentID": "7524a781400afb45c98af7be23ea074a",
+		"Name": "restartInfo",
+		"Transform": {
+			"Translation": {
+				"X": 150.40000915527345,
+				"Y": 374.5,
+				"Z": 0.0
+			}
+		},
+		"Control": "FlaxEngine.GUI.TextBox",
+		"Data": {
+			"WatermarkText": "",
+			"CaseOption": 0,
+			"Bold": true,
+			"Italic": false,
+			"VerticalAlignment": 1,
+			"HorizontalAlignment": 1,
+			"Wrapping": 0,
+			"Font": {
+				"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+				"Size": 20.0
+			},
+			"TextMaterial": null,
+			"TextColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 1.0
+			},
+			"WatermarkTextColor": {
+				"R": 0.47058824,
+				"G": 0.47058824,
+				"B": 0.5137255,
+				"A": 1.0
+			},
+			"SelectionColor": {
+				"R": 0.0,
+				"G": 0.47843137,
+				"B": 0.8,
+				"A": 1.0
+			},
+			"EndEditOnClick": true,
+			"IsMultiline": false,
+			"MaxLength": 2147483646,
+			"IsReadOnly": false,
+			"IsSelectable": true,
+			"ClipText": true,
+			"IsMultilineScrollable": true,
+			"BackgroundSelectedColor": {
+				"R": 0.24705882,
+				"G": 0.24705882,
+				"B": 0.27450982,
+				"A": 1.0
+			},
+			"CaretColor": {
+				"R": 1.0,
+				"G": 1.0,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"CaretFlashSpeed": 6.0,
+			"BackgroundSelectedFlashSpeed": 6.0,
+			"HasBorder": true,
+			"BorderThickness": 1.0,
+			"BorderColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 0.0
+			},
+			"BorderSelectedColor": {
+				"R": 0.0,
+				"G": 0.47843137,
+				"B": 0.8,
+				"A": 1.0
+			},
+			"Text": "[r to restart.]",
+			"SelectionRange": {
+				"StartIndex": -1,
+				"EndIndex": -1
+			},
+			"ClipChildren": true,
+			"CullChildren": true,
+			"AnchorMin": {
+				"X": 0.2,
+				"Y": 0.7
+			},
+			"AnchorMax": {
+				"X": 0.8,
+				"Y": 0.9
+			},
+			"Offsets": {
+				"Left": 0.0,
+				"Right": 0.0,
+				"Top": 0.0,
+				"Bottom": 0.0
+			},
+			"Scale": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Pivot": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Shear": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"Rotation": 0.0,
+			"BackgroundColor": {
+				"R": 0.2,
+				"G": 0.2,
+				"B": 0.21568628,
+				"A": 0.0
+			},
+			"BackgroundBrush": null,
+			"Enabled": true,
+			"Visible": true,
+			"AutoFocus": true
+		}
+	}
+]
+}

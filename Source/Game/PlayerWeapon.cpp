@@ -5,6 +5,7 @@
 #include "Engine/Physics/Physics.h"
 #include "Engine/Debug/DebugDraw.h"
 #include "ShotHandler.h"
+#include "GameManager.h"
 
 PlayerWeapon::PlayerWeapon(const SpawnParams& params)
 	: Script(params)
@@ -13,8 +14,24 @@ PlayerWeapon::PlayerWeapon(const SpawnParams& params)
 	_tickUpdate = true;
 }
 
+void PlayerWeapon::HandlePickup(int type)
+{
+	if (type == 1)
+	{
+		_pistolAmmo++;
+		return;
+	}
+	if (type == 2)
+	{
+		_shotgunAmmo++;
+		return;
+	}
+}
+
 void PlayerWeapon::OnEnable()
 {
+	_pistolStartingAmmo = _pistolAmmo;
+	_shotgunStartingAmmo = _shotgunAmmo;
 	if (_shotgun)
 	{
 		_shotgunRestPosition = _shotgun->GetLocalPosition();
@@ -25,17 +42,51 @@ void PlayerWeapon::OnEnable()
 		_pistolRestPosition = _pistol->GetLocalPosition();
 		_pistolRestRotation = _pistol->GetLocalOrientation();
 	}
+	GameManager::GetInstance()->OnReset.Bind<PlayerWeapon, &PlayerWeapon::Reset>(this);
+	_pistolHideFactor = 30;
+	_shotgunHideFactor = 30;
 }
 
 void PlayerWeapon::OnDisable()
 {
-	// Here you can add code that needs to be called when script is disabled (eg. unregister from events)
+	GameManager::GetInstance()->OnReset.Unbind<PlayerWeapon, &PlayerWeapon::Reset>(this);
+
 }
 
 void PlayerWeapon::OnUpdate()
 {
-	HandleAttack();
+	if (_pistolAmmo > 0)
+	{
+		_pistolHideFactor = 0;
+	}
+	else
+	{
+		if (_pistolHideFactor < 30)
+		{
+			_pistolHideFactor += Time::GetDeltaTime() * 60;
 
+		}
+	}
+	if (_shotgunAmmo > 0)
+	{
+		_shotgunHideFactor = 0;
+
+	}
+	else
+	{
+		if (_shotgunHideFactor < 30)
+		{
+			_shotgunHideFactor += Time::GetDeltaTime() * 60;
+		}
+	}
+	
+	HandleAttack();
+	GameManager* gm = GameManager::GetInstance();
+	if (gm)
+	{
+		gm->SetPistolAmmo(_pistolAmmo);
+		gm->SetShotgunAmmo(_shotgunAmmo);
+	}
 	float rotationSmoothing = 20;
 	float factor = rotationSmoothing * Time::GetDeltaTime();
 	if (_pistol)
@@ -50,7 +101,7 @@ void PlayerWeapon::OnUpdate()
 		_pistol->SetLocalPosition(
 			Vector3::Lerp(
 				_pistol->GetLocalPosition(),
-				_pistolRestPosition,
+				CalculatePistolPosition(),
 				factor
 			)
 		);
@@ -66,7 +117,7 @@ void PlayerWeapon::OnUpdate()
 		_shotgun->SetLocalPosition(
 			Vector3::Lerp(
 				_shotgun->GetLocalPosition(),
-				_shotgunRestPosition,
+				CalculateShotgunPosition(),
 				factor
 			));
 	}
@@ -81,6 +132,11 @@ void PlayerWeapon::HandleAttack()
 	}
 	if (Input::GetMouseButtonDown(MouseButton::Left))
 	{
+		if (_pistolAmmo <= 0)
+		{
+			return;
+		}
+		_pistolAmmo--;
 		PistolRecoil();
 		//pistol
 		RayCastHit hit;
@@ -109,10 +165,21 @@ void PlayerWeapon::HandleAttack()
 	}
 	if (Input::GetMouseButtonDown(MouseButton::Right))
 	{
+		if (_shotgunAmmo <= 0)
+		{
+			return;
+		}
+		_shotgunAmmo--;
 		//shotgun
 		_pc->FireShotgun(_shotgunRecoil);
 		ShotunRecoil();
 	}
+}
+
+void PlayerWeapon::Reset()
+{
+	_pistolAmmo = _pistolStartingAmmo;
+	_shotgunAmmo = _shotgunStartingAmmo;
 }
 
 void PlayerWeapon::PistolRecoil()
@@ -133,4 +200,24 @@ void PlayerWeapon::ShotunRecoil()
 		_shotgun->SetLocalOrientation(_shotgun->GetLocalOrientation() + recoilRot);
 		_shotgun->SetLocalPosition(_shotgun->GetLocalPosition() + Vector3(0, 0, -_shotgunVisualRecoilDistance));
 	}
+}
+
+Vector3 PlayerWeapon::CalculatePistolPosition()
+{
+	Vector3 pos = _pistolRestPosition;
+	if (_pistolAmmo <= 0)
+	{
+		pos.Y -= _pistolHideFactor;
+	}
+	return pos;
+}
+
+Vector3 PlayerWeapon::CalculateShotgunPosition()
+{
+	Vector3 pos = _shotgunRestPosition;
+	if (_shotgunAmmo <= 0)
+	{
+		pos.Y -= _shotgunHideFactor;
+	}
+	return pos;
 }

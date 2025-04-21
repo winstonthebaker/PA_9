@@ -34,11 +34,6 @@
             Marshaller for type <see cref="T:Game.LauncherEnemy"/>.
             </summary>
         </member>
-        <member name="T:Game.Interop.MineMarshaller">
-            <summary>
-            Marshaller for type <see cref="T:Game.Mine"/>.
-            </summary>
-        </member>
         <member name="T:Game.Interop.MineSpawnerMarshaller">
             <summary>
             Marshaller for type <see cref="T:Game.MineSpawner"/>.
@@ -109,11 +104,6 @@
             Initializes a new instance of the <see cref="T:Game.LauncherEnemy"/>.
             </summary>
         </member>
-        <member name="M:Game.Mine.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:Game.Mine"/>.
-            </summary>
-        </member>
         <member name="M:Game.MineSpawner.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Game.MineSpawner"/>.
@@ -164,6 +154,11 @@
             Initializes a new instance of the <see cref="T:Game.TurretEnemy"/>.
             </summary>
         </member>
+        <member name="T:Game.InfoTextPanel">
+            <summary>
+            InfoTextPanel Script.
+            </summary>
+        </member>
         <member name="T:Game.LockCursor">
             <summary>
             LockCursor Script.
@@ -186,6 +181,11 @@
             MainMenu Script.
             </summary>
         </member>
+        <member name="T:Game.NextLevelScreen">
+            <summary>
+            NextLevelScreen Script.
+            </summary>
+        </member>
         <member name="T:Game.RocketTrail">
             <summary>
             RocketTrail Script.
@@ -202,6 +202,23 @@
             <inheritdoc/>
         </member>
         <member name="M:Game.RocketTrail.OnUpdate">
+            <inheritdoc/>
+        </member>
+        <member name="T:Game.UIManager">
+            <summary>
+            UIManager Script.
+            </summary>
+        </member>
+        <member name="M:Game.UIManager.OnStart">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.UIManager.OnEnable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.UIManager.OnDisable">
+            <inheritdoc/>
+        </member>
+        <member name="M:Game.UIManager.OnUpdate">
             <inheritdoc/>
         </member>
     </members>

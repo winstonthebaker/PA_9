@@ -1,0 +1,185 @@
+{
+	"ID": "8ffed6564de38b4ff75e2d8c4ff7aec5",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "dcce96f24a4ae387e1c41598ea3d65eb",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "TubeEndcap"
+	},
+	{
+		"ID": "8de1d4bd499ba5275c536db5a411e51e",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "dcce96f24a4ae387e1c41598ea3d65eb",
+		"Name": "floor",
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "e1a733b84be56b2e5dc145a4a3f3efb1",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "8de1d4bd499ba5275c536db5a411e51e",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	},
+	{
+		"ID": "e3e42f684d8353c2afbb279c075592a6",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "dcce96f24a4ae387e1c41598ea3d65eb",
+		"Name": "wall2",
+		"Transform": {
+			"Translation": {
+				"X": -400.0,
+				"Y": 400.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "8191dfda424a5203828894b96d6737ff",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "e3e42f684d8353c2afbb279c075592a6",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	},
+	{
+		"ID": "5b25e9d648696d508e53ab8f7af20026",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "dcce96f24a4ae387e1c41598ea3d65eb",
+		"Name": "ceiling",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 800.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 1.0,
+				"W": -4.3711388286737938e-8
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "6973272b4dcdc487928e16a131c28428",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "5b25e9d648696d508e53ab8f7af20026",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	},
+	{
+		"ID": "9f3391a149a1b8b618a0a3bf63ee967d",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "dcce96f24a4ae387e1c41598ea3d65eb",
+		"Name": "wall",
+		"Transform": {
+			"Translation": {
+				"X": 400.0,
+				"Y": 400.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "eb6b84634e3627e0e437688f37052cb4",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "9f3391a149a1b8b618a0a3bf63ee967d",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	},
+	{
+		"ID": "c45a7d064e0f523ee392448917d77c69",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "dcce96f24a4ae387e1c41598ea3d65eb",
+		"Name": "wall3",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 400.0,
+				"Z": -400.0
+			},
+			"Orientation": {
+				"X": 0.5,
+				"Y": -0.5,
+				"Z": -0.5,
+				"W": 0.5
+			}
+		},
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "00d1e3b04a6200d42d09888ce2d79907",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "c45a7d064e0f523ee392448917d77c69",
+		"Name": "MeshCollider",
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	}
+]
+}

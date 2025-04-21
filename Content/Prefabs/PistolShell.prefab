@@ -1,0 +1,63 @@
+{
+	"ID": "654c0cd54d4b040c4dc7e284ca2af813",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "9441295c4fc76f6b08f554b04c1edf2f",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "PistolShell",
+		"IsTrigger": true,
+		"Radius": 100.0
+	},
+	{
+		"ID": "92d5a29849bfe68608fe52b03080049f",
+		"TypeName": "Game.Pickup",
+		"ParentID": "9441295c4fc76f6b08f554b04c1edf2f",
+		"_type": 1
+	},
+	{
+		"ID": "fa23d82a4f6e6b00ee7232984fdd4338",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "9441295c4fc76f6b08f554b04c1edf2f",
+		"Name": "Visual"
+	},
+	{
+		"ID": "d73c8e5b4415c23e753897a973033e86",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "fa23d82a4f6e6b00ee7232984fdd4338",
+		"_rotationSpeed": 360.0000305175781,
+		"_rotationAxis": {
+			"X": 0.0,
+			"Y": 1.3877295751130918e30,
+			"Z": 4.590373509435236e-41
+		}
+	},
+	{
+		"ID": "c05f37974edb98a08e6ca585263ae450",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "fa23d82a4f6e6b00ee7232984fdd4338",
+		"Name": "Cube",
+		"Transform": {
+			"Orientation": {
+				"X": 0.3357294201850891,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.941958487033844
+			}
+		},
+		"Model": "a8f743714f0f02cc5562cb95cb6f564d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "e07a93a54cfcde8c047be581818febc6",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

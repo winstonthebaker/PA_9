@@ -153,9 +153,25 @@ namespace Game
 {
     public unsafe partial class GameManager
     {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.GameManager::Internal_Get_startingTime", ExactSpelling = true)]
+        internal static extern partial float Internal_Get_startingTime(nint __obj);
+    }
+}
+namespace Game
+{
+    public unsafe partial class GameManager
+    {
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.GameManager::Internal_Set_startingTime", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_startingTime(nint __obj, float value);
+    }
+}
+namespace Game
+{
+    public unsafe partial class GameManager
+    {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
         [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
-        internal static partial global::FlaxEngine.Actor Internal_Get_deathScreenActor(nint __obj)
+        internal static partial global::FlaxEngine.Actor Internal_Get_UIManager(nint __obj)
         {
             bool __invokeSucceeded = default;
             global::FlaxEngine.Actor __retVal = default;
@@ -181,7 +197,7 @@ namespace Game
 
             return __retVal;
             // Local P/Invoke
-            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.GameManager::Internal_Get_deathScreenActor", ExactSpelling = true)]
+            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.GameManager::Internal_Get_UIManager", ExactSpelling = true)]
             static extern unsafe nint __PInvoke(nint ____obj_native);
         }
     }
@@ -190,8 +206,8 @@ namespace Game
 {
     public unsafe partial class GameManager
     {
-        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.GameManager::Internal_Set_deathScreenActor", ExactSpelling = true)]
-        internal static extern partial void Internal_Set_deathScreenActor(nint __obj, nint value);
+        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.GameManager::Internal_Set_UIManager", ExactSpelling = true)]
+        internal static extern partial void Internal_Set_UIManager(nint __obj, nint value);
     }
 }
 namespace Game
@@ -253,51 +269,6 @@ namespace Game
     {
         [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.LauncherEnemy::Internal_Set_spawnTime", ExactSpelling = true)]
         internal static extern partial void Internal_Set_spawnTime(nint __obj, float value);
-    }
-}
-namespace Game
-{
-    public unsafe partial class Mine
-    {
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Interop.LibraryImportGenerator", "8.0.10.46610")]
-        [global::System.Runtime.CompilerServices.SkipLocalsInitAttribute]
-        internal static partial global::FlaxEngine.Collider Internal_Get_col(nint __obj)
-        {
-            bool __invokeSucceeded = default;
-            global::FlaxEngine.Collider __retVal = default;
-            nint __retVal_native = default;
-            try
-            {
-                {
-                    __retVal_native = __PInvoke(__obj);
-                }
-
-                __invokeSucceeded = true;
-                // Unmarshal - Convert native data to managed data.
-                __retVal = global::FlaxEngine.Interop.ColliderMarshaller.NativeToManaged.ConvertToManaged(__retVal_native);
-            }
-            finally
-            {
-                if (__invokeSucceeded)
-                {
-                    // CleanupCalleeAllocated - Perform cleanup of callee allocated resources.
-                    global::FlaxEngine.Interop.ColliderMarshaller.NativeToManaged.Free(__retVal_native);
-                }
-            }
-
-            return __retVal;
-            // Local P/Invoke
-            [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Mine::Internal_Get_col", ExactSpelling = true)]
-            static extern unsafe nint __PInvoke(nint ____obj_native);
-        }
-    }
-}
-namespace Game
-{
-    public unsafe partial class Mine
-    {
-        [global::System.Runtime.InteropServices.DllImportAttribute("Game", EntryPoint = "Game.Mine::Internal_Set_col", ExactSpelling = true)]
-        internal static extern partial void Internal_Set_col(nint __obj, nint value);
     }
 }
 namespace Game
