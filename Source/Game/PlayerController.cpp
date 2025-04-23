@@ -15,6 +15,11 @@ PlayerController::PlayerController(const SpawnParams& params)
 	_tickUpdate = true;
 }
 
+bool PlayerController::IsDead()
+{
+	return _dead;
+}
+
 PlayerController* PlayerController::GetInstance()
 {
 	return _instance;
@@ -28,7 +33,6 @@ Vector3 PlayerController::GetVelocity()
 void PlayerController::FireShotgun(float recoilPower)
 {
 	_frameRecoil = recoilPower;
-	
 }
 
 Quaternion PlayerController::GetCameraOrientation()
@@ -93,11 +97,17 @@ void PlayerController::OnAwake()
 
 void PlayerController::OnUpdate()
 {
+	HandleMovement();
+
 	if (GameManager::GetInstance()->_time < 0)
 	{
 		Die();
 	}
-	HandleMovement();
+	if (Input::GetKeyDown(KeyboardKeys::R))
+	{
+		Die();
+		GameManager::GetInstance()->ResetGame();
+	}
 }
 
 void PlayerController::OnStart()
@@ -149,13 +159,14 @@ void PlayerController::Reset()
 
 void PlayerController::HandleMovement()
 {
+	EvaluateState();
 	PitchCamera();
 	RotateBody();
-	EvaluateState();
+	HandleShooting();
+	EvaluateJump();
 	HandleHorizontalMovement();
 	HandleVerticalMovement();
-	EvaluateJump();
-	HandleShooting();
+
 	ApplyMovement();
 
 }
@@ -179,13 +190,28 @@ void PlayerController::EvaluateState()
 	if (!_awaitingReset)
 	{
 		float speed = Math::Min(_characterController->GetVelocity().Length(), _currentVelocity.Length());
+		if (_characterController->GetVelocity().Length() < _currentVelocity.Length())
+		{
+			_currentVelocity = _currentVelocity.GetNormalized() * speed;
+		}
+		else
+		{
 
-		_currentVelocity = _characterController->GetVelocity().GetNormalized() * speed;
+		}
+		
 
 	}
 	else
 	{
 		_currentVelocity = Vector3::Zero;
+		if (Input::GetKey(KeyboardKeys::Spacebar))
+		{
+			_holdingSpaceOnStart = true;
+		}
+	}
+	if (Input::GetKeyUp(KeyboardKeys::Spacebar))
+	{
+		_holdingSpaceOnStart = false;
 	}
 	_awaitingReset = false;
 }
@@ -223,7 +249,7 @@ void PlayerController::RotateBody()
 		LOG(Error, "_playerBody not set on Player!");
 		return;
 	}
-	
+
 	if (GameManager::GetInstance()->IsGameOver())
 	{
 		return;
@@ -244,6 +270,7 @@ void PlayerController::RotateBody()
 
 void PlayerController::HandleHorizontalMovement()
 {
+
 	float forward = Input::GetAxis(TEXT("Vertical"));
 	float right = Input::GetAxis(TEXT("Horizontal"));
 	Transform transform = GetActor()->GetTransform();
@@ -259,9 +286,6 @@ void PlayerController::HandleHorizontalMovement()
 	Vector3 currentHorizontalVelocity = _currentVelocity;
 	currentHorizontalVelocity.Y = 0;
 	float currentSpeed = currentHorizontalVelocity.Length();
-
-	
-	
 
 	switch (_state)
 	{
@@ -292,6 +316,7 @@ void PlayerController::HandleHorizontalMovement()
 	}
 
 
+
 }
 
 void PlayerController::HandleVerticalMovement()
@@ -301,12 +326,6 @@ void PlayerController::HandleVerticalMovement()
 		LOG(Error, "_characterController not set on Player!");
 		return;
 	}
-	if (Input::GetKeyDown(KeyboardKeys::Spacebar) && !GameManager::GetInstance()->IsGameOver())
-	{
-		_timeJumpLastPressed = Time::GetGameTime();
-	}
-	float jumpBufferTime = 0.4;
-	float coyoteTime = 0.4;
 
 	switch (_state)
 	{
@@ -343,13 +362,10 @@ void PlayerController::ApplyMovement()
 	_characterController->Move(_currentVelocity * Time::GetDeltaTime());
 }
 
-
-
-
 void PlayerController::EvaluateJump()
 {
 	//Clear Old Contact Data
-	float contactRelevanceTime = 0.2; 
+	float contactRelevanceTime = 0.1;
 
 	if (_dead)
 	{
@@ -371,19 +387,20 @@ void PlayerController::EvaluateJump()
 			break;
 		}
 	}
-	if (Input::GetKeyDown(KeyboardKeys::Spacebar))
-	{
-		_timeJumpLastPressed = Time::GetGameTime();
-	}
-	float jumpBufferTime = 0.2;
-	if (Time::GetGameTime() - _timeJumpLastPressed  > jumpBufferTime)
-	{
-		return;
-		
-	}
+	
 	if (_activeContacts.size() == 0)
 	{
 		return;
+	}
+	if (Input::GetKey(KeyboardKeys::Spacebar) && !GameManager::GetInstance()->IsGameOver() && !_holdingSpaceOnStart)
+	{
+		_timeJumpLastPressed = Time::GetGameTime();
+	}
+	float jumpBufferTime = 0.1;
+	if (Time::GetGameTime() - _timeJumpLastPressed > jumpBufferTime)
+	{
+		return;
+
 	}
 	Vector3 effectiveNormal = Vector3::Zero;
 	while (!_activeContacts.empty())
@@ -393,28 +410,38 @@ void PlayerController::EvaluateJump()
 		effectiveNormal += _activeContacts.front().Second * contactRelevanceFactor;
 		_activeContacts.pop();
 	}
-
 	effectiveNormal.Normalize();
-	float normalVerticality = Vector3::Dot(effectiveNormal, Vector3::Up);
-	//LOG_STR(Info, StringUtils::ToString(normalVerticality));
 
-	Vector3 totalVelocityDelta = Vector3::Zero;
-	totalVelocityDelta.Y = _jumpVerticalForce;
-	totalVelocityDelta += (effectiveNormal * _jumpNormalForce * (1-normalVerticality));
+	Vector3 reflectedVelocity;
+	Vector3::Reflect(_currentVelocity, effectiveNormal, reflectedVelocity);
 
-	_currentVelocity += totalVelocityDelta;
-	LOG_STR(Info, totalVelocityDelta.ToString());
-	_timeJumpLastPressed = -9999.9;
+	_currentVelocity = Vector3::ProjectOnPlane(_currentVelocity, effectiveNormal);
+	_currentVelocity = reflectedVelocity;
+
+	if (_currentVelocity.Y < _jumpVerticalForce)
+	{
+		_currentVelocity.Y = _jumpVerticalForce;
+	}
+
+	float projectedLength = Vector3::Project(_currentVelocity, effectiveNormal).Length();
+	if (projectedLength < _jumpNormalForce)
+	{
+		float diff = _jumpNormalForce - projectedLength;
+		_currentVelocity += effectiveNormal * diff;
+	}
+
 	if (_jumpSource)
 	{
 		_jumpSource->SetTime(0);
 		_jumpSource->Play();
 	}
+	_state = Air;
+
 }
 
 void PlayerController::Die()
 {
-	
+
 	if (_dead)
 	{
 		return;
@@ -424,7 +451,7 @@ void PlayerController::Die()
 		_splatSource->SetTime(0);
 		_splatSource->Play();
 	}
-	
+
 	if (_loseSource)
 	{
 		_loseSource->SetTime(0);
@@ -435,6 +462,15 @@ void PlayerController::Die()
 	if (instance)
 	{
 		instance->Lose();
+	}
+	if (_jibPrefab)
+	{
+		for (int i = 0; i < 10; i++)
+		{
+
+			PrefabManager::SpawnPrefab(_jibPrefab, _cameraContainer->GetPosition());
+
+		}
 	}
 }
 
@@ -468,7 +504,11 @@ void PlayerController::OnTriggerEnter(PhysicsColliderActor* other)
 	Pickup* pickup = other->GetScript<Pickup>();
 	if (pickup)
 	{
-		pickup->Grab();
+		if (!_dead)
+		{
+			pickup->Grab();
+
+		}
 	}
 }
 
@@ -500,5 +540,5 @@ void PlayerController::OnCollisionEnter(const Collision& collision)
 	//LOG_STR(Info, normal.ToString());
 
 	_activeContacts.emplace(Pair<float, Vector3>(Time::GetGameTime(), normal));
-	
+
 }

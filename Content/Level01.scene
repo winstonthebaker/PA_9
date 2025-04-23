@@ -18,17 +18,19 @@
 			}
 		},
 		{
-			"ID": "6ff0581d474c84230b3d0fa9f17e0972",
-			"TypeName": "ExitOnEsc",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"V": {}
-		},
-		{
 			"ID": "785581dd4ebb4520a1f5ff8abd722fde",
 			"TypeName": "Game.GameManager",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
 			"_startingTime": 10.0,
 			"_UIManager": "ec15e7f24b1dca1bfc061ca1ab4a226e"
+		},
+		{
+			"ID": "3ae2bc41479fe4a5eb0798b0d7bbf114",
+			"TypeName": "Game.EscToMenu",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"V": {
+	"_menuScene": "f8c9042949fdad5ce41fe3b00db114c9"
+}
 		},
 		{
 			"ID": "28553d634087c67c711ebd96080482aa",
@@ -907,12 +909,6 @@
 			"PrefabObjectID": "912d8f2a42670ba60733b3b5170528ab",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
 			"Name": "Ambience0AudioSource"
-		},
-		{
-			"ID": "8d77923a4755dab0d8a2cbb77e65d469",
-			"PrefabID": "43e57bad4b533d5fa47fe987c2954985",
-			"PrefabObjectID": "f4b61a9a4ed020caeca848b762232d87",
-			"ParentID": "3d2e5278488b2b6fd3386ebe1e1463a1"
 		}
 	]
 }

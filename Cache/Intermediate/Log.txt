@@ -1,85 +1,85 @@
 [00:00:004] Flax.Build 1.0.0
 [00:00:004]   Arguments: -log -mutex -genproject
-[00:00:004]   Workspace: C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9
-[00:00:004]   Engine: C:\Program Files (x86)\Flax\Flax_1.9
+[00:00:005]   Workspace: C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9
+[00:00:005]   Engine: C:\Program Files (x86)\Flax\Flax_1.9
 [00:00:005]   .NET 8.0.10
 [00:00:006] Loading project file from "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.flaxproj"...
 [00:00:021] Loading project file from "C:\Program Files (x86)\Flax\Flax_1.9\Flax.flaxproj"...
 [00:00:022] Loaded project Flax, version 1.9.6605
 [00:00:022] Loaded project PA_8, version 1.0
-[00:00:033] Engine build version: 1.9.6605
+[00:00:034] Engine build version: 1.9.6605
 [00:00:044] Generating project files...
-[00:00:048] Missing Android SDK. Cannot build for Android platform.
+[00:00:049] Missing Android SDK. Cannot build for Android platform.
 [00:00:049] Missing Linux Toolchain. Cannot build for Linux platform.
-[00:00:051] Found Windows SDK v10_0_22621_0 at C:\Program Files (x86)\Windows Kits\10\
-[00:00:059] Found VisualStudio2022 at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools
-[00:00:059] Found VisualStudio2022 at C:\Program Files\Microsoft Visual Studio\2022\Community
+[00:00:052] Found Windows SDK v10_0_22621_0 at C:\Program Files (x86)\Windows Kits\10\
+[00:00:060] Found VisualStudio2022 at C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools
+[00:00:060] Found VisualStudio2022 at C:\Program Files\Microsoft Visual Studio\2022\Community
 [00:00:061] Found Windows toolset v144 at C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120
-[00:00:085] Missing VULKAN_SDK environment variable. Cannot build Vulkan.
-[00:00:085] Building for Windows without Vulkan rendering backend (Vulkan SDK is missing)
-[00:00:088] Found the following .NET SDK versions: 8.0.403
-[00:00:088] Found the following .NET runtime versions: 8.0.10
-[00:00:090] Using .NET SDK 8.0.403, runtime 8.0.10 (C:\Program Files\dotnet\)
-[00:00:090]   - Host Runtime for Windows x64
-[00:00:090]   - Host Runtime for Windows x86
-[00:00:090]   - Host Runtime for Windows ARM64
-[00:00:098] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:103] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:108] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:112] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:086] Missing VULKAN_SDK environment variable. Cannot build Vulkan.
+[00:00:086] Building for Windows without Vulkan rendering backend (Vulkan SDK is missing)
+[00:00:089] Found the following .NET SDK versions: 8.0.403
+[00:00:090] Found the following .NET runtime versions: 8.0.10
+[00:00:091] Using .NET SDK 8.0.403, runtime 8.0.10 (C:\Program Files\dotnet\)
+[00:00:092]   - Host Runtime for Windows x64
+[00:00:092]   - Host Runtime for Windows x86
+[00:00:092]   - Host Runtime for Windows ARM64
+[00:00:100] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:105] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:110] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
 [00:00:115] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
 [00:00:118] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:124] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:129] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:134] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:139] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:143] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:147] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:191] Flax -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj
-[00:00:205] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj
-[00:00:206] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj.filters
-[00:00:206] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj.user
-[00:00:206] PA_8 -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj
-[00:00:207] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj
-[00:00:208] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj.filters
-[00:00:208] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj.user
-[00:00:208] Game -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.csproj
-[00:00:213] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.csproj
-[00:00:213] Project BuildScripts -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\BuildScripts.csproj
-[00:00:214] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\BuildScripts.csproj
-[00:00:214] Solution -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln
-[00:00:222] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln
-[00:00:223] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln.DotSettings.user
-[00:00:223] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.Build.CSharp.SkipBuild.targets
-[00:00:223] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.Build.CSharp.targets
-[00:00:229] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:121] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:127] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:132] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:137] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:142] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:146] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:150] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:196] Flax -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj
+[00:00:211] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj
+[00:00:212] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj.filters
+[00:00:212] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj.user
+[00:00:212] PA_8 -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj
+[00:00:213] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj
+[00:00:214] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj.filters
+[00:00:214] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj.user
+[00:00:214] Game -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.csproj
+[00:00:219] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.csproj
+[00:00:220] Project BuildScripts -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\BuildScripts.csproj
+[00:00:221] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\BuildScripts.csproj
+[00:00:221] Solution -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln
+[00:00:229] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln
+[00:00:229] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln.DotSettings.user
+[00:00:230] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.Build.CSharp.SkipBuild.targets
+[00:00:230] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.Build.CSharp.targets
 [00:00:235] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:242] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:245] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:248] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:251] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:255] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:259] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:264] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:267] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:271] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:240] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:246] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:249] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:253] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:256] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:260] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:265] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:269] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:272] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
 [00:00:275] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
-[00:00:318] Flax -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj
-[00:00:324] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj
-[00:00:325] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj.filters
-[00:00:325] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj.user
-[00:00:325] PA_8 -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj
-[00:00:326] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj
-[00:00:326] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj.filters
-[00:00:326] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj.user
-[00:00:326] Game -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.csproj
-[00:00:327] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.csproj
-[00:00:327] Project BuildScripts -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\BuildScripts.csproj
-[00:00:327] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\BuildScripts.csproj
-[00:00:327] Solution -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln
-[00:00:327] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln
-[00:00:328] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln.DotSettings.user
-[00:00:328] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.Build.CSharp.SkipBuild.targets
-[00:00:328] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.Build.CSharp.targets
-[00:00:329] Total time: 00:00:00.3383129
-[00:00:329] End.
+[00:00:278] No x64 host compiler toolchain found in C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe or C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\arm64\cl.exe
+[00:00:320] Flax -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj
+[00:00:327] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj
+[00:00:328] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj.filters
+[00:00:328] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.vcxproj.user
+[00:00:328] PA_8 -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj
+[00:00:329] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj
+[00:00:330] Saved file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj.filters
+[00:00:330] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\PA_8.vcxproj.user
+[00:00:330] Game -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.csproj
+[00:00:330] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game.csproj
+[00:00:330] Project BuildScripts -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\BuildScripts.csproj
+[00:00:331] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\BuildScripts.csproj
+[00:00:331] Solution -> C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln
+[00:00:331] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln
+[00:00:332] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\PA_8.sln.DotSettings.user
+[00:00:332] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.Build.CSharp.SkipBuild.targets
+[00:00:332] Skipped saving file to C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Cache\Projects\Flax.Build.CSharp.targets
+[00:00:332] Total time: 00:00:00.3428813
+[00:00:332] End.

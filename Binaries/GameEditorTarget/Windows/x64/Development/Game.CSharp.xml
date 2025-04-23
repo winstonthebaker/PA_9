@@ -189,9 +189,19 @@
             BulletTrail Script.
             </summary>
         </member>
+        <member name="T:Game.EscToMenu">
+            <summary>
+            EscToMenu Script.
+            </summary>
+        </member>
         <member name="T:Game.InfoTextPanel">
             <summary>
             InfoTextPanel Script.
+            </summary>
+        </member>
+        <member name="T:Game.Jib">
+            <summary>
+            Jib Script.
             </summary>
         </member>
         <member name="T:Game.LockCursor">

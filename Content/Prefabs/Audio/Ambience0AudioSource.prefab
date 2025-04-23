@@ -10,11 +10,6 @@
 		"Clip": "4583e6204ffbbd187c4be18404fc8e8d",
 		"Loop": true,
 		"PlayOnStart": true
-	},
-	{
-		"ID": "f4b61a9a4ed020caeca848b762232d87",
-		"TypeName": "Game.ExplosionDestroySelf",
-		"ParentID": "912d8f2a42670ba60733b3b5170528ab"
 	}
 ]
 }

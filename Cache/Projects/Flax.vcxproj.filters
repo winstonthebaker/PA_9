@@ -5,7 +5,7 @@
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\flax.natvis" />
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\FlaxEngine.Gen.h" />
     <Filter Include="Editor">
-      <UniqueIdentifier>{316C1D2B-322F-4374-92D0-45F30FA3834A}</UniqueIdentifier>
+      <UniqueIdentifier>{B3CA1937-0E01-457C-9A98-91E033F446F9}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Editor\Editor.h">
       <Filter>Editor</Filter>
@@ -14,7 +14,7 @@
       <Filter>Editor</Filter>
     </ClInclude>
     <Filter Include="Shaders">
-      <UniqueIdentifier>{E6148D29-FC99-4EF6-A65A-29D998210F59}</UniqueIdentifier>
+      <UniqueIdentifier>{C753FE65-66E7-4E97-9E7F-AC4F65AF5929}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Shaders\ACES.hlsl">
       <Filter>Shaders</Filter>
@@ -110,13 +110,13 @@
       <Filter>Shaders</Filter>
     </None>
     <Filter Include="ThirdParty">
-      <UniqueIdentifier>{387DEFEF-60E6-4C0F-8BE8-23A1AEE766AA}</UniqueIdentifier>
+      <UniqueIdentifier>{022A9239-DEE9-4139-A020-FFA059D86030}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\concurrentqueue.h">
       <Filter>ThirdParty</Filter>
     </ClInclude>
     <Filter Include="Editor\Cooker">
-      <UniqueIdentifier>{FB76855D-1566-4C8D-91B0-78F90E1B4A0D}</UniqueIdentifier>
+      <UniqueIdentifier>{E3A39734-B3AA-49EB-B01F-1E33AF25267A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Editor\Cooker\CookingData.h">
       <Filter>Editor\Cooker</Filter>
@@ -128,7 +128,7 @@
       <Filter>Editor\Cooker</Filter>
     </ClInclude>
     <Filter Include="Editor\Utilities">
-      <UniqueIdentifier>{37BDBD92-8358-4F19-9A2E-D4365E4DE03E}</UniqueIdentifier>
+      <UniqueIdentifier>{EF2D10DE-B951-427F-9745-F81DFB97F51B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Editor\Utilities\ScreenUtilities.h">
       <Filter>Editor\Utilities</Filter>
@@ -137,10 +137,10 @@
       <Filter>Editor\Utilities</Filter>
     </ClInclude>
     <Filter Include="Engine">
-      <UniqueIdentifier>{FB4F0300-91DD-4CC4-8977-BF2F10AC3E21}</UniqueIdentifier>
+      <UniqueIdentifier>{4EDAA9F2-6346-4B1D-973B-C22209D4DAE2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Engine\AI">
-      <UniqueIdentifier>{9B9DB967-EFB7-410B-B73D-E58873C31E32}</UniqueIdentifier>
+      <UniqueIdentifier>{DE04D1BD-0F10-4E62-973C-87B07837FBA1}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\AI\Behavior.h">
       <Filter>Engine\AI</Filter>
@@ -164,7 +164,7 @@
       <Filter>Engine\AI</Filter>
     </ClInclude>
     <Filter Include="Engine\Animations">
-      <UniqueIdentifier>{1402B3CB-BFD8-4277-99A1-DC639497E58C}</UniqueIdentifier>
+      <UniqueIdentifier>{37CCB520-0A0C-4DB6-9899-144D033DBAFD}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Animations\AlphaBlend.h">
       <Filter>Engine\Animations</Filter>
@@ -194,7 +194,7 @@
       <Filter>Engine\Animations</Filter>
     </ClInclude>
     <Filter Include="Engine\Audio">
-      <UniqueIdentifier>{22005093-A89C-4E93-B2D9-4840579F17BD}</UniqueIdentifier>
+      <UniqueIdentifier>{E0AD8706-F1CB-475A-92B2-83A919DACE78}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Audio\Audio.h">
       <Filter>Engine\Audio</Filter>
@@ -227,7 +227,7 @@
       <Filter>Engine\Audio</Filter>
     </ClInclude>
     <Filter Include="Engine\Content">
-      <UniqueIdentifier>{8771FEF2-5242-46A0-B062-0A4BFC3172C8}</UniqueIdentifier>
+      <UniqueIdentifier>{DAA56022-6A7C-4D59-AE45-57D6266F0ABF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Content\Asset.h">
       <Filter>Engine\Content</Filter>
@@ -269,7 +269,7 @@
       <Filter>Engine\Content</Filter>
     </ClInclude>
     <Filter Include="Engine\ContentExporters">
-      <UniqueIdentifier>{8294883B-FCAB-4562-870E-D7B8A2EEB4A9}</UniqueIdentifier>
+      <UniqueIdentifier>{901288C5-E3C9-4EF1-A682-CAC8174E238B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\ContentExporters\AssetsExportingManager.h">
       <Filter>Engine\ContentExporters</Filter>
@@ -278,7 +278,7 @@
       <Filter>Engine\ContentExporters</Filter>
     </ClInclude>
     <Filter Include="Engine\ContentImporters">
-      <UniqueIdentifier>{CC42D704-D43C-44F8-8C9E-28108452C298}</UniqueIdentifier>
+      <UniqueIdentifier>{649EC710-DCA2-40D2-A357-BD89662B1CEC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\ContentImporters\AssetsImportingManager.h">
       <Filter>Engine\ContentImporters</Filter>
@@ -287,7 +287,7 @@
       <Filter>Engine\ContentImporters</Filter>
     </ClInclude>
     <Filter Include="Engine\Core">
-      <UniqueIdentifier>{03E6CCFC-00C9-4F40-9E50-05340812C7B5}</UniqueIdentifier>
+      <UniqueIdentifier>{2C404550-F378-4B7C-AE69-6C65DA67D362}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Cache.h">
       <Filter>Engine\Core</Filter>
@@ -359,7 +359,7 @@
       <Filter>Engine\Core</Filter>
     </ClInclude>
     <Filter Include="Engine\CSG">
-      <UniqueIdentifier>{5B8D43EE-5E15-4145-B4FD-2C4825461387}</UniqueIdentifier>
+      <UniqueIdentifier>{8756280B-F1BA-437F-9892-3FB9ACAA3560}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\CSG\Brush.h">
       <Filter>Engine\CSG</Filter>
@@ -368,7 +368,7 @@
       <Filter>Engine\CSG</Filter>
     </ClInclude>
     <Filter Include="Engine\Debug">
-      <UniqueIdentifier>{1C866076-0C28-4416-BE8C-DB240BC1858B}</UniqueIdentifier>
+      <UniqueIdentifier>{5EB9CC2C-6D83-4CC1-A773-2BBB654B26C5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Debug\DebugDraw.h">
       <Filter>Engine\Debug</Filter>
@@ -380,7 +380,7 @@
       <Filter>Engine\Debug</Filter>
     </ClInclude>
     <Filter Include="Engine\Engine">
-      <UniqueIdentifier>{4ED95943-7043-4225-B794-8A423CD5DAE0}</UniqueIdentifier>
+      <UniqueIdentifier>{C7A0B38F-B791-4FC4-8912-B4314239CFFC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Engine\Application.h">
       <Filter>Engine\Engine</Filter>
@@ -413,7 +413,7 @@
       <Filter>Engine\Engine</Filter>
     </ClInclude>
     <Filter Include="Engine\Foliage">
-      <UniqueIdentifier>{00BB1ABA-EFCC-49D2-8B8D-5944D82465A2}</UniqueIdentifier>
+      <UniqueIdentifier>{473E9433-3233-4C2D-BC44-B0456568A4A5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Foliage\Config.h">
       <Filter>Engine\Foliage</Filter>
@@ -431,7 +431,7 @@
       <Filter>Engine\Foliage</Filter>
     </ClInclude>
     <Filter Include="Engine\Graphics">
-      <UniqueIdentifier>{BE7F933B-AC24-425F-9E4C-9222F92FD4F1}</UniqueIdentifier>
+      <UniqueIdentifier>{E7F5162C-4F24-40D5-B617-B4205A60ED8A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Graphics\Config.h">
       <Filter>Engine\Graphics</Filter>
@@ -512,7 +512,7 @@
       <Filter>Engine\Graphics</Filter>
     </ClInclude>
     <Filter Include="Engine\Input">
-      <UniqueIdentifier>{6388DB68-8FE5-4183-BCB8-903FE06FE376}</UniqueIdentifier>
+      <UniqueIdentifier>{DE4ACA4C-7131-4A3B-B14C-0836914018FC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Input\Enums.h">
       <Filter>Engine\Input</Filter>
@@ -542,7 +542,7 @@
       <Filter>Engine\Input</Filter>
     </ClInclude>
     <Filter Include="Engine\Level">
-      <UniqueIdentifier>{6407E28E-18E5-4010-93BB-3B5AB875ACE6}</UniqueIdentifier>
+      <UniqueIdentifier>{13150EAB-5A7F-4376-9A8D-48FD165FA019}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Level\Actor.h">
       <Filter>Engine\Level</Filter>
@@ -575,7 +575,7 @@
       <Filter>Engine\Level</Filter>
     </ClInclude>
     <Filter Include="Engine\Localization">
-      <UniqueIdentifier>{02AA8428-5119-4F8F-B7BF-64A388C2368A}</UniqueIdentifier>
+      <UniqueIdentifier>{466B81D5-1730-4E19-B4D4-656B72A97A9B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Localization\CultureInfo.h">
       <Filter>Engine\Localization</Filter>
@@ -596,7 +596,7 @@
       <Filter>Engine\Localization</Filter>
     </ClInclude>
     <Filter Include="Engine\Navigation">
-      <UniqueIdentifier>{01B9BF93-8696-4689-85E8-F766BC81CF61}</UniqueIdentifier>
+      <UniqueIdentifier>{DD4BDE6B-596E-40C3-AE9A-A61B04BB0283}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Navigation\NavCrowd.h">
       <Filter>Engine\Navigation</Filter>
@@ -632,7 +632,7 @@
       <Filter>Engine\Navigation</Filter>
     </ClInclude>
     <Filter Include="Engine\Networking">
-      <UniqueIdentifier>{2CA3501C-D790-4FE2-8183-E9DC6DD59562}</UniqueIdentifier>
+      <UniqueIdentifier>{715E8DAD-44D8-4802-A386-51533F3440EF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Networking\INetworkDriver.h">
       <Filter>Engine\Networking</Filter>
@@ -695,7 +695,7 @@
       <Filter>Engine\Networking</Filter>
     </ClInclude>
     <Filter Include="Engine\Online">
-      <UniqueIdentifier>{3216CDD1-01BE-43FB-8D9D-9329A5A66072}</UniqueIdentifier>
+      <UniqueIdentifier>{1CEB1665-6932-40A3-80A1-5CCB04E50F42}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Online\IOnlinePlatform.h">
       <Filter>Engine\Online</Filter>
@@ -704,7 +704,7 @@
       <Filter>Engine\Online</Filter>
     </ClInclude>
     <Filter Include="Engine\Particles">
-      <UniqueIdentifier>{B3ED09D2-3729-4525-BB5A-0A8A5C3894C7}</UniqueIdentifier>
+      <UniqueIdentifier>{481DF66A-A6AF-4C84-AC88-39350CE94C29}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Particles\ParticleEffect.h">
       <Filter>Engine\Particles</Filter>
@@ -731,7 +731,7 @@
       <Filter>Engine\Particles</Filter>
     </ClInclude>
     <Filter Include="Engine\Physics">
-      <UniqueIdentifier>{331F245D-F2BF-4B2B-BE1C-2ACB0A466332}</UniqueIdentifier>
+      <UniqueIdentifier>{60656F7F-FB03-4EC8-8472-6D59288974A4}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\CollisionCooking.h">
       <Filter>Engine\Physics</Filter>
@@ -764,7 +764,7 @@
       <Filter>Engine\Physics</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform">
-      <UniqueIdentifier>{6A73B159-2F14-44DB-871B-90F50F81130F}</UniqueIdentifier>
+      <UniqueIdentifier>{80368C09-592D-4262-8B48-7E6E7BE22B56}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\BatteryInfo.h">
       <Filter>Engine\Platform</Filter>
@@ -833,7 +833,7 @@
       <Filter>Engine\Platform</Filter>
     </ClInclude>
     <Filter Include="Engine\Profiler">
-      <UniqueIdentifier>{0ECEC6B4-B45A-4CD6-94BF-FF9432F3FD61}</UniqueIdentifier>
+      <UniqueIdentifier>{4DF9C85A-9EDE-47B4-BE2C-6F224854BD2B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Profiler\Profiler.h">
       <Filter>Engine\Profiler</Filter>
@@ -854,7 +854,7 @@
       <Filter>Engine\Profiler</Filter>
     </ClInclude>
     <Filter Include="Engine\Render2D">
-      <UniqueIdentifier>{E744BB26-72E2-49B5-8171-EC8C934DEB4E}</UniqueIdentifier>
+      <UniqueIdentifier>{947D1598-FF9F-45A3-BFD7-9819CFEC5BD2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Render2D\Font.h">
       <Filter>Engine\Render2D</Filter>
@@ -884,7 +884,7 @@
       <Filter>Engine\Render2D</Filter>
     </ClInclude>
     <Filter Include="Engine\Renderer">
-      <UniqueIdentifier>{494CFBF3-BEF8-40D9-AF32-26FCEF36BB25}</UniqueIdentifier>
+      <UniqueIdentifier>{2326E4F6-48AB-4492-B05F-C3AF593082A3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Renderer\AmbientOcclusionPass.h">
       <Filter>Engine\Renderer</Filter>
@@ -968,7 +968,7 @@
       <Filter>Engine\Renderer</Filter>
     </ClInclude>
     <Filter Include="Engine\Scripting">
-      <UniqueIdentifier>{85E7F7F0-115F-4FE1-B792-95DF2FF3A2E5}</UniqueIdentifier>
+      <UniqueIdentifier>{4CB047DF-D88F-4CEC-B8FE-A4711268D907}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Scripting\BinaryModule.h">
       <Filter>Engine\Scripting</Filter>
@@ -1010,7 +1010,7 @@
       <Filter>Engine\Scripting</Filter>
     </ClInclude>
     <Filter Include="Engine\Serialization">
-      <UniqueIdentifier>{45E1A7AA-8122-4887-BADD-577235C57074}</UniqueIdentifier>
+      <UniqueIdentifier>{BE3219FB-171D-4F8B-93B3-EBC9814D6D3E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Serialization\FileReadStream.h">
       <Filter>Engine\Serialization</Filter>
@@ -1064,7 +1064,7 @@
       <Filter>Engine\Serialization</Filter>
     </ClInclude>
     <Filter Include="Engine\Streaming">
-      <UniqueIdentifier>{2419508F-DB79-4022-80B2-D9BA732C903A}</UniqueIdentifier>
+      <UniqueIdentifier>{2F99A0E9-208A-4894-942A-52F24E81AF00}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Streaming\IStreamingHandler.h">
       <Filter>Engine\Streaming</Filter>
@@ -1088,7 +1088,7 @@
       <Filter>Engine\Streaming</Filter>
     </ClInclude>
     <Filter Include="Engine\Terrain">
-      <UniqueIdentifier>{CBAE9440-9E1C-40F3-8564-380109EE43E5}</UniqueIdentifier>
+      <UniqueIdentifier>{1275AE36-A793-496D-98B2-007CD224A89A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Terrain\Terrain.h">
       <Filter>Engine\Terrain</Filter>
@@ -1103,7 +1103,7 @@
       <Filter>Engine\Terrain</Filter>
     </ClInclude>
     <Filter Include="Engine\Threading">
-      <UniqueIdentifier>{08CF2CC4-81C7-4203-A102-D0FD1021DBDE}</UniqueIdentifier>
+      <UniqueIdentifier>{463BB992-F283-4A7B-8B32-D556D85B0945}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Threading\ConcurrentBuffer.h">
       <Filter>Engine\Threading</Filter>
@@ -1148,7 +1148,7 @@
       <Filter>Engine\Threading</Filter>
     </ClInclude>
     <Filter Include="Engine\UI">
-      <UniqueIdentifier>{2CA93A8B-1A1D-4B1B-96C7-F467695B5682}</UniqueIdentifier>
+      <UniqueIdentifier>{DA56A4DF-7BCD-49F5-B317-6A17E2FBE122}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\UI\SpriteRender.h">
       <Filter>Engine\UI</Filter>
@@ -1163,7 +1163,7 @@
       <Filter>Engine\UI</Filter>
     </ClInclude>
     <Filter Include="Engine\Utilities">
-      <UniqueIdentifier>{FA48472C-7CD0-478E-923C-840127EB76A8}</UniqueIdentifier>
+      <UniqueIdentifier>{F7FF3641-C756-449A-97E4-C494688F74D9}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Utilities\AnsiPathTempFile.h">
       <Filter>Engine\Utilities</Filter>
@@ -1202,7 +1202,7 @@
       <Filter>Engine\Utilities</Filter>
     </ClInclude>
     <Filter Include="Engine\Video">
-      <UniqueIdentifier>{55B0C7C8-31AA-408D-AE3D-4FF8E8F70B50}</UniqueIdentifier>
+      <UniqueIdentifier>{21FB83AF-691C-415A-B53A-88D426AA4039}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Video\Types.h">
       <Filter>Engine\Video</Filter>
@@ -1217,7 +1217,7 @@
       <Filter>Engine\Video</Filter>
     </ClInclude>
     <Filter Include="Engine\Visject">
-      <UniqueIdentifier>{DD9D7EB1-36CB-4FA2-A974-D08C67649048}</UniqueIdentifier>
+      <UniqueIdentifier>{B473B6BD-FF14-4724-8717-DC9C17489821}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Visject\Graph.h">
       <Filter>Engine\Visject</Filter>
@@ -1247,10 +1247,10 @@
       <Filter>Engine\Visject</Filter>
     </ClInclude>
     <Filter Include="Platforms">
-      <UniqueIdentifier>{F491564E-D77F-42D0-809E-817C2D3CCCCD}</UniqueIdentifier>
+      <UniqueIdentifier>{69217624-059E-4A19-8473-6EB930FCC76D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platforms\DotNet">
-      <UniqueIdentifier>{E18B3A4E-0CF5-42EA-B12E-57342D0E5BFB}</UniqueIdentifier>
+      <UniqueIdentifier>{79847EF5-BC63-443C-B2F2-4819AED085A8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Platforms\DotNet\Newtonsoft.Json.dll">
       <Filter>Platforms\DotNet</Filter>
@@ -1259,13 +1259,13 @@
       <Filter>Platforms\DotNet</Filter>
     </None>
     <Filter Include="Shaders\Editor">
-      <UniqueIdentifier>{F62B0FB3-B0BE-41CA-A242-3744475F7A37}</UniqueIdentifier>
+      <UniqueIdentifier>{C4A6F944-C981-4D35-9676-AE1A014C125A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Shaders\Editor\QuadOverdraw.hlsl">
       <Filter>Shaders\Editor</Filter>
     </None>
     <Filter Include="Shaders\GI">
-      <UniqueIdentifier>{B2703F3C-F6DA-4EDF-BF6C-4B38896002D8}</UniqueIdentifier>
+      <UniqueIdentifier>{7FB09559-CD46-4F41-A6F2-84D4559A8CC8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Shaders\GI\DDGI.hlsl">
       <Filter>Shaders\GI</Filter>
@@ -1274,61 +1274,61 @@
       <Filter>Shaders\GI</Filter>
     </None>
     <Filter Include="ThirdParty\assimp">
-      <UniqueIdentifier>{0CF06FB0-CD77-4C47-AD47-4ADD8D055EA1}</UniqueIdentifier>
+      <UniqueIdentifier>{70C7251E-4486-4232-9B52-24F35230CC9F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\assimp\LICENSE">
       <Filter>ThirdParty\assimp</Filter>
     </None>
     <Filter Include="ThirdParty\astc">
-      <UniqueIdentifier>{855176E1-A9F1-44A2-A63D-1310C54B8553}</UniqueIdentifier>
+      <UniqueIdentifier>{160FEEA3-95CB-4A25-AB95-E9ABE2C72710}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\astc\LICENSE.txt">
       <Filter>ThirdParty\astc</Filter>
     </None>
     <Filter Include="ThirdParty\bc7enc16">
-      <UniqueIdentifier>{0A77B3CC-1A81-4AF6-8394-EF625BDDAD6C}</UniqueIdentifier>
+      <UniqueIdentifier>{2D331653-EC38-4384-99EC-82F8D42C6C41}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\bc7enc16\LICENSE">
       <Filter>ThirdParty\bc7enc16</Filter>
     </None>
     <Filter Include="ThirdParty\catch2">
-      <UniqueIdentifier>{94517AC4-9589-4AD7-8034-0EB431ECA593}</UniqueIdentifier>
+      <UniqueIdentifier>{3626CFE7-76A9-4020-95CB-EB096665D77E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\catch2\LICENSE.txt">
       <Filter>ThirdParty\catch2</Filter>
     </None>
     <Filter Include="ThirdParty\curl">
-      <UniqueIdentifier>{5C978BD8-D482-4585-94AE-445ACAF7645C}</UniqueIdentifier>
+      <UniqueIdentifier>{CE6AFFDD-B349-4DA8-B0CC-A08463159F97}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\curl\curl License.txt">
       <Filter>ThirdParty\curl</Filter>
     </None>
     <Filter Include="ThirdParty\detex">
-      <UniqueIdentifier>{09D5069F-5FCA-45C4-B844-0111DCA582A7}</UniqueIdentifier>
+      <UniqueIdentifier>{026C35EF-77A7-495A-B4DD-818C50BD0907}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\detex\LICENSE">
       <Filter>ThirdParty\detex</Filter>
     </None>
     <Filter Include="ThirdParty\DirectXMesh">
-      <UniqueIdentifier>{2819B1FA-E180-426B-A4FA-272D0405E95F}</UniqueIdentifier>
+      <UniqueIdentifier>{58D0B46C-B867-4775-986F-750C09D9D7B9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\DirectXMesh\LICENSE">
       <Filter>ThirdParty\DirectXMesh</Filter>
     </None>
     <Filter Include="ThirdParty\DirectXTex">
-      <UniqueIdentifier>{D2AEF351-FAB5-4FE9-A692-FAC974F6A6F9}</UniqueIdentifier>
+      <UniqueIdentifier>{EA071342-6D68-4C30-B303-83C7092DF9FC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\DirectXTex\LICENSE">
       <Filter>ThirdParty\DirectXTex</Filter>
     </None>
     <Filter Include="ThirdParty\enet">
-      <UniqueIdentifier>{A4B32E50-7442-4C47-8D02-C147F88FC43D}</UniqueIdentifier>
+      <UniqueIdentifier>{59A1A052-B42D-4121-B52D-F9CCE70B7899}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\enet\enet License.txt">
       <Filter>ThirdParty\enet</Filter>
     </None>
     <Filter Include="ThirdParty\fmt">
-      <UniqueIdentifier>{7C8ED609-027C-4672-B80B-8FF2AC184AD0}</UniqueIdentifier>
+      <UniqueIdentifier>{407DFE4A-6B28-4D09-B314-C4F8869126F2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\fmt\core.h">
       <Filter>ThirdParty\fmt</Filter>
@@ -1346,85 +1346,85 @@
       <Filter>ThirdParty\fmt</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\freetype">
-      <UniqueIdentifier>{D4BAC66B-A479-4805-9386-96FD82AF19C8}</UniqueIdentifier>
+      <UniqueIdentifier>{1D6B797D-7692-4C4A-9871-8563B01CF702}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\freetype\LICENSE.TXT">
       <Filter>ThirdParty\freetype</Filter>
     </None>
     <Filter Include="ThirdParty\glslang">
-      <UniqueIdentifier>{2F16ACB8-354F-4661-86BC-2EB35DDB33BE}</UniqueIdentifier>
+      <UniqueIdentifier>{988CDFAD-EB84-4D64-B7E8-74040A58F3E2}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\glslang\LICENSE.txt">
       <Filter>ThirdParty\glslang</Filter>
     </None>
     <Filter Include="ThirdParty\LZ4">
-      <UniqueIdentifier>{55CCFA20-E537-4D33-8D2D-1BA69EAA8264}</UniqueIdentifier>
+      <UniqueIdentifier>{BCA68BF5-E124-4ED4-A2FF-72C2BBE15342}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\LZ4\LICENSE.txt">
       <Filter>ThirdParty\LZ4</Filter>
     </None>
     <Filter Include="ThirdParty\meshoptimizer">
-      <UniqueIdentifier>{1DD3C5DE-D5CA-48A8-9F3B-2527F059EF48}</UniqueIdentifier>
+      <UniqueIdentifier>{33C59BB4-BC75-421C-A6CE-C2DAD6196217}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\meshoptimizer\LICENSE.md">
       <Filter>ThirdParty\meshoptimizer</Filter>
     </None>
     <Filter Include="ThirdParty\MikkTSpace">
-      <UniqueIdentifier>{4BB39827-712A-4990-AB89-389B68F10E47}</UniqueIdentifier>
+      <UniqueIdentifier>{3DBBB635-7F9A-4E68-8369-4ABD9A9FD65F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\MikkTSpace\license.txt">
       <Filter>ThirdParty\MikkTSpace</Filter>
     </None>
     <Filter Include="ThirdParty\minimp3">
-      <UniqueIdentifier>{927942F3-4F4E-48FA-BC3C-D36A08D1A59D}</UniqueIdentifier>
+      <UniqueIdentifier>{81DDC62E-5EC1-431A-95A0-25E3B5FF6CDB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\minimp3\LICENSE">
       <Filter>ThirdParty\minimp3</Filter>
     </None>
     <Filter Include="ThirdParty\mono-2.0">
-      <UniqueIdentifier>{52DB6961-3AF5-4B4C-8A70-A5CC50139B55}</UniqueIdentifier>
+      <UniqueIdentifier>{5C485C7F-E97B-4E25-A649-D71777FF7EA9}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\mono-2.0\LICENSE">
       <Filter>ThirdParty\mono-2.0</Filter>
     </None>
     <Filter Include="ThirdParty\nethost">
-      <UniqueIdentifier>{A350132C-2E7C-49ED-990F-48AC3A953744}</UniqueIdentifier>
+      <UniqueIdentifier>{B02660FF-A1CA-4DC8-B11B-7F67E5EB6BBB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\nethost\LICENSE.TXT">
       <Filter>ThirdParty\nethost</Filter>
     </None>
     <Filter Include="ThirdParty\NvCloth">
-      <UniqueIdentifier>{DB2F94F4-258A-44DD-846B-2F3A820A01CA}</UniqueIdentifier>
+      <UniqueIdentifier>{0CE5E8CC-F5C0-458C-8EC6-26008031D91E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\NvCloth\License.txt">
       <Filter>ThirdParty\NvCloth</Filter>
     </None>
     <Filter Include="ThirdParty\ogg">
-      <UniqueIdentifier>{68DE32CC-BC33-4EE6-B2A8-39B01DD7E5A9}</UniqueIdentifier>
+      <UniqueIdentifier>{B806DB7A-A545-4DA1-A2AF-D9CAA7BB98B5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\ogg\COPYING">
       <Filter>ThirdParty\ogg</Filter>
     </None>
     <Filter Include="ThirdParty\OpenFBX">
-      <UniqueIdentifier>{49864563-5FAD-4B9C-B428-1E79B046555E}</UniqueIdentifier>
+      <UniqueIdentifier>{949F0E5C-0449-42B5-A4B8-1BFBF07A5DFE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\OpenFBX\LICENSE.txt">
       <Filter>ThirdParty\OpenFBX</Filter>
     </None>
     <Filter Include="ThirdParty\PhysX">
-      <UniqueIdentifier>{8AD3D251-F410-4999-94A2-71A4BAAFB8D2}</UniqueIdentifier>
+      <UniqueIdentifier>{BC02B7E9-0C72-4C71-90B6-ED8264593DB4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\PhysX\License.txt">
       <Filter>ThirdParty\PhysX</Filter>
     </None>
     <Filter Include="ThirdParty\pugixml">
-      <UniqueIdentifier>{435F3310-C686-4B26-86E9-493294086C40}</UniqueIdentifier>
+      <UniqueIdentifier>{292EB01D-176D-4DBE-ADF9-42E2ED30B1F3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\pugixml\pugixml license.txt">
       <Filter>ThirdParty\pugixml</Filter>
     </None>
     <Filter Include="ThirdParty\rapidjson">
-      <UniqueIdentifier>{0A895E92-56BB-45C0-8586-3C218C65DC98}</UniqueIdentifier>
+      <UniqueIdentifier>{FF8791BF-217D-4DE1-965A-B81E109DAC43}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\rapidjson\allocators.h">
       <Filter>ThirdParty\rapidjson</Filter>
@@ -1487,49 +1487,49 @@
       <Filter>ThirdParty\rapidjson</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\recastnavigation">
-      <UniqueIdentifier>{8130F983-DA27-4FD6-B27B-A8A5AFB1297B}</UniqueIdentifier>
+      <UniqueIdentifier>{EA03BEB8-8A08-4DFD-A2EC-444B3C62E425}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\recastnavigation\License.txt">
       <Filter>ThirdParty\recastnavigation</Filter>
     </None>
     <Filter Include="ThirdParty\spirv-tools">
-      <UniqueIdentifier>{44D6ED77-E654-4659-B083-1A5E8E3AA7F4}</UniqueIdentifier>
+      <UniqueIdentifier>{BEFBABA9-1206-40B6-8961-AEB77A693693}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\spirv-tools\LICENSE.txt">
       <Filter>ThirdParty\spirv-tools</Filter>
     </None>
     <Filter Include="ThirdParty\stb">
-      <UniqueIdentifier>{55B739EA-DF15-44F3-9415-182E640CB145}</UniqueIdentifier>
+      <UniqueIdentifier>{0CEE7A9E-EBDA-4AE8-8686-30089E996DFE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\stb\LICENSE">
       <Filter>ThirdParty\stb</Filter>
     </None>
     <Filter Include="ThirdParty\tinyexr">
-      <UniqueIdentifier>{29906DD5-716F-417E-83EC-7566182D1C5E}</UniqueIdentifier>
+      <UniqueIdentifier>{869EFD80-0740-4C68-A85D-CB7108EE3E68}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\tinyexr\LICENSE">
       <Filter>ThirdParty\tinyexr</Filter>
     </None>
     <Filter Include="ThirdParty\tracy">
-      <UniqueIdentifier>{792A475B-A1E6-4505-B5B8-2A62903B1554}</UniqueIdentifier>
+      <UniqueIdentifier>{F7504BEE-F468-4010-96D6-A1D26F248738}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\tracy\LICENSE">
       <Filter>ThirdParty\tracy</Filter>
     </None>
     <Filter Include="ThirdParty\UniversalAnalytics">
-      <UniqueIdentifier>{4AD33751-16AC-45B6-AC1E-5AE1971AF8AB}</UniqueIdentifier>
+      <UniqueIdentifier>{E1C9081D-C874-44D6-928E-6D4B3C914141}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\UniversalAnalytics\LICENSE.txt">
       <Filter>ThirdParty\UniversalAnalytics</Filter>
     </None>
     <Filter Include="ThirdParty\UVAtlas">
-      <UniqueIdentifier>{731EF8FD-6E91-4FB4-8065-FAD6DB89FC7C}</UniqueIdentifier>
+      <UniqueIdentifier>{DE05BCFF-00C7-42D2-9E76-73D395F6B7A8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\UVAtlas\LICENSE">
       <Filter>ThirdParty\UVAtlas</Filter>
     </None>
     <Filter Include="ThirdParty\volk">
-      <UniqueIdentifier>{D9468515-CBD0-4382-8BA7-9894DC552140}</UniqueIdentifier>
+      <UniqueIdentifier>{21496FF6-3615-40B2-A9FD-321E808AB53A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\volk\LICENSE.txt">
       <Filter>ThirdParty\volk</Filter>
@@ -1538,31 +1538,31 @@
       <Filter>ThirdParty\volk</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\vorbis">
-      <UniqueIdentifier>{04D43167-1698-487D-A8D8-8173A722A582}</UniqueIdentifier>
+      <UniqueIdentifier>{606E16B5-24A3-4DF1-AAAB-E721A8EA208D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\vorbis\COPYING">
       <Filter>ThirdParty\vorbis</Filter>
     </None>
     <Filter Include="ThirdParty\VulkanMemoryAllocator">
-      <UniqueIdentifier>{80E95BE8-BA63-47B0-9434-14CF4A659240}</UniqueIdentifier>
+      <UniqueIdentifier>{DBA312AE-61DB-4773-9ABF-58E0FCE34330}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\VulkanMemoryAllocator\LICENSE.txt">
       <Filter>ThirdParty\VulkanMemoryAllocator</Filter>
     </None>
     <Filter Include="Editor\Cooker\Steps">
-      <UniqueIdentifier>{F3748C6D-4746-41AC-ACA9-CA59C1CB02C8}</UniqueIdentifier>
+      <UniqueIdentifier>{D28ACEA8-8ABA-4474-BA2D-B5B9CFD0A9D5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Editor\Cooker\Steps\CookAssetsStep.h">
       <Filter>Editor\Cooker\Steps</Filter>
     </ClInclude>
     <Filter Include="Engine\Animations\Graph">
-      <UniqueIdentifier>{039A0A14-EBE2-4DC7-A67E-C95AA3828953}</UniqueIdentifier>
+      <UniqueIdentifier>{0E0D800C-5D6F-483F-BFC5-010305C542F3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Animations\Graph\AnimGraph.h">
       <Filter>Engine\Animations\Graph</Filter>
     </ClInclude>
     <Filter Include="Engine\Animations\SceneAnimations">
-      <UniqueIdentifier>{4533E463-65DF-45EF-B869-1D347386F759}</UniqueIdentifier>
+      <UniqueIdentifier>{10A303D3-5E23-4896-A5CF-67CCDB2C95C3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Animations\SceneAnimations\SceneAnimation.h">
       <Filter>Engine\Animations\SceneAnimations</Filter>
@@ -1571,7 +1571,7 @@
       <Filter>Engine\Animations\SceneAnimations</Filter>
     </ClInclude>
     <Filter Include="Engine\Content\Assets">
-      <UniqueIdentifier>{85FFE4E9-6619-4FE3-A8FE-330D7FAF8153}</UniqueIdentifier>
+      <UniqueIdentifier>{0F11D168-3223-4822-87B7-1BE06AEE8E35}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Content\Assets\Animation.h">
       <Filter>Engine\Content\Assets</Filter>
@@ -1625,13 +1625,13 @@
       <Filter>Engine\Content\Assets</Filter>
     </ClInclude>
     <Filter Include="Engine\Content\Cache">
-      <UniqueIdentifier>{B73CB265-04D9-437D-B3E4-C266B8086405}</UniqueIdentifier>
+      <UniqueIdentifier>{584E9B15-D57A-42CE-88A6-DA6ACE67D556}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Content\Cache\AssetsCache.h">
       <Filter>Engine\Content\Cache</Filter>
     </ClInclude>
     <Filter Include="Engine\Content\Factories">
-      <UniqueIdentifier>{55E9C664-ED1A-45D3-923B-8AB50FB73239}</UniqueIdentifier>
+      <UniqueIdentifier>{CB0B7313-0C20-40B5-9D5E-230082C686C3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Content\Factories\BinaryAssetFactory.h">
       <Filter>Engine\Content\Factories</Filter>
@@ -1643,7 +1643,7 @@
       <Filter>Engine\Content\Factories</Filter>
     </ClInclude>
     <Filter Include="Engine\Content\Storage">
-      <UniqueIdentifier>{A11C4B3D-914E-4A51-BB7B-706A58A655B1}</UniqueIdentifier>
+      <UniqueIdentifier>{B2BE5062-1290-425B-AB8C-0127FE3CA2DF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Content\Storage\AssetHeader.h">
       <Filter>Engine\Content\Storage</Filter>
@@ -1670,7 +1670,7 @@
       <Filter>Engine\Content\Storage</Filter>
     </ClInclude>
     <Filter Include="Engine\Content\Upgraders">
-      <UniqueIdentifier>{FC48301D-5F42-4BC8-95E8-63E99C66D909}</UniqueIdentifier>
+      <UniqueIdentifier>{961EA073-43A4-4E56-8767-29E1BCC1CE99}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Content\Upgraders\BinaryAssetUpgrader.h">
       <Filter>Engine\Content\Upgraders</Filter>
@@ -1679,7 +1679,7 @@
       <Filter>Engine\Content\Upgraders</Filter>
     </ClInclude>
     <Filter Include="Engine\Core\Collections">
-      <UniqueIdentifier>{D6479B95-EFFA-44AC-B561-B9E2F5C4AB63}</UniqueIdentifier>
+      <UniqueIdentifier>{12BCCE0A-D717-4A8C-882A-9DB3A10F10B6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Collections\Array.h">
       <Filter>Engine\Core\Collections</Filter>
@@ -1718,7 +1718,7 @@
       <Filter>Engine\Core\Collections</Filter>
     </ClInclude>
     <Filter Include="Engine\Core\Config">
-      <UniqueIdentifier>{9C2E73F5-6728-4C32-89AE-376DA3104EE2}</UniqueIdentifier>
+      <UniqueIdentifier>{215B98FC-4DF0-472C-8E14-1723FCC8D17D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Config\BuildSettings.h">
       <Filter>Engine\Core\Config</Filter>
@@ -1745,7 +1745,7 @@
       <Filter>Engine\Core\Config</Filter>
     </ClInclude>
     <Filter Include="Engine\Core\Math">
-      <UniqueIdentifier>{2200F8E3-7AFA-4554-AB5C-3FBD2272322F}</UniqueIdentifier>
+      <UniqueIdentifier>{42978A81-2F1C-46B4-B9E0-331E1E1F198E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Math\AABB.h">
       <Filter>Engine\Core\Math</Filter>
@@ -1841,7 +1841,7 @@
       <Filter>Engine\Core\Math</Filter>
     </ClInclude>
     <Filter Include="Engine\Core\Memory">
-      <UniqueIdentifier>{30522B48-1616-40EA-B4D3-D76C21D89467}</UniqueIdentifier>
+      <UniqueIdentifier>{72DBE127-307B-44E1-B11D-58E0FBCB6150}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Memory\Allocation.h">
       <Filter>Engine\Core\Memory</Filter>
@@ -1859,7 +1859,7 @@
       <Filter>Engine\Core\Memory</Filter>
     </ClInclude>
     <Filter Include="Engine\Core\Types">
-      <UniqueIdentifier>{E7601D4E-AF43-4E8D-8121-3551E10DB9B2}</UniqueIdentifier>
+      <UniqueIdentifier>{E0FC0F36-CE2C-4E0F-B23C-4867A6AAE9E3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Types\BaseTypes.h">
       <Filter>Engine\Core\Types</Filter>
@@ -1913,13 +1913,13 @@
       <Filter>Engine\Core\Types</Filter>
     </ClInclude>
     <Filter Include="Engine\Engine\Android">
-      <UniqueIdentifier>{7F380CB0-97C2-47BE-AD59-1445F2AE9BD0}</UniqueIdentifier>
+      <UniqueIdentifier>{C353C9FA-D6FD-46E7-B315-B763C3CC61E5}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Engine\Android\AndroidGame.h">
       <Filter>Engine\Engine\Android</Filter>
     </ClInclude>
     <Filter Include="Engine\Engine\Base">
-      <UniqueIdentifier>{5E344C72-DC09-4373-93C0-BBDA134CC11D}</UniqueIdentifier>
+      <UniqueIdentifier>{682F046E-3821-4C96-9FA2-19522A286729}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Engine\Base\ApplicationBase.h">
       <Filter>Engine\Engine\Base</Filter>
@@ -1928,37 +1928,37 @@
       <Filter>Engine\Engine\Base</Filter>
     </ClInclude>
     <Filter Include="Engine\Engine\iOS">
-      <UniqueIdentifier>{770F37DF-CC31-4F3D-9A9C-F1A432D1509F}</UniqueIdentifier>
+      <UniqueIdentifier>{2AF64095-5674-4E3D-A9C2-466C77531536}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Engine\iOS\iOSGame.h">
       <Filter>Engine\Engine\iOS</Filter>
     </ClInclude>
     <Filter Include="Engine\Engine\Linux">
-      <UniqueIdentifier>{7E46F20F-47DC-4F68-80CB-E9366EB1578D}</UniqueIdentifier>
+      <UniqueIdentifier>{D496D003-2AC4-4F9C-87BB-6FBA664C5542}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Engine\Linux\LinuxGame.h">
       <Filter>Engine\Engine\Linux</Filter>
     </ClInclude>
     <Filter Include="Engine\Engine\Mac">
-      <UniqueIdentifier>{543EDB6D-6DEC-4AC3-8D1E-859FDC34E278}</UniqueIdentifier>
+      <UniqueIdentifier>{0A0AF017-24DB-4A94-9758-75193CC54674}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Engine\Mac\MacGame.h">
       <Filter>Engine\Engine\Mac</Filter>
     </ClInclude>
     <Filter Include="Engine\Engine\UWP">
-      <UniqueIdentifier>{881813E0-3A09-4955-ABEF-1909070ED610}</UniqueIdentifier>
+      <UniqueIdentifier>{2351419E-6248-4430-BA9D-3E5EBBE10986}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Engine\UWP\UWPGame.h">
       <Filter>Engine\Engine\UWP</Filter>
     </ClInclude>
     <Filter Include="Engine\Engine\Windows">
-      <UniqueIdentifier>{B7BF7329-D8C0-4D78-B4A9-E603377E1899}</UniqueIdentifier>
+      <UniqueIdentifier>{48AC703E-AFB7-4E99-A218-CDA89FF9D534}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Engine\Windows\WindowsGame.h">
       <Filter>Engine\Engine\Windows</Filter>
     </ClInclude>
     <Filter Include="Engine\Graphics\Async">
-      <UniqueIdentifier>{3EF5D5C0-CBD6-41EE-B226-27D915336FA9}</UniqueIdentifier>
+      <UniqueIdentifier>{2BDEFAAA-6B24-4D25-8372-4D619F81914B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Graphics\Async\DefaultGPUTasksExecutor.h">
       <Filter>Engine\Graphics\Async</Filter>
@@ -1979,7 +1979,7 @@
       <Filter>Engine\Graphics\Async</Filter>
     </ClInclude>
     <Filter Include="Engine\Graphics\Materials">
-      <UniqueIdentifier>{56F7C8D5-11D3-4A55-A73A-B515E43EA49A}</UniqueIdentifier>
+      <UniqueIdentifier>{AE35ABBE-D5AF-4545-8499-2A6ADBF1D39B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Graphics\Materials\DecalMaterialShader.h">
       <Filter>Engine\Graphics\Materials</Filter>
@@ -2024,7 +2024,7 @@
       <Filter>Engine\Graphics\Materials</Filter>
     </ClInclude>
     <Filter Include="Engine\Graphics\Models">
-      <UniqueIdentifier>{CE1F2473-64FF-4BE0-B2F3-96497A45CFC6}</UniqueIdentifier>
+      <UniqueIdentifier>{0FB8B1D4-37BE-478D-9DBC-DCB7BB218D30}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Graphics\Models\BlendShape.h">
       <Filter>Engine\Graphics\Models</Filter>
@@ -2078,7 +2078,7 @@
       <Filter>Engine\Graphics\Models</Filter>
     </ClInclude>
     <Filter Include="Engine\Graphics\Shaders">
-      <UniqueIdentifier>{4B695086-25A7-42E8-8ACE-3923B262903C}</UniqueIdentifier>
+      <UniqueIdentifier>{50C48E84-FE1E-4B9D-BA53-F0E741B8A17F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Graphics\Shaders\Config.h">
       <Filter>Engine\Graphics\Shaders</Filter>
@@ -2093,7 +2093,7 @@
       <Filter>Engine\Graphics\Shaders</Filter>
     </ClInclude>
     <Filter Include="Engine\Graphics\Textures">
-      <UniqueIdentifier>{5265AF50-3F0B-4D34-BC9C-35F1AEF91397}</UniqueIdentifier>
+      <UniqueIdentifier>{B7F5C2C1-D572-4DA5-9E95-93F6D5557373}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Graphics\Textures\GPUSampler.h">
       <Filter>Engine\Graphics\Textures</Filter>
@@ -2123,7 +2123,7 @@
       <Filter>Engine\Graphics\Textures</Filter>
     </ClInclude>
     <Filter Include="Engine\Level\Actors">
-      <UniqueIdentifier>{EF7490CC-8F2B-42BF-A299-BBA0BCBA0F5D}</UniqueIdentifier>
+      <UniqueIdentifier>{42872897-68DB-4A72-9F0A-DD910699DB1B}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Level\Actors\AnimatedModel.h">
       <Filter>Engine\Level\Actors</Filter>
@@ -2195,7 +2195,7 @@
       <Filter>Engine\Level\Actors</Filter>
     </ClInclude>
     <Filter Include="Engine\Level\Prefabs">
-      <UniqueIdentifier>{8482494F-5025-4029-96EB-A45520E36468}</UniqueIdentifier>
+      <UniqueIdentifier>{4313D0B7-D47F-4B5D-B73C-DF347EDBA958}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Level\Prefabs\Prefab.h">
       <Filter>Engine\Level\Prefabs</Filter>
@@ -2204,7 +2204,7 @@
       <Filter>Engine\Level\Prefabs</Filter>
     </ClInclude>
     <Filter Include="Engine\Level\Scene">
-      <UniqueIdentifier>{9FCE704F-8F0D-4836-8A0B-08D214D842D6}</UniqueIdentifier>
+      <UniqueIdentifier>{A831C30A-9727-47E6-BF3D-E7FDA54A598F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Level\Scene\Lightmap.h">
       <Filter>Engine\Level\Scene</Filter>
@@ -2231,7 +2231,7 @@
       <Filter>Engine\Level\Scene</Filter>
     </ClInclude>
     <Filter Include="Engine\Level\Scripts">
-      <UniqueIdentifier>{38396A74-22D9-4EB0-B6FA-778F4D77BC8F}</UniqueIdentifier>
+      <UniqueIdentifier>{96C56EEA-4F00-4614-B14E-4B2807A0C830}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Level\Scripts\MissingScript.h">
       <Filter>Engine\Level\Scripts</Filter>
@@ -2240,22 +2240,22 @@
       <Filter>Engine\Level\Scripts</Filter>
     </ClInclude>
     <Filter Include="Engine\Main">
-      <UniqueIdentifier>{94090CB3-A707-429F-B2DF-D8D50C84DC90}</UniqueIdentifier>
+      <UniqueIdentifier>{BBEF42F3-FC37-40C2-92F0-474BE8DF8341}</UniqueIdentifier>
     </Filter>
     <Filter Include="Engine\Main\Android">
-      <UniqueIdentifier>{5BC2E2A5-84F0-479D-97B7-76AAD27BEAED}</UniqueIdentifier>
+      <UniqueIdentifier>{C58ABAF5-AB14-40DB-9CEB-980A310A5EE7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Main\Android\android_native_app_glue.h">
       <Filter>Engine\Main\Android</Filter>
     </ClInclude>
     <Filter Include="Engine\Networking\Components">
-      <UniqueIdentifier>{50045F9C-2882-4680-AF41-F40C7B87CC87}</UniqueIdentifier>
+      <UniqueIdentifier>{DC53D591-3DAA-421C-8EED-303BE2599D93}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Networking\Components\NetworkTransform.h">
       <Filter>Engine\Networking\Components</Filter>
     </ClInclude>
     <Filter Include="Engine\Networking\Drivers">
-      <UniqueIdentifier>{DC252447-90BA-4A57-9F64-BF7363C76811}</UniqueIdentifier>
+      <UniqueIdentifier>{2F71E85B-D91D-469B-9F92-CDEC48A8EBEE}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Networking\Drivers\ENetDriver.h">
       <Filter>Engine\Networking\Drivers</Filter>
@@ -2264,13 +2264,13 @@
       <Filter>Engine\Networking\Drivers</Filter>
     </ClInclude>
     <Filter Include="Engine\Particles\Graph">
-      <UniqueIdentifier>{A1E89AEE-F63E-43F2-A6FF-2F0EC1BD886B}</UniqueIdentifier>
+      <UniqueIdentifier>{77D891BD-8C2A-469E-99B4-AAC6CA2585AC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Particles\Graph\ParticleEmitterGraph.h">
       <Filter>Engine\Particles\Graph</Filter>
     </ClInclude>
     <Filter Include="Engine\Physics\Actors">
-      <UniqueIdentifier>{746BBF80-780E-4EA7-B7AE-B160B7004C90}</UniqueIdentifier>
+      <UniqueIdentifier>{2D3D6656-B6E7-42DC-B8BF-3215D3912A54}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\Actors\Cloth.h">
       <Filter>Engine\Physics\Actors</Filter>
@@ -2291,7 +2291,7 @@
       <Filter>Engine\Physics\Actors</Filter>
     </ClInclude>
     <Filter Include="Engine\Physics\Colliders">
-      <UniqueIdentifier>{4FEF4662-DF56-46BE-ACF6-C17456975CF5}</UniqueIdentifier>
+      <UniqueIdentifier>{E66DF593-D282-483A-AB68-4A3FEA12B9AB}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\Colliders\BoxCollider.h">
       <Filter>Engine\Physics\Colliders</Filter>
@@ -2315,7 +2315,7 @@
       <Filter>Engine\Physics\Colliders</Filter>
     </ClInclude>
     <Filter Include="Engine\Physics\Joints">
-      <UniqueIdentifier>{31053413-37E8-4E44-AAFF-F2BFB9672254}</UniqueIdentifier>
+      <UniqueIdentifier>{51D4CD5C-C664-438C-83D1-CC93549AF08F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\Joints\D6Joint.h">
       <Filter>Engine\Physics\Joints</Filter>
@@ -2342,7 +2342,7 @@
       <Filter>Engine\Physics\Joints</Filter>
     </ClInclude>
     <Filter Include="Engine\Physics\PhysX">
-      <UniqueIdentifier>{0DB3AD3A-2D49-43C2-B440-5D7A4AE75B84}</UniqueIdentifier>
+      <UniqueIdentifier>{D02A7F48-1AF1-49E6-AB1D-2E9921F502A4}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\PhysX\PhysicsBackendPhysX.h">
       <Filter>Engine\Physics\PhysX</Filter>
@@ -2357,7 +2357,7 @@
       <Filter>Engine\Physics\PhysX</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\Android">
-      <UniqueIdentifier>{3C9FD70A-607F-4528-84C6-3FCEC78C696A}</UniqueIdentifier>
+      <UniqueIdentifier>{75803B12-DBA9-46EA-AA46-EC0C8B992FA7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\Android\AndroidDefines.h">
       <Filter>Engine\Platform\Android</Filter>
@@ -2381,7 +2381,7 @@
       <Filter>Engine\Platform\Android</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\Apple">
-      <UniqueIdentifier>{D46D4BBC-458F-49F2-AF43-8DF930A898CC}</UniqueIdentifier>
+      <UniqueIdentifier>{9155D661-A5E1-4064-8973-42618B510A98}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\Apple\AppleFileSystem.h">
       <Filter>Engine\Platform\Apple</Filter>
@@ -2399,7 +2399,7 @@
       <Filter>Engine\Platform\Apple</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\Base">
-      <UniqueIdentifier>{E4E1EFC1-FD3A-4DBC-B0E2-67D63E8F530C}</UniqueIdentifier>
+      <UniqueIdentifier>{7E9A5929-B4F4-4077-8F46-F03E1E37B6F0}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\Base\ClipboardBase.h">
       <Filter>Engine\Platform\Base</Filter>
@@ -2435,7 +2435,7 @@
       <Filter>Engine\Platform\Base</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\GDK">
-      <UniqueIdentifier>{65E180D9-F39E-4E22-B39E-1DD9908860E5}</UniqueIdentifier>
+      <UniqueIdentifier>{8A2E3D1A-AF2F-436F-9258-AA986CB3068D}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\GDK\GDKInput.h">
       <Filter>Engine\Platform\GDK</Filter>
@@ -2453,7 +2453,7 @@
       <Filter>Engine\Platform\GDK</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\iOS">
-      <UniqueIdentifier>{2193B8AB-C815-4C8F-BF76-6872C0D6A78D}</UniqueIdentifier>
+      <UniqueIdentifier>{59E018A6-7041-4F1B-9D83-8FD8AAE81689}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\iOS\iOSApp.h">
       <Filter>Engine\Platform\iOS</Filter>
@@ -2477,7 +2477,7 @@
       <Filter>Engine\Platform\iOS</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\Linux">
-      <UniqueIdentifier>{14BD356A-8C10-427D-9A3F-4FD4F7A4F02F}</UniqueIdentifier>
+      <UniqueIdentifier>{6FB90D41-C197-4F68-9B34-3314D97FC554}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\Linux\IncludeX11.h">
       <Filter>Engine\Platform\Linux</Filter>
@@ -2510,7 +2510,7 @@
       <Filter>Engine\Platform\Linux</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\Mac">
-      <UniqueIdentifier>{6421DBFB-36B4-4710-B587-CAC6C3908B9F}</UniqueIdentifier>
+      <UniqueIdentifier>{C17C5D9B-E81B-4A88-99B8-4C13E08CE715}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\Mac\MacClipboard.h">
       <Filter>Engine\Platform\Mac</Filter>
@@ -2534,7 +2534,7 @@
       <Filter>Engine\Platform\Mac</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\Unix">
-      <UniqueIdentifier>{D8BAEDAA-4B50-4F71-AF86-A45CC3AC061C}</UniqueIdentifier>
+      <UniqueIdentifier>{470B4BA1-A9B7-4CFA-8E3D-EE8362A4BECC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\Unix\UnixConditionVariable.h">
       <Filter>Engine\Platform\Unix</Filter>
@@ -2558,7 +2558,7 @@
       <Filter>Engine\Platform\Unix</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\UWP">
-      <UniqueIdentifier>{17502374-A330-4D93-8F60-2E16F9E4D7D7}</UniqueIdentifier>
+      <UniqueIdentifier>{E45718DC-5E59-4AF2-9307-3A9C8C0CB116}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\UWP\UWPDefines.h">
       <Filter>Engine\Platform\UWP</Filter>
@@ -2579,7 +2579,7 @@
       <Filter>Engine\Platform\UWP</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\Win32">
-      <UniqueIdentifier>{A3114A84-9E69-449A-BB5D-7341DFB8838F}</UniqueIdentifier>
+      <UniqueIdentifier>{E4FB25A5-1DBB-4EC1-839C-57F15417EB19}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\Win32\IncludeWindowsHeaders.h">
       <Filter>Engine\Platform\Win32</Filter>
@@ -2612,7 +2612,7 @@
       <Filter>Engine\Platform\Win32</Filter>
     </ClInclude>
     <Filter Include="Engine\Platform\Windows">
-      <UniqueIdentifier>{93FD895D-AB75-4DDB-B2DE-9582DEF4809F}</UniqueIdentifier>
+      <UniqueIdentifier>{5936B27D-9A1F-4AD0-8AB5-9BFB5FD289B9}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Platform\Windows\ComPtr.h">
       <Filter>Engine\Platform\Windows</Filter>
@@ -2642,7 +2642,7 @@
       <Filter>Engine\Platform\Windows</Filter>
     </ClInclude>
     <Filter Include="Engine\Renderer\AntiAliasing">
-      <UniqueIdentifier>{C68153BE-4FEC-4453-ABED-51118A87E152}</UniqueIdentifier>
+      <UniqueIdentifier>{049DF1BB-CFA0-4BC2-B3E3-BD719F25A4E7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Renderer\AntiAliasing\FXAA.h">
       <Filter>Engine\Renderer\AntiAliasing</Filter>
@@ -2654,7 +2654,7 @@
       <Filter>Engine\Renderer\AntiAliasing</Filter>
     </ClInclude>
     <Filter Include="Engine\Renderer\Editor">
-      <UniqueIdentifier>{FCA864E2-57C0-4279-98B1-EA68CC1C0F41}</UniqueIdentifier>
+      <UniqueIdentifier>{2F205F72-EA51-4516-9400-96A7130028F6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Renderer\Editor\LightmapUVsDensity.h">
       <Filter>Engine\Renderer\Editor</Filter>
@@ -2672,7 +2672,7 @@
       <Filter>Engine\Renderer\Editor</Filter>
     </ClInclude>
     <Filter Include="Engine\Renderer\GI">
-      <UniqueIdentifier>{985E242B-3F3B-42C6-93D7-76E480C0A7B6}</UniqueIdentifier>
+      <UniqueIdentifier>{D0946567-BCD8-4207-B8BE-31BF7A9C85A7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Renderer\GI\DynamicDiffuseGlobalIllumination.h">
       <Filter>Engine\Renderer\GI</Filter>
@@ -2681,7 +2681,7 @@
       <Filter>Engine\Renderer\GI</Filter>
     </ClInclude>
     <Filter Include="Engine\Renderer\Utils">
-      <UniqueIdentifier>{842E40C5-4F72-4226-A227-A36EC46C3E73}</UniqueIdentifier>
+      <UniqueIdentifier>{01ED8C25-7177-4A14-9989-1BE8E2DD7815}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Renderer\Utils\BitonicSort.h">
       <Filter>Engine\Renderer\Utils</Filter>
@@ -2690,7 +2690,7 @@
       <Filter>Engine\Renderer\Utils</Filter>
     </ClInclude>
     <Filter Include="Engine\Scripting\Internal">
-      <UniqueIdentifier>{D6AB6137-B9CC-4D19-94F5-EB9AAAE5B4F3}</UniqueIdentifier>
+      <UniqueIdentifier>{9C5AD231-B8F1-4C70-845D-8B2323EC9AFB}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Scripting\Internal\InternalCalls.h">
       <Filter>Engine\Scripting\Internal</Filter>
@@ -2711,7 +2711,7 @@
       <Filter>Engine\Scripting\Internal</Filter>
     </ClInclude>
     <Filter Include="Engine\Scripting\ManagedCLR">
-      <UniqueIdentifier>{9AE73EC6-2808-4C63-BCBD-2A05462D0F64}</UniqueIdentifier>
+      <UniqueIdentifier>{AA57403E-B55F-4911-A577-E68CA08D89EC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Scripting\ManagedCLR\MAssembly.h">
       <Filter>Engine\Scripting\ManagedCLR</Filter>
@@ -2747,7 +2747,7 @@
       <Filter>Engine\Scripting\ManagedCLR</Filter>
     </ClInclude>
     <Filter Include="Engine\Scripting\Plugins">
-      <UniqueIdentifier>{C209AFD8-EDF8-4109-832E-7B33F0B46735}</UniqueIdentifier>
+      <UniqueIdentifier>{25F6A7B7-C23A-44BC-A631-6E5791722A00}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Scripting\Plugins\EditorPlugin.h">
       <Filter>Engine\Scripting\Plugins</Filter>
@@ -2765,10 +2765,10 @@
       <Filter>Engine\Scripting\Plugins</Filter>
     </ClInclude>
     <Filter Include="Engine\ShadersCompilation">
-      <UniqueIdentifier>{C8D57694-CBFC-4ADC-A24F-403808CCC50C}</UniqueIdentifier>
+      <UniqueIdentifier>{B9D937B7-D8F9-46B2-9555-1F17470CC428}</UniqueIdentifier>
     </Filter>
     <Filter Include="Engine\ShadersCompilation\DirectX">
-      <UniqueIdentifier>{F6D4F937-88A5-4679-A84D-D9372D78B55C}</UniqueIdentifier>
+      <UniqueIdentifier>{99D37EA3-64BD-46FF-9A51-14EEA73E26E6}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\ShadersCompilation\DirectX\ShaderCompilerD3D.h">
       <Filter>Engine\ShadersCompilation\DirectX</Filter>
@@ -2777,10 +2777,10 @@
       <Filter>Engine\ShadersCompilation\DirectX</Filter>
     </ClInclude>
     <Filter Include="Engine\Tools">
-      <UniqueIdentifier>{44B29797-E2AE-4E83-82F6-A6465F2B6024}</UniqueIdentifier>
+      <UniqueIdentifier>{16E8EE39-3268-497A-8F8C-2C7C6D9CC14F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Engine\Tools\ModelTool">
-      <UniqueIdentifier>{6751A7BA-0533-4042-83A2-EAD47C3836FF}</UniqueIdentifier>
+      <UniqueIdentifier>{B0547680-0406-4E16-A914-7980901945CC}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Tools\ModelTool\MeshAccelerationStructure.h">
       <Filter>Engine\Tools\ModelTool</Filter>
@@ -2789,28 +2789,28 @@
       <Filter>Engine\Tools\ModelTool</Filter>
     </ClInclude>
     <Filter Include="Engine\Tools\TextureTool">
-      <UniqueIdentifier>{A0D9A72E-9975-4CC3-90C2-4F1F732CF42A}</UniqueIdentifier>
+      <UniqueIdentifier>{00D2874B-4AD2-45C7-A3E3-68AFF2F82965}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Tools\TextureTool\TextureTool.h">
       <Filter>Engine\Tools\TextureTool</Filter>
     </ClInclude>
     <Filter Include="Platforms\DotNet\AOT">
-      <UniqueIdentifier>{8244F7E9-AB1C-4805-9FB2-13862450D115}</UniqueIdentifier>
+      <UniqueIdentifier>{4F415D48-E526-4A2F-BA06-172923E64E32}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Platforms\DotNet\AOT\Newtonsoft.Json.dll">
       <Filter>Platforms\DotNet\AOT</Filter>
     </None>
     <Filter Include="Shaders\ThirdParty">
-      <UniqueIdentifier>{F1055A9C-BE08-4946-BA19-A89EEE95B65A}</UniqueIdentifier>
+      <UniqueIdentifier>{928E6FCD-07B8-4EFC-A54A-DD81F0701E1F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shaders\ThirdParty\TressFX">
-      <UniqueIdentifier>{C490A6E4-EAC3-4FDC-894B-31ABF76BB408}</UniqueIdentifier>
+      <UniqueIdentifier>{61AAFAA1-E51E-4E0F-B315-4AF66AC18F9D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Shaders\ThirdParty\TressFX\TressFXSDF.hlsl">
       <Filter>Shaders\ThirdParty\TressFX</Filter>
     </None>
     <Filter Include="ThirdParty\rapidjson\error">
-      <UniqueIdentifier>{1D6D2143-91F5-4C5A-B96F-8AA912B8B812}</UniqueIdentifier>
+      <UniqueIdentifier>{FC9711E4-3426-46DD-9D6F-FEEE75449649}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\rapidjson\error\en.h">
       <Filter>ThirdParty\rapidjson\error</Filter>
@@ -2819,7 +2819,7 @@
       <Filter>ThirdParty\rapidjson\error</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\rapidjson\internal">
-      <UniqueIdentifier>{B55ECF65-1D50-46FA-8805-727D9A825D4E}</UniqueIdentifier>
+      <UniqueIdentifier>{6F0F2254-60AB-4A58-81F9-01DEBF0F9D2A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\rapidjson\internal\biginteger.h">
       <Filter>ThirdParty\rapidjson\internal</Filter>
@@ -2858,7 +2858,7 @@
       <Filter>ThirdParty\rapidjson\internal</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\rapidjson\msinttypes">
-      <UniqueIdentifier>{784504F4-749B-431C-BDBF-E81B02342412}</UniqueIdentifier>
+      <UniqueIdentifier>{921BCCA6-98BE-4D5F-A44C-1CB2653CDAB4}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\rapidjson\msinttypes\inttypes.h">
       <Filter>ThirdParty\rapidjson\msinttypes</Filter>
@@ -2867,13 +2867,13 @@
       <Filter>ThirdParty\rapidjson\msinttypes</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\tracy\client">
-      <UniqueIdentifier>{CDF7F6C8-1A8B-4762-B6A6-F4336188B06B}</UniqueIdentifier>
+      <UniqueIdentifier>{48D354E7-EC30-4A73-B852-BE4E8948A411}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\tracy\client\TracyCallstack.h">
       <Filter>ThirdParty\tracy\client</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\tracy\common">
-      <UniqueIdentifier>{5CA4F5A5-A642-4DD4-9210-8AAFAE6C3B74}</UniqueIdentifier>
+      <UniqueIdentifier>{4BC81630-77C5-4D23-8FD1-B9806553BE5A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\tracy\common\TracyQueue.hpp">
       <Filter>ThirdParty\tracy\common</Filter>
@@ -2882,13 +2882,13 @@
       <Filter>ThirdParty\tracy\common</Filter>
     </None>
     <Filter Include="ThirdParty\tracy\tracy">
-      <UniqueIdentifier>{B1D721E5-67C4-48C2-BCB6-85FCB92C3567}</UniqueIdentifier>
+      <UniqueIdentifier>{10F83CB5-666E-46C7-9C35-6D251D580348}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\tracy\tracy\Tracy.hpp">
       <Filter>ThirdParty\tracy\tracy</Filter>
     </None>
     <Filter Include="Engine\Graphics\Async\Tasks">
-      <UniqueIdentifier>{E77D4606-1511-42B6-8C45-4AF0CF04C3C5}</UniqueIdentifier>
+      <UniqueIdentifier>{4DFC55BD-C27D-4B6C-802F-45911DF86B47}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Graphics\Async\Tasks\GPUCopyResourceTask.h">
       <Filter>Engine\Graphics\Async\Tasks</Filter>
@@ -2903,7 +2903,7 @@
       <Filter>Engine\Graphics\Async\Tasks</Filter>
     </ClInclude>
     <Filter Include="Engine\Graphics\Shaders\Cache">
-      <UniqueIdentifier>{98C10A39-0C78-4186-8256-BA8B255C39C7}</UniqueIdentifier>
+      <UniqueIdentifier>{48ADDD1F-F165-463E-A9CB-CCB9CB2D9372}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Graphics\Shaders\Cache\ShaderAssetBase.h">
       <Filter>Engine\Graphics\Shaders\Cache</Filter>
@@ -2915,13 +2915,13 @@
       <Filter>Engine\Graphics\Shaders\Cache</Filter>
     </ClInclude>
     <Filter Include="Engine\Particles\Graph\CPU">
-      <UniqueIdentifier>{E38C225B-BD55-4DD2-86D4-095507584612}</UniqueIdentifier>
+      <UniqueIdentifier>{00F73A0D-D0AF-4EE4-ACE0-0610A388AD5F}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Particles\Graph\CPU\ParticleEmitterGraph.CPU.h">
       <Filter>Engine\Particles\Graph\CPU</Filter>
     </ClInclude>
     <Filter Include="Engine\Particles\Graph\GPU">
-      <UniqueIdentifier>{C29898F3-D888-413A-A15F-34609923EFDD}</UniqueIdentifier>
+      <UniqueIdentifier>{B6B51B6E-3428-40EF-B522-9B123A2E26C2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Particles\Graph\GPU\GPUParticles.h">
       <Filter>Engine\Particles\Graph\GPU</Filter>
@@ -2930,16 +2930,16 @@
       <Filter>Engine\Particles\Graph\GPU</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\mono-2.0\mono">
-      <UniqueIdentifier>{D8EC921B-5329-468C-8628-4D406EC37237}</UniqueIdentifier>
+      <UniqueIdentifier>{BEA9F629-F42A-4784-94D5-FB8B63BB3F05}</UniqueIdentifier>
     </Filter>
     <Filter Include="ThirdParty\mono-2.0\mono\jit">
-      <UniqueIdentifier>{6A5B9807-94ED-4D7D-A8CF-3B43FF598A56}</UniqueIdentifier>
+      <UniqueIdentifier>{999BDF41-5D8F-4752-9355-19BBF737D481}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\mono-2.0\mono\jit\jit.h">
       <Filter>ThirdParty\mono-2.0\mono\jit</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\mono-2.0\mono\metadata">
-      <UniqueIdentifier>{48F3C143-880B-4A3F-A3EE-7CABFACE150A}</UniqueIdentifier>
+      <UniqueIdentifier>{816032FD-6ACB-44E3-B912-5F5749B943E3}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\mono-2.0\mono\metadata\abi-details.h">
       <Filter>ThirdParty\mono-2.0\mono\metadata</Filter>
@@ -3401,7 +3401,7 @@
       <Filter>ThirdParty\mono-2.0\mono\metadata</Filter>
     </ClInclude>
     <Filter Include="ThirdParty\mono-2.0\mono\utils">
-      <UniqueIdentifier>{12576928-FD00-49C8-A392-2352D5015CAA}</UniqueIdentifier>
+      <UniqueIdentifier>{F47FDD5D-0362-48DB-B0F1-9322947D0177}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\ThirdParty\mono-2.0\mono\utils\mono-counters.h">
       <Filter>ThirdParty\mono-2.0\mono\utils</Filter>
@@ -3422,19 +3422,19 @@
       <Filter>ThirdParty\mono-2.0\mono\utils</Filter>
     </ClInclude>
     <Filter Include="Platforms\Windows">
-      <UniqueIdentifier>{A4C94DD8-3452-4CA4-BE07-99F425712278}</UniqueIdentifier>
+      <UniqueIdentifier>{63FFED41-9EE4-46C6-8EC4-D558DCA1B178}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platforms\Windows\Binaries">
-      <UniqueIdentifier>{B0A074DE-E487-4759-B31E-8F1038E4C868}</UniqueIdentifier>
+      <UniqueIdentifier>{20A8876E-1723-4394-A93F-E68FE2547F09}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platforms\Windows\Binaries\Game">
-      <UniqueIdentifier>{496A0496-A4A6-4B55-8007-3CE79D62AC7D}</UniqueIdentifier>
+      <UniqueIdentifier>{0B28A825-6D17-463E-9EF2-291D244401A8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platforms\Windows\Binaries\Game\x64">
-      <UniqueIdentifier>{232A7A2A-0238-4406-9AEA-E098C805BEFD}</UniqueIdentifier>
+      <UniqueIdentifier>{085D1375-16A5-4C9B-AD9B-D5D62C19BB29}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platforms\Windows\Binaries\Game\x64\Debug">
-      <UniqueIdentifier>{14367C87-8571-4EFF-93BB-71D3E9BFBEFB}</UniqueIdentifier>
+      <UniqueIdentifier>{4EE82D1A-0957-4F31-AE50-7A96AC8C4F48}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Platforms\Windows\Binaries\Game\x64\Debug\dbghelp.dll">
       <Filter>Platforms\Windows\Binaries\Game\x64\Debug</Filter>
@@ -3482,7 +3482,7 @@
       <Filter>Platforms\Windows\Binaries\Game\x64\Debug</Filter>
     </None>
     <Filter Include="Platforms\Windows\Binaries\Game\x64\Development">
-      <UniqueIdentifier>{C4A0E2BB-98EA-4EF1-9D3A-51AA4E282148}</UniqueIdentifier>
+      <UniqueIdentifier>{90C1A262-57D9-44A7-8942-C2B3E7071BCB}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Platforms\Windows\Binaries\Game\x64\Development\dbghelp.dll">
       <Filter>Platforms\Windows\Binaries\Game\x64\Development</Filter>
@@ -3527,7 +3527,7 @@
       <Filter>Platforms\Windows\Binaries\Game\x64\Development</Filter>
     </None>
     <Filter Include="Platforms\Windows\Binaries\Game\x64\Release">
-      <UniqueIdentifier>{6200B939-4336-4D2C-AD44-E7308E6FF3D3}</UniqueIdentifier>
+      <UniqueIdentifier>{96235DB8-46DC-4DA4-A6CF-283436BD19A4}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Platforms\Windows\Binaries\Game\x64\Release\FlaxEngine.CSharp.dll">
       <Filter>Platforms\Windows\Binaries\Game\x64\Release</Filter>
@@ -3569,10 +3569,10 @@
       <Filter>Platforms\Windows\Binaries\Game\x64\Release</Filter>
     </None>
     <Filter Include="Platforms\Windows\Binaries\Game\x86">
-      <UniqueIdentifier>{6D151517-F850-4BE2-B127-DD9A9E803CF4}</UniqueIdentifier>
+      <UniqueIdentifier>{F891106B-F375-4553-A5B0-C1A07AEDD0E7}</UniqueIdentifier>
     </Filter>
     <Filter Include="Platforms\Windows\Binaries\Game\x86\Debug">
-      <UniqueIdentifier>{FEEA77E5-B3CA-42A1-BC7F-9F91A8738087}</UniqueIdentifier>
+      <UniqueIdentifier>{B69C60C8-AD44-4FA2-98E5-A658A5DFE1FE}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\..\..\..\..\..\..\Program Files (x86)\Flax\Flax_1.9\Source\Platforms\Windows\Binaries\Game\x86\Debug\FlaxEngine.CSharp.dll">
       <Filter>Platforms\Windows\Binaries\Game\x86\Debug</Filter>

@@ -15,7 +15,7 @@
 		"Bullets",
 		"IgnoreRocket",
 		"IgnoreBullet",
-		null,
+		"IgnorePlayer",
 		null,
 		null,
 		null,

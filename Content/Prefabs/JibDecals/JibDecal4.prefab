@@ -1,0 +1,13 @@
+{
+	"ID": "cf3fb14a41d9f6e20af16d826f44f598",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "2d89f0b34328f1114b051195d6dd1e56",
+		"TypeName": "FlaxEngine.Decal",
+		"Name": "JibDecal",
+		"Material": "3a41aada48a0e991cd3e86b2ebea8724"
+	}
+]
+}

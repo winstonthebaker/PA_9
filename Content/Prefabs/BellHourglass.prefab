@@ -1,0 +1,104 @@
+{
+	"ID": "949e92784b4fa986cdc08b9d894dbcc6",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "42e22a25460a4656235322a8b4ae3311",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "Hourglass",
+		"Layer": 4,
+		"IsTrigger": true,
+		"Radius": 100.0
+	},
+	{
+		"ID": "2c8baec7460cc0e9b05f9187bb709905",
+		"TypeName": "Game.Pickup",
+		"ParentID": "42e22a25460a4656235322a8b4ae3311",
+		"_audioSource": "4be3223b4a4d67ed66d1558650099e9b"
+	},
+	{
+		"ID": "c3f8e9b246efd456443b749d714f4132",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "42e22a25460a4656235322a8b4ae3311",
+		"Name": "Visual",
+		"Layer": 4
+	},
+	{
+		"ID": "da876ab74dd407800eca32a30bed9724",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "c3f8e9b246efd456443b749d714f4132",
+		"_rotationSpeed": 360.0
+	},
+	{
+		"ID": "5b19927446f3354d57b2e1ac87996fce",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "c3f8e9b246efd456443b749d714f4132",
+		"Name": "Cube",
+		"Transform": {
+			"Orientation": {
+				"X": 0.3357294201850891,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.941958487033844
+			}
+		},
+		"Layer": 4,
+		"Model": "dfb19a5c45e04c0cf628d0aff72628d8",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "e07a93a54cfcde8c047be581818febc6",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "934af30b4865ab30e8f1009b690b8ce3",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "5083a8884e9efa8e818777904f95f310",
+		"ParentID": "42e22a25460a4656235322a8b4ae3311",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 100.0,
+				"Z": 0.0
+			}
+		}
+	},
+	{
+		"ID": "825c02334df27591ac276b973457b952",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "4657a32544c05332eb680689b0f13b08",
+		"ParentID": "934af30b4865ab30e8f1009b690b8ce3"
+	},
+	{
+		"ID": "b4f2b5f64fc836804e773da5c5279186",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "a2b89b4640342e5d7a4de98f23bb5652",
+		"ParentID": "934af30b4865ab30e8f1009b690b8ce3",
+		"_pickup": "2c8baec7460cc0e9b05f9187bb709905"
+	},
+	{
+		"ID": "9cac97c7492dc803a9ad25b7016cd6ef",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "8a3a078e4ca5467023e516a4ae0f6895",
+		"ParentID": "934af30b4865ab30e8f1009b690b8ce3",
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "2831e44e469c6ebbc6b457af71abc20d",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "72e3980f400e9031e37c248a16eea278",
+		"ParentID": "9cac97c7492dc803a9ad25b7016cd6ef"
+	}
+]
+}

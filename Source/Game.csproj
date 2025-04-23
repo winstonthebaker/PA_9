@@ -182,9 +182,11 @@
     <Compile Include="Game.Gen.cs" />
     <Compile Include="Game\BulletTrail.cs" />
     <Compile Include="Game\DeathScreen.cs" />
+    <Compile Include="Game\EscToMenu.cs" />
     <Compile Include="Game\ExitOnEsc.cs" />
     <Compile Include="Game\FreeCamera.cs" />
     <Compile Include="Game\InfoTextPanel.cs" />
+    <Compile Include="Game\Jib.cs" />
     <Compile Include="Game\LockCursor.cs" />
     <Compile Include="Game\MainMenu.cs" />
     <Compile Include="Game\NextLevelScreen.cs" />

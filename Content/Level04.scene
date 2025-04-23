@@ -18,17 +18,19 @@
 			}
 		},
 		{
-			"ID": "6ff0581d474c84230b3d0fa9f17e0972",
-			"TypeName": "ExitOnEsc",
-			"ParentID": "9ebe0f314cd6019be174b69c95586629",
-			"V": {}
-		},
-		{
 			"ID": "785581dd4ebb4520a1f5ff8abd722fde",
 			"TypeName": "Game.GameManager",
 			"ParentID": "9ebe0f314cd6019be174b69c95586629",
 			"_startingTime": 3.0,
 			"_UIManager": "e19994cc40ca9bfb12924383cc6f3606"
+		},
+		{
+			"ID": "8d04c7a2484509fc25a76f811b141d3d",
+			"TypeName": "Game.EscToMenu",
+			"ParentID": "9ebe0f314cd6019be174b69c95586629",
+			"V": {
+	"_menuScene": "f8c9042949fdad5ce41fe3b00db114c9"
+}
 		},
 		{
 			"ID": "28553d634087c67c711ebd96080482aa",
@@ -589,8 +591,7 @@
 			"TypeName": "Game.LauncherEnemy",
 			"ParentID": "9ac53cfe41672012c15f66aac7c4c15f",
 			"_missilePrefab": "5e40e14f4b884341a0302ca5acefb0d6",
-			"_spawnTime": 4091553349894144.0,
-			"_startingTime": 1.0201452820284669e-42
+			"_spawnTime": 4091553349894144.0
 		},
 		{
 			"ID": "a76782b14ed12fc26f35008aaf46b12d",
@@ -1043,12 +1044,6 @@
 			"PrefabObjectID": "912d8f2a42670ba60733b3b5170528ab",
 			"ParentID": "9ebe0f314cd6019be174b69c95586629",
 			"Name": "Ambience0AudioSource"
-		},
-		{
-			"ID": "fc84ec1348bc892fa7f824a753589869",
-			"PrefabID": "43e57bad4b533d5fa47fe987c2954985",
-			"PrefabObjectID": "f4b61a9a4ed020caeca848b762232d87",
-			"ParentID": "51e2e9f54e594acf387bfd9734b78524"
 		}
 	]
 }

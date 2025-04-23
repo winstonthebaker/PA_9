@@ -10,6 +10,7 @@
 		"StaticFlags": 0,
 		"Layer": 1,
 		"Tag": "Player",
+		"Material": "7a1365ff445bbd74b9d86393a7a58f5f",
 		"StepOffset": 10.0
 	},
 	{
@@ -22,6 +23,7 @@
 		"_splatSource": "e680c65642473636333b20b8b9270683",
 		"_jumpSource": "4470bb1d4b5cbe791e3cb9a2a864f9b6",
 		"_loseSource": "858562f040479436a14785a7243bced3",
+		"_jibPrefab": "90b5175e4d6f6fafbb2799a54fd29038",
 		"_movementSpeed": 1000.0,
 		"_groundMovementAcceleration": 10000.0,
 		"_gravity": 2000.0,

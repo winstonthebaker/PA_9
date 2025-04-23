@@ -67,7 +67,12 @@ public class UIManager : Script
         }
         if(_timeText != null)
         {
-            _timeText.Get<TextBox>().Text = time.ToString("F1");
+            string timeString = "0.0";
+            if(time > 0)
+            {
+                timeString = time.ToString("F1");
+            }
+            _timeText.Get<TextBox>().Text = timeString;
         }
     }
     public void BeatLevel()

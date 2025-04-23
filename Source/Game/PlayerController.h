@@ -8,6 +8,7 @@
 #include "Engine/Core/Types/Pair.h"
 #include "Engine/Audio/Audio.h"
 #include "Engine/Audio/AudioSource.h"
+#include "Engine/Content/AssetReference.h"
 #include <queue>
 
 
@@ -23,6 +24,8 @@ public:
     API_FIELD() ScriptingObjectReference<AudioSource> _splatSource;
     API_FIELD() ScriptingObjectReference<AudioSource> _jumpSource;
     API_FIELD() ScriptingObjectReference<AudioSource> _loseSource;
+    API_FIELD() AssetReference<Prefab> _jibPrefab;
+
     API_FIELD() float _movementSpeed = 600.0;
     API_FIELD() float _airMovementAcceleration = 1000.0;
     API_FIELD() float _groundMovementAcceleration = 2000.0;
@@ -34,7 +37,7 @@ public:
     API_FIELD() float _jumpVerticalForce = 1000.0;
 
     
-
+    bool IsDead();
     static PlayerController* GetInstance(); 
     Vector3 GetVelocity();
 
@@ -86,6 +89,7 @@ private:
     bool _dead = false;
     bool _isLookingBackward = false;
     bool _awaitingReset = false;
+    bool _holdingSpaceOnStart = false;
     void HandleMovement();
     void EvaluateState();
     void PitchCamera();

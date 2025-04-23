@@ -16,6 +16,7 @@ public class NextLevelScreen : Script
     private bool _fadingIn;
     private float _fadeTimer;
     private bool _canProceed = false;
+    private bool _alreadyPressingSpace = false;
     public void Show()
     {
         _canProceed = true;
@@ -23,6 +24,10 @@ public class NextLevelScreen : Script
         _fadeTimer = 0;
         _screen.Get<AlphaPanel>().Alpha = 0f;
         _screen.Control.Visible = true;
+        if (Input.GetKey(KeyboardKeys.Spacebar))
+        {
+            _alreadyPressingSpace = true;
+        }
     }
     public void Hide()
     {
@@ -53,10 +58,15 @@ public class NextLevelScreen : Script
         {
             return;
         }
-        if (Input.GetKeyDown(KeyboardKeys.Spacebar))
+        
+        if (Input.GetKeyUp(KeyboardKeys.Spacebar))
         {
+            if (_alreadyPressingSpace)
+            {
+                _alreadyPressingSpace = false;
+                return;
+            }
             Level.ChangeSceneAsync(_nextLevel);
-
         }
     }
 }

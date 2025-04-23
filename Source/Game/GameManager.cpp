@@ -26,10 +26,7 @@ void GameManager::OnUpdate()
 {
 	UpdateTime();
 
-	if (Input::GetKeyDown(KeyboardKeys::R))
-	{
-		ResetGame();
-	}
+
 }
 
 void GameManager::OnStart()
@@ -44,7 +41,6 @@ void GameManager::Win()
 {
 	_gameOver = true;
 	ShowWinScreen();
-	LOG_STR(Info, TEXT("won"));
 	HideInfoText();
 }
 

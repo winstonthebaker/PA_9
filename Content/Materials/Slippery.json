@@ -7,8 +7,8 @@
 	"FrictionCombineMode": 1,
 	"OverrideFrictionCombineMode": true,
 	"Restitution": 0.0,
-	"RestitutionCombineMode": 0,
-	"OverrideRestitutionCombineMode": false,
+	"RestitutionCombineMode": 1,
+	"OverrideRestitutionCombineMode": true,
 	"Density": 1000.0,
 	"Tag": ""
 }

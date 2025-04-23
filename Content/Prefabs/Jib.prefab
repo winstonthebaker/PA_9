@@ -1,0 +1,53 @@
+{
+	"ID": "90b5175e4d6f6fafbb2799a54fd29038",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "ff4e10374da86298a09bac8c8c16d38f",
+		"TypeName": "FlaxEngine.RigidBody",
+		"Name": "Jib",
+		"Layer": 5,
+		"Mass": 4.188790321350098
+	},
+	{
+		"ID": "76732e924b1c1e9828718f8162e07f12",
+		"TypeName": "Game.Jib",
+		"ParentID": "ff4e10374da86298a09bac8c8c16d38f",
+		"V": {
+	"_jibDecals": [
+		"656c36c34a04e0e4bffe1baaaffb570d",
+		"609062da4c2501e24142488f4bbf18ee",
+		"367437334aa94938b5c664a0619383a7",
+		"cf3fb14a41d9f6e20af16d826f44f598"
+	]
+}
+	},
+	{
+		"ID": "6d26af094b6e6e25e9c977849f313dd4",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"ParentID": "ff4e10374da86298a09bac8c8c16d38f",
+		"Name": "SphereCollider",
+		"Layer": 5,
+		"IsTrigger": true,
+		"Radius": 10.0
+	},
+	{
+		"ID": "3da6db234bc626771d9af7bc059b00e8",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "ff4e10374da86298a09bac8c8c16d38f",
+		"Name": "Cube",
+		"Model": "7dce07734f337e4d52eca090ce0a6036",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "795935b643d40fa80e7f0b8cc3c42ad7",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

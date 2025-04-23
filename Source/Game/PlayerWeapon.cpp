@@ -147,6 +147,11 @@ void PlayerWeapon::HandleWeaponVisuals()
 			_shotgunHideFactor += Time::GetDeltaTime() * 60;
 		}
 	}
+	if (_pc->IsDead())
+	{
+		_pistolHideFactor = 30;
+		_shotgunHideFactor = 30;
+	}
 	float rotationSmoothing = 10;
 	float factor = rotationSmoothing * Time::GetDeltaTime();
 	if (_pistol)
@@ -185,7 +190,7 @@ void PlayerWeapon::HandleWeaponVisuals()
 
 void PlayerWeapon::FirePistol()
 {
-	if (_pistolAmmo <= 0)
+	if (_pistolAmmo <= 0 || _pc->IsDead())
 	{
 		return;
 	}
@@ -225,8 +230,11 @@ void PlayerWeapon::FirePistol()
 
 void PlayerWeapon::FireShotgun()
 {
-
-	if (_shotgunAmmo <= 0)
+	if (!_pc)
+	{
+		return;
+	}
+	if (_shotgunAmmo <= 0 || _pc->IsDead())
 	{
 		return;
 	}

@@ -1,0 +1,1812 @@
+{
+	"ID": "3e97dd3d4aa8e9fe76b4b4bb2b07a1ec",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "166a589d40505c27fb0dbb8b70614f6e",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "BigLava"
+	},
+	{
+		"ID": "27d8006d4714b50542dca383d0b8a50e",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Transform": {
+			"Translation": {
+				"X": -2500.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "55416ec64fe30860a4b6a68d598f0b44",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "27d8006d4714b50542dca383d0b8a50e"
+	},
+	{
+		"ID": "3d04a274444f0bd49408fb9a34be2ba9",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 0",
+		"Transform": {
+			"Translation": {
+				"X": -2500.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "75cb5756403751d527c35488696f1420",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "3d04a274444f0bd49408fb9a34be2ba9"
+	},
+	{
+		"ID": "8f5ad1b0478cd3bc54eaf18ec223e866",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 1",
+		"Transform": {
+			"Translation": {
+				"X": -3300.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "4a02b7f249debab4be941992f794a6cd",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "8f5ad1b0478cd3bc54eaf18ec223e866"
+	},
+	{
+		"ID": "e0465202490eb2ef317a618adc9dd405",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 2",
+		"Transform": {
+			"Translation": {
+				"X": -3300.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "ec39d5df462c22de2f82ecb83e216625",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "e0465202490eb2ef317a618adc9dd405"
+	},
+	{
+		"ID": "479764be46ba7d5cc03658bbb102346b",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 3",
+		"Transform": {
+			"Translation": {
+				"X": -4100.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "c77ad06d4d45ff185880a8874a433177",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "479764be46ba7d5cc03658bbb102346b"
+	},
+	{
+		"ID": "83d29b1b404c7b57d42813ac19f230fa",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 4",
+		"Transform": {
+			"Translation": {
+				"X": -4100.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "0cb521af41a4534f3edf3eac99120802",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "83d29b1b404c7b57d42813ac19f230fa"
+	},
+	{
+		"ID": "2977d6e74498eadf4ba37b82e36abfe6",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 5",
+		"Transform": {
+			"Translation": {
+				"X": -4900.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "973604fc415f0eea57286cae99548aa9",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "2977d6e74498eadf4ba37b82e36abfe6"
+	},
+	{
+		"ID": "225f00ac4911bc1898134580aaa907dc",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 6",
+		"Transform": {
+			"Translation": {
+				"X": -4900.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "a983e8ff40b9f55cdb10938c796ea945",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "225f00ac4911bc1898134580aaa907dc"
+	},
+	{
+		"ID": "f24c7c844ad52b3ef17ff99b893ace4f",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 7",
+		"Transform": {
+			"Translation": {
+				"X": -900.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "5f1e0ac1484307dc2bcf1a9716880e57",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "f24c7c844ad52b3ef17ff99b893ace4f"
+	},
+	{
+		"ID": "6f64830a4e3c063c446fe0951f8d1ad1",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 8",
+		"Transform": {
+			"Translation": {
+				"X": -900.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "f1de17764f81e0ba854e01a81992d407",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "6f64830a4e3c063c446fe0951f8d1ad1"
+	},
+	{
+		"ID": "c94d31e64b56b3784334aea16480f50c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 9",
+		"Transform": {
+			"Translation": {
+				"X": -1700.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "51c8853243d758cd184f65a3260d28e1",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "c94d31e64b56b3784334aea16480f50c"
+	},
+	{
+		"ID": "9cce95ee4d149fa8e55f44a2089fcc9a",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 10",
+		"Transform": {
+			"Translation": {
+				"X": -1700.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "8285d58141115c3e0a9d2b8d6c231f94",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "9cce95ee4d149fa8e55f44a2089fcc9a"
+	},
+	{
+		"ID": "6d3daec7476ce9d85671c3a50f1c5ae2",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 11",
+		"Transform": {
+			"Translation": {
+				"X": -100.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "56828019405846e1110e5b88e2c07ee2",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "6d3daec7476ce9d85671c3a50f1c5ae2"
+	},
+	{
+		"ID": "5452a3094407c3a6a877039715ec4d18",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 12",
+		"Transform": {
+			"Translation": {
+				"X": -100.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "cf97a5cf4b01270d914af1a94600a036",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "5452a3094407c3a6a877039715ec4d18"
+	},
+	{
+		"ID": "bc85bc07493c6ef3814aa39a6063e4a8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 13",
+		"Transform": {
+			"Translation": {
+				"X": 700.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "b2f84baa4d216774215536ae8b02a147",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "bc85bc07493c6ef3814aa39a6063e4a8"
+	},
+	{
+		"ID": "0b84d0534c9a7902129778aded988666",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 14",
+		"Transform": {
+			"Translation": {
+				"X": 700.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "99e44b4844d56705503f0098400f37fa",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "0b84d0534c9a7902129778aded988666"
+	},
+	{
+		"ID": "1b1d267241c5da235a97f88e06cb78eb",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 15",
+		"Transform": {
+			"Translation": {
+				"X": 2300.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "9caee4bb4d86fe781e2dd0abcf953f25",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "1b1d267241c5da235a97f88e06cb78eb"
+	},
+	{
+		"ID": "361e9b0f4af50e3e1c73ed9494da9724",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 16",
+		"Transform": {
+			"Translation": {
+				"X": 2300.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "dcb1c5ce45b85a9bf018dc8fe6e5fb38",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "361e9b0f4af50e3e1c73ed9494da9724"
+	},
+	{
+		"ID": "be09b26f4e72044ec8391285cb381f56",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 17",
+		"Transform": {
+			"Translation": {
+				"X": 1500.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "c9d3644b478a2cacc94c0d859888b210",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "be09b26f4e72044ec8391285cb381f56"
+	},
+	{
+		"ID": "17c9798f44523ad07442dba41ddcefd9",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 18",
+		"Transform": {
+			"Translation": {
+				"X": 1500.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "a81c19fc4a7018360096cdacf132af25",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "17c9798f44523ad07442dba41ddcefd9"
+	},
+	{
+		"ID": "2d2b7e99423927e36b3306b51e7b9ae8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 19",
+		"Transform": {
+			"Translation": {
+				"X": 3100.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "8efa869a4978c48404c3ecbfc6e40b31",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "2d2b7e99423927e36b3306b51e7b9ae8"
+	},
+	{
+		"ID": "67fe05904df3e8ab756fe4b0fba9cf95",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 20",
+		"Transform": {
+			"Translation": {
+				"X": 3100.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "1f0913d346324f101275e8b985778488",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "67fe05904df3e8ab756fe4b0fba9cf95"
+	},
+	{
+		"ID": "f13aa24b4cb5a4fd5f423b9e59409788",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 21",
+		"Transform": {
+			"Translation": {
+				"X": 3900.0,
+				"Y": 0.0,
+				"Z": -1800.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "628c99f14193ad336c300e85ab5940c8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "f13aa24b4cb5a4fd5f423b9e59409788"
+	},
+	{
+		"ID": "9cf975124fc0c62120b554a8699967d8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 22",
+		"Transform": {
+			"Translation": {
+				"X": 3900.0,
+				"Y": 0.0,
+				"Z": -2600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "cdfc94ed462e5fa3bdda8787a5877346",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "9cf975124fc0c62120b554a8699967d8"
+	},
+	{
+		"ID": "100853a04d6eca2c042f358df2d5bdbf",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 23",
+		"Transform": {
+			"Translation": {
+				"X": -2500.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "20ac8f004d440543ea8aaf96df7171a4",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "100853a04d6eca2c042f358df2d5bdbf"
+	},
+	{
+		"ID": "30fddfa04e7e027dcba33ea9a636f0a3",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 24",
+		"Transform": {
+			"Translation": {
+				"X": -2500.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "ff4e6beb4870856993df0db365683523",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "30fddfa04e7e027dcba33ea9a636f0a3"
+	},
+	{
+		"ID": "dd11d5f84aa73ce6fa3d09847105f787",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 25",
+		"Transform": {
+			"Translation": {
+				"X": -3300.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "13dc149240cb4fadfdb7359597d2b54d",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "dd11d5f84aa73ce6fa3d09847105f787"
+	},
+	{
+		"ID": "fdf3961a402945f0873c3195f0e8840b",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 26",
+		"Transform": {
+			"Translation": {
+				"X": -3300.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "eeaddd04449cb7680df4a995a73c9c6c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "fdf3961a402945f0873c3195f0e8840b"
+	},
+	{
+		"ID": "5a1c36304dad37588bb0e69781284ba8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 27",
+		"Transform": {
+			"Translation": {
+				"X": -4100.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "c3b8b068439fc29514f7dcb446411ccb",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "5a1c36304dad37588bb0e69781284ba8"
+	},
+	{
+		"ID": "1d5f60e444af733fd3c343a7a30b1760",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 28",
+		"Transform": {
+			"Translation": {
+				"X": -4100.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "274c567b4dbe7c25dfc696a00bf4c12c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "1d5f60e444af733fd3c343a7a30b1760"
+	},
+	{
+		"ID": "fcfb3b9c4774b87dec019d9084dbe63c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 29",
+		"Transform": {
+			"Translation": {
+				"X": -4900.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "8babae3443a8fd79b28d908ef6d54a7e",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "fcfb3b9c4774b87dec019d9084dbe63c"
+	},
+	{
+		"ID": "a2d5004546c6d29ad22e849295aa34a2",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 30",
+		"Transform": {
+			"Translation": {
+				"X": -4900.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "2514ccb74e356418447dddaa47f4924d",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "a2d5004546c6d29ad22e849295aa34a2"
+	},
+	{
+		"ID": "7befef58426c455e4ccf4797ddac310c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 31",
+		"Transform": {
+			"Translation": {
+				"X": -900.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "48a7ff0c4bba58800c9ffebc6c3ca5a5",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "7befef58426c455e4ccf4797ddac310c"
+	},
+	{
+		"ID": "80b184ec4fadf1bd855f1da3d422e60e",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 32",
+		"Transform": {
+			"Translation": {
+				"X": -900.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "78dbce6646f1689a55c6308973c0d078",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "80b184ec4fadf1bd855f1da3d422e60e"
+	},
+	{
+		"ID": "6c6d8e6f4b9b867cfab17c83f7ad9bf7",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 33",
+		"Transform": {
+			"Translation": {
+				"X": -1700.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "92417f544b20211e9980c0a88d1d0cb3",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "6c6d8e6f4b9b867cfab17c83f7ad9bf7"
+	},
+	{
+		"ID": "d58b6a1c400453393211f8bab960e21b",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 34",
+		"Transform": {
+			"Translation": {
+				"X": -1700.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "d396a2f34419e270b07353a988c25b0c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "d58b6a1c400453393211f8bab960e21b"
+	},
+	{
+		"ID": "935f599c46f3c3142a4a2da26b6b9b07",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 35",
+		"Transform": {
+			"Translation": {
+				"X": -100.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "0e9e24064594639378b53494c9e0baab",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "935f599c46f3c3142a4a2da26b6b9b07"
+	},
+	{
+		"ID": "c00b28154b072dc1680b118452b3cee3",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 36",
+		"Transform": {
+			"Translation": {
+				"X": -100.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "5e4d918a4e39b6cdd0ac5a99b76ae8fc",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "c00b28154b072dc1680b118452b3cee3"
+	},
+	{
+		"ID": "96f69281400fd09fa6117082067c18f8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 37",
+		"Transform": {
+			"Translation": {
+				"X": 700.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "66d99a1248f8af4dfe2727a405f0bb35",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "96f69281400fd09fa6117082067c18f8"
+	},
+	{
+		"ID": "79e8fe43459a3fd26cc1fd88774bacb2",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 38",
+		"Transform": {
+			"Translation": {
+				"X": 700.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "2ab1e2b14d5473be666ab99a0840ef9f",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "79e8fe43459a3fd26cc1fd88774bacb2"
+	},
+	{
+		"ID": "477f598c4a527e9c830a7a9cbeb67e37",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 39",
+		"Transform": {
+			"Translation": {
+				"X": 2300.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "c263cc4848d5e4a83662bbb3eac5079c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "477f598c4a527e9c830a7a9cbeb67e37"
+	},
+	{
+		"ID": "75cd93a04fb3f19a7bf417b512243aa2",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 40",
+		"Transform": {
+			"Translation": {
+				"X": 2300.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "9ecb5c08499bdf703e9aedae0e964a82",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "75cd93a04fb3f19a7bf417b512243aa2"
+	},
+	{
+		"ID": "367064cc46b7c8c39d429dbe9702c43b",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 41",
+		"Transform": {
+			"Translation": {
+				"X": 1500.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "d5b904624312dc6a0907bdbf44aa8fbf",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "367064cc46b7c8c39d429dbe9702c43b"
+	},
+	{
+		"ID": "18cffdf2475e5d70a64e3a84fef98eb1",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 42",
+		"Transform": {
+			"Translation": {
+				"X": 1500.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "e0512fb14f39d8263b5b7f99c4d71401",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "18cffdf2475e5d70a64e3a84fef98eb1"
+	},
+	{
+		"ID": "8ae178c145063b43ad3ccab1842d38c3",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 43",
+		"Transform": {
+			"Translation": {
+				"X": 3100.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "45de307342cca1cb25472a9fff62e863",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "8ae178c145063b43ad3ccab1842d38c3"
+	},
+	{
+		"ID": "f49255e84639da365272ceb92e4469f8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 44",
+		"Transform": {
+			"Translation": {
+				"X": 3100.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "10a22779470480747ec828a70052417f",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "f49255e84639da365272ceb92e4469f8"
+	},
+	{
+		"ID": "c7173903465045ee18714fbd07abbb7e",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 45",
+		"Transform": {
+			"Translation": {
+				"X": 3900.0,
+				"Y": 0.0,
+				"Z": -200.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "586635884471aa08b5e55287f5e75ede",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "c7173903465045ee18714fbd07abbb7e"
+	},
+	{
+		"ID": "4c7ea1e54f02f9bd4d189e98dbb41652",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 46",
+		"Transform": {
+			"Translation": {
+				"X": 3900.0,
+				"Y": 0.0,
+				"Z": -1000.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "1d9c47e04e4d256d329601ac74b45cc5",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "4c7ea1e54f02f9bd4d189e98dbb41652"
+	},
+	{
+		"ID": "00c2ccbe47f1e6769059e39fc671a6dd",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 47",
+		"Transform": {
+			"Translation": {
+				"X": -2500.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "7adf5f0e4a48323b2f578cbeb717191a",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "00c2ccbe47f1e6769059e39fc671a6dd"
+	},
+	{
+		"ID": "530eae0040789256093268a5ea878d87",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 48",
+		"Transform": {
+			"Translation": {
+				"X": -2500.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "63b77f9f47abb2cc2b8415a5d07d5cac",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "530eae0040789256093268a5ea878d87"
+	},
+	{
+		"ID": "77b468584ed6813fe19668bb8f222b52",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 49",
+		"Transform": {
+			"Translation": {
+				"X": -3300.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "1579556c462ae9989e97e3857261c77e",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "77b468584ed6813fe19668bb8f222b52"
+	},
+	{
+		"ID": "eba5801a4c69eab7e151c5b4f7577902",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 50",
+		"Transform": {
+			"Translation": {
+				"X": -3300.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "0e115ac74b237f0d8fe0969b674f8efc",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "eba5801a4c69eab7e151c5b4f7577902"
+	},
+	{
+		"ID": "871ddd5b45ed96d9c3672fa6252aa631",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 51",
+		"Transform": {
+			"Translation": {
+				"X": -4100.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "8aa902604cab9f72b34eeba70ebd8b68",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "871ddd5b45ed96d9c3672fa6252aa631"
+	},
+	{
+		"ID": "807da59f49d692852dd315af10f7b127",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 52",
+		"Transform": {
+			"Translation": {
+				"X": -4100.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "966408734d2cf109d795af8f9571b610",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "807da59f49d692852dd315af10f7b127"
+	},
+	{
+		"ID": "d4dbe8794d7313df4f35f3bc8c650558",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 53",
+		"Transform": {
+			"Translation": {
+				"X": -4900.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "f45153a247bdb7fe95eed6bb64913b07",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "d4dbe8794d7313df4f35f3bc8c650558"
+	},
+	{
+		"ID": "ae1df2c24efcbb3bb1ad8781598585cc",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 54",
+		"Transform": {
+			"Translation": {
+				"X": -4900.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "f8c49df04fc59fc96a5bd694ea2a65aa",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "ae1df2c24efcbb3bb1ad8781598585cc"
+	},
+	{
+		"ID": "e3c212b84d3bf4c3e87c0980d3f933ca",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 55",
+		"Transform": {
+			"Translation": {
+				"X": -900.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "f5913f364ba9206461f8e68d12b3e2f5",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "e3c212b84d3bf4c3e87c0980d3f933ca"
+	},
+	{
+		"ID": "7bf99fe64598078e6263e7a485ebaf9c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 56",
+		"Transform": {
+			"Translation": {
+				"X": -900.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "054a8f6041fcd1066f043eb53636dee2",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "7bf99fe64598078e6263e7a485ebaf9c"
+	},
+	{
+		"ID": "ee0d50d04b0a1905c1be98bff7219fe6",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 57",
+		"Transform": {
+			"Translation": {
+				"X": -1700.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "dfa5169646ceee65a8b6b2ba6cb6fda9",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "ee0d50d04b0a1905c1be98bff7219fe6"
+	},
+	{
+		"ID": "88161dc640c94f911df39c8eab7b4d9b",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 58",
+		"Transform": {
+			"Translation": {
+				"X": -1700.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "ad08b0404eb9cd1d984064a584ab2e47",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "88161dc640c94f911df39c8eab7b4d9b"
+	},
+	{
+		"ID": "597d2c5d4df25cafe5b373968b7a5901",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 59",
+		"Transform": {
+			"Translation": {
+				"X": -100.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "05f5eb1d4dfa5419837741884941ec1c",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "597d2c5d4df25cafe5b373968b7a5901"
+	},
+	{
+		"ID": "a40f5efc4b9e41ef606ec0ad3798d9f8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 60",
+		"Transform": {
+			"Translation": {
+				"X": -100.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "b0106c764f9d579f96a623ad18cdd9e9",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "a40f5efc4b9e41ef606ec0ad3798d9f8"
+	},
+	{
+		"ID": "5a0fa9d7412819c4822b44855fe35189",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 61",
+		"Transform": {
+			"Translation": {
+				"X": 700.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "e2d71d7649453fb0aed96b8a54f626b3",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "5a0fa9d7412819c4822b44855fe35189"
+	},
+	{
+		"ID": "6047b40447ddc35a53211d8c153a680f",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 62",
+		"Transform": {
+			"Translation": {
+				"X": 700.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "914104a64a91e93464984cac2b156691",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "6047b40447ddc35a53211d8c153a680f"
+	},
+	{
+		"ID": "cbd8d37f430eb00d07f990a2f1693ae9",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 63",
+		"Transform": {
+			"Translation": {
+				"X": 2300.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "67535624434c69a6f9173c9bc8e479f8",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "cbd8d37f430eb00d07f990a2f1693ae9"
+	},
+	{
+		"ID": "d2834fb6488f79b21676b9bfa2ee89d1",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 64",
+		"Transform": {
+			"Translation": {
+				"X": 2300.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "726add5e4d91867a88a4798922c25ff4",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "d2834fb6488f79b21676b9bfa2ee89d1"
+	},
+	{
+		"ID": "5266e3c748cd695a67bd589d04956fb2",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 65",
+		"Transform": {
+			"Translation": {
+				"X": 1500.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "49b2abec46ac7d2334a79d8a95475209",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "5266e3c748cd695a67bd589d04956fb2"
+	},
+	{
+		"ID": "6a1274e24f3c91ff75c0989585e38d0f",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 66",
+		"Transform": {
+			"Translation": {
+				"X": 1500.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "5ac48c144585b3fd92701fb61298c12b",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "6a1274e24f3c91ff75c0989585e38d0f"
+	},
+	{
+		"ID": "fecd55354cefdea140f60199cfd8f46a",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 67",
+		"Transform": {
+			"Translation": {
+				"X": 3100.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "467ab9c24680d8fadeab6094c0da0aba",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "fecd55354cefdea140f60199cfd8f46a"
+	},
+	{
+		"ID": "28637bba4bc66e8bc521708f9e8d1467",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 68",
+		"Transform": {
+			"Translation": {
+				"X": 3100.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "697447344d542c9cc7df0e8c39e1e809",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "28637bba4bc66e8bc521708f9e8d1467"
+	},
+	{
+		"ID": "d713cfef4573b17e48f56a9d333cf61d",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 69",
+		"Transform": {
+			"Translation": {
+				"X": 3900.0,
+				"Y": 0.0,
+				"Z": 1400.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "15916eba4e7a25f63134eb9d2e7663ad",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "d713cfef4573b17e48f56a9d333cf61d"
+	},
+	{
+		"ID": "43189fab4ade39e7233a67988f89a4e0",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "0b891d8f4810e5bce369c3aaedc3d4bc",
+		"ParentID": "166a589d40505c27fb0dbb8b70614f6e",
+		"Name": "lava 70",
+		"Transform": {
+			"Translation": {
+				"X": 3900.0,
+				"Y": 0.0,
+				"Z": 600.0
+			}
+		},
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "37e193f242820ec052e92da5f2976b19",
+		"PrefabID": "b750c8264c0790ce1c601abc50690b33",
+		"PrefabObjectID": "f3a62a2a40e6c747e1c7a5b3770a6c9a",
+		"ParentID": "43189fab4ade39e7233a67988f89a4e0"
+	}
+]
+}

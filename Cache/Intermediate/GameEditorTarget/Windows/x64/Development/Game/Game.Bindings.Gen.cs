@@ -1278,6 +1278,20 @@ namespace Game
         internal static partial void Internal_Set_loseSource(IntPtr __obj, IntPtr value);
 
         [Unmanaged]
+        [DefaultValue(null)]
+        public Prefab _jibPrefab
+        {
+            get { return Internal_Get_jibPrefab(__unmanagedPtr); }
+            set { Internal_Set_jibPrefab(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Get_jibPrefab", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Prefab Internal_Get_jibPrefab(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Set_jibPrefab", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_jibPrefab(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
         [DefaultValue((float)600.0)]
         public float _movementSpeed
         {

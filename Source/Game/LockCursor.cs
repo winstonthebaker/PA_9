@@ -38,6 +38,11 @@ public class LockCursor : Script
             Screen.CursorVisible = false;
             Screen.CursorLock = CursorLockMode.Locked;
         }
+        else
+        {
+            Screen.CursorVisible = true;
+            Screen.CursorLock = CursorLockMode.None;
+        }
 
     }
 }

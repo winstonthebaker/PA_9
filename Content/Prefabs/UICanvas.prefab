@@ -25,6 +25,12 @@
 }
 	},
 	{
+		"ID": "5d36708748c85bcd1879c6a0f47dab24",
+		"TypeName": "Game.LockCursor",
+		"ParentID": "cb9bdadc431bfa4cd49180b4ddb9559c",
+		"V": {}
+	},
+	{
 		"ID": "8884269f4614e37bc74f6fb798f41b8c",
 		"PrefabID": "633fd50b4421f4a0133facadc4d00887",
 		"PrefabObjectID": "7524a781400afb45c98af7be23ea074a",
@@ -54,7 +60,9 @@
 				"Z": 0.0
 			}
 		},
-		"Data": {}
+		"Data": {
+	"IsSelectable": false
+}
 	},
 	{
 		"ID": "ac1abef14309abaa67ecf3983d97c06f",
@@ -171,7 +179,9 @@
 				"Z": 0.0
 			}
 		},
-		"Data": {}
+		"Data": {
+	"IsSelectable": false
+}
 	},
 	{
 		"ID": "30e0149149ef064343d0d8b78bc65f16",
@@ -372,6 +382,7 @@
 		"B": 0.0,
 		"A": 1.0
 	},
+	"IsSelectable": false,
 	"Text": "",
 	"AnchorMin": {
 		"X": 0.0,
