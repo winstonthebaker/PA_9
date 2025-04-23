@@ -1,0 +1,19 @@
+{
+	"ID": "1c31ea4045677611cb7248afc26b4739",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "9eb39d53455d2d419bf1f3821bb5fbea",
+		"TypeName": "FlaxEngine.AudioSource",
+		"Name": "BellAudioSource",
+		"Clip": "594a60ea44f9fb68a50a20b52b32f815",
+		"PlayOnStart": true
+	},
+	{
+		"ID": "22ab00c943b4063a8ca7c9891b1b39e3",
+		"TypeName": "Game.ExplosionDestroySelf",
+		"ParentID": "9eb39d53455d2d419bf1f3821bb5fbea"
+	}
+]
+}

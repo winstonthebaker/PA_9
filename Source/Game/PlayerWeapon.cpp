@@ -9,6 +9,7 @@
 #include "Engine/Core/Random.h"
 #include "Engine/Scripting/ManagedCLR/MClass.h"
 #include "Engine/Scripting/ManagedCLR/MMethod.h"
+#include "Bell.h"
 
 PlayerWeapon::PlayerWeapon(const SpawnParams& params)
 	: Script(params)
@@ -33,21 +34,28 @@ void PlayerWeapon::HandlePickup(int type)
 
 void PlayerWeapon::OnEnable()
 {
+	_pistolHideFactor = 30;
+	_shotgunHideFactor = 30;
 	_pistolStartingAmmo = _pistolAmmo;
 	_shotgunStartingAmmo = _shotgunAmmo;
 	if (_shotgun)
 	{
 		_shotgunRestPosition = _shotgun->GetLocalPosition();
 		_shotgunRestRotation = _shotgun->GetLocalOrientation();
+		_shotgun->SetLocalPosition(CalculateShotgunPosition());
+
 	}
 	if (_pistol)
 	{
 		_pistolRestPosition = _pistol->GetLocalPosition();
 		_pistolRestRotation = _pistol->GetLocalOrientation();
+		_pistol->SetLocalPosition(CalculatePistolPosition());
+
 	}
 	GameManager::GetInstance()->OnReset.Bind<PlayerWeapon, &PlayerWeapon::Reset>(this);
-	_pistolHideFactor = 30;
-	_shotgunHideFactor = 30;
+
+
+	
 }
 
 void PlayerWeapon::OnDisable()
@@ -139,7 +147,7 @@ void PlayerWeapon::HandleWeaponVisuals()
 			_shotgunHideFactor += Time::GetDeltaTime() * 60;
 		}
 	}
-	float rotationSmoothing = 20;
+	float rotationSmoothing = 10;
 	float factor = rotationSmoothing * Time::GetDeltaTime();
 	if (_pistol)
 	{
@@ -181,6 +189,11 @@ void PlayerWeapon::FirePistol()
 	{
 		return;
 	}
+	if (_pistolAudioSource)
+	{
+		_shotgunAudioSource->SetTime(0);
+		_pistolAudioSource->Play();
+	}
 	_pistolAmmo--;
 	PistolRecoil();
 	//pistol
@@ -217,6 +230,11 @@ void PlayerWeapon::FireShotgun()
 	{
 		return;
 	}
+	if (_shotgunAudioSource)
+	{
+		_shotgunAudioSource->SetTime(0);
+		_shotgunAudioSource->Play();
+	}
 	_shotgunAmmo--;
 	//shotgun
 	_pc->FireShotgun(_shotgunRecoil);
@@ -234,7 +252,7 @@ void PlayerWeapon::FireShotgun()
 		Vector3 spread = _pc->GetCameraOrientation() * Vector3(radius * Math::Cos(angle), radius * Math::Sin(angle), 0);
 		Vector3 origin = _pc->GetCameraPosition() + spread;
 		Vector3 direction = _pc->GetCameraOrientation() * Vector3::Forward;
-		if (Physics::RayCast(origin, direction, hit, shotgunRange, _layers))
+		if (Physics::RayCast(origin, direction, hit, MAX_float, _layers))
 		{
 			Actor* current = hit.Collider;
 			while (current)

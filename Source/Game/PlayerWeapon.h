@@ -6,7 +6,7 @@
 #include "Engine/Level/Actor.h"
 #include "Engine/Content/AssetReference.h"
 #include "Engine/Level/Prefabs/PrefabManager.h"
-
+#include "Engine/Audio/AudioSource.h"
 API_CLASS() class GAME_API PlayerWeapon : public Script
 {
 	API_AUTO_SERIALIZATION();
@@ -18,7 +18,10 @@ public:
 	
 	API_FIELD() ScriptingObjectReference<PlayerController> _pc;
 	API_FIELD() ScriptingObjectReference<Actor> _shotgun;
+	API_FIELD() ScriptingObjectReference<AudioSource> _shotgunAudioSource;
+
 	API_FIELD() ScriptingObjectReference<Actor> _pistol;
+	API_FIELD() ScriptingObjectReference<AudioSource> _pistolAudioSource;
 	API_FIELD() AssetReference<Prefab> _bulletTrailPrefab;
 
 	API_FIELD() LayersMask _layers;
@@ -33,7 +36,7 @@ public:
 	void HandlePickup(int type);
 
 private:
-	float _shotgunRecoil = 800;
+	float _shotgunRecoil = 1200;
 	void OnEnable() override;
 	void OnDisable() override;
 	void OnUpdate() override;

@@ -1,0 +1,13 @@
+{
+	"ID": "eb8c4486472a262b7f5da5bd9a600b6d",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "912d8f2a42670ba60733b3b5170528ab",
+		"TypeName": "FlaxEngine.AudioSource",
+		"Name": "DingAudioSource",
+		"Clip": "745b1ce742390da688fa35a597191500"
+	}
+]
+}

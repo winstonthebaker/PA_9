@@ -2,6 +2,7 @@
 #include "Engine/Level/Prefabs/PrefabManager.h"
 #include "Engine/Engine/Time.h"
 #include "GameManager.h"
+#include "Rocket.h"
 
 LauncherEnemy::LauncherEnemy(const SpawnParams& params)
     : Script(params)
@@ -12,11 +13,15 @@ LauncherEnemy::LauncherEnemy(const SpawnParams& params)
 
 void LauncherEnemy::OnEnable()
 {
-    _spawnTimer = _spawnTime;
+    _spawnTimer = _startingTime;
+    GameManager::GetInstance()->OnReset.Bind<LauncherEnemy, &LauncherEnemy::Reset>(this);
+
 }
 
 void LauncherEnemy::OnDisable()
 {
+    GameManager::GetInstance()->OnReset.Bind<LauncherEnemy, &LauncherEnemy::Reset>(this);
+
 }
 
 void LauncherEnemy::OnUpdate()
@@ -39,5 +44,17 @@ void LauncherEnemy::OnUpdate()
 
 void LauncherEnemy::SpawnMissile()
 {
-    PrefabManager::SpawnPrefab(_missilePrefab, GetActor()->GetPosition());
+    float initialVelocity = 300;
+    auto spawn = PrefabManager::SpawnPrefab(_missilePrefab, GetActor()->GetPosition());
+    Rocket* rocket = spawn->GetScript<Rocket>();
+    if (rocket)
+    {
+        rocket->SetInitialVelocity(GetActor()->GetOrientation() * Vector3::Up * initialVelocity);
+    }
+}
+
+void LauncherEnemy::Reset()
+{
+    _spawnTimer = _startingTime;
+
 }

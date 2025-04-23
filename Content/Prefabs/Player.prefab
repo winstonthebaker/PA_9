@@ -19,6 +19,9 @@
 		"_characterController": "b011bdec4efe71e176a41e8e7503e6cb",
 		"_cameraContainer": "d1df58b14fcc4ff50d1526b3a73ed1a9",
 		"_playerBody": "b011bdec4efe71e176a41e8e7503e6cb",
+		"_splatSource": "e680c65642473636333b20b8b9270683",
+		"_jumpSource": "4470bb1d4b5cbe791e3cb9a2a864f9b6",
+		"_loseSource": "858562f040479436a14785a7243bced3",
 		"_movementSpeed": 1000.0,
 		"_groundMovementAcceleration": 10000.0,
 		"_gravity": 2000.0,
@@ -30,9 +33,11 @@
 		"ParentID": "b011bdec4efe71e176a41e8e7503e6cb",
 		"_pc": "02ed9b5844900dc51530d9b721ff89d1",
 		"_shotgun": "2b97d92a43be4e87a352a1b560f63b22",
+		"_shotgunAudioSource": "c05a0a9d4309507f0383e8a9872e6da7",
 		"_pistol": "c101cbc54697aece43db0abc324f1a66",
+		"_pistolAudioSource": "758652cd45c370c280991da97bec0052",
 		"_bulletTrailPrefab": "14f715514d2044e512c0e3b865f50368",
-		"_layers": 4294967293
+		"_layers": 4294967277
 	},
 	{
 		"ID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
@@ -54,6 +59,13 @@
 		"TypeName": "FreeCamera",
 		"ParentID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
 		"V": {}
+	},
+	{
+		"ID": "e680c65642473636333b20b8b9270683",
+		"PrefabID": "41f95efc4ff7e7b09a6190a2f54a61e2",
+		"PrefabObjectID": "62289f3f482473211edb549c8321306d",
+		"ParentID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+		"StaticFlags": 0
 	},
 	{
 		"ID": "2b97d92a43be4e87a352a1b560f63b22",
@@ -81,6 +93,15 @@
 		}
 	},
 	{
+		"ID": "c05a0a9d4309507f0383e8a9872e6da7",
+		"PrefabID": "f5bed72b4bc15b713579f7a2e916d75a",
+		"PrefabObjectID": "62289f3f482473211edb549c8321306d",
+		"ParentID": "2b97d92a43be4e87a352a1b560f63b22",
+		"Name": "ShotgunShotAudioSource",
+		"StaticFlags": 0,
+		"PlayOnStart": false
+	},
+	{
 		"ID": "c101cbc54697aece43db0abc324f1a66",
 		"TypeName": "FlaxEngine.StaticModel",
 		"ParentID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
@@ -104,6 +125,39 @@
 				}
 			]
 		}
+	},
+	{
+		"ID": "758652cd45c370c280991da97bec0052",
+		"PrefabID": "0974546d4a3cb4bf5f552ebc75d13c70",
+		"PrefabObjectID": "62289f3f482473211edb549c8321306d",
+		"ParentID": "c101cbc54697aece43db0abc324f1a66",
+		"Name": "PistolShotAudioSource",
+		"StaticFlags": 0,
+		"PlayOnStart": false
+	},
+	{
+		"ID": "858562f040479436a14785a7243bced3",
+		"PrefabID": "eb8c4486472a262b7f5da5bd9a600b6d",
+		"PrefabObjectID": "912d8f2a42670ba60733b3b5170528ab",
+		"ParentID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+		"Name": "LoseAudioSource",
+		"StaticFlags": 0
+	},
+	{
+		"ID": "8441917344979cb1537227b6d96d769e",
+		"TypeName": "FlaxEngine.AudioListener",
+		"ParentID": "d1df58b14fcc4ff50d1526b3a73ed1a9",
+		"Name": "AudioListener",
+		"StaticFlags": 0
+	},
+	{
+		"ID": "4470bb1d4b5cbe791e3cb9a2a864f9b6",
+		"PrefabID": "fa852edc455f01df88997f8d0d74b2a9",
+		"PrefabObjectID": "62289f3f482473211edb549c8321306d",
+		"ParentID": "b011bdec4efe71e176a41e8e7503e6cb",
+		"Name": "JumpAudioSource",
+		"StaticFlags": 0,
+		"PlayOnStart": false
 	}
 ]
 }

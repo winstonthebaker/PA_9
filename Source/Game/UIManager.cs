@@ -40,6 +40,35 @@ public class UIManager : Script
     public void UpdateTime(float time, int pistolAmmo, int shotgunAmmo)
     {
         UpdateTimeBar(time);
+        if (_pistolText != null)
+        {
+            if (pistolAmmo > 0)
+            {
+                _pistolText.Get<TextBox>().Text = pistolAmmo.ToString();
+                _pistolText.Get<TextBox>().Visible = true;
+
+            }
+            else
+            {
+                _pistolText.Get<TextBox>().Visible = false;
+            }
+        }
+        if (_shotgunText != null)
+        {
+            if(shotgunAmmo > 0)
+            {
+                _shotgunText.Get<TextBox>().Text = shotgunAmmo.ToString();
+                _shotgunText.Get<TextBox>().Visible = true;
+            }
+            else
+            {
+                _shotgunText.Get<TextBox>().Visible = false;
+            }
+        }
+        if(_timeText != null)
+        {
+            _timeText.Get<TextBox>().Text = time.ToString("F1");
+        }
     }
     public void BeatLevel()
     {
@@ -47,6 +76,9 @@ public class UIManager : Script
     }
     public UIControl _progressBarLeft;
     public UIControl _progressBarRight;
+    public UIControl _pistolText;
+    public UIControl _shotgunText;
+    public UIControl _timeText;
     private void UpdateTimeBar(float time)
     {
         if (_progressBarLeft != null && _progressBarRight != null)

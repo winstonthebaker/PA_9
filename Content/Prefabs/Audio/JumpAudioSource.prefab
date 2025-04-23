@@ -1,0 +1,14 @@
+{
+	"ID": "fa852edc455f01df88997f8d0d74b2a9",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "62289f3f482473211edb549c8321306d",
+		"TypeName": "FlaxEngine.AudioSource",
+		"Name": "SplatAudioSource",
+		"Clip": "e80b28a8416451d7f3ab0682da7a66c7",
+		"PlayOnStart": true
+	}
+]
+}

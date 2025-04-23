@@ -188,6 +188,10 @@
   <ItemGroup>
     <ClCompile Include="..\..\Source\Game.Gen.cpp"/>
     <ClInclude Include="..\..\Source\Game.Gen.h"/>
+    <ClCompile Include="..\..\Source\Game\Bell.cpp"/>
+    <ClInclude Include="..\..\Source\Game\Bell.h"/>
+    <ClCompile Include="..\..\Source\Game\Door.cpp"/>
+    <ClInclude Include="..\..\Source\Game\Door.h"/>
     <ClCompile Include="..\..\Source\Game\Explodes.cpp"/>
     <ClInclude Include="..\..\Source\Game\Explodes.h"/>
     <ClCompile Include="..\..\Source\Game\ExplosionDestroySelf.cpp"/>
@@ -196,6 +200,8 @@
     <ClInclude Include="..\..\Source\Game\FloatingMine.h"/>
     <ClCompile Include="..\..\Source\Game\GameManager.cpp"/>
     <ClInclude Include="..\..\Source\Game\GameManager.h"/>
+    <ClCompile Include="..\..\Source\Game\Key.cpp"/>
+    <ClInclude Include="..\..\Source\Game\Key.h"/>
     <ClCompile Include="..\..\Source\Game\LauncherEnemy.cpp"/>
     <ClInclude Include="..\..\Source\Game\LauncherEnemy.h"/>
     <ClCompile Include="..\..\Source\Game\MineSpawner.cpp"/>

@@ -7,26 +7,30 @@
 		"ID": "5380a1b647ddfa2cf2d9fa9d5dae3261",
 		"TypeName": "FlaxEngine.SphereCollider",
 		"Name": "WinItem",
+		"Layer": 4,
 		"Tag": "WinItem",
 		"IsTrigger": true,
 		"Radius": 95.0
 	},
 	{
+		"ID": "82b1bd434c7de9690a79bbb205e187ea",
+		"TypeName": "Game.Pickup",
+		"ParentID": "5380a1b647ddfa2cf2d9fa9d5dae3261",
+		"_audioSource": "9dd9367846c240b695de55964cddabb8",
+		"_type": 3
+	},
+	{
 		"ID": "9b1cc3f14ba876159de732affe2356ec",
 		"TypeName": "FlaxEngine.EmptyActor",
 		"ParentID": "5380a1b647ddfa2cf2d9fa9d5dae3261",
-		"Name": "Container"
+		"Name": "Container",
+		"Layer": 4
 	},
 	{
 		"ID": "c8fc328d4981bd00a7bd5b8ab9066428",
 		"TypeName": "Game.RotateObject",
 		"ParentID": "9b1cc3f14ba876159de732affe2356ec",
-		"_rotationSpeed": 360.0,
-		"_rotationAxis": {
-			"X": 0.0,
-			"Y": 1.0,
-			"Z": 0.0
-		}
+		"_rotationSpeed": 360.0
 	},
 	{
 		"ID": "3a6cfb1249c78fc309d5819fd2dcc6a8",
@@ -41,6 +45,7 @@
 				"W": 0.8697659969329834
 			}
 		},
+		"Layer": 4,
 		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 		"Buffer": {
 			"Entries": [

@@ -1,0 +1,16 @@
+{
+	"ID": "7d45806048c7cc0bf54bd1a3b59f21ba",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "16f2ba094e855130a1f386a899309ae9",
+		"TypeName": "FlaxEngine.AudioSource",
+		"Name": "SawbladeAudioSource",
+		"Clip": "ba7e5b844feefd1e72a304a53303947a",
+		"Volume": 0.10000000149011612,
+		"Loop": true,
+		"PlayOnStart": true
+	}
+]
+}

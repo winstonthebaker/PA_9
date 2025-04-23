@@ -1,0 +1,20 @@
+{
+	"ID": "6f9b72a74fc03cea02a41a99a037c584",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "d381cecd490f13a39a4ee58dfd6ea0fb",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "PistolCockAudioSource",
+		"Clip": "5c4c560e4d80550cadc96fab595b22a2",
+		"PlayOnStart": true
+	},
+	{
+		"ID": "342962be4a03954ac65709a0d7137b45",
+		"TypeName": "Game.ExplosionDestroySelf",
+		"ParentID": "d381cecd490f13a39a4ee58dfd6ea0fb"
+	}
+]
+}

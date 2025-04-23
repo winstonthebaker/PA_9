@@ -3,11 +3,11 @@
   "Platform": "Windows",
   "Architecture": "x64",
   "Configuration": "Development",
-  "HotReloadPostfix": ".HotReload.7",
+  "HotReloadPostfix": ".HotReload.17",
   "BinaryModules": [
     {
       "Name": "Game",
-      "NativePath": "$(ProjectPath)/Binaries/GameEditorTarget/Windows/x64/Development/Game.HotReload.7.dll",
+      "NativePath": "$(ProjectPath)/Binaries/GameEditorTarget/Windows/x64/Development/Game.HotReload.17.dll",
       "ManagedPath": "$(ProjectPath)/Binaries/GameEditorTarget/Windows/x64/Development/Game.CSharp.dll"
     }
   ],

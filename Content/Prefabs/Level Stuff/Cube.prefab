@@ -1,0 +1,36 @@
+{
+	"ID": "4d08884e4e237093ce82e687037ed610",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "7541bee442fc56ea5ef1e5934906f512",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "EmptyActor"
+	},
+	{
+		"ID": "2c76fce84d8c03c81ab2718395382ffb",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "7541bee442fc56ea5ef1e5934906f512",
+		"Name": "Cube",
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "9b28d395449053e1afe51aa76bfc682f",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "7541bee442fc56ea5ef1e5934906f512",
+		"Name": "BoxCollider"
+	}
+]
+}

@@ -1,0 +1,19 @@
+{
+	"ID": "9dd9367846c240b695de55964cddabb8",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "912d8f2a42670ba60733b3b5170528ab",
+		"TypeName": "FlaxEngine.AudioSource",
+		"Name": "DingAudioSource",
+		"Clip": "c1d34f3c4b18553eaa236d89d1a594db",
+		"PlayOnStart": true
+	},
+	{
+		"ID": "f4b61a9a4ed020caeca848b762232d87",
+		"TypeName": "Game.ExplosionDestroySelf",
+		"ParentID": "912d8f2a42670ba60733b3b5170528ab"
+	}
+]
+}

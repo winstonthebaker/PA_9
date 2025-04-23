@@ -1,0 +1,20 @@
+{
+	"ID": "e1cb0e2e477fbb037920a39275dd3a99",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "a2e50628456eae05641443863e8314a8",
+		"TypeName": "FlaxEngine.AudioSource",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "DoorAudioSource",
+		"Clip": "c1c07af446b9c5897e8b898e9d9adb65",
+		"PlayOnStart": true
+	},
+	{
+		"ID": "54901573447f6381a4b837b566db77fb",
+		"TypeName": "Game.ExplosionDestroySelf",
+		"ParentID": "a2e50628456eae05641443863e8314a8"
+	}
+]
+}

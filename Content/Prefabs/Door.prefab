@@ -1,0 +1,71 @@
+{
+	"ID": "600cb3ee473a60530f3142bd5c0fb0f9",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "c37e181c475bccdfb4dbc3a331edd619",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Door"
+	},
+	{
+		"ID": "22cc07e54065c2f534b9e3b113526172",
+		"TypeName": "Game.Door",
+		"ParentID": "c37e181c475bccdfb4dbc3a331edd619",
+		"_doorTransform": "5c80b6d540e6468551c8cca647a993c4",
+		"_audioSource": "e1cb0e2e477fbb037920a39275dd3a99"
+	},
+	{
+		"ID": "566ffa50440ec55d96d362bdef2fd2a4",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "c37e181c475bccdfb4dbc3a331edd619",
+		"Name": "Shape",
+		"Transform": {
+			"Scale": {
+				"X": 4.0,
+				"Y": 8.0,
+				"Z": 0.5
+			}
+		}
+	},
+	{
+		"ID": "5c80b6d540e6468551c8cca647a993c4",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "566ffa50440ec55d96d362bdef2fd2a4",
+		"Name": "Transform"
+	},
+	{
+		"ID": "ccfa8b1845dfb364070a1696cce23980",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "5c80b6d540e6468551c8cca647a993c4",
+		"Name": "Cube",
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "b76841614540106683424b9cf9e6a171",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "11822d2f4df1f97b98d0e8b292e903f3",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "5c80b6d540e6468551c8cca647a993c4",
+		"Name": "BoxCollider"
+	},
+	{
+		"ID": "de57dd524efdd3f663369f8f39328f62",
+		"PrefabID": "e1cb0e2e477fbb037920a39275dd3a99",
+		"PrefabObjectID": "a2e50628456eae05641443863e8314a8",
+		"ParentID": "c37e181c475bccdfb4dbc3a331edd619",
+		"RemovedObjects": [
+			"54901573447f6381a4b837b566db77fb"
+		],
+		"PlayOnStart": false
+	}
+]
+}

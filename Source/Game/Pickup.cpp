@@ -1,6 +1,8 @@
 ﻿#include "Pickup.h"
 #include "GameManager.h"
 #include "Engine/Level/Actor.h"
+#include "PlayerController.h"
+#include "Engine/Level/Prefabs/PrefabManager.h"
 
 Pickup::Pickup(const SpawnParams& params)
     : Script(params)
@@ -41,6 +43,18 @@ void Pickup::OnDestroy()
 
 int Pickup::Grab()
 {
+    if (_audioSource)
+    {
+        PrefabManager::SpawnPrefab(_audioSource, GetActor()->GetPosition());
+
+    }
+
+    PlayerController* pc = PlayerController::GetInstance();
+    if (pc)
+    {
+        pc->HandlePickup(_type);
+    }
+    OnGrabbed();
     GetActor()->SetIsActive(false);
     return _type;
 }

@@ -189,6 +189,7 @@
     <Compile Include="Game\MainMenu.cs" />
     <Compile Include="Game\NextLevelScreen.cs" />
     <Compile Include="Game\RocketTrail.cs" />
+    <Compile Include="Game\SoundPlayer.cs" />
     <Compile Include="Game\UIManager.cs" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)|$(Platform)' == 'Editor.Windows.Debug|x64' " >

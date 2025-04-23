@@ -1,0 +1,65 @@
+{
+	"ID": "9bd73a514ca8c92d03a68f9b1ead3ef3",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "bee38edf466a21bd9e64b08f421e25c8",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"Name": "Key",
+		"Layer": 4,
+		"IsTrigger": true
+	},
+	{
+		"ID": "eb237d984ad3f9e5c21893a42daa81b1",
+		"TypeName": "Game.Pickup",
+		"ParentID": "bee38edf466a21bd9e64b08f421e25c8",
+		"_audioSource": "1e3d25ef4115e1303ebdce982b25b5f9",
+		"_type": 5
+	},
+	{
+		"ID": "1b69167545218dee7af130bee72dc01d",
+		"TypeName": "Game.Key",
+		"ParentID": "bee38edf466a21bd9e64b08f421e25c8"
+	},
+	{
+		"ID": "6c0a85504ed9277ae952c282d7b8c1f6",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "bee38edf466a21bd9e64b08f421e25c8",
+		"Name": "Visual",
+		"Layer": 4
+	},
+	{
+		"ID": "dff4aafd444e5d88aac1a5b97b4b9886",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "6c0a85504ed9277ae952c282d7b8c1f6",
+		"_rotationSpeed": 200.0
+	},
+	{
+		"ID": "681e20c14d31029152b06c830a8e34ca",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "6c0a85504ed9277ae952c282d7b8c1f6",
+		"Name": "Cube",
+		"Transform": {
+			"Orientation": {
+				"X": -0.32556813955307009,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.9455185532569885
+			}
+		},
+		"Layer": 4,
+		"Model": "9a5bf1624f14fc52c2eca88dabc38416",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "ab8a576349b3325acbb9259fd06e4257",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

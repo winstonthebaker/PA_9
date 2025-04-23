@@ -7,7 +7,9 @@
 		"ID": "b1db0837481161598fe95f9fb3ecfe44",
 		"TypeName": "FlaxEngine.RigidBody",
 		"Name": "Missile",
+		"Layer": 2,
 		"Tag": "KillsOnContact",
+		"OverrideMass": true,
 		"EnableGravity": false
 	},
 	{
@@ -15,7 +17,8 @@
 		"TypeName": "Game.Rocket",
 		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
 		"_rb": "b1db0837481161598fe95f9fb3ecfe44",
-		"_col": "77374f674e3b3a6dd21344ade782101b",
+		"_col": "979dec39486077249ed894b29000fadb",
+		"_audioSource": "86a8fde94238435577d97c899a318710",
 		"_thrustPower": 4000.0
 	},
 	{
@@ -34,6 +37,7 @@
 		"TypeName": "FlaxEngine.StaticModel",
 		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
 		"Name": "Cone",
+		"Layer": 2,
 		"Model": "1629791049d56625f1980a849286d1d7",
 		"Buffer": {
 			"Entries": [
@@ -64,34 +68,26 @@
 				"W": 0.7071068286895752
 			}
 		},
+		"Layer": 2,
 		"Overrides": [],
 		"ParticleSystem": "bf8578a4402de6a8c9b6cf95911c5598"
 	},
 	{
-		"ID": "d62b508c4ae6489ba35088babfff6373",
-		"TypeName": "Game.RocketTrail",
-		"ParentID": "bb6262d044326d1e3c3c42a3f94c42fc",
-		"V": {}
+		"ID": "979dec39486077249ed894b29000fadb",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
+		"Name": "MeshCollider",
+		"Layer": 2,
+		"Tag": "KillsOnContact",
+		"IsTrigger": true,
+		"CollisionData": "db39d65e49b31400576edcb334592841"
 	},
 	{
-		"ID": "77374f674e3b3a6dd21344ade782101b",
-		"TypeName": "FlaxEngine.SphereCollider",
+		"ID": "86a8fde94238435577d97c899a318710",
+		"PrefabID": "8ee09c9f478ff510f6a228bb2a67c943",
+		"PrefabObjectID": "1c9bd52440c91ae2149ba189d8f76596",
 		"ParentID": "b1db0837481161598fe95f9fb3ecfe44",
-		"Name": "SphereCollider",
-		"Transform": {
-			"Translation": {
-				"X": 0.0,
-				"Y": 0.0,
-				"Z": 53.983177185058597
-			},
-			"Scale": {
-				"X": 1.350000023841858,
-				"Y": 1.0,
-				"Z": 1.0
-			}
-		},
-		"Tag": "KillsOnContact",
-		"IsTrigger": true
+		"Layer": 2
 	}
 ]
 }

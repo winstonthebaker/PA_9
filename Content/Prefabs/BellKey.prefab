@@ -1,0 +1,104 @@
+{
+	"ID": "ad2d5e214a17ddc49a699da9c56ccd60",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "21a9676846991bcb91e8b998da6175f8",
+		"TypeName": "FlaxEngine.SphereCollider",
+		"Name": "BellKey",
+		"Layer": 4,
+		"IsTrigger": true
+	},
+	{
+		"ID": "9da441264fd4aa3ba8d5bebd5ef859ed",
+		"TypeName": "Game.Pickup",
+		"ParentID": "21a9676846991bcb91e8b998da6175f8",
+		"_type": 5
+	},
+	{
+		"ID": "d85a26ef4ce258a413c75b859839a6ca",
+		"TypeName": "Game.Key",
+		"ParentID": "21a9676846991bcb91e8b998da6175f8"
+	},
+	{
+		"ID": "04e7839e45b378f89b9e47a3b14d5528",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "21a9676846991bcb91e8b998da6175f8",
+		"Name": "Visual"
+	},
+	{
+		"ID": "e27ec2844c6654388f9b278faa44960e",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "04e7839e45b378f89b9e47a3b14d5528",
+		"_rotationSpeed": 200.0
+	},
+	{
+		"ID": "28157bd5469c0500b0956eafdeac8841",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "04e7839e45b378f89b9e47a3b14d5528",
+		"Name": "Cube",
+		"Transform": {
+			"Orientation": {
+				"X": -0.32556813955307009,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.9455185532569885
+			}
+		},
+		"Model": "9a5bf1624f14fc52c2eca88dabc38416",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "ab8a576349b3325acbb9259fd06e4257",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "0dc93dc54e04194796e5b6b5fb3634d8",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "5083a8884e9efa8e818777904f95f310",
+		"ParentID": "21a9676846991bcb91e8b998da6175f8",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 100.0,
+				"Z": 0.0
+			}
+		}
+	},
+	{
+		"ID": "07feb4b44a894e1356be57bf4820e8dc",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "4657a32544c05332eb680689b0f13b08",
+		"ParentID": "0dc93dc54e04194796e5b6b5fb3634d8"
+	},
+	{
+		"ID": "0d73acb146bbe6a8f574639dd61d72f9",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "a2b89b4640342e5d7a4de98f23bb5652",
+		"ParentID": "0dc93dc54e04194796e5b6b5fb3634d8"
+	},
+	{
+		"ID": "fe0af2704f965e6370af7aa204b1c638",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "8a3a078e4ca5467023e516a4ae0f6895",
+		"ParentID": "0dc93dc54e04194796e5b6b5fb3634d8",
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "46500860473517e2975196b9e762ce9e",
+		"PrefabID": "def66333479de39f28706a82d5c636f2",
+		"PrefabObjectID": "72e3980f400e9031e37c248a16eea278",
+		"ParentID": "fe0af2704f965e6370af7aa204b1c638"
+	}
+]
+}

@@ -1,0 +1,48 @@
+{
+	"ID": "def66333479de39f28706a82d5c636f2",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "5083a8884e9efa8e818777904f95f310",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"Name": "bell",
+		"IsTrigger": true,
+		"CollisionData": "dadf643d46e28949b4dc9a91aa95d384"
+	},
+	{
+		"ID": "4657a32544c05332eb680689b0f13b08",
+		"TypeName": "Game.ShotHandler",
+		"ParentID": "5083a8884e9efa8e818777904f95f310"
+	},
+	{
+		"ID": "a2b89b4640342e5d7a4de98f23bb5652",
+		"TypeName": "Game.Bell",
+		"ParentID": "5083a8884e9efa8e818777904f95f310",
+		"_audioSource": "1c31ea4045677611cb7248afc26b4739"
+	},
+	{
+		"ID": "8a3a078e4ca5467023e516a4ae0f6895",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "5083a8884e9efa8e818777904f95f310",
+		"Name": "visual",
+		"Model": "f56301de41b12724cb577eadc1083b33",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "1e1439eb46a76162bcedc3a8e017152f",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "72e3980f400e9031e37c248a16eea278",
+		"TypeName": "Game.RotateObject",
+		"ParentID": "8a3a078e4ca5467023e516a4ae0f6895",
+		"_rotationSpeed": 200.0
+	}
+]
+}

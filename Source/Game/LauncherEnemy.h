@@ -16,7 +16,9 @@ DECLARE_SCRIPTING_TYPE(LauncherEnemy);
     void OnUpdate() override;
     void SpawnMissile();
     float _spawnTimer;
+    void Reset();
 public:
     API_FIELD() AssetReference<Prefab> _missilePrefab;
     API_FIELD() float _spawnTime;
+    API_FIELD() float _startingTime;
 };

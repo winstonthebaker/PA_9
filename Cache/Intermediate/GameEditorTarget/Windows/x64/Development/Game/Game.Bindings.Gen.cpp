@@ -7,6 +7,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #include "Engine/Scripting/ManagedCLR/MUtils.h"
 #include "Engine/Scripting/ManagedCLR/MCore.h"
 #include "Game.Gen.h"
+#include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Audio\AudioSource.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Content\AssetReference.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Collections\Array.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Core\Types\BaseTypes.h"
@@ -17,10 +18,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\Colliders\CharacterController.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Physics\Colliders\Collider.h"
 #include "C:\Program Files (x86)\Flax\Flax_1.9\Source\Engine\Scripting\ScriptingObjectReference.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Bell.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Door.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Explodes.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\ExplosionDestroySelf.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\FloatingMine.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\GameManager.h"
+#include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\Key.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\LauncherEnemy.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\MineSpawner.h"
 #include "C:\Users\winst\OneDrive\Documents\Flax Projects\PA_9\Source\Game\MovingEnemy.h"
@@ -35,6 +39,144 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #include "Engine/Scripting/ManagedCLR/MClass.h"
 #include "Engine/Scripting/ManagedCLR/MMethod.h"
 #include "Engine/Serialization/Serialization.h"
+
+void Bell::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(Bell);
+    SERIALIZE(_pickup);
+    SERIALIZE(_audioSource);
+}
+
+void Bell::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_pickup);
+    DESERIALIZE(_audioSource);
+}
+
+class BellInternal
+{
+public:
+    DLLEXPORT static MObject* Get_pickup(Bell* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Bell::Internal_Get_pickup")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_pickup.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_pickup(Bell* __obj, Pickup* value)
+    {
+        MSVC_FUNC_EXPORT("Game.Bell::Internal_Set_pickup")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_pickup = value;
+    }
+
+    DLLEXPORT static MObject* Get_audioSource(Bell* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Bell::Internal_Get_audioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_audioSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_audioSource(Bell* __obj, Prefab* value)
+    {
+        MSVC_FUNC_EXPORT("Game.Bell::Internal_Set_audioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_audioSource = value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer Bell::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Bell", 9), sizeof(Bell), &BellInternal::InitRuntime, (ScriptingType::SpawnHandler)&Bell::Spawn, &Script::TypeInitializer, &BellInternal::SetupScriptVTable, &BellInternal::SetupScriptObjectVTable, nullptr);
+
+void Door::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(Door);
+    SERIALIZE(_doorTransform);
+    SERIALIZE(_audioSource);
+}
+
+void Door::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_doorTransform);
+    DESERIALIZE(_audioSource);
+}
+
+class DoorInternal
+{
+public:
+    DLLEXPORT static MObject* Get_doorTransform(Door* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Door::Internal_Get_doorTransform")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_doorTransform.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_doorTransform(Door* __obj, Actor* value)
+    {
+        MSVC_FUNC_EXPORT("Game.Door::Internal_Set_doorTransform")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_doorTransform = value;
+    }
+
+    DLLEXPORT static MObject* Get_audioSource(Door* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Door::Internal_Get_audioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_audioSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_audioSource(Door* __obj, Prefab* value)
+    {
+        MSVC_FUNC_EXPORT("Game.Door::Internal_Set_audioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_audioSource = value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer Door::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Door", 9), sizeof(Door), &DoorInternal::InitRuntime, (ScriptingType::SpawnHandler)&Door::Spawn, &Script::TypeInitializer, &DoorInternal::SetupScriptVTable, &DoorInternal::SetupScriptObjectVTable, nullptr);
 
 void Explodes::Serialize(SerializeStream& stream, const void* otherObj)
 {
@@ -280,12 +422,66 @@ public:
 
 ScriptingTypeInitializer GameManager::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.GameManager", 16), sizeof(GameManager), &GameManagerInternal::InitRuntime, (ScriptingType::SpawnHandler)&GameManager::Spawn, &Script::TypeInitializer, &GameManagerInternal::SetupScriptVTable, &GameManagerInternal::SetupScriptObjectVTable, nullptr);
 
+void Key::Serialize(SerializeStream& stream, const void* otherObj)
+{
+    Script::Serialize(stream, otherObj);
+    SERIALIZE_GET_OTHER_OBJ(Key);
+    SERIALIZE(_door);
+}
+
+void Key::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
+{
+    Script::Deserialize(stream, modifier);
+    DESERIALIZE(_door);
+}
+
+class KeyInternal
+{
+public:
+    DLLEXPORT static MObject* Get_door(Key* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Key::Internal_Get_door")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_door.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_door(Key* __obj, Door* value)
+    {
+        MSVC_FUNC_EXPORT("Game.Key::Internal_Set_door")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_door = value;
+    }
+
+
+    static void SetupScriptVTable(MClass* mclass, void**& scriptVTable, void**& scriptVTableBase)
+    {
+        if (!scriptVTable)
+        {
+            scriptVTable = (void**)Platform::Allocate(sizeof(void*) * 15, 16);
+            Platform::MemoryClear(scriptVTable, sizeof(void*) * 15);
+            scriptVTableBase = (void**)Platform::Allocate(sizeof(void*) * 16, 16);
+        }
+    }
+
+    static void SetupScriptObjectVTable(void** scriptVTable, void** scriptVTableBase, void** vtable, int32 entriesCount, int32 wrapperIndex)
+    {
+    }
+
+    static void InitRuntime()
+    {
+    }
+
+};
+
+ScriptingTypeInitializer Key::TypeInitializer((BinaryModule*)GetBinaryModuleGame(), StringAnsiView("Game.Key", 8), sizeof(Key), &KeyInternal::InitRuntime, (ScriptingType::SpawnHandler)&Key::Spawn, &Script::TypeInitializer, &KeyInternal::SetupScriptVTable, &KeyInternal::SetupScriptObjectVTable, nullptr);
+
 void LauncherEnemy::Serialize(SerializeStream& stream, const void* otherObj)
 {
     Script::Serialize(stream, otherObj);
     SERIALIZE_GET_OTHER_OBJ(LauncherEnemy);
     SERIALIZE(_missilePrefab);
     SERIALIZE(_spawnTime);
+    SERIALIZE(_startingTime);
 }
 
 void LauncherEnemy::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
@@ -293,6 +489,7 @@ void LauncherEnemy::Deserialize(DeserializeStream& stream, ISerializeModifier* m
     Script::Deserialize(stream, modifier);
     DESERIALIZE(_missilePrefab);
     DESERIALIZE(_spawnTime);
+    DESERIALIZE(_startingTime);
 }
 
 class LauncherEnemyInternal
@@ -324,6 +521,20 @@ public:
         MSVC_FUNC_EXPORT("Game.LauncherEnemy::Internal_Set_spawnTime")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
         __obj->_spawnTime = value;
+    }
+
+    DLLEXPORT static float Get_startingTime(LauncherEnemy* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.LauncherEnemy::Internal_Get_startingTime")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_startingTime;
+    }
+
+    DLLEXPORT static void Set_startingTime(LauncherEnemy* __obj, float value)
+    {
+        MSVC_FUNC_EXPORT("Game.LauncherEnemy::Internal_Set_startingTime")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_startingTime = value;
     }
 
 
@@ -541,18 +752,34 @@ void Pickup::Serialize(SerializeStream& stream, const void* otherObj)
 {
     Script::Serialize(stream, otherObj);
     SERIALIZE_GET_OTHER_OBJ(Pickup);
+    SERIALIZE(_audioSource);
     SERIALIZE(_type);
 }
 
 void Pickup::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier)
 {
     Script::Deserialize(stream, modifier);
+    DESERIALIZE(_audioSource);
     DESERIALIZE(_type);
 }
 
 class PickupInternal
 {
 public:
+    DLLEXPORT static MObject* Get_audioSource(Pickup* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Pickup::Internal_Get_audioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_audioSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_audioSource(Pickup* __obj, Prefab* value)
+    {
+        MSVC_FUNC_EXPORT("Game.Pickup::Internal_Set_audioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_audioSource = value;
+    }
+
     DLLEXPORT static int Get_type(Pickup* __obj)
     {
         MSVC_FUNC_EXPORT("Game.Pickup::Internal_Get_type")
@@ -597,6 +824,9 @@ void PlayerController::Serialize(SerializeStream& stream, const void* otherObj)
     SERIALIZE(_characterController);
     SERIALIZE(_cameraContainer);
     SERIALIZE(_playerBody);
+    SERIALIZE(_splatSource);
+    SERIALIZE(_jumpSource);
+    SERIALIZE(_loseSource);
     SERIALIZE(_movementSpeed);
     SERIALIZE(_airMovementAcceleration);
     SERIALIZE(_groundMovementAcceleration);
@@ -613,6 +843,9 @@ void PlayerController::Deserialize(DeserializeStream& stream, ISerializeModifier
     DESERIALIZE(_characterController);
     DESERIALIZE(_cameraContainer);
     DESERIALIZE(_playerBody);
+    DESERIALIZE(_splatSource);
+    DESERIALIZE(_jumpSource);
+    DESERIALIZE(_loseSource);
     DESERIALIZE(_movementSpeed);
     DESERIALIZE(_airMovementAcceleration);
     DESERIALIZE(_groundMovementAcceleration);
@@ -666,6 +899,48 @@ public:
         MSVC_FUNC_EXPORT("Game.PlayerController::Internal_Set_playerBody")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
         __obj->_playerBody = value;
+    }
+
+    DLLEXPORT static MObject* Get_splatSource(PlayerController* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerController::Internal_Get_splatSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_splatSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_splatSource(PlayerController* __obj, AudioSource* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerController::Internal_Set_splatSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_splatSource = value;
+    }
+
+    DLLEXPORT static MObject* Get_jumpSource(PlayerController* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerController::Internal_Get_jumpSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_jumpSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_jumpSource(PlayerController* __obj, AudioSource* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerController::Internal_Set_jumpSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_jumpSource = value;
+    }
+
+    DLLEXPORT static MObject* Get_loseSource(PlayerController* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerController::Internal_Get_loseSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_loseSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_loseSource(PlayerController* __obj, AudioSource* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerController::Internal_Set_loseSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_loseSource = value;
     }
 
     DLLEXPORT static float Get_movementSpeed(PlayerController* __obj)
@@ -809,7 +1084,9 @@ void PlayerWeapon::Serialize(SerializeStream& stream, const void* otherObj)
     SERIALIZE_GET_OTHER_OBJ(PlayerWeapon);
     SERIALIZE(_pc);
     SERIALIZE(_shotgun);
+    SERIALIZE(_shotgunAudioSource);
     SERIALIZE(_pistol);
+    SERIALIZE(_pistolAudioSource);
     SERIALIZE(_bulletTrailPrefab);
     SERIALIZE(_layers);
     SERIALIZE(_pistolAmmo);
@@ -825,7 +1102,9 @@ void PlayerWeapon::Deserialize(DeserializeStream& stream, ISerializeModifier* mo
     Script::Deserialize(stream, modifier);
     DESERIALIZE(_pc);
     DESERIALIZE(_shotgun);
+    DESERIALIZE(_shotgunAudioSource);
     DESERIALIZE(_pistol);
+    DESERIALIZE(_pistolAudioSource);
     DESERIALIZE(_bulletTrailPrefab);
     DESERIALIZE(_layers);
     DESERIALIZE(_pistolAmmo);
@@ -867,6 +1146,20 @@ public:
         __obj->_shotgun = value;
     }
 
+    DLLEXPORT static MObject* Get_shotgunAudioSource(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_shotgunAudioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_shotgunAudioSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_shotgunAudioSource(PlayerWeapon* __obj, AudioSource* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_shotgunAudioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_shotgunAudioSource = value;
+    }
+
     DLLEXPORT static MObject* Get_pistol(PlayerWeapon* __obj)
     {
         MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_pistol")
@@ -879,6 +1172,20 @@ public:
         MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_pistol")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
         __obj->_pistol = value;
+    }
+
+    DLLEXPORT static MObject* Get_pistolAudioSource(PlayerWeapon* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Get_pistolAudioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_pistolAudioSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_pistolAudioSource(PlayerWeapon* __obj, AudioSource* value)
+    {
+        MSVC_FUNC_EXPORT("Game.PlayerWeapon::Internal_Set_pistolAudioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_pistolAudioSource = value;
     }
 
     DLLEXPORT static MObject* Get_bulletTrailPrefab(PlayerWeapon* __obj)
@@ -1075,6 +1382,7 @@ void Rocket::Serialize(SerializeStream& stream, const void* otherObj)
     SERIALIZE_GET_OTHER_OBJ(Rocket);
     SERIALIZE(_rb);
     SERIALIZE(_col);
+    SERIALIZE(_audioSource);
     SERIALIZE(_thrustPower);
 }
 
@@ -1083,6 +1391,7 @@ void Rocket::Deserialize(DeserializeStream& stream, ISerializeModifier* modifier
     Script::Deserialize(stream, modifier);
     DESERIALIZE(_rb);
     DESERIALIZE(_col);
+    DESERIALIZE(_audioSource);
     DESERIALIZE(_thrustPower);
 }
 
@@ -1115,6 +1424,20 @@ public:
         MSVC_FUNC_EXPORT("Game.Rocket::Internal_Set_col")
         if (__obj == nullptr) DebugLog::ThrowNullReference();
         __obj->_col = value;
+    }
+
+    DLLEXPORT static MObject* Get_audioSource(Rocket* __obj)
+    {
+        MSVC_FUNC_EXPORT("Game.Rocket::Internal_Get_audioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        return __obj->_audioSource.GetManagedInstance();
+    }
+
+    DLLEXPORT static void Set_audioSource(Rocket* __obj, AudioSource* value)
+    {
+        MSVC_FUNC_EXPORT("Game.Rocket::Internal_Set_audioSource")
+        if (__obj == nullptr) DebugLog::ThrowNullReference();
+        __obj->_audioSource = value;
     }
 
     DLLEXPORT static float Get_thrustPower(Rocket* __obj)

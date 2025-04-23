@@ -1,7 +1,7 @@
 ﻿#include "ExplosionDestroySelf.h"
 #include "Engine/Level/Actor.h"
 #include "Engine/Engine/Time.h"
-
+#include "GameManager.h"
 ExplosionDestroySelf::ExplosionDestroySelf(const SpawnParams& params)
     : Script(params)
 {
@@ -9,14 +9,22 @@ ExplosionDestroySelf::ExplosionDestroySelf(const SpawnParams& params)
     _tickUpdate = true;
 }
 
+void ExplosionDestroySelf::Reset()
+{
+    GetActor()->DeleteObject();
+}
+
 void ExplosionDestroySelf::OnEnable()
 {
     _timeSpawned = Time::GetGameTime();
+    GameManager::GetInstance()->OnReset.Bind<ExplosionDestroySelf, &ExplosionDestroySelf::Reset>(this);
+
 }
 
 void ExplosionDestroySelf::OnDisable()
 {
-    // Here you can add code that needs to be called when script is disabled (eg. unregister from events)
+    GameManager::GetInstance()->OnReset.Unbind<ExplosionDestroySelf, &ExplosionDestroySelf::Reset>(this);
+
 }
 
 void ExplosionDestroySelf::OnUpdate()

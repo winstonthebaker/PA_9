@@ -6,6 +6,8 @@
 #include "Engine/Physics/Colliders/Collider.h"
 #include "Engine/Core/Collections/Array.h"
 #include "Engine/Core/Types/Pair.h"
+#include "Engine/Audio/Audio.h"
+#include "Engine/Audio/AudioSource.h"
 #include <queue>
 
 
@@ -18,7 +20,9 @@ public:
     API_FIELD() ScriptingObjectReference<CharacterController> _characterController;
     API_FIELD() ScriptingObjectReference<Actor> _cameraContainer;
     API_FIELD() ScriptingObjectReference<Actor> _playerBody;
-
+    API_FIELD() ScriptingObjectReference<AudioSource> _splatSource;
+    API_FIELD() ScriptingObjectReference<AudioSource> _jumpSource;
+    API_FIELD() ScriptingObjectReference<AudioSource> _loseSource;
     API_FIELD() float _movementSpeed = 600.0;
     API_FIELD() float _airMovementAcceleration = 1000.0;
     API_FIELD() float _groundMovementAcceleration = 2000.0;
@@ -38,7 +42,7 @@ public:
 
     Quaternion GetCameraOrientation();
     Vector3 GetCameraPosition();
-
+    void HandlePickup(int pickupType);
     // [Script]
 
 

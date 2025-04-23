@@ -6,8 +6,8 @@
 	{
 		"ID": "8d86bd0c4e3bdf4028cc5aa38501bb21",
 		"TypeName": "FlaxEngine.SphereCollider",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "Hourglass",
+		"Layer": 4,
 		"IsTrigger": true,
 		"Radius": 100.0
 	},
@@ -15,24 +15,20 @@
 		"ID": "72b64b024c2ec13e0963bcbd2397f34e",
 		"TypeName": "Game.Pickup",
 		"ParentID": "8d86bd0c4e3bdf4028cc5aa38501bb21",
-		"_type": 0
+		"_audioSource": "4be3223b4a4d67ed66d1558650099e9b"
 	},
 	{
 		"ID": "9b1232d846a6825fe084e4945edd5df0",
 		"TypeName": "FlaxEngine.EmptyActor",
 		"ParentID": "8d86bd0c4e3bdf4028cc5aa38501bb21",
-		"Name": "Visual"
+		"Name": "Visual",
+		"Layer": 4
 	},
 	{
 		"ID": "605aa3e64c164c1531eb8498842c34f0",
 		"TypeName": "Game.RotateObject",
 		"ParentID": "9b1232d846a6825fe084e4945edd5df0",
-		"_rotationSpeed": 360.0,
-		"_rotationAxis": {
-			"X": 0.0,
-			"Y": 1.0,
-			"Z": 0.0
-		}
+		"_rotationSpeed": 360.0
 	},
 	{
 		"ID": "04afc6574bd686ebd5de18b8e602842e",
@@ -47,6 +43,7 @@
 				"W": 0.941958487033844
 			}
 		},
+		"Layer": 4,
 		"Model": "dfb19a5c45e04c0cf628d0aff72628d8",
 		"Buffer": {
 			"Entries": [

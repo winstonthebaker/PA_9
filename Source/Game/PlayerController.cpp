@@ -41,6 +41,27 @@ Vector3 PlayerController::GetCameraPosition()
 	return _cameraContainer->GetPosition();
 }
 
+void PlayerController::HandlePickup(int pickupType)
+{
+	if (pickupType == 3)
+	{
+		GameManager* instance = GameManager::GetInstance();
+		if (instance)
+		{
+			instance->Win();
+		}
+	}
+	if (pickupType == 0)
+	{
+		GameManager::GetInstance()->AddTime(3);
+	}
+	PlayerWeapon* weapon = GetActor()->GetScript<PlayerWeapon>();
+	if (weapon)
+	{
+		weapon->HandlePickup(pickupType);
+	}
+}
+
 void PlayerController::OnEnable()
 {
 	if (!_characterController)
@@ -157,7 +178,9 @@ void PlayerController::EvaluateState()
 	}
 	if (!_awaitingReset)
 	{
-		_currentVelocity = _characterController->GetVelocity();
+		float speed = Math::Min(_characterController->GetVelocity().Length(), _currentVelocity.Length());
+
+		_currentVelocity = _characterController->GetVelocity().GetNormalized() * speed;
 
 	}
 	else
@@ -382,22 +405,33 @@ void PlayerController::EvaluateJump()
 	_currentVelocity += totalVelocityDelta;
 	LOG_STR(Info, totalVelocityDelta.ToString());
 	_timeJumpLastPressed = -9999.9;
+	if (_jumpSource)
+	{
+		_jumpSource->SetTime(0);
+		_jumpSource->Play();
+	}
 }
 
 void PlayerController::Die()
 {
-	GameManager* instance = GameManager::GetInstance();
-	if (instance)
-	{
-
-	}
 	
 	if (_dead)
 	{
 		return;
 	}
+	if (_splatSource)
+	{
+		_splatSource->SetTime(0);
+		_splatSource->Play();
+	}
+	
+	if (_loseSource)
+	{
+		_loseSource->SetTime(0);
+		_loseSource->Play();
+	}
 	_dead = true;
-
+	GameManager* instance = GameManager::GetInstance();
 	if (instance)
 	{
 		instance->Lose();
@@ -418,7 +452,7 @@ void PlayerController::HandleShooting()
 
 void PlayerController::OnTriggerEnter(PhysicsColliderActor* other)
 {
-	if (_awaitingReset)
+	if (_awaitingReset || GameManager::GetInstance()->IsGameOver())
 	{
 		return;
 	}
@@ -431,31 +465,11 @@ void PlayerController::OnTriggerEnter(PhysicsColliderActor* other)
 
 		}
 	}
-	Tag winTag = Tags::Get(TEXT("WinItem"));
-	if (other->HasTag(winTag))
-	{
-		GameManager* instance = GameManager::GetInstance();
-		if (instance)
-		{
-			instance->Win();
-		}
-	}
 	Pickup* pickup = other->GetScript<Pickup>();
 	if (pickup)
 	{
-		int pickupType = pickup->Grab();
-		
-		PlayerWeapon* weapon = GetActor()->GetScript<PlayerWeapon>();
-		if (weapon)
-		{
-			weapon->HandlePickup(pickupType);
-		}
-		if (pickupType == 0)
-		{
-			GameManager::GetInstance()->AddTime(3);
-		}
+		pickup->Grab();
 	}
-	
 }
 
 void PlayerController::OnCollisionEnter(const Collision& collision)

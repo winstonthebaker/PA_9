@@ -16,6 +16,216 @@ using System.Runtime.InteropServices.Marshalling;
 namespace Game
 {
     [Unmanaged]
+    [NativeMarshalling(typeof(BellMarshaller))]
+    public unsafe partial class Bell : Script
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Bell"/>.
+        /// </summary>
+        public Bell() : base()
+        {
+        }
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Pickup _pickup
+        {
+            get { return Internal_Get_pickup(__unmanagedPtr); }
+            set { Internal_Set_pickup(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Bell::Internal_Get_pickup", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Pickup Internal_Get_pickup(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Bell::Internal_Set_pickup", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_pickup(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Prefab _audioSource
+        {
+            get { return Internal_Get_audioSource(__unmanagedPtr); }
+            set { Internal_Set_audioSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Bell::Internal_Get_audioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Prefab Internal_Get_audioSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Bell::Internal_Set_audioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_audioSource(IntPtr __obj, IntPtr value);
+    }
+}
+namespace Game.Interop
+{
+
+    /// <summary>
+    /// Marshaller for type <see cref="Bell"/>.
+    /// </summary>
+    #if FLAX_EDITOR
+    [HideInEditor]
+    #endif
+    [CustomMarshaller(typeof(Bell), MarshalMode.ManagedToUnmanagedIn, typeof(BellMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Bell), MarshalMode.UnmanagedToManagedOut, typeof(BellMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Bell), MarshalMode.ElementIn, typeof(BellMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Bell), MarshalMode.ManagedToUnmanagedOut, typeof(BellMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Bell), MarshalMode.UnmanagedToManagedIn, typeof(BellMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Bell), MarshalMode.ElementOut, typeof(BellMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Bell), MarshalMode.ManagedToUnmanagedRef, typeof(BellMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Bell), MarshalMode.UnmanagedToManagedRef, typeof(BellMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Bell), MarshalMode.ElementRef, typeof(BellMarshaller))]
+    public static class BellMarshaller
+    {
+    #pragma warning disable 1591
+    #pragma warning disable 618
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class NativeToManaged
+        {
+            public static Bell ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Bell>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Bell managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class ManagedToNative
+        {
+            public static Bell ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Bell>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Bell managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public struct Bidirectional
+        {
+            ManagedHandleMarshaller.Bidirectional marsh;
+            public void FromManaged(Bell managed) => marsh.FromManaged(managed);
+            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
+            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
+            public Bell ToManaged() => Unsafe.As<Bell>(marsh.ToManaged());
+            public void Free() => marsh.Free();
+        }
+        internal static Bell ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Bell>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
+        internal static IntPtr ConvertToUnmanaged(Bell managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
+        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
+    
+        internal static Bell ToManaged(IntPtr managed) => Unsafe.As<Bell>(ManagedHandleMarshaller.ToManaged(managed));
+        internal static IntPtr ToNative(Bell managed) => ManagedHandleMarshaller.ToNative(managed);
+    #pragma warning restore 618
+    #pragma warning restore 1591
+    }
+}
+
+namespace Game
+{
+    [Unmanaged]
+    [NativeMarshalling(typeof(DoorMarshaller))]
+    public unsafe partial class Door : Script
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Door"/>.
+        /// </summary>
+        public Door() : base()
+        {
+        }
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Actor _doorTransform
+        {
+            get { return Internal_Get_doorTransform(__unmanagedPtr); }
+            set { Internal_Set_doorTransform(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Door::Internal_Get_doorTransform", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Actor Internal_Get_doorTransform(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Door::Internal_Set_doorTransform", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_doorTransform(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Prefab _audioSource
+        {
+            get { return Internal_Get_audioSource(__unmanagedPtr); }
+            set { Internal_Set_audioSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Door::Internal_Get_audioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Prefab Internal_Get_audioSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Door::Internal_Set_audioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_audioSource(IntPtr __obj, IntPtr value);
+    }
+}
+namespace Game.Interop
+{
+
+    /// <summary>
+    /// Marshaller for type <see cref="Door"/>.
+    /// </summary>
+    #if FLAX_EDITOR
+    [HideInEditor]
+    #endif
+    [CustomMarshaller(typeof(Door), MarshalMode.ManagedToUnmanagedIn, typeof(DoorMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Door), MarshalMode.UnmanagedToManagedOut, typeof(DoorMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Door), MarshalMode.ElementIn, typeof(DoorMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Door), MarshalMode.ManagedToUnmanagedOut, typeof(DoorMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Door), MarshalMode.UnmanagedToManagedIn, typeof(DoorMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Door), MarshalMode.ElementOut, typeof(DoorMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Door), MarshalMode.ManagedToUnmanagedRef, typeof(DoorMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Door), MarshalMode.UnmanagedToManagedRef, typeof(DoorMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Door), MarshalMode.ElementRef, typeof(DoorMarshaller))]
+    public static class DoorMarshaller
+    {
+    #pragma warning disable 1591
+    #pragma warning disable 618
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class NativeToManaged
+        {
+            public static Door ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Door>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Door managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class ManagedToNative
+        {
+            public static Door ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Door>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Door managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public struct Bidirectional
+        {
+            ManagedHandleMarshaller.Bidirectional marsh;
+            public void FromManaged(Door managed) => marsh.FromManaged(managed);
+            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
+            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
+            public Door ToManaged() => Unsafe.As<Door>(marsh.ToManaged());
+            public void Free() => marsh.Free();
+        }
+        internal static Door ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Door>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
+        internal static IntPtr ConvertToUnmanaged(Door managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
+        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
+    
+        internal static Door ToManaged(IntPtr managed) => Unsafe.As<Door>(ManagedHandleMarshaller.ToManaged(managed));
+        internal static IntPtr ToNative(Door managed) => ManagedHandleMarshaller.ToNative(managed);
+    #pragma warning restore 618
+    #pragma warning restore 1591
+    }
+}
+
+namespace Game
+{
+    [Unmanaged]
     [NativeMarshalling(typeof(ExplodesMarshaller))]
     public unsafe partial class Explodes : Script
     {
@@ -408,6 +618,97 @@ namespace Game.Interop
 namespace Game
 {
     [Unmanaged]
+    [NativeMarshalling(typeof(KeyMarshaller))]
+    public unsafe partial class Key : Script
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Key"/>.
+        /// </summary>
+        public Key() : base()
+        {
+        }
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public Door _door
+        {
+            get { return Internal_Get_door(__unmanagedPtr); }
+            set { Internal_Set_door(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Key::Internal_Get_door", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Door Internal_Get_door(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Key::Internal_Set_door", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_door(IntPtr __obj, IntPtr value);
+    }
+}
+namespace Game.Interop
+{
+
+    /// <summary>
+    /// Marshaller for type <see cref="Key"/>.
+    /// </summary>
+    #if FLAX_EDITOR
+    [HideInEditor]
+    #endif
+    [CustomMarshaller(typeof(Key), MarshalMode.ManagedToUnmanagedIn, typeof(KeyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Key), MarshalMode.UnmanagedToManagedOut, typeof(KeyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Key), MarshalMode.ElementIn, typeof(KeyMarshaller.ManagedToNative))]
+    [CustomMarshaller(typeof(Key), MarshalMode.ManagedToUnmanagedOut, typeof(KeyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Key), MarshalMode.UnmanagedToManagedIn, typeof(KeyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Key), MarshalMode.ElementOut, typeof(KeyMarshaller.NativeToManaged))]
+    [CustomMarshaller(typeof(Key), MarshalMode.ManagedToUnmanagedRef, typeof(KeyMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Key), MarshalMode.UnmanagedToManagedRef, typeof(KeyMarshaller.Bidirectional))]
+    [CustomMarshaller(typeof(Key), MarshalMode.ElementRef, typeof(KeyMarshaller))]
+    public static class KeyMarshaller
+    {
+    #pragma warning disable 1591
+    #pragma warning disable 618
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class NativeToManaged
+        {
+            public static Key ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Key>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Key managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public static class ManagedToNative
+        {
+            public static Key ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Key>(ManagedHandleMarshaller.NativeToManaged.ConvertToManaged(unmanaged));
+            public static IntPtr ConvertToUnmanaged(Key managed) => managed != null ? ManagedHandle.ToIntPtr(managed, GCHandleType.Weak) : IntPtr.Zero;
+            public static void Free(IntPtr unmanaged) {}
+        }
+    #if FLAX_EDITOR
+        [HideInEditor]
+    #endif
+        public struct Bidirectional
+        {
+            ManagedHandleMarshaller.Bidirectional marsh;
+            public void FromManaged(Key managed) => marsh.FromManaged(managed);
+            public IntPtr ToUnmanaged() => marsh.ToUnmanaged();
+            public void FromUnmanaged(IntPtr unmanaged) => marsh.FromUnmanaged(unmanaged);
+            public Key ToManaged() => Unsafe.As<Key>(marsh.ToManaged());
+            public void Free() => marsh.Free();
+        }
+        internal static Key ConvertToManaged(IntPtr unmanaged) => Unsafe.As<Key>(ManagedHandleMarshaller.ConvertToManaged(unmanaged));
+        internal static IntPtr ConvertToUnmanaged(Key managed) => ManagedHandleMarshaller.ConvertToUnmanaged(managed);
+        internal static void Free(IntPtr unmanaged) => ManagedHandleMarshaller.Free(unmanaged);
+    
+        internal static Key ToManaged(IntPtr managed) => Unsafe.As<Key>(ManagedHandleMarshaller.ToManaged(managed));
+        internal static IntPtr ToNative(Key managed) => ManagedHandleMarshaller.ToNative(managed);
+    #pragma warning restore 618
+    #pragma warning restore 1591
+    }
+}
+
+namespace Game
+{
+    [Unmanaged]
     [NativeMarshalling(typeof(LauncherEnemyMarshaller))]
     public unsafe partial class LauncherEnemy : Script
     {
@@ -444,6 +745,19 @@ namespace Game
 
         [LibraryImport("Game", EntryPoint = "Game.LauncherEnemy::Internal_Set_spawnTime", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
         internal static partial void Internal_Set_spawnTime(IntPtr __obj, float value);
+
+        [Unmanaged]
+        public float _startingTime
+        {
+            get { return Internal_Get_startingTime(__unmanagedPtr); }
+            set { Internal_Set_startingTime(__unmanagedPtr, value); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.LauncherEnemy::Internal_Get_startingTime", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial float Internal_Get_startingTime(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.LauncherEnemy::Internal_Set_startingTime", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_startingTime(IntPtr __obj, float value);
     }
 }
 namespace Game.Interop
@@ -775,6 +1089,21 @@ namespace Game
         }
 
         [Unmanaged]
+        [DefaultValue(null)]
+        public Prefab _audioSource
+        {
+            get { return Internal_Get_audioSource(__unmanagedPtr); }
+            set { Internal_Set_audioSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Pickup::Internal_Get_audioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial Prefab Internal_Get_audioSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Pickup::Internal_Set_audioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_audioSource(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue((int)0)]
         public int _type
         {
             get { return Internal_Get_type(__unmanagedPtr); }
@@ -905,6 +1234,48 @@ namespace Game
 
         [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Set_playerBody", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
         internal static partial void Internal_Set_playerBody(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public AudioSource _splatSource
+        {
+            get { return Internal_Get_splatSource(__unmanagedPtr); }
+            set { Internal_Set_splatSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Get_splatSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial AudioSource Internal_Get_splatSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Set_splatSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_splatSource(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public AudioSource _jumpSource
+        {
+            get { return Internal_Get_jumpSource(__unmanagedPtr); }
+            set { Internal_Set_jumpSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Get_jumpSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial AudioSource Internal_Get_jumpSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Set_jumpSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_jumpSource(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public AudioSource _loseSource
+        {
+            get { return Internal_Get_loseSource(__unmanagedPtr); }
+            set { Internal_Set_loseSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Get_loseSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial AudioSource Internal_Get_loseSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerController::Internal_Set_loseSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_loseSource(IntPtr __obj, IntPtr value);
 
         [Unmanaged]
         [DefaultValue((float)600.0)]
@@ -1125,6 +1496,20 @@ namespace Game
 
         [Unmanaged]
         [DefaultValue(null)]
+        public AudioSource _shotgunAudioSource
+        {
+            get { return Internal_Get_shotgunAudioSource(__unmanagedPtr); }
+            set { Internal_Set_shotgunAudioSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Get_shotgunAudioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial AudioSource Internal_Get_shotgunAudioSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_shotgunAudioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_shotgunAudioSource(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
         public Actor _pistol
         {
             get { return Internal_Get_pistol(__unmanagedPtr); }
@@ -1136,6 +1521,20 @@ namespace Game
 
         [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_pistol", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
         internal static partial void Internal_Set_pistol(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public AudioSource _pistolAudioSource
+        {
+            get { return Internal_Get_pistolAudioSource(__unmanagedPtr); }
+            set { Internal_Set_pistolAudioSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Get_pistolAudioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial AudioSource Internal_Get_pistolAudioSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.PlayerWeapon::Internal_Set_pistolAudioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_pistolAudioSource(IntPtr __obj, IntPtr value);
 
         [Unmanaged]
         [DefaultValue(null)]
@@ -1443,6 +1842,20 @@ namespace Game
 
         [LibraryImport("Game", EntryPoint = "Game.Rocket::Internal_Set_col", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
         internal static partial void Internal_Set_col(IntPtr __obj, IntPtr value);
+
+        [Unmanaged]
+        [DefaultValue(null)]
+        public AudioSource _audioSource
+        {
+            get { return Internal_Get_audioSource(__unmanagedPtr); }
+            set { Internal_Set_audioSource(__unmanagedPtr, FlaxEngine.Object.GetUnmanagedPtr(value)); }
+        }
+
+        [LibraryImport("Game", EntryPoint = "Game.Rocket::Internal_Get_audioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial AudioSource Internal_Get_audioSource(IntPtr __obj);
+
+        [LibraryImport("Game", EntryPoint = "Game.Rocket::Internal_Set_audioSource", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(FlaxEngine.Interop.StringMarshaller))]
+        internal static partial void Internal_Set_audioSource(IntPtr __obj, IntPtr value);
 
         [Unmanaged]
         public float _thrustPower

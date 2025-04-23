@@ -6,6 +6,7 @@
 #include "Engine/Level/Actor.h"
 #include "PlayerController.h"
 #include <Engine/Engine/Time.h>
+#include "PlayerController.h"
 GameManager* GameManager::_instance = nullptr;
 
 GameManager::GameManager(const SpawnParams& params)

@@ -66,6 +66,12 @@ void Rocket::OnUpdate()
 
     _rb->AddForce(thrustVector * _thrustPower);
     GetActor()->SetOrientation(Quaternion::LookRotation(_rb->GetLinearVelocity(), Vector3::Up));
+    if (_audioSource)
+    {
+        float volume  = _audioSource->GetVolume();
+        volume = Math::MoveTowards(volume, 0.2f, 0.4f * Time::GetDeltaTime());
+        _audioSource->SetVolume(volume);
+    }
 
 }
 
@@ -102,4 +108,9 @@ void Rocket::OnTriggerEnter(PhysicsColliderActor* other)
     {
         explodes->Explode();
     }
+}
+
+void Rocket::SetInitialVelocity(Vector3 force)
+{
+    _rb->AddForce(force, ForceMode::VelocityChange);
 }

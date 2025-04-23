@@ -1,0 +1,84 @@
+{
+	"ID": "637e1f69430b6062739e8486b6b3933d",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "dc684b264a023976d07aee87202cd250",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "RocketHole",
+		"Layer": 3
+	},
+	{
+		"ID": "47beaad54ccb8f56a89a529df3577bfc",
+		"TypeName": "Game.LauncherEnemy",
+		"ParentID": "dc684b264a023976d07aee87202cd250",
+		"_missilePrefab": "5e40e14f4b884341a0302ca5acefb0d6",
+		"_spawnTime": 3.0,
+		"_startingTime": 1.0
+	},
+	{
+		"ID": "83ffb03244cc4efcb2b6bfa13383b16d",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "dc684b264a023976d07aee87202cd250",
+		"Name": "Cube",
+		"Layer": 3,
+		"Model": "f4c749d3449253aab06c17b996c31945",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "2f8fe1ee41029086f274af810ea53cf8",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "dc684b264a023976d07aee87202cd250",
+		"Name": "wall",
+		"Transform": {
+			"Translation": {
+				"X": 0.00003496911085676402,
+				"Y": -0.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": -2.9802322387695315e-8,
+				"Y": 0.7071068286895752,
+				"Z": 2.9802322387695315e-8,
+				"W": 0.7071068286895752
+			}
+		},
+		"Layer": 3,
+		"Model": "e8f25141480717b145a115ad5de0bd8d",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "cdbdd24349b0de1ada879e9a790743c3",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "2f8fe1ee41029086f274af810ea53cf8",
+		"Name": "MeshCollider",
+		"Layer": 3,
+		"CollisionData": "9f24010149c0277927292a905b74d02c"
+	}
+]
+}

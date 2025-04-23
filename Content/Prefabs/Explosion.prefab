@@ -20,6 +20,18 @@
 		"Name": "ParticleEffect",
 		"Overrides": [],
 		"ParticleSystem": "61a823394c042a4e9a013480fdc50839"
+	},
+	{
+		"ID": "3114595d464f695fa7a53cb0934d3651",
+		"PrefabID": "136476ac49d531f3582c3cbb9fdb8773",
+		"PrefabObjectID": "e345664f4af022a65dcd89bfe855ed4a",
+		"ParentID": "87e4a7cd4b0815140690fd90ff3b297e"
+	},
+	{
+		"ID": "ee70f4f94e5c76e607666aaeaba28c90",
+		"PrefabID": "136476ac49d531f3582c3cbb9fdb8773",
+		"PrefabObjectID": "9436c48e41e5633071a105ad4eec0df4",
+		"ParentID": "3114595d464f695fa7a53cb0934d3651"
 	}
 ]
 }

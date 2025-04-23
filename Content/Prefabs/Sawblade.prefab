@@ -6,7 +6,6 @@
 	{
 		"ID": "11009a5643555fa053c22cbe076264f9",
 		"TypeName": "FlaxEngine.BoxCollider",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "Sawblade",
 		"Tag": "KillsOnContact",
 		"IsTrigger": true,
@@ -21,8 +20,8 @@
 		"TypeName": "Game.MovingEnemy",
 		"ParentID": "11009a5643555fa053c22cbe076264f9",
 		"_followPoints": [
-			"29c823734f729b795b857b81f33f4be4",
-			"554e4ccf4e45cafacccaffb72b7aba35"
+			"00000000000000000000000000000000",
+			"00000000000000000000000000000000"
 		]
 	},
 	{
@@ -52,6 +51,12 @@
 			"Y": 0.0,
 			"Z": 0.0
 		}
+	},
+	{
+		"ID": "9084cceb4bdbd43bfe9ae98b70735d3b",
+		"PrefabID": "7d45806048c7cc0bf54bd1a3b59f21ba",
+		"PrefabObjectID": "16f2ba094e855130a1f386a899309ae9",
+		"ParentID": "11009a5643555fa053c22cbe076264f9"
 	}
 ]
 }

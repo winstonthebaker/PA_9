@@ -4,9 +4,19 @@
         <name>Game.CSharp</name>
     </assembly>
     <members>
-        <member name="M:Game.Explodes.#ctor">
+        <member name="M:Game.Bell.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Game.Explodes"/>.
+            Initializes a new instance of the <see cref="T:Game.Bell"/>.
+            </summary>
+        </member>
+        <member name="T:Game.Interop.BellMarshaller">
+            <summary>
+            Marshaller for type <see cref="T:Game.Bell"/>.
+            </summary>
+        </member>
+        <member name="T:Game.Interop.DoorMarshaller">
+            <summary>
+            Marshaller for type <see cref="T:Game.Door"/>.
             </summary>
         </member>
         <member name="T:Game.Interop.ExplodesMarshaller">
@@ -27,6 +37,11 @@
         <member name="T:Game.Interop.GameManagerMarshaller">
             <summary>
             Marshaller for type <see cref="T:Game.GameManager"/>.
+            </summary>
+        </member>
+        <member name="T:Game.Interop.KeyMarshaller">
+            <summary>
+            Marshaller for type <see cref="T:Game.Key"/>.
             </summary>
         </member>
         <member name="T:Game.Interop.LauncherEnemyMarshaller">
@@ -84,6 +99,16 @@
             Marshaller for type <see cref="T:Game.TurretEnemy"/>.
             </summary>
         </member>
+        <member name="M:Game.Door.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Game.Door"/>.
+            </summary>
+        </member>
+        <member name="M:Game.Explodes.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Game.Explodes"/>.
+            </summary>
+        </member>
         <member name="M:Game.ExplosionDestroySelf.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Game.ExplosionDestroySelf"/>.
@@ -97,6 +122,11 @@
         <member name="M:Game.GameManager.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Game.GameManager"/>.
+            </summary>
+        </member>
+        <member name="M:Game.Key.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Game.Key"/>.
             </summary>
         </member>
         <member name="M:Game.LauncherEnemy.#ctor">
@@ -208,6 +238,11 @@
         </member>
         <member name="M:Game.RocketTrail.OnUpdate">
             <inheritdoc/>
+        </member>
+        <member name="T:Game.SoundPlayer">
+            <summary>
+            SoundPlayer Script.
+            </summary>
         </member>
         <member name="T:Game.UIManager">
             <summary>

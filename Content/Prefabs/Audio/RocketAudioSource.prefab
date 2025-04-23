@@ -1,0 +1,16 @@
+{
+	"ID": "8ee09c9f478ff510f6a228bb2a67c943",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6605,
+	"Data": [
+	{
+		"ID": "1c9bd52440c91ae2149ba189d8f76596",
+		"TypeName": "FlaxEngine.AudioSource",
+		"Name": "RocketAudioSource",
+		"Clip": "0664f1ec47d1377fecfc27ba9bb46125",
+		"Volume": 0.0,
+		"Loop": true,
+		"PlayOnStart": true
+	}
+]
+}
