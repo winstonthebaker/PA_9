@@ -173,6 +173,8 @@ void PlayerController::HandleMovement()
 
 void PlayerController::EvaluateState()
 {
+	LOG_STR(Info, TEXT("Velocity before EvaluateState: ") + _currentVelocity.ToString());
+
 	if (!_characterController)
 	{
 		LOG(Error, "_characterController not set on Player!");
@@ -198,8 +200,6 @@ void PlayerController::EvaluateState()
 		{
 
 		}
-		
-
 	}
 	else
 	{
@@ -214,6 +214,8 @@ void PlayerController::EvaluateState()
 		_holdingSpaceOnStart = false;
 	}
 	_awaitingReset = false;
+	LOG_STR(Info, TEXT("Velocity after EvaluateState: ") + _currentVelocity.ToString());
+
 }
 
 void PlayerController::PitchCamera()
@@ -270,6 +272,7 @@ void PlayerController::RotateBody()
 
 void PlayerController::HandleHorizontalMovement()
 {
+	
 
 	float forward = Input::GetAxis(TEXT("Vertical"));
 	float right = Input::GetAxis(TEXT("Horizontal"));
@@ -315,6 +318,8 @@ void PlayerController::HandleHorizontalMovement()
 		break;
 	}
 
+	LOG_STR(Info, TEXT("Velocity after Horizontal Movement: ") + _currentVelocity.ToString());
+
 
 
 }
@@ -349,6 +354,8 @@ void PlayerController::HandleVerticalMovement()
 		//}
 		break;
 	}
+	LOG_STR(Info, TEXT("Velocity after Vertical Movement: ") + _currentVelocity.ToString());
+
 }
 
 void PlayerController::ApplyMovement()
@@ -402,7 +409,10 @@ void PlayerController::EvaluateJump()
 		return;
 
 	}
+
+	LOG_STR(Info, TEXT("Velocity before Jump: ") + _currentVelocity.ToString());
 	Vector3 effectiveNormal = Vector3::Zero;
+	
 	while (!_activeContacts.empty())
 	{
 		float contactLife = Time::GetGameTime() - _activeContacts.front().First;
@@ -415,7 +425,6 @@ void PlayerController::EvaluateJump()
 	Vector3 reflectedVelocity;
 	Vector3::Reflect(_currentVelocity, effectiveNormal, reflectedVelocity);
 
-	_currentVelocity = Vector3::ProjectOnPlane(_currentVelocity, effectiveNormal);
 	_currentVelocity = reflectedVelocity;
 
 	if (_currentVelocity.Y < _jumpVerticalForce)
@@ -436,6 +445,8 @@ void PlayerController::EvaluateJump()
 		_jumpSource->Play();
 	}
 	_state = Air;
+	LOG_STR(Info, TEXT("Velocity after HandleJump: ") + _currentVelocity.ToString());
+
 
 }
 
@@ -484,6 +495,8 @@ void PlayerController::HandleShooting()
 	Vector3 recoilImpulse = directionFaced * Vector3::Forward * -_frameRecoil;
 	_currentVelocity += recoilImpulse;
 	_frameRecoil = 0.0;
+	LOG_STR(Info, TEXT("Velocity after HandleShooting: ") + _currentVelocity.ToString());
+
 }
 
 void PlayerController::OnTriggerEnter(PhysicsColliderActor* other)

@@ -27,7 +27,8 @@
 		"_movementSpeed": 1000.0,
 		"_groundMovementAcceleration": 10000.0,
 		"_gravity": 2000.0,
-		"_jumpSpeed": 500.0
+		"_jumpSpeed": 500.0,
+		"_jumpVerticalForce": 1025.0
 	},
 	{
 		"ID": "ab76e18b4b72de7bcc27eaaf0f47ac1c",

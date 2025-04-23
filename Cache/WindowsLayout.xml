@@ -1,8 +1,8 @@
 ﻿<DockPanelLayout Version="4">
 	<MainWindow>
-		<Bounds X="0" Y="0" Width="3840" Height="2280" IsMaximized="True" IsMinimized="False" />
+		<Bounds X="16" Y="72" Width="3840" Height="2280" IsMaximized="False" IsMinimized="True" />
 	</MainWindow>
-	<MasterPanel SelectedTab="0">
+	<MasterPanel SelectedTab="1">
 		<Window Typename="::FlaxEditor.Windows.EditGameWindow">
 			<Data GridEnabled="False" ShowFpsCounter="False" ShowNavigation="False" NearPlane="8" FarPlane="20000" FieldOfView="60" MovementSpeed="10.432" OrthographicScale="1" UseOrthographicProjection="False" ViewFlags="122683391" />
 		</Window>
@@ -17,7 +17,7 @@
 				<Window Typename="::FlaxEditor.Windows.ToolboxWindow" />
 			</Panel>
 		</Panel>
-		<Panel DockState="9" SplitterValue="0.36376816" SelectedTab="0">
+		<Panel DockState="9" SplitterValue="0.4072464" SelectedTab="0">
 			<Window Typename="::FlaxEditor.Windows.ContentWindow">
 				<Data Split="0.2" Scale="1" ShowFileExtensions="False" ShowEngineFiles="True" ShowPluginsFiles="True" ShowAllFiles="True" ShowGeneratedFiles="False" ViewType="Tiles" />
 			</Window>
@@ -32,4 +32,8 @@
 			<Window Typename="::FlaxEditor.Windows.SceneTreeWindow" />
 		</Panel>
 	</MasterPanel>
+	<Float SelectedTab="0">
+		<Window Typename="::FlaxEditor.Windows.GameCookerWindow" />
+		<Bounds X="827" Y="551" Width="2216" Height="1298" IsMaximized="False" IsMinimized="True" />
+	</Float>
 </DockPanelLayout>

@@ -410,43 +410,6 @@
 			"CollisionData": "9f24010149c0277927292a905b74d02c"
 		},
 		{
-			"ID": "027593924ab6aa339eb496aeef71b362",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
-			"Name": "floor",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.0,
-					"Z": 3200.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -4.371138828673793e-8
-				}
-			},
-			"Model": "e8f25141480717b145a115ad5de0bd8d",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "661fd3a443fe3f312a8a15b207087155",
-			"TypeName": "FlaxEngine.MeshCollider",
-			"ParentID": "027593924ab6aa339eb496aeef71b362",
-			"Name": "MeshCollider",
-			"CollisionData": "9f24010149c0277927292a905b74d02c"
-		},
-		{
 			"ID": "40f0842a48010475f165768360d8a16d",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
@@ -2622,7 +2585,7 @@
 				"Translation": {
 					"X": 400.00006103515627,
 					"Y": -400.0,
-					"Z": 3196.66650390625
+					"Z": 3046.66650390625
 				},
 				"Orientation": {
 					"X": 0.7071068286895752,
@@ -4167,6 +4130,1819 @@
 			"ParentID": "1ca801f94b1c6017d24a3eb2f1683259"
 		},
 		{
+			"ID": "3b4aacf74c79211533cc4b8bbe4d5c98",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall20",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "0515ccb04dc8f9865a2589ab5449bf36",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "3b4aacf74c79211533cc4b8bbe4d5c98",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "b8268d8e4d6b5bd16c034a8a0bf158db",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall21",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "0e89068a4eb1011decc6ddaf06f1269c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b8268d8e4d6b5bd16c034a8a0bf158db",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "d14bb08c4fb4937eca1f6d8d806bda8b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall22",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f7e641ef4f5e26bfb4a99da3094fdc0a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d14bb08c4fb4937eca1f6d8d806bda8b",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "6dc0b949414cf3daee995281d37e359e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall43",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "9347acc24a5be5f71686398d5f87caf1",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "6dc0b949414cf3daee995281d37e359e",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "c7f4dd0d437b1f349ee41dbc31dc73a2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall44",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f7ebb56e499b0a08ad9f7abdc571d2e4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c7f4dd0d437b1f349ee41dbc31dc73a2",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "b44525344d5aa3704663838e356366c1",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall45",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "6ed8f8cc4f830d1e193677a432517ec5",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b44525344d5aa3704663838e356366c1",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "21675c5d426cf911f3747dbfbc14822d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall46",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f55315b84afcb732133e049b449bf221",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "21675c5d426cf911f3747dbfbc14822d",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "c5ca15e7432dee651ea178a2ef8edef6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall47",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "9a076e5d4e64250c84f4e6b3e1384e56",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c5ca15e7432dee651ea178a2ef8edef6",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "81285f3a4066a15d1c3327b26f07c4e2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall48",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "2b288f4f43b80a87e6a3afa26be92199",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "81285f3a4066a15d1c3327b26f07c4e2",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "ad7ba03c4213f1ca5af410a4bdc4520c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall49",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "5f78faa446c0082fde5db08ba7d6e466",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ad7ba03c4213f1ca5af410a4bdc4520c",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "fd8648704b2603987b9a9e942e5e0d1a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall50",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "b72129384af203ed51897b85412927b4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "fd8648704b2603987b9a9e942e5e0d1a",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "15aa0d8c4a1b50564fb6078f73c9eead",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall51",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "0203acfa466bb6b659c3d2bda31c6cfa",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "15aa0d8c4a1b50564fb6078f73c9eead",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "96cd8e494d69355a319c8b9b3fcdfd85",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall52",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "e1eb39aa4c5bc7cba952378ea6a591fa",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "96cd8e494d69355a319c8b9b3fcdfd85",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "4a3d15904bcd8ce0565233aba1cc63bd",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall53",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ae11b988478acc595b8e27aca0d58ed2",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4a3d15904bcd8ce0565233aba1cc63bd",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "56ff255e4945002313d14da718cdaec6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall54",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "2f1bf0ab4b408c18aaaeb48ecc5c6e9c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "56ff255e4945002313d14da718cdaec6",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "328398874a90d1ae1400daa09f81c7e0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall55",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ffef82724c5ff06d3ea72292dad30ae4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "328398874a90d1ae1400daa09f81c7e0",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "7af707af48976c01a9fb8ab4e2e4f215",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall56",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "a8c2e2de46ccdd6d267966831fb7ce75",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "7af707af48976c01a9fb8ab4e2e4f215",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "4f2458a741d90b274de89089d0d87910",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall57",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "2db5eae14ce9e1641f6d68aeb6e26a79",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4f2458a741d90b274de89089d0d87910",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "e9f0d84646860b72f8b16f927a212871",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall58",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "8e183f274af394876b9b428adf9afd39",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "e9f0d84646860b72f8b16f927a212871",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "512d52794f970e8da5a3fdb5238316e2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall59",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "6787c75a4a1205215eb467849ac97251",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "512d52794f970e8da5a3fdb5238316e2",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "607d623b49f92d872196c3afc589b3ee",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall60",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "4b470e124044a7c330831a82e532e777",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "607d623b49f92d872196c3afc589b3ee",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "a1ddbd9641dfb6e7f94f3e8776e947b1",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall61",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "c0caa38a46c21ebabf9dc7bd9778d353",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a1ddbd9641dfb6e7f94f3e8776e947b1",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "39c7269546d8281252062e807a7c31ab",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall62",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "9dcfbed947a63ce4fb5387b035596243",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "39c7269546d8281252062e807a7c31ab",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "bf86dfe444fed22c2f96329f5a11075d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall63",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ad46ea114388d990bd82e18bddce81d6",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bf86dfe444fed22c2f96329f5a11075d",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "8c83228d45f6dd7ca8947bb4ca6dff45",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall64",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "217dee754f318d6aeba4d48782501ea7",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8c83228d45f6dd7ca8947bb4ca6dff45",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "d8abc3f5428f3d79145260a266ddec0d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall65",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "0bb2ee6746889c7abbd04dae65c894b6",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "d8abc3f5428f3d79145260a266ddec0d",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "c83cd5004dc1c8e8fbbf39b59427cc18",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall66",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "3c73aa9042fd0e8d5b10048ed0333215",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "c83cd5004dc1c8e8fbbf39b59427cc18",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "9bd3eb6c41ba66ea5786df8e740708e5",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall67",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "fcfc97a04a1a5790c285009fe3e1c6a7",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9bd3eb6c41ba66ea5786df8e740708e5",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "84024a3d4948950cfb5a0b94556a88fa",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall68",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "5807096a49fc195487e7baa32e3c9834",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "84024a3d4948950cfb5a0b94556a88fa",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "39ec6621410beea736df8baf2dbb3802",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall69",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "31e5e0d94a232530f0e5db8c07b33f1b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "39ec6621410beea736df8baf2dbb3802",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "5d15d6e44fb772d0ef6082ae0d507ad6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall70",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ce88a0754a2987f84dc84eb7d41603cc",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "5d15d6e44fb772d0ef6082ae0d507ad6",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "48def451443a93001b95c08cd9d1f01b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall71",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "548afb274a0152280348e4a5a7e59991",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "48def451443a93001b95c08cd9d1f01b",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "38767e5641daf2924983aa8a01f8be79",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall72",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "7a9158364843d554f3a517820732e050",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "38767e5641daf2924983aa8a01f8be79",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "cfede81e4c3c4c902c14e2ba48f7ee82",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall73",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ce10954146a6ed59589475aa3284b147",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "cfede81e4c3c4c902c14e2ba48f7ee82",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "38cb05024143b94d99922486100f7ef9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall74",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "2b5f968747ed5ad06ce6868c2f85d6e9",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "38cb05024143b94d99922486100f7ef9",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "83fc6c9346ea4a75f06d458b13dbf30c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall75",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ba6800af4ac6580c99e352b813c3c653",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "83fc6c9346ea4a75f06d458b13dbf30c",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "78800e8043ea9d75bfc9428161248a9f",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall76",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f06d5e654826a5fecf6ff99ef19401c0",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "78800e8043ea9d75bfc9428161248a9f",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "b3992595445e56fb051e2eaa7b57ea14",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall77",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f34b36ef4ba956d2ff5210a36f669286",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "b3992595445e56fb051e2eaa7b57ea14",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "ec7a7cc04178f799882109adc013473c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall78",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "8471664446855e698fc9ef9480198641",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "ec7a7cc04178f799882109adc013473c",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "bcd822d447ca81542430f586a37b7ae0",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall79",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ab2d04e94703e37d39333da4667bd904",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "bcd822d447ca81542430f586a37b7ae0",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "121eda3c4733890cc9bb36a11879a4fb",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall80",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "829dfcff4be89ce7e0621e88b09b72af",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "121eda3c4733890cc9bb36a11879a4fb",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "69a1a0cd4e68b39e0435488964ca3def",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall81",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "948c14434c8e93bb276043ad423d4454",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "69a1a0cd4e68b39e0435488964ca3def",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "4a770c4e49ca58cf5569e2ae32e43930",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall82",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2796.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "fc28f0ee45dd909317c699ae7570adc4",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "4a770c4e49ca58cf5569e2ae32e43930",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "a470ebfa4abc792bf13ef1a39643cf65",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall83",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3196.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "f24de71748719d78ec2ac58fe98e734e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "a470ebfa4abc792bf13ef1a39643cf65",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "8b91571f457d7b031a79aa8a5d382c93",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall84",
+			"Transform": {
+				"Translation": {
+					"X": 0.0001220703125,
+					"Y": -400.0,
+					"Z": 2646.666748046875
+				},
+				"Orientation": {
+					"X": 0.4999999403953552,
+					"Y": -0.4999999403953552,
+					"Z": 0.5000000596046448,
+					"W": -0.5000000596046448
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "8b47601e4abebab1633a8fa73e9adcd8",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "8b91571f457d7b031a79aa8a5d382c93",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "52db5f0044b3eaf2b65ea1b5ff7efc5c",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall85",
+			"Transform": {
+				"Translation": {
+					"X": -399.9998779296875,
+					"Y": -400.0,
+					"Z": 3046.66650390625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": -2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "3f1b20dd42404ca3bb1d6ab156b9af85",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "52db5f0044b3eaf2b65ea1b5ff7efc5c",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "9f25a7ff47d458f0dd464f8550294adf",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 39",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 3050.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -4.371138828673793e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "8be8c4b044ba120a37f2fd8fc78c5f3c",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "9f25a7ff47d458f0dd464f8550294adf",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "18d6c15b41e892b212aca49374466c8a",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "wall 11",
+			"Transform": {
+				"Translation": {
+					"X": 400.00006103515627,
+					"Y": -400.0,
+					"Z": 3846.66650390625
+				},
+				"Orientation": {
+					"X": 0.7071068286895752,
+					"Y": 0.7071068286895752,
+					"Z": 2.107342567114756e-8,
+					"W": 2.107343100021808e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "558199284d38d25ff7103583089fed5b",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "18d6c15b41e892b212aca49374466c8a",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
+			"ID": "1c6efe95422669006b4a7f97b3bc84b8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "6ad7a94a48162fbc6c1f26bb3371869b",
+			"Name": "floor 40",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 3850.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -4.371138828673793e-8
+				}
+			},
+			"Model": "e8f25141480717b145a115ad5de0bd8d",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "223aaa5c4332028ccd6401b32366af0a",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "1c6efe95422669006b4a7f97b3bc84b8",
+			"Name": "MeshCollider",
+			"CollisionData": "9f24010149c0277927292a905b74d02c"
+		},
+		{
 			"ID": "9ac53cfe41672012c15f66aac7c4c15f",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
@@ -4240,7 +6016,7 @@
 				"Translation": {
 					"X": 0.0,
 					"Y": -100.0,
-					"Z": 600.0
+					"Z": 550.0
 				},
 				"Scale": {
 					"X": 2.0,
@@ -4276,7 +6052,7 @@
 				"Translation": {
 					"X": 0.0,
 					"Y": -100.0,
-					"Z": 1700.0
+					"Z": 1600.0
 				},
 				"Scale": {
 					"X": 2.0,
@@ -4372,7 +6148,7 @@
 				"Translation": {
 					"X": 0.0,
 					"Y": 100.0,
-					"Z": 600.0
+					"Z": 550.0
 				}
 			}
 		},
@@ -4427,6 +6203,13 @@
 	"_shotgunText": "90e3345144de0952867e758a8776c7e2",
 	"_timeText": "c900801f4305af0723807a8f708f67fe"
 }
+		},
+		{
+			"ID": "a66e5f71443a8576c4ef06834bffb1f9",
+			"PrefabID": "6f5bd4fd4ae13c70297dc5bc115ced7e",
+			"PrefabObjectID": "5d36708748c85bcd1879c6a0f47dab24",
+			"ParentID": "48989ed149826a15d2deacad4291948e",
+			"V": {}
 		},
 		{
 			"ID": "c395b9814c7811688f35c6846bf47b76",
@@ -4656,7 +6439,7 @@
 			"TypeName": "FlaxEngine.RigidBody",
 			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
 			"Name": "Jib",
-			"Mass": 523.5988159179688
+			"Mass": 4.188790321350098
 		},
 		{
 			"ID": "679ec6c44471acc452bbb683bc1919a1",
@@ -4684,6 +6467,834 @@
 				}
 			},
 			"Material": "d9cdbdbe4299106fc0ef1ab7ac5efc9d"
+		},
+		{
+			"ID": "f904668041d92f107b4f1982f1ca057d",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 3",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "5eec4eb84fec75e0dd1f5e8a822d8d39",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "f904668041d92f107b4f1982f1ca057d",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7b0b119d4ea36fd6743261a7c7923a90",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "f904668041d92f107b4f1982f1ca057d"
+		},
+		{
+			"ID": "8fbe63ad4d5f132e9f4dd9bab31428a4",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 4",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "6c2788a7432c94f1f0fb78840d21a9f4",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "8fbe63ad4d5f132e9f4dd9bab31428a4",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "cab4505645f95b15c70c87b836824769",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "8fbe63ad4d5f132e9f4dd9bab31428a4"
+		},
+		{
+			"ID": "0fd600d7476062f8c4f660ab369fed72",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 5",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "55cd6e3d4cb3d120b762e486af092d14",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "0fd600d7476062f8c4f660ab369fed72",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "70bc75da4ae53c16413c129b000c07a3",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "0fd600d7476062f8c4f660ab369fed72"
+		},
+		{
+			"ID": "201637154a5727f94c60088dc9dadd24",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 6",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "bd94afa949fe5427fbfbd7a2fe9801ac",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "201637154a5727f94c60088dc9dadd24",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "a6714aca41e24877e800e6b2c6bfa7f4",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "201637154a5727f94c60088dc9dadd24"
+		},
+		{
+			"ID": "16d44c6e4e17570f769251a5dc353506",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 7",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "d481168d4cb0545dca4fcb82ecfc5606",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "16d44c6e4e17570f769251a5dc353506",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7921042141a39848d8b230a61ef3c599",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "16d44c6e4e17570f769251a5dc353506"
+		},
+		{
+			"ID": "192c80004bff0472f738e6a74e384d66",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 8",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "d6b6cd35495a147764650a93fc8a399d",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "192c80004bff0472f738e6a74e384d66",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "064d1d0b4130062875f1389df4756f32",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "192c80004bff0472f738e6a74e384d66"
+		},
+		{
+			"ID": "a11e58cb471e8fff0e8c948837ef5678",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 9",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "9dbc940e4b8578f38c484796bc15c8c0",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "a11e58cb471e8fff0e8c948837ef5678",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "fb3b054b421d8ad7ac1c1a8cd6dffd9b",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "a11e58cb471e8fff0e8c948837ef5678"
+		},
+		{
+			"ID": "3ad43cdb46de7ca6c23e7ab3e10b713e",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 10",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "b146952947cce2590aa754b88d809e3a",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "3ad43cdb46de7ca6c23e7ab3e10b713e",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "ee17910c424a595d6e6717adad24ea8c",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "3ad43cdb46de7ca6c23e7ab3e10b713e"
+		},
+		{
+			"ID": "e19eae7c4812997e9ecf34b76c9daf5c",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 11",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "9dacfa2c4e295aa9c472728bf4c03230",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "e19eae7c4812997e9ecf34b76c9daf5c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7a4f4f394049cce9fd6f7eadaf2a97f2",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "e19eae7c4812997e9ecf34b76c9daf5c"
+		},
+		{
+			"ID": "5d0a167a4cb3a5e1bc2b769dfdcd2f2f",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 12",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "c967f80d45435e203ccf8cb9c7941d19",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "5d0a167a4cb3a5e1bc2b769dfdcd2f2f",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "86b72285418fb1cbf3a9de9237c9a45b",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "5d0a167a4cb3a5e1bc2b769dfdcd2f2f"
+		},
+		{
+			"ID": "20bbee8f43d5e90eac9ccfbf6b2089eb",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 13",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "db7123ce42d87d6c2b1959978ed110bd",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "20bbee8f43d5e90eac9ccfbf6b2089eb",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "534295d74e97222ab4840cb86234a078",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "20bbee8f43d5e90eac9ccfbf6b2089eb"
+		},
+		{
+			"ID": "98c2ced44222d54e33331189e6d64f5b",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 14",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "952f8aec47e0778d612e409e0404e18c",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "98c2ced44222d54e33331189e6d64f5b",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "60b8337b492aeafcf88465ac5d320dc6",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "98c2ced44222d54e33331189e6d64f5b"
+		},
+		{
+			"ID": "0a1daa534b6546da9213b49967db8ba0",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 15",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "99721d514269781ebde0489378d01d0a",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "0a1daa534b6546da9213b49967db8ba0",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "e39de1ab458143cfca229bb80a6f2fc2",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "0a1daa534b6546da9213b49967db8ba0"
+		},
+		{
+			"ID": "840f0cdc429e86d8762caea4357bf5a5",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 16",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "e82abb4640196eae106172b44624ac03",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "840f0cdc429e86d8762caea4357bf5a5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "d1753b494214b21df7528bb572d5477d",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "840f0cdc429e86d8762caea4357bf5a5"
+		},
+		{
+			"ID": "e714aa05449e368a5665f4b5ac52ae81",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 17",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "d4ef24b64538abb24b7c36afd9531e57",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "e714aa05449e368a5665f4b5ac52ae81",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "212d1aff437f8a489095a0a9e8b0577a",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "e714aa05449e368a5665f4b5ac52ae81"
+		},
+		{
+			"ID": "e5a5bedf40a5fa8734880eaa368dd589",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 18",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "6c37eb124738bc80c4e66cbbbd375988",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "e5a5bedf40a5fa8734880eaa368dd589",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "c20ca80146860a9e12da7aa4e2c6ea91",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "e5a5bedf40a5fa8734880eaa368dd589"
+		},
+		{
+			"ID": "c712bc124badbbb1084bd4b739a744b9",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 19",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "f12859bf4d57d7acf6de3bb9c962eb6d",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "c712bc124badbbb1084bd4b739a744b9",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "1392d73f40229f190ee9469cf2bc9029",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "c712bc124badbbb1084bd4b739a744b9"
+		},
+		{
+			"ID": "c61b746f420bf539881e44b08adeced1",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 20",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "8152402f46d48028911d9a8ceb559b83",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "c61b746f420bf539881e44b08adeced1",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "76d71bfa46d5b886c35e448da46cdc1c",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "c61b746f420bf539881e44b08adeced1"
+		},
+		{
+			"ID": "049a858e416d878f3b6a52b5e50831d3",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 21",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "32d5e5cc47344a2697653eaed8a260f7",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "049a858e416d878f3b6a52b5e50831d3",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "c2ff05bf45a235f4dd0cd298b1979d3e",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "049a858e416d878f3b6a52b5e50831d3"
+		},
+		{
+			"ID": "b8ae52b044a43bd7ea6edd8810765d08",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 22",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "37a8706a4b32712eb134c4b9a443e6f7",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "b8ae52b044a43bd7ea6edd8810765d08",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "34a371e74aca6f5060625baff8c712c9",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "b8ae52b044a43bd7ea6edd8810765d08"
+		},
+		{
+			"ID": "2920a5d841d0d6087353ceb16c36f49c",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 23",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "2f06e7b446d5c164718d44b13db024cb",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "2920a5d841d0d6087353ceb16c36f49c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "0c27b4624e67bee45bd7948f0354cc48",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "2920a5d841d0d6087353ceb16c36f49c"
+		},
+		{
+			"ID": "a7f4005747d4d531032090951d5a1983",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 24",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2700.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "9ce9c0534bc244f138b119bfd29a1311",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "a7f4005747d4d531032090951d5a1983",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "771914cb4cfe2b0b115c9c8bcac1efcb",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "a7f4005747d4d531032090951d5a1983"
+		},
+		{
+			"ID": "4c523b464991f8d1ff4e97976ddf79b4",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "7541bee442fc56ea5ef1e5934906f512",
+			"ParentID": "ea538f974d800e34dd5b0a9a30ac9568",
+			"Name": "Cube 25",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -100.0,
+					"Z": 2550.0
+				},
+				"Scale": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": 2.0
+				}
+			}
+		},
+		{
+			"ID": "e940e244431080a45b8f49ac9743eb1f",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "2c76fce84d8c03c81ab2718395382ffb",
+			"ParentID": "4c523b464991f8d1ff4e97976ddf79b4",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "b32ec9f44dfcfdc9c3e54e9770c418da",
+			"PrefabID": "4d08884e4e237093ce82e687037ed610",
+			"PrefabObjectID": "9b28d395449053e1afe51aa76bfc682f",
+			"ParentID": "4c523b464991f8d1ff4e97976ddf79b4"
 		}
 	]
 }

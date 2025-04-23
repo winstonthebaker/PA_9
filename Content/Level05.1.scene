@@ -110,7 +110,8 @@
 			"_playerBody": "5451148f47d7faebc699da88ae833c91",
 			"_splatSource": "c170026946fbdce04d96c58449964b55",
 			"_jumpSource": "7001e76a4b602dd3490a43a9f3b052ed",
-			"_loseSource": "6e260f7e428fe300945b7bba6827fb67"
+			"_loseSource": "6e260f7e428fe300945b7bba6827fb67",
+			"_jumpVerticalForce": 1100.0
 		},
 		{
 			"ID": "5725a64940fc653828e8ffb303b0ee31",
@@ -6858,6 +6859,13 @@
 	"_shotgunText": "43abed29462cdc12afe331b0842d7d2d",
 	"_timeText": "fcf0621346124a2b1968ffb63f49126c"
 }
+		},
+		{
+			"ID": "387e94014144eab6dfb8f2a3b0035a15",
+			"PrefabID": "6f5bd4fd4ae13c70297dc5bc115ced7e",
+			"PrefabObjectID": "5d36708748c85bcd1879c6a0f47dab24",
+			"ParentID": "48989ed149826a15d2deacad4291948e",
+			"V": {}
 		},
 		{
 			"ID": "c395b9814c7811688f35c6846bf47b76",
